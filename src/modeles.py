@@ -45,7 +45,12 @@ except ImportError:  # python-dotenv non installe : les variables doivent venir 
 URL_OPENROUTER = "https://openrouter.ai/api/v1/chat/completions"
 
 DELAI_SECONDES = int(os.environ.get("NARCISSUS_DELAI", "180"))
-JETONS_MAX = int(os.environ.get("NARCISSUS_JETONS_MAX", "4000"))
+# 16 000 et non 4 000 : les modeles a raisonnement depensent une part du budget
+# en reflexion avant d'ecrire. Mesure du 18 aout 2026 sur claude-opus-5 et
+# l'enonce f001_chaudiere_a : 3 719 jetons de reflexion et 5 800 de reponse
+# visible, soit 7 526 au total. A 4 000, la reponse revenait tronquee, ou vide
+# quand la reflexion avait tout consomme.
+JETONS_MAX = int(os.environ.get("NARCISSUS_JETONS_MAX", "16000"))
 TENTATIVES_MAX = int(os.environ.get("NARCISSUS_TENTATIVES", "4"))
 
 # OpenRouter peut router une requete vers plusieurs fournisseurs pour un meme
