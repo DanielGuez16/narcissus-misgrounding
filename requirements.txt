@@ -1,0 +1,7 @@
+# Couche modeles
+requests>=2.32.0        # appels HTTP OpenRouter
+anthropic>=0.40.0       # API directe Anthropic (Claude Opus 5)
+python-dotenv>=1.0.0    # chargement des cles depuis .env (jamais versionne)
+
+# Lanceur
+tqdm>=4.66.0            # barre de progression
