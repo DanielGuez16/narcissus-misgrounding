@@ -44,13 +44,17 @@ except ImportError:  # python-dotenv non installe : les variables doivent venir 
 
 URL_OPENROUTER = "https://openrouter.ai/api/v1/chat/completions"
 
-DELAI_SECONDES = int(os.environ.get("NARCISSUS_DELAI", "180"))
+# 600 s : une consultation complete demande plusieurs minutes de generation.
+# Mesure du 18 aout 2026 : jusqu'a 6 min sur claude-opus-5.
+DELAI_SECONDES = int(os.environ.get("NARCISSUS_DELAI", "600"))
 # 16 000 et non 4 000 : les modeles a raisonnement depensent une part du budget
 # en reflexion avant d'ecrire. Mesure du 18 aout 2026 sur claude-opus-5 et
 # l'enonce f001_chaudiere_a : 3 719 jetons de reflexion et 5 800 de reponse
 # visible, soit 7 526 au total. A 4 000, la reponse revenait tronquee, ou vide
-# quand la reflexion avait tout consomme.
-JETONS_MAX = int(os.environ.get("NARCISSUS_JETONS_MAX", "16000"))
+# quand la reflexion avait tout consomme. 16 000 ne suffisait toujours pas a
+# f003_apport_partiel_b. C'est un plafond, non une cible : un modele qui repond
+# court ne coute pas plus cher parce qu'il est haut.
+JETONS_MAX = int(os.environ.get("NARCISSUS_JETONS_MAX", "32000"))
 TENTATIVES_MAX = int(os.environ.get("NARCISSUS_TENTATIVES", "4"))
 
 # OpenRouter peut router une requete vers plusieurs fournisseurs pour un meme
@@ -309,8 +313,12 @@ def _appel_anthropic(fiche: Modele, systeme: str, message: str, contexte: str | 
         parametres["temperature"] = 0
 
     def tenter():
+        # Flux continu, non par gout du direct : au-dela d'un certain budget de
+        # jetons, le SDK refuse l'appel classique, une generation pouvant
+        # depasser dix minutes. Le message final est identique.
         try:
-            return client.messages.create(**parametres)
+            with client.messages.stream(**parametres) as flux:
+                return flux.get_final_message()
         except anthropic.BadRequestError as erreur:
             message = f"{type(erreur).__name__} : {erreur}"
             if "temperature" in message.lower():
