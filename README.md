@@ -137,11 +137,12 @@ et `qwen-3.6-plus` (le grand modele stable, le canal preview ayant ete ecarte).
 
 **Temperature.** Elle est fixee a zero partout ou le fournisseur l'accepte, et
 le routage OpenRouter est restreint aux fournisseurs qui honorent ce parametre
-(`require_parameters`). Deux exceptions, verifiees au catalogue par le champ
-`supported_parameters` : `gpt-5.6-sol` et `gpt-5.6-terra` n'acceptent pas le
-parametre de temperature ; ils sont appeles sans lui, et le champ
-`temperature_zero` de chaque resultat en garde la trace. Les onze autres
-l'acceptent.
+(`require_parameters`). Trois exceptions sur treize. `gpt-5.6-sol` et `gpt-5.6-terra` ne listent pas
+`temperature` parmi leurs parametres au catalogue OpenRouter. `claude-opus-5`
+la refuse a l'appel, l'API repondant que le parametre est deprecie pour ce
+modele. Les trois sont appeles sans lui, et le champ `temperature_zero` de
+chaque resultat en garde la trace. Les dix autres l'acceptent et sont appeles a
+zero.
 
 **Seed.** Il n'est pas fixe, et c'est une decision, non un oubli. Les douze
 modeles joignables par OpenRouter accepteraient le parametre. Trois raisons de

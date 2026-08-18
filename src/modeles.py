@@ -106,6 +106,9 @@ REGISTRE: dict[str, Modele] = {
         famille="ferme",
         dorsale="anthropic",
         identifiant="claude-opus-5",
+        temperature_zero=False,
+        note="L'API repond \"`temperature` is deprecated for this model\" (constate le "
+             "18 aout 2026). Appel sans parametre de temperature.",
     ),
     "gpt-5.6-sol": Modele(
         cle="gpt-5.6-sol",
@@ -286,6 +289,11 @@ def _appel_anthropic(fiche: Modele, systeme: str, message: str, contexte: str | 
         raise ErreurModele(fiche.cle, f"paquet anthropic absent : {erreur}", contexte) from erreur
 
     client = anthropic.Anthropic(api_key=cle_api("ANTHROPIC_API_KEY", fiche.cle, contexte))
+    conseil_temperature = (
+        "\n  -> Ce modele refuse le parametre temperature. Passez temperature_zero=False "
+        f"sur '{fiche.cle}' dans REGISTRE, et signalez-le dans le papier : la temperature "
+        "n'est pas reglable pour ce modele."
+    )
     parametres = {
         "model": fiche.identifiant_effectif(),
         "max_tokens": JETONS_MAX,
@@ -296,7 +304,13 @@ def _appel_anthropic(fiche: Modele, systeme: str, message: str, contexte: str | 
         parametres["temperature"] = 0
 
     def tenter():
-        return client.messages.create(**parametres)
+        try:
+            return client.messages.create(**parametres)
+        except anthropic.BadRequestError as erreur:
+            message = f"{type(erreur).__name__} : {erreur}"
+            if "temperature" in message.lower():
+                raise ErreurModele(fiche.cle, message + conseil_temperature, contexte) from erreur
+            raise
 
     reponse = _avec_reprises(tenter, fiche, contexte)
 
