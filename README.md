@@ -118,21 +118,30 @@ modifier le code.
 | `mistral-large-3` | ouvert | OpenRouter |
 | `mistral-medium-3.5` | ouvert | OpenRouter |
 | `kimi-k3` | ouvert | OpenRouter |
-| `glm-5.3` | ouvert | OpenRouter |
-| `deepseek-v4` | ouvert | OpenRouter |
-| `qwen-3.6` | ouvert | OpenRouter |
+| `glm-5.2` | ouvert | OpenRouter |
+| `deepseek-v4-pro` | ouvert | OpenRouter |
+| `qwen-3.6-plus` | ouvert | OpenRouter |
 | `minimax-m3` | ouvert | OpenRouter |
 | `llama-4-maverick` | ouvert | OpenRouter |
 
 Tout ce qui ne dispose pas d'une API directe passe par OpenRouter, ce qui evite
 treize integrations distinctes.
 
+Les identifiants fournisseurs du registre ont ete verifies un a un contre le
+catalogue OpenRouter le 18 aout 2026. Le registre de `src/modeles.py` est la
+reference : `NARCISSUS_ID_<CLE>` ne sert qu'a surcharger ponctuellement, jamais
+a reparer une entree fausse. Trois cles portent le nom de la declinaison
+reellement interrogee, et non le nom generique de la famille : `glm-5.2` (GLM
+5.3 n'existe pas), `deepseek-v4-pro` (Pro et Flash sont deux modeles distincts)
+et `qwen-3.6-plus` (le grand modele stable, le canal preview ayant ete ecarte).
+
 **Temperature.** Elle est fixee a zero partout ou le fournisseur l'accepte, et
 le routage OpenRouter est restreint aux fournisseurs qui honorent ce parametre
-(`require_parameters`). Deux exceptions declarees dans `src/modeles.py` :
-`gpt-5.6-sol` et `gpt-5.6-terra`, dont la temperature n'est pas reglable ; ils
-sont appeles sans ce parametre, et le champ `temperature_zero` de chaque
-resultat en garde la trace. Si un autre modele refuse le parametre, l'appel
+(`require_parameters`). Deux exceptions, verifiees au catalogue par le champ
+`supported_parameters` : `gpt-5.6-sol` et `gpt-5.6-terra` n'acceptent pas le
+parametre de temperature ; ils sont appeles sans lui, et le champ
+`temperature_zero` de chaque resultat en garde la trace. Les onze autres
+l'acceptent. Si un autre modele refuse le parametre, l'appel
 echoue avec un message qui le dit et indique la ligne du registre a corriger :
 il n'y a pas de repli silencieux.
 

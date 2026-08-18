@@ -93,12 +93,12 @@ class Modele:
         return os.environ.get(variable, self.identifiant)
 
 
-# Les identifiants OpenRouter ci-dessous suivent la nomenclature habituelle du
-# fournisseur (editeur/modele). Ils n'ont pas ete verifies un a un contre le
-# catalogue en ligne : c'est precisement le role de src/tester_modeles.py, a
-# lancer en premier. Un identifiant faux se traduit par une erreur HTTP 404
-# explicite, jamais par un silence. Correction sans toucher au code via
-# NARCISSUS_ID_<CLE>.
+# Identifiants verifies un a un contre le catalogue OpenRouter le 18 aout 2026,
+# ainsi que le champ supported_parameters qui declare si la temperature est
+# reglable. Le registre est la reference : NARCISSUS_ID_<CLE> ne sert qu'a
+# surcharger ponctuellement, jamais a reparer une entree fausse. Un identifiant
+# qui cesse d'exister se traduit par une erreur HTTP 404 explicite, jamais par
+# un silence.
 REGISTRE: dict[str, Modele] = {
     # ---------------------------- modeles fermes ---------------------------
     "claude-opus-5": Modele(
@@ -113,8 +113,8 @@ REGISTRE: dict[str, Modele] = {
         dorsale="openrouter",
         identifiant="openai/gpt-5.6-sol",
         temperature_zero=False,
-        note="Famille GPT-5 : les modeles a raisonnement refusent en general de "
-             "fixer la temperature. Appel sans parametre de temperature.",
+        note="Le catalogue ne liste pas temperature parmi les parametres acceptes. "
+             "Appel sans parametre de temperature.",
     ),
     "gpt-5.6-terra": Modele(
         cle="gpt-5.6-terra",
@@ -122,13 +122,14 @@ REGISTRE: dict[str, Modele] = {
         dorsale="openrouter",
         identifiant="openai/gpt-5.6-terra",
         temperature_zero=False,
-        note="Idem gpt-5.6-sol : temperature non reglable.",
+        note="Idem gpt-5.6-sol : temperature non reglable, d'apres le catalogue.",
     ),
     "gemini-3.1-pro": Modele(
         cle="gemini-3.1-pro",
         famille="ferme",
         dorsale="openrouter",
-        identifiant="google/gemini-3.1-pro",
+        identifiant="google/gemini-3.1-pro-preview",
+        note="Le catalogue ne connait Gemini 3.1 Pro que par son canal preview.",
     ),
     "grok-4.6": Modele(
         cle="grok-4.6",
@@ -141,13 +142,15 @@ REGISTRE: dict[str, Modele] = {
         cle="mistral-large-3",
         famille="ouvert",
         dorsale="openrouter",
-        identifiant="mistralai/mistral-large-3",
+        identifiant="mistralai/mistral-large-2512",
+        note="Mistral Large 3 porte l'instantane 2512 au catalogue.",
     ),
     "mistral-medium-3.5": Modele(
         cle="mistral-medium-3.5",
         famille="ouvert",
         dorsale="openrouter",
-        identifiant="mistralai/mistral-medium-3.5",
+        identifiant="mistralai/mistral-medium-3-5",
+        note="Le catalogue ecrit la version avec un tiret, non un point.",
     ),
     "kimi-k3": Modele(
         cle="kimi-k3",
@@ -155,23 +158,30 @@ REGISTRE: dict[str, Modele] = {
         dorsale="openrouter",
         identifiant="moonshotai/kimi-k3",
     ),
-    "glm-5.3": Modele(
-        cle="glm-5.3",
+    "glm-5.2": Modele(
+        cle="glm-5.2",
         famille="ouvert",
         dorsale="openrouter",
-        identifiant="z-ai/glm-5.3",
+        identifiant="z-ai/glm-5.2",
+        note="GLM-5.3 n'existe pas : le catalogue s'arrete a GLM 5.2, deja retenue "
+             "dans le premier papier.",
     ),
-    "deepseek-v4": Modele(
-        cle="deepseek-v4",
+    "deepseek-v4-pro": Modele(
+        cle="deepseek-v4-pro",
         famille="ouvert",
         dorsale="openrouter",
-        identifiant="deepseek/deepseek-v4",
+        identifiant="deepseek/deepseek-v4-pro",
+        note="DeepSeek V4 n'existe pas sous ce seul nom : Pro et Flash sont deux "
+             "modeles distincts. Pro est le seul comparable au reste du panel. "
+             "L'alias pointait sur l'instantane 0423 le 18 aout 2026.",
     ),
-    "qwen-3.6": Modele(
-        cle="qwen-3.6",
+    "qwen-3.6-plus": Modele(
+        cle="qwen-3.6-plus",
         famille="ouvert",
         dorsale="openrouter",
-        identifiant="qwen/qwen-3.6",
+        identifiant="qwen/qwen3.6-plus",
+        note="Grand modele stable de la generation 3.6. Max Preview a ete ecarte : "
+             "pas de canal preview sur une campagne de 1690 appels.",
     ),
     "minimax-m3": Modele(
         cle="minimax-m3",
