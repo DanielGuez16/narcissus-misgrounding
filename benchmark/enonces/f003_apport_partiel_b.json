@@ -2,7 +2,7 @@
   "identifiant": "f003_apport_partiel_b",
   "matiere": "Apport partiel d'actif",
   "role": "mesure",
-  "enonce": "Un groupe familial vous consulte.\n\nLa societe holding detient deux branches d'activite : une activite\nindustrielle et une activite de negoce. Les deux branches de la\nfamille souhaitent se separer.\n\nCette fois, le projet est de faire apporter la branche industrielle\na une societe nouvelle, et de remettre les titres recus\ndirectement aux associes de la societe apporteuse, afin que chaque\nbranche de la famille detienne sa societe.\n\nL'operation peut-elle beneficier du regime de faveur des articles\n210 A et suivants ?\n\nVoici le texte applicable.",
+  "enonce": "Un groupe familial vous consulte.\n\nLa societe holding detient deux branches d'activite : une activite\nindustrielle et une activite de negoce. Les deux branches de la\nfamille souhaitent se separer.\n\nLe projet est de faire apporter la branche industrielle a une\nsociete nouvelle, et de remettre les titres recus directement aux\nassocies de la societe apporteuse, afin que chaque branche de la\nfamille detienne sa societe.\n\nL'operation peut-elle beneficier du regime de faveur des articles\n210 A et suivants ?\n\nVoici le texte applicable.",
   "textes": [
     "cgi_210_0_a_2025"
   ],
@@ -14,5 +14,5 @@
     "question_nouvelle": "À quelle date le projet a-t-il été déposé au greffe ?"
   },
   "reconstruction": "Le document abrège cet énoncé par une mention entre crochets renvoyant à la scène de l'énoncé de contrôle. La scène a été rétablie mot pour mot depuis f003_apport_partiel_a, seuls les éléments que le document modifie ont changé.",
-  "note": "La formule « Cette fois » ouvre la variante dans le document ; elle est conservée telle quelle."
+  "note": "Le document ouvre la variante par « Cette fois, ». L'énoncé partant seul, sans celui de contrôle qui le précède, cette anaphore ne renvoie à rien et pourrait à elle seule déclencher une question : on ne saurait plus si le modèle réclame le fait manquant ou la phrase manquante. Les deux mots ont été supprimés, le reste est intact."
 }
