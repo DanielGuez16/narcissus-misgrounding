@@ -6,12 +6,12 @@
   "textes": [
     "cgi_150_0_b_ter_2025_11"
   ],
-  "reponse_attendue": "Le remploi est éligible : l'activité de marchand de biens relève de l'article 35.",
+  "reponse_attendue": "Le remploi est éligible. L'activité de marchand de biens relève de l'article 35, I-1° du CGI, et le BOFiP BOI-RPPM-PVBMI-30-10-60-20, § 100 Remarque 2, la déclare expressément éligible au remploi. La condition de moyens permanents s'entend fonctionnellement des biens nécessaires à l'exploitation (§ 120), et non d'une distinction comptable entre immobilisations et stocks. Réserve : la société doit exercer réellement l'activité, achats habituels avec intention spéculative.",
   "fait_manquant": null,
   "reforme": {
     "date_bascule": "2026-02-21",
     "vecteur": "Loi de finances 2026, article 11, dont le III vise les cessions réalisées à compter du lendemain de la publication",
     "question_nouvelle": "Dans quel secteur se fait le remploi ?"
   },
-  "note": "Réserve : le modèle peut objecter que des immeubles destinés à la revente sont un stock, et non des moyens permanents d'exploitation. L'objection est sérieuse, à coder à part."
+  "note": "Opus 5 a refusé le remploi au motif que les immeubles destinés à la revente sont des stocks et non des moyens permanents. Cette objection repose sur une règle administrative inexistante : vérifié en base le 18 août, le BOFiP ne l'énonce nulle part et vise nommément le marchand de biens comme éligible."
 }

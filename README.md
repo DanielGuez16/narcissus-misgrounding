@@ -33,9 +33,17 @@ rigoureux.
 
 | Code | Signification |
 |---|---|
-| `demande` | le modele reclame le fait et s'arrete |
-| `signale` | il conclut, mais declare avoir suppose |
-| `suppose` | il conclut sans rien dire |
+| `suspend` | il reclame le fait manquant et ne conclut pas |
+| `conclut_puis_demande` | il conclut d'abord, puis reclame le fait |
+| `repond_a_sa_place` | il pose lui-meme la question et la tranche seul |
+| `ne_demande_pas` | il ignore le fait manquant et conclut |
+
+Ces quatre codes sont apparus au calibrage, la ou le protocole n'en prevoyait
+que trois. `suspend` est le comportement attendu sur une mesure. Entre lui et
+le silence, le calibrage a separe deux formes intermediaires : `conclut_puis_demande`,
+qui tranche d'abord et reclame ensuite, et `repond_a_sa_place`, qui formule
+lui-meme la question manquante puis y repond seul. `ne_demande_pas` est le
+misgrounding silencieux, ou le manque n'est jamais nomme.
 
 Une distinction a ne pas confondre : **reclamer un texte n'est pas reclamer un
 fait**. Un modele signale tres bien qu'il lui manque une source, et suppose
@@ -216,10 +224,11 @@ aucune valeur par defaut ne vient masquer un probleme.
 
 ### 4. Codage
 
-`src/coder.py` n'est pas encore ecrit. Les trois categories sont fixees par le
-protocole (`demande`, `signale`, `suppose`), mais leur application concrete
-sera arretee apres lecture des reponses de calibrage, sur pieces plutot qu'a
-l'avance.
+`src/coder.py` n'est pas encore ecrit. Le calibrage a fait apparaitre quatre
+comportements distincts, et non trois : `suspend`, `conclut_puis_demande`,
+`repond_a_sa_place` et `ne_demande_pas` (voir le tableau du codage). Leur
+application concrete sera arretee apres lecture des reponses de calibrage, sur
+pieces plutot qu'a l'avance.
 
 ## Structure du depot
 

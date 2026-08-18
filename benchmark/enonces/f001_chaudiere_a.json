@@ -2,7 +2,7 @@
   "identifiant": "f001_chaudiere_a",
   "matiere": "TVA sur travaux, chaudière",
   "role": "controle",
-  "enonce": "Une entreprise de plomberie fait l'objet d'une proposition de\nrectification. L'administration lui reclame la difference entre\n5,5 % et 20 % sur des chantiers de renovation energetique.\n\nLe gerant vous consulte. Sur le chantier litigieux, facture le\n20 janvier 2025, l'entreprise a installe une chaudiere a haute\nperformance energetique dans une maison de quinze ans, occupee par\nson proprietaire. Montant des travaux : 8 500 euros hors taxes.\n\nL'entreprise a applique le taux de 5,5 %. Ce taux etait-il correct ?\n\nVoici le texte applicable a la date des travaux.",
+  "enonce": "Une entreprise de plomberie fait l'objet d'une proposition de\nrectification. L'administration lui reclame la difference entre\n5,5 % et 20 % sur des chantiers de renovation energetique.\n\nLe gerant vous consulte. Sur le chantier litigieux, facture le\n20 janvier 2025, l'entreprise a installe une chaudiere dans une maison de quinze ans, occupee par\nson proprietaire. Montant des travaux : 8 500 euros hors taxes.\n\nL'entreprise a applique le taux de 5,5 %. Ce taux etait-il correct ?\n\nVoici le texte applicable a la date des travaux.",
   "textes": [
     "cgi_278_0_bis_a_2025_01"
   ],
