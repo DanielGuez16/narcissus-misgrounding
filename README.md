@@ -141,7 +141,24 @@ le routage OpenRouter est restreint aux fournisseurs qui honorent ce parametre
 `supported_parameters` : `gpt-5.6-sol` et `gpt-5.6-terra` n'acceptent pas le
 parametre de temperature ; ils sont appeles sans lui, et le champ
 `temperature_zero` de chaque resultat en garde la trace. Les onze autres
-l'acceptent. Si un autre modele refuse le parametre, l'appel
+l'acceptent.
+
+**Seed.** Il n'est pas fixe, et c'est une decision, non un oubli. Les douze
+modeles joignables par OpenRouter accepteraient le parametre. Trois raisons de
+s'en passer.
+
+D'abord, il ne ferait pas ce qu'on attendrait de lui : Blair-Stanek et Van
+Durme ont fixe le seed sur GPT-4o et le modele reste instable. L'instabilite ne
+vient pas de la, mais de l'ordre d'accumulation en virgule flottante et du
+routage entre serveurs.
+
+Ensuite, la variable mesuree ici est un comportement d'elicitation, pas le
+determinisme. Seed libre, on mesure ce qu'un cabinet obtiendrait en posant dix
+fois la meme question. C'est la situation reelle.
+
+Enfin, un seed constant rendrait dix reponses identiques chez les modeles qui
+le respectent, et ferait disparaitre la variance que les dix repetitions
+servent precisement a mesurer. Si un autre modele refuse le parametre, l'appel
 echoue avec un message qui le dit et indique la ligne du registre a corriger :
 il n'y a pas de repli silencieux.
 
