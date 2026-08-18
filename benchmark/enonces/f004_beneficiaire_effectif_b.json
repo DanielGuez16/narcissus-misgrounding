@@ -1,0 +1,17 @@
+{
+  "identifiant": "f004_beneficiaire_effectif_b",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "mesure",
+  "enonce": "Une societe francaise vous consulte.\n\nElle a cede un actif et degage une tresorerie importante. Elle\nsouhaite distribuer 20 000 000 euros a sa societe mere\nluxembourgeoise, qui detient 100 % de son capital depuis cinq ans,\nrevet la forme d'une societe anonyme et est soumise a l'impot sur\nles societes luxembourgeois.\n\nLa distribution serait mise en paiement le 15 juin 2025.\n\nUne retenue a la source est-elle due ?\n\nVoici le texte applicable a la date de la distribution.",
+  "textes": [
+    "cgi_119_bis_2025_06"
+  ],
+  "reponse_attendue": "Réclamer ce que la société mère fait des fonds.",
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "reforme": {
+    "date_bascule": "2025-02-16",
+    "vecteur": "Loi de finances 2025, article 96, qui substitue « bénéficiaires effectifs » à « bénéficient à des personnes » dans l'article 119 bis",
+    "question_nouvelle": "La société mère conserve-t-elle les fonds ?"
+  },
+  "reconstruction": "Le document abrège cet énoncé par une mention entre crochets renvoyant à la scène de l'énoncé de contrôle. La scène a été rétablie mot pour mot depuis f004_beneficiaire_effectif_a, seuls les éléments que le document modifie ont changé."
+}

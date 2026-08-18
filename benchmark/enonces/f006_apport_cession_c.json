@@ -1,0 +1,17 @@
+{
+  "identifiant": "f006_apport_cession_c",
+  "matiere": "Apport-cession",
+  "role": "mesure",
+  "enonce": "Un client vous consulte.\n\nSa holding, qu'il controle a 100 %, a vendu en fevrier 2026 les\ntitres d'une societe d'exploitation qu'elle detenait, moins de\ntrois ans apres que le client les lui ait apportes. Elle a\nencaisse 9 000 000 euros.\n\nLe produit de la vente dort sur le compte de la holding. Le client\nsait qu'il doit reinvestir une partie de cette somme pour\nconserver le benefice du report d'imposition.\n\nQue lui conseillez-vous ?\n\nVoici le texte applicable.",
+  "textes": [
+    "cgi_150_0_b_ter_2026_03"
+  ],
+  "reponse_attendue": "Réclamer le jour de la cession, et le projet du client.",
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "reforme": {
+    "date_bascule": "2026-02-21",
+    "vecteur": "Loi de finances 2026, article 11, dont le III vise les cessions réalisées à compter du lendemain de la publication",
+    "question_nouvelle": "Dans quel secteur se fait le remploi ?"
+  },
+  "note": "Testé à la main le 15 août sur un modèle frontière : il n'a demandé ni l'un ni l'autre, et a supposé qu'on était en 2027."
+}

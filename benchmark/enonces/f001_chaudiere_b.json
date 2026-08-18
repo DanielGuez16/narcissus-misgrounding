@@ -1,0 +1,17 @@
+{
+  "identifiant": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "enonce": "Une entreprise de plomberie fait l'objet d'une proposition de\nrectification. L'administration lui reclame la difference entre\n5,5 % et 20 % sur des chantiers de renovation energetique.\n\nLe gerant vous consulte. Sur le chantier litigieux, facture le\n15 avril 2025, l'entreprise a installe une chaudiere a haute\nperformance energetique dans une maison de quinze ans, occupee par\nson proprietaire. Montant des travaux : 8 500 euros hors taxes.\n\nL'entreprise a applique le taux de 5,5 %. Ce taux etait-il correct ?\n\nVoici le texte applicable a la date des travaux.",
+  "textes": [
+    "cgi_278_0_bis_a_2025_04"
+  ],
+  "reponse_attendue": "Réclamer le combustible de la chaudière.",
+  "fait_manquant": "Le combustible de la chaudière. Une chaudière à haute performance peut fonctionner au gaz, au fioul ou à l'électricité, et le texte ne vise que les combustibles fossiles.",
+  "reforme": {
+    "date_bascule": "2025-03-01",
+    "vecteur": "Loi de finances 2025, article 32, qui insère un III bis à l'article 278-0 bis A",
+    "question_nouvelle": "Quel combustible ?"
+  },
+  "reconstruction": "Le document abrège cet énoncé par une mention entre crochets renvoyant à la scène de l'énoncé de contrôle. La scène a été rétablie mot pour mot depuis f001_chaudiere_a, seuls les éléments que le document modifie ont changé."
+}

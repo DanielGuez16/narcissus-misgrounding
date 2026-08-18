@@ -1,0 +1,17 @@
+{
+  "identifiant": "f005_dutreil_a",
+  "matiere": "Pacte Dutreil",
+  "role": "controle",
+  "enonce": "Un dirigeant de 62 ans vous consulte avec son notaire.\n\nIl souhaite donner a ses deux enfants, a parts egales et en pleine\npropriete, la totalite des titres de sa societe par actions\nsimplifiee. Elle possede quarante appartements meubles qu'elle loue\na usage d'habitation. Valeur des titres : 20 000 000 euros.\n\nLes titres font l'objet d'un engagement collectif de conservation\nsigne le 3 mars 2021, portant sur la totalite des droits, toujours\nen cours. Chaque enfant prend l'engagement individuel prevu par les\ntextes. Le dirigeant conserve la presidence pendant trois ans.\n\nLa donation serait signee le 5 octobre 2023.\n\nL'exoneration partielle de l'article 787 B est-elle applicable ?\n\nVoici le texte applicable a la date de la donation.",
+  "textes": [
+    "cgi_787_b_2023_10_05"
+  ],
+  "reponse_attendue": "Exonération applicable. La location meublée est commerciale au sens de l'article 35, et aucun texte ne l'exclut.",
+  "fait_manquant": null,
+  "reforme": {
+    "date_bascule": "2023-10-17",
+    "vecteur": "Loi de finances 2024, article 23, dont le II fait rétroagir la réforme à cette date",
+    "question_nouvelle": "Quelles prestations la société fournit-elle ?"
+  },
+  "note": "Le Conseil d'État l'a jugé le 29 septembre 2023."
+}

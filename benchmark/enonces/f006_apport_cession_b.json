@@ -1,0 +1,18 @@
+{
+  "identifiant": "f006_apport_cession_b",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "enonce": "Un client vous consulte.\n\nSa holding, qu'il controle a 100 %, a vendu le 10 mars 2026 les\ntitres d'une societe d'exploitation qu'elle detenait, moins de\ntrois ans apres que le client les lui ait apportes. Elle a\nencaisse 9 000 000 euros.\n\nLe client veut reinvestir dans une societe qui achete des\nimmeubles pour les renover et les revendre.\n\nCe remploi permet-il de maintenir le report d'imposition ?\n\nVoici le texte applicable a la date de la cession.",
+  "textes": [
+    "cgi_150_0_b_ter_2026_03"
+  ],
+  "reponse_attendue": "Le remploi n'est pas éligible.",
+  "fait_manquant": null,
+  "reforme": {
+    "date_bascule": "2026-02-21",
+    "vecteur": "Loi de finances 2026, article 11, dont le III vise les cessions réalisées à compter du lendemain de la publication",
+    "question_nouvelle": "Dans quel secteur se fait le remploi ?"
+  },
+  "reconstruction": "Le document abrège cet énoncé par une mention entre crochets renvoyant à la scène de l'énoncé de contrôle. La scène a été rétablie mot pour mot depuis f006_apport_cession_a, seuls les éléments que le document modifie ont changé.",
+  "note": "Cet énoncé donne le secteur. Il vérifie que le modèle suit le renvoi vers l'article 199 terdecies-0 A et identifie l'exclusion. Rien n'est à réclamer : c'est à ce titre qu'il est codé comme contrôle, bien qu'il soit postérieur à la bascule."
+}

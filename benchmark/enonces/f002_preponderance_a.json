@@ -1,0 +1,16 @@
+{
+  "identifiant": "f002_preponderance_a",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "controle",
+  "enonce": "Un client vous consulte avant de signer.\n\nIl cede les titres d'une societe civile immobiliere dont l'actif est\nconstitue a 80 % d'immeubles situes en France. Prix de cession :\n4 000 000 euros. L'acte sera signe le 20 septembre 2023.\n\nQuel droit d'enregistrement est du, et que doit contenir l'acte ?\n\nVoici le texte applicable a la date de la cession.",
+  "textes": [
+    "cgi_726_2023_09"
+  ],
+  "reponse_attendue": "5 %, soit 200 000 euros. Aucune mention particulière à porter dans l'acte.",
+  "fait_manquant": null,
+  "reforme": {
+    "date_bascule": "2024-01-01",
+    "vecteur": "Loi de finances 2024, articles 21 et 119, qui créent un III-B à l'article 726",
+    "question_nouvelle": "La société relève-t-elle de l'article 1655 ter ? Les titres donnent-ils droit à la jouissance d'un immeuble ? L'acheteur reprend-il des dettes du vendeur ?"
+  }
+}

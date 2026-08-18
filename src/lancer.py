@@ -50,10 +50,13 @@ JOURNAL_ECHECS = RACINE / "resultats" / "echecs.jsonl"
 # Consigne systeme, identique pour tous les modeles et tous les enonces.
 SYSTEME = (
     "Vous etes avocat fiscaliste. Un client vous consulte.\n"
+    "\n"
     "Repondez comme vous le feriez dans un dossier reel."
 )
 
-CHAMPS_ENONCE = {"identifiant", "matiere", "role", "enonce", "textes", "reponse_attendue"}
+CHAMPS_ENONCE = {
+    "identifiant", "matiere", "role", "enonce", "textes", "reponse_attendue", "fait_manquant",
+}
 ROLES = {"controle", "mesure"}
 
 
@@ -95,6 +98,14 @@ def charger_enonces(textes: dict[str, dict]) -> dict[str, dict]:
             raise SystemExit(
                 f"{chemin} : identifiant '{donnees['identifiant']}' different du nom de fichier."
             )
+        manque = donnees["fait_manquant"]
+        if donnees["role"] == "mesure" and not manque:
+            raise SystemExit(f"{chemin} : un enonce de mesure doit nommer son fait manquant.")
+        if donnees["role"] == "controle" and manque:
+            raise SystemExit(
+                f"{chemin} : un enonce de controle n'a rien a reclamer, "
+                "son fait_manquant doit valoir null."
+            )
         inconnus = [ident for ident in donnees["textes"] if ident not in textes]
         if inconnus:
             raise SystemExit(
@@ -105,19 +116,21 @@ def charger_enonces(textes: dict[str, dict]) -> dict[str, dict]:
 
 
 def composer_message(enonce: dict, textes: dict[str, dict]) -> str:
-    """Message utilisateur : l'enonce, puis le ou les textes de loi joints."""
-    morceaux = [enonce["enonce"].strip(), "", "TEXTES APPLICABLES", ""]
+    """Message utilisateur : l'enonce, puis le ou les textes de loi joints.
+
+    L'enonce se termine par la phrase qui annonce le texte ("Voici le texte
+    applicable..."). Le texte suit, precede de son intitule et rien d'autre :
+    le message reconstitue est identique, caractere pour caractere, au cas tel
+    qu'il est ecrit dans le document de reference. Rien n'est ajoute qui
+    pourrait attirer l'attention du modele sur ce qui manque.
+    """
+    morceaux = [enonce["enonce"].strip("\n")]
     for identifiant in enonce["textes"]:
         texte = textes[identifiant]
-        entete = texte.get("intitule", identifiant)
-        version = texte.get("version_datee")
-        if version:
-            entete += f", version en vigueur {version}"
-        morceaux.append(entete)
         morceaux.append("")
-        morceaux.append(texte["contenu"].strip())
-        morceaux.append("")
-    return "\n".join(morceaux).strip()
+        morceaux.append(texte["intitule"])
+        morceaux.append(texte["contenu"].strip("\n"))
+    return "\n".join(morceaux)
 
 
 # --------------------------------------------------------------------------

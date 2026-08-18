@@ -1,0 +1,17 @@
+{
+  "identifiant": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "enonce": "Un client vous consulte avant de signer.\n\nIl cede les titres d'une societe civile immobiliere dont l'actif est\nconstitue a 80 % d'immeubles situes en France. Prix de cession :\n4 000 000 euros. L'acte sera signe le 20 mars 2024.\n\nQuel droit d'enregistrement est du, et que doit contenir l'acte ?\n\nVoici le texte applicable a la date de la cession.",
+  "textes": [
+    "cgi_726_2024_03"
+  ],
+  "reponse_attendue": "Réclamer les trois informations du III-B.",
+  "fait_manquant": "Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.",
+  "reforme": {
+    "date_bascule": "2024-01-01",
+    "vecteur": "Loi de finances 2024, articles 21 et 119, qui créent un III-B à l'article 726",
+    "question_nouvelle": "La société relève-t-elle de l'article 1655 ter ? Les titres donnent-ils droit à la jouissance d'un immeuble ? L'acheteur reprend-il des dettes du vendeur ?"
+  },
+  "reconstruction": "Le document abrège cet énoncé par une mention entre crochets renvoyant à la scène de l'énoncé de contrôle. La scène a été rétablie mot pour mot depuis f002_preponderance_a, seuls les éléments que le document modifie ont changé."
+}

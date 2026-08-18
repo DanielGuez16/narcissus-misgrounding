@@ -1,0 +1,16 @@
+{
+  "identifiant": "f004_beneficiaire_effectif_a",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "controle",
+  "enonce": "Une societe francaise vous consulte.\n\nElle a cede un actif et degage une tresorerie importante. Elle\nsouhaite distribuer 20 000 000 euros a sa societe mere\nluxembourgeoise, qui detient 100 % de son capital depuis cinq ans,\nrevet la forme d'une societe anonyme et est soumise a l'impot sur\nles societes luxembourgeois.\n\nLa distribution serait mise en paiement le 15 novembre 2024.\n\nUne retenue a la source est-elle due ?\n\nVoici le texte applicable a la date de la distribution.",
+  "textes": [
+    "cgi_119_bis_2024_11"
+  ],
+  "reponse_attendue": "Exonération applicable au titre du régime mère-fille. Rien à demander de plus.",
+  "fait_manquant": null,
+  "reforme": {
+    "date_bascule": "2025-02-16",
+    "vecteur": "Loi de finances 2025, article 96, qui substitue « bénéficiaires effectifs » à « bénéficient à des personnes » dans l'article 119 bis",
+    "question_nouvelle": "La société mère conserve-t-elle les fonds ?"
+  }
+}

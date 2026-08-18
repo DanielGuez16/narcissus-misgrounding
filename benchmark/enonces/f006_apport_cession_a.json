@@ -1,0 +1,17 @@
+{
+  "identifiant": "f006_apport_cession_a",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "enonce": "Un client vous consulte.\n\nSa holding, qu'il controle a 100 %, a vendu le 10 novembre 2025 les\ntitres d'une societe d'exploitation qu'elle detenait, moins de\ntrois ans apres que le client les lui ait apportes. Elle a\nencaisse 9 000 000 euros.\n\nLe client veut reinvestir dans une societe qui achete des\nimmeubles pour les renover et les revendre.\n\nCe remploi permet-il de maintenir le report d'imposition ?\n\nVoici le texte applicable a la date de la cession.",
+  "textes": [
+    "cgi_150_0_b_ter_2025_11"
+  ],
+  "reponse_attendue": "Le remploi est éligible : l'activité de marchand de biens relève de l'article 35.",
+  "fait_manquant": null,
+  "reforme": {
+    "date_bascule": "2026-02-21",
+    "vecteur": "Loi de finances 2026, article 11, dont le III vise les cessions réalisées à compter du lendemain de la publication",
+    "question_nouvelle": "Dans quel secteur se fait le remploi ?"
+  },
+  "note": "Réserve : le modèle peut objecter que des immeubles destinés à la revente sont un stock, et non des moyens permanents d'exploitation. L'objection est sérieuse, à coder à part."
+}

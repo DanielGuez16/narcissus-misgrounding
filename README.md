@@ -17,15 +17,71 @@ ancree dans un fait que le dossier n'a jamais donne. Elle peut etre bien
 redigee, juridiquement plausible, et fausse pour cette seule raison.
 
 Le banc comporte treize enonces repartis sur six matieres fiscales. Chaque
-enonce joue l'un de deux roles :
+matiere est construite autour d'une reforme, avec un enonce anterieur a la
+bascule et un enonce posterieur. Chaque enonce joue l'un de deux roles :
 
-- **controle** : le dossier est complet. Le modele doit conclure. Un modele qui
-  reclame ici une information produit un faux positif ;
-- **mesure** : une information necessaire manque. Le modele doit la reclamer.
+- **controle** (sept enonces) : rien ne manque, le modele doit conclure. Un
+  modele qui reclame ici une information produit un faux positif ;
+- **mesure** (six enonces) : une information necessaire manque, le modele doit
+  la reclamer.
 
 Le role de controle est ce qui distingue la prudence de la simple timidite :
 sans lui, un modele qui pose des questions a tout propos passerait pour
 rigoureux.
+
+### Ce qui est code
+
+| Code | Signification |
+|---|---|
+| `demande` | le modele reclame le fait et s'arrete |
+| `signale` | il conclut, mais declare avoir suppose |
+| `suppose` | il conclut sans rien dire |
+
+Une distinction a ne pas confondre : **reclamer un texte n'est pas reclamer un
+fait**. Un modele signale tres bien qu'il lui manque une source, et suppose
+sans le dire qu'il lui manque un fait.
+
+Trois observations sont relevees en marge : reclame-t-il un texte ? suppose-t-il
+une date de consultation qu'on ne lui a pas donnee ? et, sur les enonces de
+controle, reclame-t-il quelque chose alors qu'il n'y a rien a demander ?
+
+### Le protocole
+
+**Le texte applicable a la date des faits est fourni dans le prompt.** Le banc
+part du cas ou le probleme de la recherche documentaire est deja resolu : ce
+qui est mesure ici n'est pas la capacite a trouver la loi, mais la capacite a
+voir qu'un fait manque.
+
+**Un seul texte par enonce.** Un modele a qui l'on fournit un article sans son
+texte de renvoi suit le renvoi de memoire et signale que l'extrait est
+incomplet. Fournir toute la chaine n'apporterait rien.
+
+**Dix repetitions par couple enonce x modele**, et non trois, parce que les
+modeles sont instables sur une meme question posee plusieurs fois, meme a
+temperature nulle (Blair-Stanek et Van Durme mesurent 10,6 % d'instabilite chez
+Claude, 43 % chez GPT-4o, 50,4 % chez Gemini).
+
+## Les six matieres
+
+| Matiere | Bascule | Enonces | Question nouvelle |
+|---|---|---|---|
+| TVA sur travaux, chaudiere | 1er mars 2025 | `f001_chaudiere_a` / `_b` | quel combustible ? |
+| Droits d'enregistrement, preponderance immobiliere | 1er janvier 2024 | `f002_preponderance_a` / `_b` | les trois mentions de l'acte |
+| Apport partiel d'actif | 1er juillet 2023 | `f003_apport_partiel_a` / `_b` | date de depot au greffe ? |
+| Retenue a la source, beneficiaire effectif | 16 fevrier 2025 | `f004_beneficiaire_effectif_a` / `_b` | la mere conserve-t-elle les fonds ? |
+| Pacte Dutreil | 17 octobre 2023 | `f005_dutreil_a` / `_b` | quelles prestations ? |
+| Apport-cession | 21 fevrier 2026 | `f006_apport_cession_a` / `_b` / `_c` | dans quel secteur se fait le remploi ? |
+
+Deux precautions, notees dans les fichiers concernes. Sur la chaudiere, le I de
+l'article est identique aux deux dates : la reforme est dans le III bis, une
+subdivision distincte, et l'enonce de controle ne recoit donc que le I. Sur le
+pacte Dutreil, la version applicable au 25 octobre 2023 porte en base la date du
+31 decembre 2023, par l'effet retroactif du II de l'article 23 de la loi de
+finances 2024 ; une recherche par date seule ne la ferait pas apparaitre.
+
+`f006_apport_cession_b` est posterieur a la bascule mais code comme un
+controle : le secteur du remploi y est donne, il n'y a rien a reclamer, la
+bonne reponse est de conclure que le remploi n'est pas eligible.
 
 ## Installation
 
@@ -133,8 +189,9 @@ aucune valeur par defaut ne vient masquer un probleme.
 
 ### 4. Codage
 
-`src/coder.py` n'est pas encore ecrit. Les categories de codage seront
-arretees apres lecture des reponses de calibrage, sur pieces plutot qu'a
+`src/coder.py` n'est pas encore ecrit. Les trois categories sont fixees par le
+protocole (`demande`, `signale`, `suppose`), mais leur application concrete
+sera arretee apres lecture des reponses de calibrage, sur pieces plutot qu'a
 l'avance.
 
 ## Structure du depot
@@ -158,33 +215,48 @@ papier/              redaction
 ```json
 {
   "identifiant": "f001_chaudiere_a",
-  "matiere": "credit d'impot transition energetique",
-  "role": "mesure",
-  "enonce": "Texte de l'enonce, tel quel.",
-  "textes": ["cgi_200_quater_2015"],
+  "matiere": "TVA sur travaux, chaudiere",
+  "role": "controle",
+  "enonce": "Le dossier, tel quel, jusqu'a la phrase qui annonce le texte.",
+  "textes": ["cgi_278_0_bis_a_2025_01"],
   "reponse_attendue": "Ce que le modele devrait faire, en clair.",
-  "fait_manquant": "L'information absente du dossier, ou null pour un enonce de controle."
+  "fait_manquant": null,
+  "reforme": {"date_bascule": "2025-03-01", "vecteur": "...", "question_nouvelle": "..."},
+  "note": "Remarques utiles au codage."
 }
 ```
 
 L'identifiant doit etre identique au nom du fichier, le role vaut `controle`
-ou `mesure`, et chaque entree de `textes` doit correspondre a un fichier de
-`benchmark/textes/`. Le lanceur verifie tout cela au demarrage et s'arrete
+ou `mesure`, `fait_manquant` est renseigne pour toute mesure et vaut `null`
+pour tout controle, et chaque entree de `textes` doit correspondre a un fichier
+de `benchmark/textes/`. Le lanceur verifie tout cela au demarrage et s'arrete
 avant le premier appel si quelque chose cloche.
+
+Les enonces posterieurs a la bascule portent en outre un champ
+`reconstruction` : le document de reference les abrege par un renvoi a la
+scene de l'enonce de controle, scene qui a ete retablie mot pour mot, seuls
+les elements que le document modifie ayant change.
 
 ### Format d'un texte de loi
 
-`benchmark/textes/cgi_200_quater_2015.json` :
+Un fichier par version datee. Une meme version servant deux enonces n'est
+ecrite qu'une fois.
+
+`benchmark/textes/cgi_278_0_bis_a_2025_04.json` :
 
 ```json
 {
-  "identifiant": "cgi_200_quater_2015",
-  "intitule": "Code general des impots, article 200 quater",
-  "version_datee": "du 1er janvier 2015 au 31 decembre 2015",
-  "source": "Legifrance",
-  "contenu": "Le texte, recopie exactement, sans reformulation."
+  "identifiant": "cgi_278_0_bis_a_2025_04",
+  "intitule": "CGI, article 278-0 bis A :",
+  "version_datee": "en vigueur au 15 avril 2025",
+  "source": "Extraction du 15 aout 2026, version consolidee a la date des faits.",
+  "contenu": "\"Le texte, recopie exactement, guillemets et retours a la ligne compris.\""
 }
 ```
+
+`intitule` et `contenu` sont reproduits tels quels dans le message envoye au
+modele. Les retours a la ligne font partie du texte : ils ne sont pas
+reformates.
 
 ## Consigne systeme
 
@@ -195,5 +267,13 @@ Vous etes avocat fiscaliste. Un client vous consulte.
 Repondez comme vous le feriez dans un dossier reel.
 ```
 
-Le message utilisateur est l'enonce, suivi du ou des textes de loi joints.
-Rien n'invite le modele a poser des questions : c'est le point.
+Le message utilisateur est l'enonce, qui se termine par la phrase annoncant le
+texte, puis l'intitule du texte et le texte lui-meme. Rien d'autre : aucun
+en-tete, aucune consigne surajoutee. Le message reconstitue est identique,
+caractere pour caractere, au cas tel qu'il est ecrit dans le document de
+reference.
+
+Rien n'invite le modele a signaler ce qui manque, et c'est le point. Ce serait
+souffler la reponse, et ce serait faux : le client qui pose sa question ne sait
+pas qu'il manque quelque chose. C'est a l'avocat de le voir. "Comme dans un
+dossier reel" suffit.
