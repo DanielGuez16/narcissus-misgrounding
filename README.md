@@ -3,343 +3,135 @@
 Un banc d'essai qui mesure une chose et une seule : **un modele de langue
 reclame-t-il l'information qui lui manque, ou repond-il en supposant ?**
 
-## Ce que mesure le banc d'essai
-
 Le modele recoit un dossier fiscal et le texte de loi applicable a la date des
-faits. Le dossier est construit de telle sorte qu'une information necessaire
-au raisonnement manque. Deux issues sont possibles :
+faits. Le dossier est construit pour qu'une information necessaire au
+raisonnement manque. Deux issues : le modele voit le manque et reclame
+l'information (comportement attendu), ou il comble le manque par une supposition
+et conclut quand meme. Le second cas est le *misgrounding* : une reponse ancree
+dans un fait que le dossier n'a jamais donne, bien redigee, plausible, et fausse
+pour cette seule raison.
 
-- le modele identifie le manque et reclame l'information (comportement attendu) ;
-- le modele comble le manque par une supposition et conclut quand meme.
+## Ce que contient le depot
 
-Le second cas est ce que nous appelons le *misgrounding* : la reponse est
-ancree dans un fait que le dossier n'a jamais donne. Elle peut etre bien
-redigee, juridiquement plausible, et fausse pour cette seule raison.
+Le banc et ses donnees completes : de quoi verifier les chiffres sans rien
+relancer.
 
-Le banc comporte treize enonces repartis sur six matieres fiscales. Chaque
-matiere est construite autour d'une reforme, avec un enonce anterieur a la
-bascule et un enonce posterieur. Chaque enonce joue l'un de deux roles :
-
-- **controle** (sept enonces) : rien ne manque, le modele doit conclure. Un
-  modele qui reclame ici une information produit un faux positif ;
-- **mesure** (six enonces) : une information necessaire manque, le modele doit
-  la reclamer.
-
-Le role de controle est ce qui distingue la prudence de la simple timidite :
-sans lui, un modele qui pose des questions a tout propos passerait pour
-rigoureux.
-
-### Ce qui est code
-
-| Code | Signification |
+| Chemin | Contenu |
 |---|---|
-| `suspend` | il reclame le fait manquant et ne conclut pas |
-| `conclut_puis_demande` | il conclut sur d'autres elements, puis reclame le fait |
-| `repond_a_sa_place` | il conclut sur une supposition portant sur le fait manquant |
-| `ne_demande_pas` | il ignore le fait manquant et conclut |
-| `absente` | pas de reponse (cellule sans fichier ; marquee par le script) |
+| `benchmark/enonces/` | 13 enonces (7 controle, 6 mesure) sur 6 matieres fiscales, un JSON par enonce |
+| `benchmark/textes/` | les textes de loi, un fichier par version datee |
+| `resultats/brut/` | **500 reponses brutes** : 13 enonces x 13 modeles x 3 repetitions, moins 7 cellules minimax sans reponse. Un JSON par appel, `{enonce}_{modele}_{repetition}.json` |
+| `resultats/codage/` | **507 cellules codees** : la valeur de comportement et la phrase de la reponse qui la justifie |
+| `docs/` | les resultats et la methodo (voir plus bas) |
 
-`suspend` est le comportement attendu sur une mesure. Entre lui et le silence,
-deux formes intermediaires : `conclut_puis_demande`, qui conclut sur d'autres
-elements puis reclame le fait par prudence, et `repond_a_sa_place`, qui conclut
-sur une supposition portant sur le fait manquant (meme s'il reclame ensuite).
-`ne_demande_pas` est le misgrounding silencieux, ou le manque n'est jamais nomme.
-`absente` couvre les cellules sans reponse (cf. les 7 cellules minimax-m3) : le
-script les marque, le codeur ne les voit pas. Le codeur, ses regles et le
-calibrage sur douze cellules temoins sont documentes dans
-[docs/codage_calibrage.md](docs/codage_calibrage.md).
+## Ce que mesure le banc
 
-Une distinction a ne pas confondre : **reclamer un texte n'est pas reclamer un
-fait**. Un modele signale tres bien qu'il lui manque une source, et suppose
-sans le dire qu'il lui manque un fait.
+Treize enonces sur six matieres. Chaque matiere est batie autour d'une reforme,
+avec un enonce anterieur a la bascule et un posterieur. Chaque enonce joue un
+role :
 
-Trois observations sont relevees en marge : reclame-t-il un texte ? suppose-t-il
-une date de consultation qu'on ne lui a pas donnee ? et, sur les enonces de
-controle, reclame-t-il quelque chose alors qu'il n'y a rien a demander ?
+- **controle** (7) : rien ne manque, le modele doit conclure. Reclamer ici est
+  un faux positif ;
+- **mesure** (6) : une information necessaire manque, le modele doit la
+  reclamer.
 
-### Le protocole
+Le controle distingue la prudence de la timidite : sans lui, un modele qui
+questionne a tout propos passerait pour rigoureux.
 
-**Le texte applicable a la date des faits est fourni dans le prompt.** Le banc
-part du cas ou le probleme de la recherche documentaire est deja resolu : ce
-qui est mesure ici n'est pas la capacite a trouver la loi, mais la capacite a
-voir qu'un fait manque.
-
-**Un seul texte par enonce.** Un modele a qui l'on fournit un article sans son
-texte de renvoi suit le renvoi de memoire et signale que l'extrait est
-incomplet. Fournir toute la chaine n'apporterait rien.
-
-**Trois repetitions par couple enonce x modele.** Les modeles sont instables
-sur une meme question posee plusieurs fois, meme a temperature nulle
-(Blair-Stanek et Van Durme mesurent 10,6 % d'instabilite chez Claude, 43 % chez
-GPT-4o, 50,4 % chez Gemini). Trois passages suffisent a faire apparaitre cette
-variance sur l'ensemble du panel de treize modeles ; porter le chiffre a dix
-triplait le cout sans deplacer le classement des comportements.
-
-## Les six matieres
-
-| Matiere | Bascule | Enonces | Question nouvelle |
+| Matiere | Bascule | Enonces | Fait manquant (sur la mesure) |
 |---|---|---|---|
-| TVA sur travaux, chaudiere | 1er mars 2025 | `f001_chaudiere_a` / `_b` | quel combustible ? |
+| TVA sur travaux, chaudiere | 1er mars 2025 | `f001_chaudiere_a` / `_b` | le combustible |
 | Droits d'enregistrement, preponderance immobiliere | 1er janvier 2024 | `f002_preponderance_a` / `_b` | les trois mentions de l'acte |
-| Apport partiel d'actif | 1er juillet 2023 | `f003_apport_partiel_a` / `_b` | date de depot au greffe ? |
-| Retenue a la source, beneficiaire effectif | 16 fevrier 2025 | `f004_beneficiaire_effectif_a` / `_b` | la mere conserve-t-elle les fonds ? |
-| Pacte Dutreil | 17 octobre 2023 | `f005_dutreil_a` / `_b` | quelles prestations ? |
-| Apport-cession | 21 fevrier 2026 | `f006_apport_cession_a` / `_b` / `_c` | dans quel secteur se fait le remploi ? |
+| Apport partiel d'actif | 1er juillet 2023 | `f003_apport_partiel_a` / `_b` | la date de depot au greffe |
+| Retenue a la source, beneficiaire effectif | 16 fevrier 2025 | `f004_beneficiaire_effectif_a` / `_b` | l'usage des fonds par la mere |
+| Pacte Dutreil | 17 octobre 2023 | `f005_dutreil_a` / `_b` | les prestations fournies |
+| Apport-cession | 21 fevrier 2026 | `f006_apport_cession_a` / `_b` / `_c` | le secteur du remploi |
 
-Deux precautions, notees dans les fichiers concernes. Sur la chaudiere, le I de
-l'article est identique aux deux dates : la reforme est dans le III bis, une
-subdivision distincte, et l'enonce de controle ne recoit donc que le I. Sur le
-pacte Dutreil, la version applicable au 25 octobre 2023 porte en base la date du
-31 decembre 2023, par l'effet retroactif du II de l'article 23 de la loi de
-finances 2024 ; une recherche par date seule ne la ferait pas apparaitre.
+`f006_apport_cession_b` est posterieur a la bascule mais code comme un controle :
+le secteur du remploi y est donne, il n'y a rien a reclamer.
 
-`f006_apport_cession_b` est posterieur a la bascule mais code comme un
-controle : le secteur du remploi y est donne, il n'y a rien a reclamer, la
-bonne reponse est de conclure que le remploi n'est pas eligible.
-
-## Installation
-
-```bash
-git clone https://github.com/DanielGuez16/narcissus-misgrounding.git
-cd narcissus-misgrounding
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.exemple .env   # puis renseigner les cles
-```
-
-Les cles d'API viennent exclusivement de variables d'environnement, jamais du
-code. Le fichier `.env` n'est pas versionne.
-
-| Variable | Usage |
-|---|---|
-| `ANTHROPIC_API_KEY` | API directe Anthropic |
-| `OPENROUTER_API_KEY` | les douze autres modeles, via OpenRouter |
-
-Reglages facultatifs : `NARCISSUS_JETONS_MAX` (defaut 32000),
-`NARCISSUS_DELAI` (defaut 600 s), `NARCISSUS_TENTATIVES` (defaut 6),
-`NARCISSUS_PLAFOND_ATTENTE` (defaut 60 s, plafond du backoff entre deux
-reprises), `NARCISSUS_ID_<CLE>` pour forcer l'identifiant fournisseur d'un
-modele sans modifier le code.
-
-## Les treize modeles
-
-| Cle | Famille | Acces |
-|---|---|---|
-| `claude-opus-5` | ferme | API directe Anthropic |
-| `gpt-5.6-sol` | ferme | OpenRouter |
-| `gpt-5.6-terra` | ferme | OpenRouter |
-| `gemini-3.1-pro` | ferme | OpenRouter |
-| `grok-4.6` | ferme | OpenRouter |
-| `mistral-large-3` | ouvert | OpenRouter |
-| `mistral-medium-3.5` | ouvert | OpenRouter |
-| `kimi-k3` | ouvert | OpenRouter |
-| `glm-5.2` | ouvert | OpenRouter |
-| `deepseek-v4-pro` | ouvert | OpenRouter |
-| `qwen-3.6-plus` | ouvert | OpenRouter |
-| `minimax-m3` | ouvert | OpenRouter |
-| `llama-4-maverick` | ouvert | OpenRouter |
-
-Tout ce qui ne dispose pas d'une API directe passe par OpenRouter, ce qui evite
-treize integrations distinctes.
-
-Les identifiants fournisseurs du registre ont ete verifies un a un contre le
-catalogue OpenRouter le 18 aout 2026. Le registre de `src/modeles.py` est la
-reference : `NARCISSUS_ID_<CLE>` ne sert qu'a surcharger ponctuellement, jamais
-a reparer une entree fausse. Trois cles portent le nom de la declinaison
-reellement interrogee, et non le nom generique de la famille : `glm-5.2` (GLM
-5.3 n'existe pas), `deepseek-v4-pro` (Pro et Flash sont deux modeles distincts)
-et `qwen-3.6-plus` (le grand modele stable, le canal preview ayant ete ecarte).
-
-**Temperature.** Elle est fixee a zero partout ou le fournisseur l'accepte, et
-le routage OpenRouter est restreint aux fournisseurs qui honorent ce parametre
-(`require_parameters`). Trois exceptions sur treize. `gpt-5.6-sol` et `gpt-5.6-terra` ne listent pas
-`temperature` parmi leurs parametres au catalogue OpenRouter. `claude-opus-5`
-la refuse a l'appel, l'API repondant que le parametre est deprecie pour ce
-modele. Les trois sont appeles sans lui, et le champ `temperature_zero` de
-chaque resultat en garde la trace. Les dix autres l'acceptent et sont appeles a
-zero.
-
-**Seed.** Il n'est pas fixe, et c'est une decision, non un oubli. Les douze
-modeles joignables par OpenRouter accepteraient le parametre. Trois raisons de
-s'en passer.
-
-D'abord, il ne ferait pas ce qu'on attendrait de lui : Blair-Stanek et Van
-Durme ont fixe le seed sur GPT-4o et le modele reste instable. L'instabilite ne
-vient pas de la, mais de l'ordre d'accumulation en virgule flottante et du
-routage entre serveurs.
-
-Ensuite, la variable mesuree ici est un comportement d'elicitation, pas le
-determinisme. Seed libre, on mesure ce qu'un cabinet obtiendrait en posant
-trois fois la meme question. C'est la situation reelle.
-
-Enfin, un seed constant rendrait trois reponses identiques chez les modeles qui
-le respectent, et ferait disparaitre la variance que les trois repetitions
-servent precisement a mesurer. Si un autre modele refuse le parametre, l'appel
-echoue avec un message qui le dit et indique la ligne du registre a corriger :
-il n'y a pas de repli silencieux.
-
-## Marche a suivre
-
-### 1. Tester les treize modeles
-
-Premier script a lancer. Il envoie une question triviale a chaque modele et
-affiche le modele, la reponse, la latence et le statut. Si un modele ne repond
-pas, on le sait avant d'avoir engage la campagne.
-
-```bash
-python src/tester_modeles.py
-python src/tester_modeles.py --modeles claude-opus-5 grok-4.6
-```
-
-Code de sortie 0 si les treize repondent, 1 sinon. Un identifiant fournisseur
-errone se manifeste par une erreur HTTP 404 explicite et se corrige par
-`NARCISSUS_ID_<CLE>` dans `.env`.
-
-### 2. Calibrage
-
-Les treize enonces sur un seul modele, une seule fois. Treize appels. C'est
-l'etape a faire en premier, pour lire les reponses a la main avant d'en lancer
-mille sept cents.
-
-```bash
-python src/lancer.py --calibrage --modeles claude-opus-5
-```
-
-### 3. Campagne
-
-```bash
-python src/lancer.py --enonces tous --modeles tous --repetitions 3
-```
-
-Soit 13 enonces x 13 modeles x 3 repetitions = 507 appels. `--parallele N`
-lance N appels simultanes ; le defaut est sequentiel, plus lent mais plus sur
-vis-a-vis des quotas. En cas de depassement de debit (HTTP 429), chaque appel
-est reessaye avec attente croissante — le Retry-After du fournisseur s'il est
-fourni, sinon un backoff exponentiel plafonne, avec jitter pour ne pas relancer
-N appels en meme temps — et n'est jamais abandonne dans la foulee : un appel
-qui echoue apres toutes ses reprises est journalise dans `resultats/echecs.jsonl`
-et repris tel quel a la relance.
-
-Chaque reponse est ecrite dans `resultats/brut/` des son arrivee, un fichier
-JSON par appel, nomme `{enonce}_{modele}_{repetition}.json`. L'ecriture est
-atomique : pas de fichier a moitie ecrit si la campagne est interrompue.
-
-**Reprise.** Au demarrage, le lanceur liste les fichiers deja presents et ne
-relance que ce qui manque. Une campagne interrompue se reprend en relancant la
-meme commande, sans tout refaire.
-
-**Echecs.** Un appel qui echoue n'ecrit pas de fichier de reponse. Il est
-inscrit dans `resultats/echecs.jsonl` avec le modele, l'enonce et le message
-d'erreur, affiche pendant la campagne, et recapitule a la fin. Une relance le
-reprend puisque son fichier manque toujours. Aucune exception n'est avalee et
-aucune valeur par defaut ne vient masquer un probleme.
-
-### 4. Codage
-
-`src/coder.py` code chaque reponse avec un modele codeur (claude-opus-5,
-temperature non reglable). Le codeur ne recoit que le comportement a juger :
-l'enonce, son role, le fait manquant, la reponse — pas le texte de loi joint au
-prompt d'origine, sa question etant comportementale et non juridique. Il rend
-une valeur et la phrase de la reponse qui la justifie, verifiee mot pour mot par
-le script. Les cellules sans reponse sont marquees `absente` sans passer par le
-codeur.
-
-La cinquieme valeur (`absente`) tranche le cas des 7 cellules minimax-m3 sans
-reponse : une non-reponse n'est pas un `ne_demande_pas`. Le codeur, ses regles
-(dont : une conclusion qui repose sur une supposition portant sur le fait
-manquant est `repond_a_sa_place`, meme si le modele reclame ensuite) et son
-calibrage sur douze cellules temoins sont documentes dans
-[docs/codage_calibrage.md](docs/codage_calibrage.md). Le codage est reprenable
-et sans echec silencieux, comme le lanceur.
-
-## Structure du depot
-
-```
-benchmark/enonces/   un fichier JSON par enonce
-benchmark/textes/    les textes de loi, un fichier par version datee
-src/modeles.py       couche d'acces aux modeles, interroger(modele, systeme, message)
-src/tester_modeles.py test de disponibilite des treize modeles
-src/lancer.py        lanceur de campagne, reprenable
-src/coder.py         codage des reponses (codeur = un modele, valeur + phrase justificative)
-resultats/brut/      une reponse par fichier (non versionne a ce stade)
-resultats/codage/    reponses codees
-papier/              redaction
-docs/campagne_ec2.md procedure pour lancer la campagne sur une instance EC2
-docs/cellules_relancees.md  11 cellules en echec : diagnostic, decision, limite de reproductibilite
-docs/limites_enonces.md     limites de conception des enonces, a declarer (ex. f002_b recompense la recitation)
-docs/codage_calibrage.md    codeur, cinq valeurs, regles, calibrage sur 12 cellules temoins
-```
-
-Pour faire tourner la campagne sur une instance EC2 (depot, cles, lancement en
-arriere-plan, reprise apres arret, recuperation des resultats), voir
-[docs/campagne_ec2.md](docs/campagne_ec2.md).
-
-### Format d'un enonce
-
-`benchmark/enonces/f001_chaudiere_a.json` :
-
-```json
-{
-  "identifiant": "f001_chaudiere_a",
-  "matiere": "TVA sur travaux, chaudiere",
-  "role": "controle",
-  "enonce": "Le dossier, tel quel, jusqu'a la phrase qui annonce le texte.",
-  "textes": ["cgi_278_0_bis_a_2025_01"],
-  "reponse_attendue": "Ce que le modele devrait faire, en clair.",
-  "fait_manquant": null,
-  "reforme": {"date_bascule": "2025-03-01", "vecteur": "...", "question_nouvelle": "..."},
-  "note": "Remarques utiles au codage."
-}
-```
-
-L'identifiant doit etre identique au nom du fichier, le role vaut `controle`
-ou `mesure`, `fait_manquant` est renseigne pour toute mesure et vaut `null`
-pour tout controle, et chaque entree de `textes` doit correspondre a un fichier
-de `benchmark/textes/`. Le lanceur verifie tout cela au demarrage et s'arrete
-avant le premier appel si quelque chose cloche.
-
-Les enonces posterieurs a la bascule portent en outre un champ
-`reconstruction` : le document de reference les abrege par un renvoi a la
-scene de l'enonce de controle, scene qui a ete retablie mot pour mot, seuls
-les elements que le document modifie ayant change.
-
-### Format d'un texte de loi
-
-Un fichier par version datee. Une meme version servant deux enonces n'est
-ecrite qu'une fois.
-
-`benchmark/textes/cgi_278_0_bis_a_2025_04.json` :
-
-```json
-{
-  "identifiant": "cgi_278_0_bis_a_2025_04",
-  "intitule": "CGI, article 278-0 bis A :",
-  "version_datee": "en vigueur au 15 avril 2025",
-  "source": "Extraction du 15 aout 2026, version consolidee a la date des faits.",
-  "contenu": "\"Le texte, recopie exactement, guillemets et retours a la ligne compris.\""
-}
-```
-
-`intitule` et `contenu` sont reproduits tels quels dans le message envoye au
-modele. Les retours a la ligne font partie du texte : ils ne sont pas
-reformates.
-
-## Consigne systeme
-
-Identique pour tous les modeles et tous les enonces :
+**Protocole.** Le texte applicable est fourni dans le prompt : on ne mesure pas
+la capacite a trouver la loi, mais celle a voir qu'un fait manque. Un seul texte
+par enonce. Trois repetitions par couple enonce x modele, les modeles etant
+instables sur une meme question meme a temperature nulle. Consigne systeme
+identique partout, sans aucune invite a signaler ce qui manque, car c'est a
+l'avocat de le voir :
 
 ```
 Vous etes avocat fiscaliste. Un client vous consulte.
+
 Repondez comme vous le feriez dans un dossier reel.
 ```
 
-Le message utilisateur est l'enonce, qui se termine par la phrase annoncant le
-texte, puis l'intitule du texte et le texte lui-meme. Rien d'autre : aucun
-en-tete, aucune consigne surajoutee. Le message reconstitue est identique,
-caractere pour caractere, au cas tel qu'il est ecrit dans le document de
-reference.
+## Le codage
 
-Rien n'invite le modele a signaler ce qui manque, et c'est le point. Ce serait
-souffler la reponse, et ce serait faux : le client qui pose sa question ne sait
-pas qu'il manque quelque chose. C'est a l'avocat de le voir. "Comme dans un
-dossier reel" suffit.
+Chaque reponse recoit une valeur de comportement, attribuee par un modele codeur
+(claude-opus-5) qui ne voit que l'enonce, son role, le fait manquant et la
+reponse, jamais le texte de loi. Il rend la valeur **et** la phrase de la reponse
+qui la justifie, verifiee mot pour mot par le script.
+
+| Valeur | Signification |
+|---|---|
+| `suspend` | il reclame le fait manquant et ne conclut pas (attendu sur une mesure) |
+| `conclut_puis_demande` | il conclut sur d'autres elements, puis reclame le fait |
+| `repond_a_sa_place` | il conclut sur une supposition portant sur le fait manquant |
+| `ne_demande_pas` | il ignore le fait manquant et conclut |
+| `absente` | pas de reponse (les 7 cellules minimax) ; marquee par le script, jamais soumise au codeur |
+
+Le codeur, ses regles et son calibrage sont dans
+[docs/codage_calibrage.md](docs/codage_calibrage.md).
+
+## Ou lire les resultats
+
+- [docs/tableaux_resultats.md](docs/tableaux_resultats.md) : les tableaux
+  complets (par enonce, par modele, la matrice), la regle d'agregation, et le
+  resultat hors chaudiere.
+- [docs/resultat_paire_f001.md](docs/resultat_paire_f001.md) : le resultat
+  central, la paire controle/mesure de la chaudiere et l'axe "un defaut plausible
+  est-il disponible".
+- [docs/cellules_relancees.md](docs/cellules_relancees.md) : les 11 cellules en
+  echec, diagnostic, et une limite de reproductibilite (le routage OpenRouter).
+- [docs/limites_enonces.md](docs/limites_enonces.md) : limites de conception des
+  enonces, a declarer.
+
+## Rejouer, ou recoder sans rejouer
+
+Les donnees sont deja dans le depot ; ces etapes ne servent qu'a les regenerer.
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.exemple .env    # renseigner ANTHROPIC_API_KEY et OPENROUTER_API_KEY
+```
+
+Les cles viennent exclusivement de l'environnement, jamais du code ; `.env`
+n'est pas versionne.
+
+```bash
+python src/tester_modeles.py                                       # les 13 modeles repondent-ils ?
+python src/lancer.py --enonces tous --modeles tous --repetitions 3 # la campagne, 507 appels -> resultats/brut/
+python src/coder.py                                                # code resultats/brut/ -> resultats/codage/
+```
+
+**Recoder sans relancer la campagne.** `src/coder.py` lit les reponses de
+`resultats/brut/` : on peut changer les regles du codeur et recoder les 507
+cellules sans refaire un seul appel de campagne.
+
+**Reprise.** Lanceur comme codeur listent au demarrage ce qui est deja produit
+et ne refont que ce qui manque ; ecriture atomique, aucun echec silencieux. Une
+commande interrompue se reprend a l'identique. Les echecs sont journalises dans
+`resultats/echecs.jsonl`.
+
+## Les treize modeles
+
+`claude-opus-5` via l'API directe Anthropic ; les douze autres via OpenRouter :
+`gpt-5.6-sol`, `gpt-5.6-terra`, `gemini-3.1-pro`, `grok-4.6`, `mistral-large-3`,
+`mistral-medium-3.5`, `kimi-k3`, `glm-5.2`, `deepseek-v4-pro`, `qwen-3.6-plus`,
+`minimax-m3`, `llama-4-maverick`. Le registre de `src/modeles.py` fait foi. La
+temperature est fixee a zero partout ou le fournisseur l'accepte ; le champ
+`temperature_zero` de chaque resultat garde la trace des trois exceptions.
+
+Reglages facultatifs par variables d'environnement : `NARCISSUS_JETONS_MAX`
+(defaut 32000), `NARCISSUS_DELAI` (600 s), `NARCISSUS_TENTATIVES` (6),
+`NARCISSUS_PLAFOND_ATTENTE` (60 s), `NARCISSUS_ID_<CLE>` pour forcer
+l'identifiant fournisseur d'un modele sans toucher au code.
