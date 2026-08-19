@@ -166,3 +166,8 @@ Reglages facultatifs par variables d'environnement : `NARCISSUS_JETONS_MAX`
 (defaut 32000), `NARCISSUS_DELAI` (600 s), `NARCISSUS_TENTATIVES` (6),
 `NARCISSUS_PLAFOND_ATTENTE` (60 s), `NARCISSUS_ID_<CLE>` pour forcer
 l'identifiant fournisseur d'un modele sans toucher au code.
+
+## Licence
+
+MIT, voir [LICENSE](LICENSE). Les enonces reprennent des textes de loi
+francais, qui relevent de leur propre regime de diffusion.
