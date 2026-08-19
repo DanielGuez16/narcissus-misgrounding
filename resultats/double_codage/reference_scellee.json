@@ -1,5 +1,5 @@
 {
-  "horodatage": "2026-08-19T19:00:33+00:00",
+  "horodatage": "2026-08-19T19:31:14+00:00",
   "cellules_codables": 500,
   "absentes_exclues": 7,
   "tirages": {
@@ -827,6 +827,378 @@
           "modele_evalue": "qwen-3.6-plus",
           "repetition": 3,
           "valeur_modele": "ne_demande_pas"
+        }
+      ],
+      "statut": "ecarte",
+      "motif": "Feuille non melangee : les 40 cellules etaient presentees en quatre blocs de dix valeurs identiques, ce qui laissait deviner la categorie. Codage humain contamine, remplace par le tirage stratifie2."
+    },
+    "stratifie2": {
+      "graine": 20260820,
+      "graine_melange": 20260821,
+      "taille": 40,
+      "par_valeur": 10,
+      "methode": "tirage au hasard de N cellules par valeur, hors de tout tirage anterieur, puis melange de l'ordre de presentation",
+      "fichier_saisie": "stratifie2_saisie.csv",
+      "correspondance": [
+        {
+          "etiquette": "T01",
+          "cellule": "f004_beneficiaire_effectif_b_gpt-5.6-sol_01",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-sol",
+          "repetition": 1,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T02",
+          "cellule": "f006_apport_cession_a_mistral-medium-3.5_01",
+          "enonce": "f006_apport_cession_a",
+          "role": "controle",
+          "modele_evalue": "mistral-medium-3.5",
+          "repetition": 1,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T03",
+          "cellule": "f005_dutreil_b_gemini-3.1-pro_03",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T04",
+          "cellule": "f005_dutreil_a_kimi-k3_02",
+          "enonce": "f005_dutreil_a",
+          "role": "controle",
+          "modele_evalue": "kimi-k3",
+          "repetition": 2,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T05",
+          "cellule": "f001_chaudiere_b_mistral-large-3_01",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 1,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T06",
+          "cellule": "f005_dutreil_b_grok-4.6_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "grok-4.6",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T07",
+          "cellule": "f001_chaudiere_b_mistral-large-3_03",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 3,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T08",
+          "cellule": "f001_chaudiere_b_glm-5.2_02",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "glm-5.2",
+          "repetition": 2,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T09",
+          "cellule": "f004_beneficiaire_effectif_b_grok-4.6_01",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "grok-4.6",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T10",
+          "cellule": "f001_chaudiere_b_gpt-5.6-sol_01",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-sol",
+          "repetition": 1,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T11",
+          "cellule": "f005_dutreil_b_claude-opus-5_03",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T12",
+          "cellule": "f005_dutreil_b_glm-5.2_01",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "glm-5.2",
+          "repetition": 1,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T13",
+          "cellule": "f006_apport_cession_c_glm-5.2_03",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "glm-5.2",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T14",
+          "cellule": "f001_chaudiere_b_kimi-k3_02",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "kimi-k3",
+          "repetition": 2,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T15",
+          "cellule": "f001_chaudiere_b_llama-4-maverick_03",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "llama-4-maverick",
+          "repetition": 3,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T16",
+          "cellule": "f006_apport_cession_a_llama-4-maverick_01",
+          "enonce": "f006_apport_cession_a",
+          "role": "controle",
+          "modele_evalue": "llama-4-maverick",
+          "repetition": 1,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T17",
+          "cellule": "f002_preponderance_b_claude-opus-5_03",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 3,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T18",
+          "cellule": "f004_beneficiaire_effectif_a_qwen-3.6-plus_03",
+          "enonce": "f004_beneficiaire_effectif_a",
+          "role": "controle",
+          "modele_evalue": "qwen-3.6-plus",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T19",
+          "cellule": "f006_apport_cession_c_qwen-3.6-plus_02",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "qwen-3.6-plus",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T20",
+          "cellule": "f002_preponderance_a_gpt-5.6-terra_03",
+          "enonce": "f002_preponderance_a",
+          "role": "controle",
+          "modele_evalue": "gpt-5.6-terra",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T21",
+          "cellule": "f005_dutreil_b_kimi-k3_01",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "kimi-k3",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T22",
+          "cellule": "f005_dutreil_b_gpt-5.6-sol_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-sol",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T23",
+          "cellule": "f006_apport_cession_c_mistral-medium-3.5_02",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "mistral-medium-3.5",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T24",
+          "cellule": "f006_apport_cession_b_claude-opus-5_03",
+          "enonce": "f006_apport_cession_b",
+          "role": "controle",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T25",
+          "cellule": "f004_beneficiaire_effectif_b_gemini-3.1-pro_03",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 3,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T26",
+          "cellule": "f002_preponderance_b_deepseek-v4-pro_02",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T27",
+          "cellule": "f001_chaudiere_a_llama-4-maverick_01",
+          "enonce": "f001_chaudiere_a",
+          "role": "controle",
+          "modele_evalue": "llama-4-maverick",
+          "repetition": 1,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T28",
+          "cellule": "f001_chaudiere_b_gemini-3.1-pro_01",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 1,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "T29",
+          "cellule": "f005_dutreil_b_mistral-large-3_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 2,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T30",
+          "cellule": "f005_dutreil_b_qwen-3.6-plus_01",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "qwen-3.6-plus",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T31",
+          "cellule": "f004_beneficiaire_effectif_b_kimi-k3_03",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "kimi-k3",
+          "repetition": 3,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T32",
+          "cellule": "f006_apport_cession_b_claude-opus-5_02",
+          "enonce": "f006_apport_cession_b",
+          "role": "controle",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T33",
+          "cellule": "f004_beneficiaire_effectif_b_gemini-3.1-pro_02",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 2,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T34",
+          "cellule": "f002_preponderance_b_gpt-5.6-terra_02",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-terra",
+          "repetition": 2,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T35",
+          "cellule": "f002_preponderance_b_llama-4-maverick_02",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "llama-4-maverick",
+          "repetition": 2,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T36",
+          "cellule": "f005_dutreil_a_deepseek-v4-pro_03",
+          "enonce": "f005_dutreil_a",
+          "role": "controle",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T37",
+          "cellule": "f005_dutreil_a_deepseek-v4-pro_02",
+          "enonce": "f005_dutreil_a",
+          "role": "controle",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T38",
+          "cellule": "f006_apport_cession_c_claude-opus-5_03",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 3,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T39",
+          "cellule": "f006_apport_cession_c_mistral-medium-3.5_03",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "mistral-medium-3.5",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "T40",
+          "cellule": "f001_chaudiere_b_mistral-medium-3.5_02",
+          "enonce": "f001_chaudiere_b",
+          "role": "mesure",
+          "modele_evalue": "mistral-medium-3.5",
+          "repetition": 2,
+          "valeur_modele": "suspend"
         }
       ]
     }

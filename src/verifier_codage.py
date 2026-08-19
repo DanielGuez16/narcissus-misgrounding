@@ -342,7 +342,12 @@ def calculer_accord(tirage: str = "tous") -> int:
     resultats = []
     for nom, entree in reference["tirages"].items():
         if tirage != "tous" and nom != tirage:
-            print(f"\n=== {nom} : ecarte du calcul (--tirage {tirage}) ===")
+            print(f"\n=== {nom} : hors du calcul demande (--tirage {tirage}) ===")
+            continue
+        if entree.get("statut") == "ecarte" and tirage == "tous":
+            print(f"\n=== {nom} : ecarte, non calcule ===")
+            print(f"    motif : {entree.get('motif')}")
+            print(f"    pour le calculer malgre tout : --tirage {nom}")
             continue
         saisi = lire_saisie(DOSSIER_DOUBLE / entree["fichier_saisie"], entree["correspondance"])
         resultats.append(accord_d_un_tirage(nom, entree["correspondance"], saisi))
@@ -393,12 +398,73 @@ def verifier_correspondance_stable(nom: str, nouvelle: list[dict]) -> None:
         )
 
 
+def charger_reference() -> dict | None:
+    chemin = DOSSIER_DOUBLE / "reference_scellee.json"
+    return json.loads(chemin.read_text(encoding="utf-8")) if chemin.exists() else None
+
+
+def ecrire_reference(reference: dict) -> None:
+    reference["horodatage"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    (DOSSIER_DOUBLE / "reference_scellee.json").write_text(
+        json.dumps(reference, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+def cellules_deja_tirees(reference: dict | None) -> set[str]:
+    if not reference:
+        return set()
+    return {
+        e["cellule"]
+        for tirage in reference["tirages"].values()
+        for e in tirage["correspondance"]
+    }
+
+
+def ajouter_tirage(reference: dict, nom: str, prefixe: str, par_valeur: int,
+                   cellules: list[dict], enonces: dict) -> None:
+    """Ajoute un tirage stratifie neuf, hors de tout ce qui a deja ete tire.
+
+    Un tirage deja ecrit n'est jamais recalcule : la feuille qu'une personne a
+    lue et le codage qu'elle a rendu ne doivent pas pouvoir bouger sous eux.
+    Un nouveau tirage s'ajoute a cote, sur des cellules encore jamais vues.
+    """
+    if nom in reference["tirages"]:
+        raise SystemExit(f"Le tirage '{nom}' existe deja dans la reference.")
+    deja = cellules_deja_tirees(reference)
+    disponibles = [c for c in cellules if cle(c) not in deja]
+    print(f"{len(deja)} cellules deja tirees, {len(disponibles)} encore jamais vues.")
+    for valeur in VALEURS:
+        n = sum(1 for c in disponibles if c["valeur"] == valeur)
+        print(f"  {valeur:22s} {n:4d} disponibles")
+
+    echantillon = tirage_stratifie(disponibles, par_valeur, GRAINE_STRATIFIEE)
+    correspondance = ecrire_feuille(nom, prefixe, echantillon, enonces)
+    croise = {e["cellule"] for e in correspondance} & deja
+    if croise:
+        raise SystemExit(f"Le nouveau tirage reprend des cellules deja vues : {sorted(croise)}")
+    reference["tirages"][nom] = {
+        "graine": GRAINE_STRATIFIEE, "graine_melange": GRAINE_MELANGE,
+        "taille": len(correspondance), "par_valeur": par_valeur,
+        "methode": "tirage au hasard de N cellules par valeur, hors de tout tirage "
+                   "anterieur, puis melange de l'ordre de presentation",
+        "fichier_saisie": f"{nom}_saisie.csv", "correspondance": correspondance,
+    }
+
+
 def main() -> int:
     analyseur = argparse.ArgumentParser(description="Double codage en aveugle du codage automatique.")
     analyseur.add_argument("--accord", action="store_true",
                            help="Calculer l'accord, une fois les feuilles remplies.")
-    analyseur.add_argument("--tirage", choices=["uniforme", "stratifie", "tous"], default="tous",
+    analyseur.add_argument("--tirage", default="tous",
                            help="Restreindre le calcul d'accord a un tirage (defaut : tous).")
+    analyseur.add_argument("--nouveau-tirage", metavar="NOM",
+                           help="Ajouter un tirage stratifie neuf, sur des cellules jamais "
+                                "tirees, melange. N'en recalcule aucun autre.")
+    analyseur.add_argument("--prefixe", default="T",
+                           help="Prefixe des etiquettes du nouveau tirage (defaut : T).")
+    analyseur.add_argument("--ecarter", metavar="NOM",
+                           help="Marquer un tirage comme ecarte, avec --motif.")
+    analyseur.add_argument("--motif", default="", help="Motif de la mise a l'ecart.")
     analyseur.add_argument("--taille-uniforme", type=int, default=TAILLE_UNIFORME)
     analyseur.add_argument("--par-valeur", type=int, default=PAR_VALEUR)
     arguments = analyseur.parse_args()
@@ -409,6 +475,42 @@ def main() -> int:
     enonces = charger_enonces()
     codages = charger_codages()
     cellules = codables(codages)
+    reference = charger_reference()
+
+    if arguments.ecarter:
+        if not reference or arguments.ecarter not in reference["tirages"]:
+            raise SystemExit(f"Tirage '{arguments.ecarter}' introuvable dans la reference.")
+        if not arguments.motif:
+            raise SystemExit("--ecarter demande --motif : un tirage ecarte sans raison ecrite "
+                             "est un chiffre perdu sans trace.")
+        reference["tirages"][arguments.ecarter]["statut"] = "ecarte"
+        reference["tirages"][arguments.ecarter]["motif"] = arguments.motif
+        ecrire_reference(reference)
+        print(f"Tirage '{arguments.ecarter}' marque ecarte : {arguments.motif}")
+        return 0
+
+    if arguments.nouveau_tirage:
+        if reference is None:
+            raise SystemExit("Aucune reference : tirez d'abord les echantillons initiaux.")
+        DOSSIER_DOUBLE.mkdir(parents=True, exist_ok=True)
+        ajouter_tirage(reference, arguments.nouveau_tirage, arguments.prefixe,
+                       arguments.par_valeur, cellules, enonces)
+        ecrire_reference(reference)
+        entree = reference["tirages"][arguments.nouveau_tirage]
+        print(f"\nTirage '{arguments.nouveau_tirage}' : {entree['taille']} cellules neuves, "
+              f"graine {GRAINE_STRATIFIEE}, melange {GRAINE_MELANGE}")
+        print(f"  a lire    : {DOSSIER_DOUBLE / (arguments.nouveau_tirage + '_feuille.md')}")
+        print(f"  a remplir : {DOSSIER_DOUBLE / entree['fichier_saisie']}")
+        return 0
+
+    if reference is not None:
+        print("Une reference existe deja. Les tirages ecrits ne sont pas recalcules.")
+        for nom, entree in reference["tirages"].items():
+            statut = entree.get("statut", "actif")
+            print(f"  {nom:12s} {entree['taille']:3d} cellules  {statut}"
+                  + (f" ({entree['motif']})" if entree.get("motif") else ""))
+        print("\nPour ajouter un tirage : --nouveau-tirage NOM")
+        return 0
     absentes = len(codages) - len(cellules)
     repartition = Counter(c["valeur"] for c in cellules)
     print(f"{len(codages)} cellules codees, {absentes} absentes exclues, "

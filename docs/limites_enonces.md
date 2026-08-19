@@ -53,3 +53,53 @@ comportement, pas un alea : le modele redige la clause obligatoire en supposant
 la reponse la plus frequente plutot qu'en demandant laquelle s'applique. Une
 forme de `repond_a_sa_place` sur les sous-faits, malgre une demande de pieces en
 fin de reponse. A citer comme tel.
+
+## f006_apport_cession_c porte deux faits manquants, pas un
+
+La variable codee suppose un fait manquant unique : le modele le reclame, ou il
+conclut sans lui. Cet enonce en fait manquer **deux a la fois**, et son champ
+`fait_manquant` le dit lui-meme : « le jour de la cession, la bascule etant au
+21 fevrier 2026, et le secteur dans lequel le remploi serait fait ».
+
+Un modele peut donc reclamer le jour et supposer le secteur, ou l'inverse. La
+nomenclature, elle, impose une valeur unique par cellule. Deux codeurs de bonne
+foi se separent alors sur celui des deux faits qu'ils regardent.
+
+### Ce que le double codage a montre
+
+Sur le tirage uniforme de 50 cellules, codees par claude-opus-5 puis a la main
+en aveugle : **7 desaccords**, dont **5 sur f006_apport_cession_c**. Or le
+tirage comptait exactement 5 cellules de cet enonce. **Les cinq ont ete codees
+differemment par les deux codeurs.** Aucune n'a fait accord.
+
+| Perimetre | n | Accord brut | Kappa de Cohen |
+|---|---|---|---|
+| Tirage uniforme entier | 50 | 86,0 % | 0,776 |
+| Sans f006_apport_cession_c | 45 | 95,6 % | 0,924 |
+
+Les 45 autres cellules ne produisent que 2 desaccords. **L'ambiguite n'est pas
+diffuse dans le banc : elle est concentree sur le seul enonce a deux faits.**
+
+Le sens des desaccords est constant : le codeur automatique retient
+`repond_a_sa_place`, la ou l'humain voit `conclut_puis_demande` ou
+`ne_demande_pas`. Le modele evalue suppose l'un des deux faits et reclame
+l'autre ; selon le fait regarde, la meme reponse se code differemment.
+
+### Ce que le papier doit declarer
+
+1. L'enonce n'est pas modifie. Les 500 reponses sont produites, et le corriger
+   apres coup invaliderait la campagne.
+2. Le kappa d'ensemble, 0,776, est rapporte tel quel. C'est la fiabilite reelle
+   du codage sur nos donnees.
+3. La decomposition ci-dessus est rapportee avec lui : la fiabilite est de 0,924
+   sur les enonces a fait manquant unique, et l'ecart s'explique entierement par
+   un defaut de conception d'un enonce sur treize.
+4. Les resultats de f006_apport_cession_c sont lus avec cette reserve, ou
+   rapportes a part.
+
+### La regle qui s'en deduit pour un banc futur
+
+Un enonce doit faire manquer **un seul** fait. Deux faits manquants ne
+produisent pas une mesure deux fois plus fine : ils produisent une cellule que
+la nomenclature ne sait pas coder, et un desaccord entre codeurs qui ne mesure
+plus le comportement du modele evalue mais l'attention du codeur.
