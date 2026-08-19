@@ -43,3 +43,8 @@ resultats/echecs*.jsonl
 # --- Systeme ---
 .DS_Store
 Thumbs.db
+
+# Feuilles de lecture du double codage : elles reproduisent les reponses brutes,
+# versionnees a la publication comme resultats/brut. Les feuilles de saisie, la
+# reference scellee et l'accord, eux, sont suivis.
+resultats/double_codage/*_feuille.md
