@@ -250,7 +250,12 @@ src/coder.py         codage des reponses (a venir)
 resultats/brut/      une reponse par fichier (non versionne a ce stade)
 resultats/codage/    reponses codees
 papier/              redaction
+docs/campagne_ec2.md procedure pour lancer la campagne sur une instance EC2
 ```
+
+Pour faire tourner la campagne sur une instance EC2 (depot, cles, lancement en
+arriere-plan, reprise apres arret, recuperation des resultats), voir
+[docs/campagne_ec2.md](docs/campagne_ec2.md).
 
 ### Format d'un enonce
 
