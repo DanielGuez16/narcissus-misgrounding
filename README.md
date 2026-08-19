@@ -64,10 +64,12 @@ voir qu'un fait manque.
 texte de renvoi suit le renvoi de memoire et signale que l'extrait est
 incomplet. Fournir toute la chaine n'apporterait rien.
 
-**Dix repetitions par couple enonce x modele**, et non trois, parce que les
-modeles sont instables sur une meme question posee plusieurs fois, meme a
-temperature nulle (Blair-Stanek et Van Durme mesurent 10,6 % d'instabilite chez
-Claude, 43 % chez GPT-4o, 50,4 % chez Gemini).
+**Trois repetitions par couple enonce x modele.** Les modeles sont instables
+sur une meme question posee plusieurs fois, meme a temperature nulle
+(Blair-Stanek et Van Durme mesurent 10,6 % d'instabilite chez Claude, 43 % chez
+GPT-4o, 50,4 % chez Gemini). Trois passages suffisent a faire apparaitre cette
+variance sur l'ensemble du panel de treize modeles ; porter le chiffre a dix
+triplait le cout sans deplacer le classement des comportements.
 
 ## Les six matieres
 
@@ -109,10 +111,11 @@ code. Le fichier `.env` n'est pas versionne.
 | `ANTHROPIC_API_KEY` | API directe Anthropic |
 | `OPENROUTER_API_KEY` | les douze autres modeles, via OpenRouter |
 
-Reglages facultatifs : `NARCISSUS_JETONS_MAX` (defaut 4000),
-`NARCISSUS_DELAI` (defaut 180 s), `NARCISSUS_TENTATIVES` (defaut 4),
-`NARCISSUS_ID_<CLE>` pour forcer l'identifiant fournisseur d'un modele sans
-modifier le code.
+Reglages facultatifs : `NARCISSUS_JETONS_MAX` (defaut 32000),
+`NARCISSUS_DELAI` (defaut 600 s), `NARCISSUS_TENTATIVES` (defaut 6),
+`NARCISSUS_PLAFOND_ATTENTE` (defaut 60 s, plafond du backoff entre deux
+reprises), `NARCISSUS_ID_<CLE>` pour forcer l'identifiant fournisseur d'un
+modele sans modifier le code.
 
 ## Les treize modeles
 
@@ -201,12 +204,17 @@ python src/lancer.py --calibrage --modeles claude-opus-5
 ### 3. Campagne
 
 ```bash
-python src/lancer.py --enonces tous --modeles tous --repetitions 10
+python src/lancer.py --enonces tous --modeles tous --repetitions 3
 ```
 
-Soit 13 enonces x 13 modeles x 10 repetitions = 1690 appels. `--parallele N`
+Soit 13 enonces x 13 modeles x 3 repetitions = 507 appels. `--parallele N`
 lance N appels simultanes ; le defaut est sequentiel, plus lent mais plus sur
-vis-a-vis des quotas.
+vis-a-vis des quotas. En cas de depassement de debit (HTTP 429), chaque appel
+est reessaye avec attente croissante — le Retry-After du fournisseur s'il est
+fourni, sinon un backoff exponentiel plafonne, avec jitter pour ne pas relancer
+N appels en meme temps — et n'est jamais abandonne dans la foulee : un appel
+qui echoue apres toutes ses reprises est journalise dans `resultats/echecs.jsonl`
+et repris tel quel a la relance.
 
 Chaque reponse est ecrite dans `resultats/brut/` des son arrivee, un fichier
 JSON par appel, nomme `{enonce}_{modele}_{repetition}.json`. L'ecriture est

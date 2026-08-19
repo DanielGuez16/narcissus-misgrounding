@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import json
 import os
+import random
 import sys
 import time
 from dataclasses import dataclass, field
@@ -55,7 +56,10 @@ DELAI_SECONDES = int(os.environ.get("NARCISSUS_DELAI", "600"))
 # f003_apport_partiel_b. C'est un plafond, non une cible : un modele qui repond
 # court ne coute pas plus cher parce qu'il est haut.
 JETONS_MAX = int(os.environ.get("NARCISSUS_JETONS_MAX", "32000"))
-TENTATIVES_MAX = int(os.environ.get("NARCISSUS_TENTATIVES", "4"))
+TENTATIVES_MAX = int(os.environ.get("NARCISSUS_TENTATIVES", "6"))
+# Plafond de l'attente entre deux reprises quand le fournisseur n'impose pas de
+# Retry-After (backoff exponentiel : 2, 4, 8, 16, 32... borne a ce plafond).
+PLAFOND_ATTENTE = int(os.environ.get("NARCISSUS_PLAFOND_ATTENTE", "60"))
 
 # OpenRouter peut router une requete vers plusieurs fournisseurs pour un meme
 # modele. `require_parameters` restreint le routage aux fournisseurs qui
@@ -193,7 +197,7 @@ REGISTRE: dict[str, Modele] = {
         dorsale="openrouter",
         identifiant="qwen/qwen3.6-plus",
         note="Grand modele stable de la generation 3.6. Max Preview a ete ecarte : "
-             "pas de canal preview sur une campagne de 1690 appels.",
+             "pas de canal preview sur une campagne de 507 appels.",
     ),
     "minimax-m3": Modele(
         cle="minimax-m3",
@@ -401,6 +405,11 @@ CODES_TRANSITOIRES = {408, 409, 429, 500, 502, 503, 504, 520, 522, 524}
 class _ErreurTransitoire(Exception):
     """Erreur passagere : on reessaie. Si les reprises s'epuisent, elle devient ErreurModele."""
 
+    def __init__(self, message: str, retry_after: float | None = None):
+        super().__init__(message)
+        # Secondes demandees par le fournisseur via l'en-tete Retry-After, si present.
+        self.retry_after = retry_after
+
 
 def _lever_http(fiche: Modele, reponse, contexte: str | None) -> None:
     detail = reponse.text[:1000]
@@ -416,17 +425,28 @@ def _lever_http(fiche: Modele, reponse, contexte: str | None) -> None:
             contexte,
         )
     if reponse.status_code in CODES_TRANSITOIRES:
-        raise _ErreurTransitoire(message)
+        # Depassement de debit (429) ou indisponibilite (503) : respecter le
+        # Retry-After renvoye par le fournisseur quand il est chiffre en secondes.
+        brut = reponse.headers.get("Retry-After") or reponse.headers.get("retry-after")
+        retry_after = None
+        if brut:
+            try:
+                retry_after = float(brut)
+            except ValueError:
+                retry_after = None  # forme date-HTTP : on retombe sur le backoff
+        raise _ErreurTransitoire(message, retry_after=retry_after)
     raise ErreurModele(fiche.cle, message, contexte)
 
 
 def _avec_reprises(action, fiche: Modele, contexte: str | None):
     derniere = ""
     for tentative in range(1, TENTATIVES_MAX + 1):
+        retry_after = None
         try:
             return action()
         except _ErreurTransitoire as erreur:
             derniere = str(erreur)
+            retry_after = erreur.retry_after
         except requests.exceptions.RequestException as erreur:
             derniere = f"reseau : {type(erreur).__name__} : {erreur}"
         except ErreurModele:
@@ -442,10 +462,16 @@ def _avec_reprises(action, fiche: Modele, contexte: str | None):
             derniere = texte
 
         if tentative < TENTATIVES_MAX:
-            attente = 2 ** tentative
+            # Retry-After s'il est connu, sinon backoff exponentiel plafonne. Le
+            # jitter empeche N appels simultanes de repartir tous en meme temps
+            # (effet de troupeau qui reprovoquerait aussitot le depassement).
+            if retry_after is not None:
+                attente = retry_after + random.uniform(0, 1)
+            else:
+                attente = min(2 ** tentative, PLAFOND_ATTENTE) + random.uniform(0, tentative)
             print(
                 f"  reprise {tentative}/{TENTATIVES_MAX - 1} pour {fiche.cle} "
-                f"dans {attente}s ({derniere[:200]})",
+                f"dans {attente:.1f}s ({derniere[:200]})",
                 file=sys.stderr,
                 flush=True,
             )
