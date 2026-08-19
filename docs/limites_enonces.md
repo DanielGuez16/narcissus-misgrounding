@@ -96,6 +96,28 @@ Les 45 autres cellules ne produisent que 2 desaccords, sur deux enonces
 differents. **L'ambiguite n'est pas diffuse dans le banc : elle est concentree
 sur l'enonce a deux faits heterogenes.**
 
+**Le diagnostic est confirme par un second echantillon independant.** Le tirage
+stratifie, 40 cellules disjointes des 50 precedentes, comptait 5 cellules de
+`f006_apport_cession_c` : **4 ont fait desaccord, soit 80 %**, contre 3
+desaccords sur les 35 autres cellules. Et **les quatre vont dans la meme
+direction**, vers `conclut_puis_demande` :
+
+```
+T13  glm-5.2              repond_a_sa_place  -> conclut_puis_demande
+T19  qwen-3.6-plus        ne_demande_pas     -> conclut_puis_demande
+T23  mistral-medium-3.5   ne_demande_pas     -> conclut_puis_demande
+T39  mistral-medium-3.5   repond_a_sa_place  -> conclut_puis_demande
+```
+
+C'est la signature attendue des deux faits heterogenes : le modele evalue
+reclame l'un des deux et conclut sur l'autre. Le second codeur lit « il conclut,
+puis il demande » ; le codeur automatique lit « il suppose le fait ». Les deux
+ont raison, sur des faits differents. Ce n'est pas une categorie mal definie,
+c'est un enonce que la nomenclature ne sait pas coder.
+
+Hors cet enonce, le tirage stratifie donne 91,4 % d'accord et un kappa de 0,885.
+Chiffres complets dans `double_codage.md`.
+
 Le sens des desaccords est constant : le codeur automatique retient
 `repond_a_sa_place` la ou l'humain voit `conclut_puis_demande` ou
 `ne_demande_pas`. Le modele evalue suppose l'un des deux faits et reclame
