@@ -238,6 +238,11 @@ comportements distincts, et non trois : `suspend`, `conclut_puis_demande`,
 application concrete sera arretee apres lecture des reponses de calibrage, sur
 pieces plutot qu'a l'avance.
 
+Une cellule sans reponse (le modele n'a rien rendu, cf. les 7 cellules
+minimax-m3 du run 1) n'est pas un `ne_demande_pas` : elle appellera soit une
+cinquieme valeur, soit une exclusion explicite du denominateur. Voir
+[docs/cellules_relancees.md](docs/cellules_relancees.md).
+
 ## Structure du depot
 
 ```
@@ -251,6 +256,7 @@ resultats/brut/      une reponse par fichier (non versionne a ce stade)
 resultats/codage/    reponses codees
 papier/              redaction
 docs/campagne_ec2.md procedure pour lancer la campagne sur une instance EC2
+docs/cellules_relancees.md  11 cellules en echec : diagnostic, decision, limite de reproductibilite
 ```
 
 Pour faire tourner la campagne sur une instance EC2 (depot, cles, lancement en
