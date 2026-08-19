@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gpt-5.6-terra",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, un investissement dans une société de marchand de biens peut, en principe, permettre le maintien du report d’imposition**, car l’achat-revente d’immeubles avec intention spéculative relève normalement de l’activité commerciale visée à l’article 35 du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:08+00:00"
+}

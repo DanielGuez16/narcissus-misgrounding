@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "kimi-k3",
+  "repetition": 1,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "À défaut de projet crédible à hauteur de 6,3 M€, il faut envisager lucidement l'option inverse : laisser tomber le report et provisionner l'impôt.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:13:25+00:00"
+}

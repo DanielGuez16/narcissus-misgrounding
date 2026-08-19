@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "minimax-m3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**En conclusion** : le remploi envisagé est *en principe* éligible au maintien du report d'imposition, sous réserve que la société cible exerce une véritable activité commerciale de marchand de biens, et non une simple gestion patrimoniale.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:37+00:00"
+}

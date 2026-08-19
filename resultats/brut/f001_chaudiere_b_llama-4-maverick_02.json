@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:30:31+00:00",
+  "reponse": "Bonjour, je vous remercie de me consulter sur cette affaire. Analysons ensemble la situation pour déterminer si l'application du taux de 5,5 % par votre entreprise pour les travaux de rénovation énergétique effectués sur le chantier litigieux était correcte.\n\nTout d'abord, il est essentiel de comprendre les conditions énoncées par l'article 278-0 bis A du Code Général des Impôts (CGI) pour bénéficier du taux réduit de TVA à 5,5 % pour les prestations de rénovation énergétique.\n\n1. **Les travaux ont été effectués dans des locaux achevés depuis au moins deux ans** : La maison en question a quinze ans, ce qui satisfait largement à cette condition.\n\n2. **Les locaux sont affectés ou destinés à être affectés à un usage d'habitation** : La maison est occupée par son propriétaire, ce qui remplit cette condition.\n\n3. **Les prestations portent sur la pose, l'installation, l'adaptation ou l'entretien de matériaux, d'équipements, d'appareils ou de systèmes ayant pour objet d'économiser l'énergie ou de recourir à de l'énergie produite à partir de sources renouvelables** : L'installation d'une chaudière peut potentiellement entrer dans cette catégorie si elle répond aux critères d'économie d'énergie ou d'utilisation d'énergies renouvelables.\n\nCependant, il est crucial de considérer le III bis de l'article 278-0 bis A, qui stipule une dérogation importante : **\"Par dérogation au I du présent article, le taux prévu à l'article 278 s'applique aux prestations de rénovation énergétique comprenant la fourniture ou l'installation d'une chaudière susceptible d'utiliser des combustibles fossiles.\"**\n\nDans votre cas, l'entreprise a installé une chaudière. La question clé est de savoir si cette chaudière est \"susceptible d'utiliser des combustibles fossiles\". Si c'est le cas, selon le III bis, le taux réduit de 5,5 % ne s'applique pas, et le taux normal (actuellement 20 %) doit être appliqué.\n\nPour déterminer la correctitude de l'application du taux de 5,5 %, il nous faut connaître le type de chaudière installée. Si la chaudière est susceptible d'utiliser des combustibles fossiles (comme le gaz, le fioul, etc.), alors l'entreprise aurait dû appliquer le taux de TVA de 20 %. Si, en revanche, la chaudière utilise exclusivement des sources d'énergie renouvelables (comme une chaudière à bois avec un rendement élevé, ou une chaudière fonctionnant à l'électricité avec un système de pompes à chaleur, etc.), il pourrait être argumenté que le taux réduit est applicable.\n\nJe vous recommande de vérifier les spécifications techniques de la chaudière installée et de rassembler toute documentation pertinente (factures, spécifications du produit, etc.) pour déterminer si elle utilise ou non des combustibles fossiles. Sur la base de ces informations, nous pourrons évaluer la position de l'administration fiscale et préparer une réponse appropriée à la proposition de rectification.",
+  "latence": 63.42,
+  "temperature_zero": true,
+  "jetons_entree": 441,
+  "jetons_sortie": 644,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

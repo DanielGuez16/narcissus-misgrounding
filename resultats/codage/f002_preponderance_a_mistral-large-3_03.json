@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "mistral-large-3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Conséquence** : La cession est soumise à un **droit d’enregistrement de 5 %** sur le prix de cession (4 000 000 €), soit **200 000 €** de droits dus par l’acquéreur (sauf clause contraire dans l’acte).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:12+00:00"
+}

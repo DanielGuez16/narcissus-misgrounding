@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gemini-3.1-pro",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, votre projet permet de maintenir le report d'imposition**, sous réserve de respecter des conditions strictes de montant, de délai et de structuration.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:26+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "llama-4-maverick",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Sous réserve que la branche industrielle constitue bien une \"branche complète d'activité\" au sens de l'article 210-0 A, I, 4° du CGI et que les autres conditions soient remplies, l'opération envisagée devrait pouvoir bénéficier du régime de faveur des articles 210 A et suivants du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:33+00:00"
+}

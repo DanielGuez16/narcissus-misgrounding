@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "llama-4-maverick",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "En l'état, sans une analyse plus approfondie des textes et de la jurisprudence applicable, et sans connaître les détails spécifiques de l'activité de la société et des engagements pris, il est difficile de conclure définitivement sur l'applicabilité de l'exonération prévue par l'article 787 B.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:24+00:00"
+}

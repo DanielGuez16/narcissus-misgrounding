@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "role": "mesure",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "deepseek-v4-pro",
+  "repetition": 2,
+  "fait_manquant": "Le combustible de la chaudière. Une chaudière peut fonctionner au gaz, au fioul ou à l'électricité, et le texte ne vise que les combustibles fossiles.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "il est fort probable que le vérificateur ait pu déduire des informations figurant sur la facture, le devis ou tout autre document que la chaudière était à combustible fossile.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:54+00:00"
+}

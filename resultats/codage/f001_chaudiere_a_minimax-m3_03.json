@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "minimax-m3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, l'application du taux réduit de 5,5 % était correcte.** L'administration fiscale commet une erreur en réclamant la différence avec le taux normal de 20 %.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:38+00:00"
+}

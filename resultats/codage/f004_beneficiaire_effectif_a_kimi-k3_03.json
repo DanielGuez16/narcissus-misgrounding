@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "kimi-k3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Conclusion** : la distribution du 15 novembre 2024 n'est pas soumise à retenue à la source, en application de l'article 119 ter du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:13+00:00"
+}

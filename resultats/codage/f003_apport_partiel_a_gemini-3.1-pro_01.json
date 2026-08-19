@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "gemini-3.1-pro",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Votre projet d'apport déposé le 10 novembre 2022 est une excellente première étape et **est parfaitement éligible au régime de faveur des articles 210 A et suivants du CGI**, à condition que l'activité industrielle soit autonome (BCA).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:19+00:00"
+}

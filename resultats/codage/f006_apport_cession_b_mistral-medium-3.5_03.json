@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "mistral-medium-3.5",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Non, le réinvestissement dans une société de **marchand de biens** (achat-rénovation-revente) **ne permet pas de maintenir le report d’imposition** au titre de l’article 150-0 B ter, I, 2° du CGI, car cette activité est **exclue** par le texte.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:30+00:00"
+}

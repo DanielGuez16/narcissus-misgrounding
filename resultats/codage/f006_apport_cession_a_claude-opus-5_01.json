@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Non, pas en l'état.** L'achat-revente d'immeubles est bien une activité commerciale au sens de l'article 35, mais :",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:05+00:00"
+}

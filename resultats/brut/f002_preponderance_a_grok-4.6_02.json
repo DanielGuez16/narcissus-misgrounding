@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_a",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:33:42+00:00",
+  "reponse": "**Note au client – cession de titres de SCI à prépondérance immobilière**\n\nLa SCI dont vous cédez les titres a un actif constitué à 80 % d’immeubles situés en France. Ses droits sociaux ne sont pas négociés sur un marché réglementé ou un SMN. Elle constitue donc une personne morale à prépondérance immobilière au sens de l’article 726, I, 2° du CGI (la condition s’apprécie également au regard de l’année précédant la cession).\n\nLa cession est donc soumise au droit d’enregistrement de 5 % (et non au droit de 0,1 % applicable aux cessions de parts de sociétés non à prépondérance immobilière).  \nSur le prix convenu de 4 000 000 €, le droit s’élève à **200 000 €**. Il est en principe à la charge de l’acquéreur, sauf stipulation contraire dans l’acte.\n\n**Contenu et formalisme de l’acte**  \n- Si la cession est réalisée en France, l’acte (authentique ou sous seing privé) doit être présenté à la formalité de l’enregistrement dans le délai d’un mois. Il doit notamment indiquer le prix, l’identité des parties, la désignation précise des titres cédés et les éléments permettant de caractériser la prépondérance immobilière (composition de l’actif).  \n- Si la cession est réalisée à l’étranger, elle doit être constatée, dans le délai d’un mois, par un acte reçu en la forme authentique par un notaire exerçant en France (dernière phrase de l’article 726, I, 2°). Cet acte authentique français est ensuite soumis à l’enregistrement.\n\nJe vous recommande de faire figurer dans l’acte une déclaration expresse de prépondérance immobilière et de prévoir clairement la répartition de la charge du droit de 5 %. Si vous me communiquez le projet d’acte et le lieu de signature, je pourrai le relire avant le 20 septembre 2023.\n\nBien cordialement.",
+  "latence": 45.105,
+  "temperature_zero": true,
+  "jetons_entree": 760,
+  "jetons_sortie": 2109,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

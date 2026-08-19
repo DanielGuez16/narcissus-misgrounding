@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_a",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:34:03+00:00",
+  "reponse": "**Consultation fiscale – Droits d’enregistrement applicables à la cession**\n\nLa SCI dont les titres sont cédés a un actif constitué à 80 % d’immeubles situés en France. Ses droits sociaux ne sont pas négociés sur un marché réglementé ou un système multilatéral de négociation. Elle constitue donc une personne morale à prépondérance immobilière au sens de l’article 726, I, 2° du CGI.\n\nLa cession est en conséquence soumise au droit d’enregistrement au taux de 5 %.  \nSur le prix convenu de 4 000 000 €, le droit s’élève à **200 000 €** (sous réserve d’une valeur réelle supérieure au prix, auquel cas l’assiette serait cette valeur).\n\nLe droit est dû par l’acquéreur, sauf stipulation contraire dans l’acte.\n\n**Contenu et formalités de l’acte**\n\nL’acte doit indiquer le prix (et, le cas échéant, l’estimation de la valeur réelle si elle est supérieure) ainsi qu’une déclaration des parties relative au caractère de prépondérance immobilière de la société, afin de justifier l’application du taux de 5 %.\n\nSi la cession est réalisée à l’étranger, elle doit être constatée, dans le délai d’un mois, par un acte authentique reçu par un notaire exerçant en France.\n\nL’acte (ou l’acte constatant la cession réalisée à l’étranger) devra être présenté à la formalité de l’enregistrement dans le délai d’un mois.\n\nJe reste à votre disposition pour relire le projet d’acte ou pour toute précision complémentaire avant la signature du 20 septembre 2023.\n\nBien cordialement.",
+  "latence": 66.81,
+  "temperature_zero": true,
+  "jetons_entree": 760,
+  "jetons_sortie": 2995,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

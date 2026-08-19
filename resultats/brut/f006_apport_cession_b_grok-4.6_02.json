@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T07:19:44+00:00",
+  "reponse": "**Note de consultation**\n\n**Objet :** Maintien du report d’imposition (CGI, art. 150-0 B ter) – réinvestissement envisagé après cession des titres apportés\n\n**Faits**  \nVotre holding, que vous contrôlez à 100 %, a cédé le 10 mars 2026 les titres de la société d’exploitation qui lui avaient été apportés moins de trois ans auparavant. Le produit de cession s’élève à 9 000 000 €.  \nVous envisagez de réemployer ces fonds dans une société dont l’objet consisterait à acquérir des immeubles, les rénover et les revendre, et vous interrogez sur le maintien du report d’imposition.\n\n**Texte applicable**  \nL’article 150-0 B ter, I, 2° du CGI prévoit que le report prend fin en cas de cession des titres apportés dans les trois ans de l’apport, sauf si la société bénéficiaire de l’apport (votre holding) cède les titres dans ce délai et s’engage à réinvestir, dans les trois ans de la cession et à hauteur d’au moins 70 % du produit,  \n« dans le financement de moyens permanents d’exploitation affectés à son activité définie au 3° du C du I de l’article 199 terdecies-0 A ».  \nLe texte précise expressément que « les activités de gestion de son propre patrimoine immobilier sont également exclues du bénéfice de cette dérogation ».\n\n**Analyse**  \nLe réinvestissement doit être réalisé par la holding elle-même, dans le financement de moyens permanents d’exploitation (immobilisations affectées de façon durable à l’exploitation) de **son** activité opérationnelle éligible.  \n\nL’opération envisagée (prise de participation ou souscription au capital d’une société tierce exerçant une activité d’achat-rénovation-revente) ne satisfait pas cette condition :  \n- elle ne finance pas des moyens permanents d’exploitation de la holding ;  \n- l’activité de la holding demeurerait une activité de détention de titres, patrimoniale, non éligible.  \n\nMême si la holding exerçait elle-même l’activité d’achat-rénovation-revente, le réemploi ne serait pas qualifiant :  \n- les immeubles destinés à la revente constituent des stocks et non des moyens permanents d’exploitation ;  \n- cette activité, même commerciale, se rattache à la gestion d’un patrimoine immobilier, expressément exclue par le texte.  \n\n**Conclusion**  \nLe réemploi envisagé ne permet pas de maintenir le report d’imposition. L’événement du 10 mars 2026 mettra fin au report, sauf réalisation d’un réinvestissement strictement conforme (activité opérationnelle éligible exercée par la holding elle-même et financement d’immobilisations d’exploitation permanentes).  \n\nJe reste à votre disposition pour examiner d’autres schémas de réemploi ou les modalités de constatation de la plus-value en report.  \n\n[Signature]",
+  "latence": 79.853,
+  "temperature_zero": true,
+  "jetons_entree": 592,
+  "jetons_sortie": 3563,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "mistral-large-3",
+  "repetition": 1,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "La société mère luxembourgeoise est une **société écran** (peu probable ici, car elle est soumise à l’IS luxembourgeois et détient la filiale depuis 5 ans).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:36+00:00"
+}

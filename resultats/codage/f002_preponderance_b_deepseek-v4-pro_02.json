@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_b",
+  "role": "mesure",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "deepseek-v4-pro",
+  "repetition": 2,
+  "fait_manquant": "Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "Cette mention est essentielle car, si un tel droit de jouissance existe, la cession pourrait être soumise non pas au droit de 5 % mais au régime fiscal des mutations d’immeubles (taux plus élevé, actuellement 5,80665 %). Une réponse négative doit être clairement indiquée si la SCI ne relève pas de ce régime.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:08+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "qwen-3.6-plus",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Le projet de remploi dans une société d’achat-rénovation-revente d’immeubles est, en principe, compatible avec le maintien du report d’imposition**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:35+00:00"
+}

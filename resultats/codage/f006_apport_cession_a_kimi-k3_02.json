@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "kimi-k3",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Non, en l'état du projet, le remploi ne maintient pas le report.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:16+00:00"
+}

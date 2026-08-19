@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "qwen-3.6-plus",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Le remploi dans une société exerçant une activité d'achat, rénovation et revente d'immeubles **peut permettre de maintenir le report d'imposition**, sous réserve que cette activité soit effectivement qualifiée de commerciale et que les conditions légales (engagement formel, délai de 2 ans, seuil de 60 %, traçabilité, réalité économique) soient strictement respectées.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:18+00:00"
+}

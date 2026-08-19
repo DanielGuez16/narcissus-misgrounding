@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Non.** En l'état du texte applicable à la date de la cession, un réinvestissement dans une société qui acquiert des immeubles pour les rénover et les revendre (activité de marchand de biens) **ne constitue pas un remploi éligible**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:22+00:00"
+}

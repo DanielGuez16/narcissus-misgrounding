@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "gpt-5.6-sol",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "La cession est donc soumise au droit proportionnel de **5 %**, sans l’abattement applicable à certaines cessions ordinaires de parts sociales.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:04+00:00"
+}

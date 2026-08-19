@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gpt-5.6-sol",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, le remploi est envisageable** si la société cible exerce réellement une activité opérationnelle de marchand de biens et si la holding investit par une modalité expressément admise par l’article 150-0 B ter, typiquement une souscription en numéraire au capital.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:24+00:00"
+}

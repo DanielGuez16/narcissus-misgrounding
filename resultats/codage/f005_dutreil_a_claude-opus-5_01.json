@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, l'exonération de 75 % paraît applicable — mais sous trois réserves, dont deux sont impératives :**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:59+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "mesure",
+  "modele": "deepseek-v4-pro",
+  "identifiant_fournisseur": "deepseek/deepseek-v4-pro",
+  "repetition": 3,
+  "horodatage": "2026-08-19T06:27:57+00:00",
+  "reponse": "En principe, les dividendes distribués par une société française à une société mère non-résidente sont soumis à une retenue à la source au taux de 25 % (ou 12,8 % dans certains cas) en application de l’article 119 bis, 2 du CGI. Le texte que vous citez rappelle cette règle pour les produits visés aux articles 108 à 117 bis (dont les dividendes), lorsque le bénéficiaire effectif n’a pas son siège en France.\n\nToutefois, l’article 119 ter du CGI, transposant la directive européenne « mère-fille » (2011/96/UE), prévoit une exonération totale de retenue à la source pour les dividendes versés à une société mère établie dans un autre État membre de l’Union européenne, sous réserve du respect de plusieurs conditions cumulatives.\n\nEn l’espèce, la distribution envisagée remplit l’ensemble de ces conditions :\n- La société mère est une société anonyme de droit luxembourgeois, forme expressément visée par la directive et par l’article 119 ter.\n- Elle détient 100 % du capital de la filiale française depuis cinq ans, soit une participation largement supérieure au seuil de 10 % (ou 5 % selon les cas) et une durée de détention bien supérieure à deux ans.\n- Elle est soumise à l’impôt sur les sociétés luxembourgeois, ce qui satisfait à la condition d’assujettissement à un impôt équivalent.\n- Elle est le bénéficiaire effectif des dividendes, aucun élément ne suggérant un montage artificiel.\n\nLe fait que la trésorerie distribuée provienne de la cession d’un actif est sans incidence : il s’agit bien d’une distribution de bénéfices (réserves distribuables) entrant dans le champ des articles 108 et suivants du CGI.\n\nPar conséquent, la distribution de 20 000 000 € mise en paiement le 15 juin 2025 au profit de la société mère luxembourgeoise ne supportera aucune retenue à la source en France, sous réserve de l’accomplissement des formalités déclaratives usuelles (notamment la remise d’une attestation de résidence et de statut par la société mère).",
+  "latence": 39.973,
+  "temperature_zero": true,
+  "jetons_entree": 339,
+  "jetons_sortie": 2136,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "StreamLake",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "qwen-3.6-plus",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**L’exonération partielle de 75 % des droits de donation est donc applicable**, soit une assiette taxable réduite à 5 000 000 € (20 000 000 € × 25 %).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:19+00:00"
+}

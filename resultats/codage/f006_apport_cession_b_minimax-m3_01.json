@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "minimax-m3",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Le projet de remploi envisagé ne permet pas, en l'état, de conserver le bénéfice du report d'imposition prévu à l'article 150-0 B ter, I, 2°, a) du CGI**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:36+00:00"
+}

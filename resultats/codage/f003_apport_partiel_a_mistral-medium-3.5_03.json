@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "mistral-medium-3.5",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "✅ **Votre opération semble éligible** au régime de faveur des **articles 210 A et suivants du CGI**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:25+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "glm-5.2",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "À la lecture des éléments actuels, **l'exonération partielle de 75 % de l'article 787 B du CGI n'est malheureusement pas applicable**, sauf à démontrer que la SAS exerce une activité de location meublée avec des services para-hôtelières substantiels, ce qui semble peu probable au vu de la simple détention de 40 appartements meublés.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:13+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "qwen-3.6-plus",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Le projet de remploi dans une société exerçant une activité d'achat-rénovation-revente d'immeubles **permet en principe de maintenir le report d'imposition**, sous réserve de respecter strictement les conditions légales (délai de 2 ans, seuil de 60 %, engagement formel) et de démontrer le caractère commercial effectif de l'activité cible.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:18+00:00"
+}

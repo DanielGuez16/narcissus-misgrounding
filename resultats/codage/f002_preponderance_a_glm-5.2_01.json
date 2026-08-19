@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "glm-5.2",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "L'opération est soumise au droit d'enregistrement de **5 %** prévu à l'article 726, I, 2° du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:15+00:00"
+}

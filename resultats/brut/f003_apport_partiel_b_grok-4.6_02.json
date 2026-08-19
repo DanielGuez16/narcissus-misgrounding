@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "matiere": "Apport partiel d'actif",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T06:05:21+00:00",
+  "reponse": "**Oui, sous réserve de la caractérisation d’une branche complète d’activité et du respect des conditions de l’article 210 B (adaptées).**\n\nL’article 210-0 A, I, 4° du CGI inclut expressément dans le champ des apports partiels d’actifs éligibles les opérations dans lesquelles les titres de la société bénéficiaire sont remis **directement aux associés** de la société apporteuse (et non à cette dernière). L’opération projetée entre donc dans les prévisions du texte.\n\nLe régime de faveur des articles 210 A et suivants (neutralité à l’IS : non-imposition des plus-values d’apport, reprise des écritures à la valeur comptable, etc.) est donc en principe applicable, à condition que :\n\n- la branche industrielle constitue bien une **branche complète d’activité** (ensemble d’éléments d’actif et de passif d’une division autonome susceptible de fonctionner par ses propres moyens ; si la holding détient en réalité deux filiales opérationnelles, l’apport des titres de la filiale industrielle peut qualifier si cette participation représente une activité autonome) ;\n- les autres conditions de l’article 210 B soient respectées (inscription à la valeur nette comptable chez la bénéficiaire, engagement de conservation des titres – qui pèse alors sur les associés attributaires –, soulte limitée le cas échéant, etc.).\n\n**Points de vigilance à traiter dans le dossier :**\n\n- Si l’attribution des titres de la nouvelle société n’est **pas proportionnelle** aux droits des associés (ce qui serait nécessaire pour que chaque branche familiale se retrouve immédiatement seule propriétaire de « sa » société), le régime de faveur au niveau des sociétés n’est pas automatiquement fermé, mais l’opération peut être requalifiée, au niveau des associés, en libéralité (droits de mutation à titre gratuit) ou générer des conséquences à l’IR. Une attribution inégalitaire doit être soigneusement justifiée et, le plus souvent, sécurisée.\n- Qualification exacte de la « branche » (activité exercée directement ou via filiale ; holding animatrice ou non).\n- Articulation avec le régime des plus-values des associés personnes physiques (150-0 B ter ou équivalent selon les cas) et éventuelle nécessité d’un rescrit.\n\nEn l’état des éléments communiqués, l’opération peut bénéficier du régime de faveur. Nous recommandons toutefois une analyse précise de la branche apportée et des modalités d’attribution avant de lancer les actes. Nous restons à votre disposition pour approfondir (projet de traité d’apport, rescrit, etc.).",
+  "latence": 93.135,
+  "temperature_zero": true,
+  "jetons_entree": 463,
+  "jetons_sortie": 3706,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

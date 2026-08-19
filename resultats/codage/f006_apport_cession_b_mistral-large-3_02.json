@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "mistral-large-3",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Votre projet de réinvestissement dans une activité de réhabilitation-revente d’immeubles peut être éligible au maintien du report d’imposition, sous réserve de respecter strictement les conditions légales.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:29+00:00"
+}

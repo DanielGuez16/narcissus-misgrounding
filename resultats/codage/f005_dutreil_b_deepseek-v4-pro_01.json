@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "deepseek-v4-pro",
+  "repetition": 1,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "En l’état des informations fournies, il n’est pas possible de se prononcer avec certitude sur l’applicabilité de l’exonération partielle de l’article 787 B.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:53+00:00"
+}

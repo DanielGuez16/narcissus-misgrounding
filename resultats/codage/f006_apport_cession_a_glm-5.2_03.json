@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "glm-5.2",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Sous réserve des précisions ci-dessous, **ce remploi devrait permettre de maintenir le report d'imposition**, à condition de respecter rigoureusement la nature de l'activité et la structure de l'investissement.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:15+00:00"
+}

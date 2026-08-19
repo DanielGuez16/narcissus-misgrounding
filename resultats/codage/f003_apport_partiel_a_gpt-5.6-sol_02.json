@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "gpt-5.6-sol",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui**, si les titres de la société nouvelle sont effectivement remis à la holding apporteuse : l’apport peut relever des articles 210 A et 210 B, à condition que l’activité industrielle soit une branche complète et autonome et que les autres conditions soient satisfaites.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:23+00:00"
+}

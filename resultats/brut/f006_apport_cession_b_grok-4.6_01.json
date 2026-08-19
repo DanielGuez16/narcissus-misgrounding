@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T07:19:29+00:00",
+  "reponse": "**Non. Ce remploi ne permet pas de maintenir le report d’imposition.**\n\nLa cession du 10 mars 2026 intervient moins de trois ans après l’apport. Elle met donc fin au report, sauf si la holding prend l’engagement de réinvestir, dans les trois ans de la cession et à hauteur d’au moins 70 % du produit (soit 6,3 M€), dans les conditions strictes du 2° du I de l’article 150-0 B ter.\n\nLe texte applicable n’ouvre la dérogation qu’au financement de **moyens permanents d’exploitation affectés à l’activité de la holding elle-même**, activité qui doit correspondre à celle visée au 3° du C du I de l’article 199 terdecies-0 A. Les activités de gestion de son propre patrimoine immobilier sont expressément exclues.\n\nL’opération envisagée (investissement dans une société qui achète des immeubles pour les rénover et les revendre) ne remplit aucune de ces conditions :\n\n- L’acquisition de titres d’une société tierce n’est pas le financement de moyens permanents d’exploitation de la holding.\n- Même si la holding exerçait elle-même l’activité d’achat-rénovation-revente, les immeubles constitueraient des stocks (actifs circulants) et non des moyens permanents (immobilisations d’exploitation).\n- L’activité immobilière de cette nature, qu’elle soit exercée directement ou via une filiale, relève de la gestion d’un patrimoine immobilier ou s’en rapproche suffisamment pour tomber sous le coup de l’exclusion textuelle.\n\nLe report d’imposition prendra donc fin au titre de l’année 2026. La plus-value en report deviendra imposable (prélèvement forfaitaire unique ou barème, selon l’option, majoré des prélèvements sociaux). Il convient d’anticiper le financement de cette imposition et d’examiner, le cas échéant, d’autres schémas de remploi réellement éligibles ou des aménagements de la structure avant toute décision d’investissement.\n\nJe reste à votre disposition pour chiffrer l’imposition et étudier les alternatives.",
+  "latence": 73.242,
+  "temperature_zero": true,
+  "jetons_entree": 592,
+  "jetons_sortie": 3238,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

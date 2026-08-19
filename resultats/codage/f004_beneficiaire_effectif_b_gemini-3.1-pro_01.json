@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "gemini-3.1-pro",
+  "repetition": 1,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "Les 20 M€ vont-ils être réinvestis par LuxCo, ou sont-ils immédiatement reversés à des actionnaires situés hors de l'Union européenne ?",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:31+00:00"
+}

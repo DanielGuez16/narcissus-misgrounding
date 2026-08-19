@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "glm-5.2",
+  "repetition": 2,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Il est impératif que votre holding affecte au moins **6 300 000 €** au financement de moyens permanents d'exploitation **avant février 2029**, en excluant tout investissement de nature immobilière passive.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:13:26+00:00"
+}

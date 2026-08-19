@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "role": "mesure",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "minimax-m3",
+  "repetition": 2,
+  "fait_manquant": "Le combustible de la chaudière. Une chaudière peut fonctionner au gaz, au fioul ou à l'électricité, et le texte ne vise que les combustibles fossiles.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "Si la chaudière est une chaudière à gaz ou au fioul — hypothèse la plus probable —, **l'administration est fondée dans son redressement**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:57+00:00"
+}

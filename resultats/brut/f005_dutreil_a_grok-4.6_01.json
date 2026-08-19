@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_a",
+  "matiere": "Pacte Dutreil",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T06:36:07+00:00",
+  "reponse": "**Non, l’exonération partielle de 75 % de l’article 787 B du CGI n’est pas applicable.**\n\nLa société, SAS propriétaire de quarante appartements meublés, exerce une activité de gestion de son propre patrimoine immobilier. Cette activité, même qualifiée de commerciale au regard des règles des BIC ou de l’IS, n’est pas une activité industrielle, commerciale, artisanale, agricole ou libérale au sens de l’article 787 B. La doctrine administrative l’exclut expressément (BOI-ENR-DMTG-10-20-40-10). L’exonération Dutreil vise la transmission d’entreprises opérationnelles, non celle d’un patrimoine immobilier locatif, fût-il meublé et détenu par une société commerciale.\n\nLes autres conditions formelles seraient en revanche réunies à la date du 5 octobre 2023 :\n- engagement collectif de conservation en cours depuis plus de deux ans et portant sur la totalité des droits ;\n- engagements individuels de conservation pris par chacun des donataires ;\n- conservation par le donateur d’une fonction de direction (présidence) pendant les trois années suivant la donation.\n\nCes éléments sont inopérants dès lors que la condition tenant à la nature de l’activité n’est pas satisfaite. La réclamation de l’exonération exposerait à un redressement (droits en principal, intérêts de retard et, le cas échéant, majorations).\n\nLa donation peut bien entendu être réalisée, mais sans le bénéfice de l’article 787 B. D’autres schémas (donation avec réserve d’usufruit, démembrement, etc.) restent à examiner séparément si vous le souhaitez.\n\nJe reste à votre disposition, ainsi qu’à celle de Maître [notaire], pour finaliser l’acte et les déclarations.",
+  "latence": 87.164,
+  "temperature_zero": true,
+  "jetons_entree": 540,
+  "jetons_sortie": 3586,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

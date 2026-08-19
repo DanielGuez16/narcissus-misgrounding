@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:39:48+00:00",
+  "reponse": "## 1. Droit d’enregistrement\n\nLa SCI est une **personne morale à prépondérance immobilière** au sens de l’article 726, I, 2° du CGI dès lors que :\n\n- ses parts ne sont pas négociées sur un marché réglementé ou un système multilatéral de négociation ;\n- son actif est principalement constitué d’immeubles situés en France — le seuil de 80 % satisfait cette condition ;\n- elle ne relève pas de l’une des exclusions prévues pour certains organismes de logement social.\n\nLa cession est donc soumise au droit d’enregistrement de **5 %**.\n\nSous réserve que le prix de 4 000 000 € constitue l’intégralité de la contrepartie, qu’il n’existe aucune charge augmentative du prix et que la valeur réelle des titres ne soit pas supérieure :\n\n> **4 000 000 € × 5 % = 200 000 €**\n\nLe droit d’enregistrement dû est donc de **200 000 €**.\n\nIl conviendra notamment de vérifier si le cessionnaire reprend ou acquitte une dette de la SCI envers le cédant, par exemple un compte courant d’associé : une telle opération doit être mentionnée dans l’acte et peut nécessiter un examen de l’assiette du droit.\n\n## 2. Mentions obligatoires de l’acte\n\nL’acte doit indiquer **expressément**, y compris par une réponse négative, les trois éléments suivants :\n\n1. **Si la SCI est ou non une société relevant de l’article 1655 ter du CGI** ;\n2. **Si les titres cédés confèrent ou non au cessionnaire, directement ou indirectement, un droit à la jouissance d’un immeuble ou d’une fraction d’immeuble au sens de l’article 728 du CGI** ;\n3. **Si le cessionnaire a acquitté ou s’engage à acquitter, directement ou indirectement, des dettes contractées par la SCI auprès du cédant** et, dans l’affirmative, le montant de ces dettes.\n\nUne clause pourrait être rédigée ainsi, à adapter après vérification :\n\n> « Les parties déclarent expressément que :  \n> – la Société [est/n’est pas] une société mentionnée à l’article 1655 ter du code général des impôts ;  \n> – les parts cédées [confèrent/ne confèrent pas] au Cessionnaire, directement ou indirectement, un droit à la jouissance d’immeubles ou de fractions d’immeubles au sens de l’article 728 du même code ;  \n> – le Cessionnaire [n’a acquitté et ne s’engage à acquitter aucune dette/a acquitté ou s’engage à acquitter les dettes suivantes] contractée(s) par la Société auprès du Cédant : […], pour un montant total de […] euros. »\n\nIl est également recommandé que l’acte rappelle la qualification de société à prépondérance immobilière et les éléments qui la justifient.\n\nEnfin, si la cession est réalisée à l’étranger, elle devra être constatée, dans le délai d’un mois, par un **acte authentique reçu par un notaire exerçant en France**. Sous réserve de ce cas particulier, l’acte signé le 20 mars 2024 devra être présenté à l’enregistrement dans le délai légal d’un mois.",
+  "latence": 43.967,
+  "temperature_zero": false,
+  "jetons_entree": 735,
+  "jetons_sortie": 2148,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

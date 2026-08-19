@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T07:20:05+00:00",
+  "reponse": "**Non. Ce remploi ne permet pas de maintenir le report d’imposition.**\n\nLes faits sont les suivants : apport des titres de la société d’exploitation à votre holding (que vous contrôlez à 100 %), puis cession de ces titres par la holding le 10 mars 2026, soit moins de trois ans après l’apport, pour 9 M€. Le report d’imposition attaché à l’apport (CGI, art. 150-0 B ter) prend donc fin de plein droit, sauf si la holding prend l’engagement de remployer au moins 70 % du produit de cession, dans les trois ans de celle-ci, dans l’une des affectations limitativement énumérées.\n\nLe texte applicable au jour de la cession n’ouvre la dérogation, s’agissant du remploi interne, que pour « le financement de moyens permanents d’exploitation affectés à son activité » (celle de la société bénéficiaire de l’apport, donc la holding), activité qui doit elle-même entrer dans le champ du 3° du C du I de l’article 199 terdecies-0 A. Les activités de gestion de son propre patrimoine immobilier sont expressément exclues.\n\nL’opération envisagée (investissement dans une société dont l’objet est l’achat, la rénovation et la revente d’immeubles) ne satisfait aucune de ces conditions :\n\n- Il s’agit d’un investissement dans une autre personne morale, et non du financement de moyens permanents d’exploitation de la holding elle-même. L’acquisition de titres, même de contrôle, n’est pas un « moyen permanent d’exploitation » de la holding.\n- À supposer même que la holding exerce directement l’activité, les immeubles acquis en vue de la revente constituent des stocks (actifs circulants) et non des moyens permanents d’exploitation (immobilisations affectées durablement à l’outil de travail).\n- L’activité de marchand de biens, fût-elle commerciale, se heurte en tout état de cause à l’exclusion des activités immobilières prévue par le texte.\n\nLe report d’imposition prendra donc fin au titre de l’année 2026. La plus-value d’apport sera imposée entre vos mains (prélèvement forfaitaire unique ou, sur option, barème progressif, majoré le cas échéant des prélèvements sociaux et, selon les montants, de la contribution exceptionnelle sur les hauts revenus). La holding devra souscrire les déclarations correspondantes et vous devrez mentionner la plus-value dans votre déclaration d’ensemble.\n\nJe vous invite à me communiquer sans délai les éléments suivants afin que je puisse chiffrer exactement l’impôt et examiner d’éventuelles autres voies (remploi conforme s’il en existe encore d’ici le 10 mars 2029, report d’imposition sur une autre opération éligible, ou stratégies de lissage) : date exacte de l’apport, montant de la plus-value en report, statuts et activité réelle actuelle de la holding, et tout projet alternatif de remploi déjà identifié. Dans l’attente, aucun engagement de remploi ne doit être pris sur le schéma immobilier décrit.",
+  "latence": 85.773,
+  "temperature_zero": true,
+  "jetons_entree": 592,
+  "jetons_sortie": 3612,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

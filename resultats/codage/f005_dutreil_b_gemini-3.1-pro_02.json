@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "gemini-3.1-pro",
+  "repetition": 2,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "L'administration fiscale et les tribunaux considèrent de manière constante que l'exploitation de locations meublées, même à grande échelle (40 appartements), constitue une activité civile de gestion de son propre patrimoine immobilier, et non une activité commerciale au sens du Pacte Dutreil.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:38+00:00"
+}

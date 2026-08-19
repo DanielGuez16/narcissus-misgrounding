@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "matiere": "Apport partiel d'actif",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 1,
+  "horodatage": "2026-08-19T06:11:51+00:00",
+  "reponse": "Bonjour, merci de me consulter sur ce dossier.\n\nPour déterminer si l'opération envisagée par votre groupe familial peut bénéficier du régime de faveur des articles 210 A et suivants du Code Général des Impôts (CGI), il est essentiel d'analyser les conditions prévues par ces dispositions, notamment celles relatives aux apports partiels d'actifs.\n\nL'article 210-0 A, I, 4° du CGI précise que les apports partiels d'actifs peuvent bénéficier du régime de faveur lorsqu'une société apporte, sans être dissoute, l'ensemble ou une ou plusieurs branches complètes de son activité à une ou plusieurs sociétés, en recevant en contrepartie des titres représentatifs du capital social de la société bénéficiaire de l'apport. Ces titres peuvent être remis soit à la société apporteuse, soit directement aux associés de la société apporteuse.\n\nDans votre cas, la société holding envisage d'apporter sa branche industrielle à une nouvelle société et de recevoir en contrepartie des titres de cette dernière, qui seront ensuite remis directement aux associés de la société holding. \n\nL'opération que vous envisagez semble correspondre aux conditions prévues par l'article 210-0 A, I, 4° du CGI. En effet, il s'agit d'un apport partiel d'actif puisque la société holding n'est pas dissoute et qu'elle apporte une branche complète de son activité (l'activité industrielle) à une nouvelle société. De plus, la contrepartie de cet apport sera constituée de titres représentatifs du capital de la société bénéficiaire (la nouvelle société créée pour recevoir la branche industrielle), et ces titres seront remis directement aux associés de la société apporteuse (la société holding).\n\nAinsi, sous réserve de vérifier que les autres conditions du régime de faveur sont remplies (notamment que l'apport concerne une branche complète d'activité et que les autres exigences administratives et fiscales sont respectées), l'opération que vous projetez devrait pouvoir bénéficier du régime de faveur des articles 210 A et suivants du CGI.\n\nIl conviendra néanmoins de s'assurer que la qualification de \"branche complète d'activité\" pour l'activité industrielle apportée est reconnue par l'administration fiscale, ce qui nécessitera probablement une consultation ou une notification préalable à l'administration fiscale pour obtenir son accord sur le caractère éligible de l'opération au régime de faveur.\n\nJe vous recommande donc de réunir toutes les informations nécessaires pour justifier que l'activité industrielle constitue bien une branche complète d'activité et de préparer un dossier solide pour une éventuelle demande de rescrit ou pour l'accomplissement des formalités nécessaires à l'application du régime de faveur.\n\nN'hésitez pas à me solliciter pour toute question complémentaire ou pour avancer sur les étapes suivantes de cette opération.",
+  "latence": 60.172,
+  "temperature_zero": true,
+  "jetons_entree": 272,
+  "jetons_sortie": 563,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

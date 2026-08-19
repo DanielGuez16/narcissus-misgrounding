@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "grok-4.6",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "La cession est en conséquence soumise au droit d’enregistrement au taux de 5 %.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:10+00:00"
+}

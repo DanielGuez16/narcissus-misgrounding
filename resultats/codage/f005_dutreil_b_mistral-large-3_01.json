@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "mistral-large-3",
+  "repetition": 1,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "Faire réaliser un **rapport d’expert-comptable** ou d’avocat fiscaliste sur la nature de l’activité (commerciale vs. gestion de patrimoine), en insistant sur les **services para-hôteliers** (le cas échéant).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:51+00:00"
+}

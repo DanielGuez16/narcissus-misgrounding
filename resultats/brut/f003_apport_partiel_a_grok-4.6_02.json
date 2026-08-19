@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "matiere": "Apport partiel d'actif",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:48:03+00:00",
+  "reponse": "**Oui, sous réserve des conditions habituelles du régime.**\n\nL’opération décrite constitue un apport partiel d’actifs au sens de l’article 210-0 A, I, 4° du CGI : la société holding apporte, sans dissolution, une branche d’activité (la branche industrielle) à une société nouvelle, moyennant remise de titres de cette dernière.\n\nElle entre donc dans le champ des opérations éligibles au régime de faveur des articles 210 A et suivants (via l’article 210 B).\n\n**Conditions à vérifier et à formaliser**\n\n- La branche industrielle doit constituer une **branche complète et autonome d’activité** (moyens humains, matériels et incorporels suffisants pour une exploitation indépendante). Si la holding détient cette activité via une filiale, l’apport des titres de cette filiale peut qualifier si la participation représente elle-même une branche complète.\n- Les deux sociétés (apporteuse et bénéficiaire) doivent être passibles de l’impôt sur les sociétés.\n- L’apporteuse doit prendre l’engagement de conservation des titres reçus pendant trois ans (art. 210 B). Le traité d’apport et les résolutions devront le mentionner expressément.\n- Le projet d’apport a été déposé au greffe le 10 novembre 2022 : ce dépôt est conforme aux exigences de publicité. Il n’emporte pas, à lui seul, de difficulté particulière au regard du régime fiscal.\n\n**Point d’attention lié à l’objectif de séparation familiale**\n\nSi, immédiatement après l’apport, les titres de la société nouvelle doivent être attribués ou cédés aux associés (pour réaliser la séparation des deux branches familiales), l’engagement de conservation de trois ans ne pourra pas être respecté. Dans cette hypothèse, le régime de faveur de l’apport partiel d’actifs serait remis en cause.\n\nDans un tel cas, il convient d’examiner une **scission partielle** (attribution directe des titres de la société nouvelle aux associés de la holding). Cette opération peut également bénéficier du régime de faveur, sous réserve notamment de l’engagement de conservation des titres par les associés pendant trois ans et du respect des conditions de l’article 210-0 A.\n\nJe reste à votre disposition pour examiner le traité d’apport, qualifier précisément la branche et, le cas échéant, comparer les schémas APA + distribution versus scission partielle.",
+  "latence": 82.75,
+  "temperature_zero": true,
+  "jetons_entree": 450,
+  "jetons_sortie": 3877,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

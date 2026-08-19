@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "glm-5.2",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "En l'état du texte applicable, le réinvestissement du produit de la cession dans une société ayant pour objet l'achat, la rénovation et la revente d'immeubles **ne permet pas** de bénéficier du maintien du report d'imposition.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:32+00:00"
+}

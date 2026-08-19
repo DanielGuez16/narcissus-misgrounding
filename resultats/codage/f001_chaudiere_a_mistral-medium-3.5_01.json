@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "mistral-medium-3.5",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "**Transmettre les documents techniques** de la chaudière pour confirmation.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:23+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:25:28+00:00",
+  "reponse": "**Note à l’attention du gérant**\n\n**Objet :** Proposition de rectification – TVA applicable à l’installation d’une chaudière (facture du 15 avril 2025 – 8 500 € HT)\n\nVous m’interrogez sur le bien-fondé du taux de 5,5 % que vous avez appliqué.\n\n### 1. Conditions du taux réduit (art. 278-0 bis A, I du CGI)\n\nLes trois conditions du I sont réunies :\n- locaux achevés depuis plus de deux ans (maison de quinze ans) ;\n- affectation à l’habitation (occupation par le propriétaire) ;\n- prestation portant sur l’installation d’un équipement de chauffage.\n\nLe taux de 5,5 % serait donc en principe applicable.\n\n### 2. Dérogation impérative (art. 278-0 bis A, III bis)\n\nLe III bis écarte expressément le taux réduit et soumet au taux normal de 20 % (art. 278 du CGI) « les prestations de rénovation énergétique comprenant la fourniture ou l’installation d’une chaudière susceptible d’utiliser des combustibles fossiles ».\n\nCette dérogation s’applique dès lors que la chaudière est *susceptible* d’utiliser du gaz, du fioul ou tout autre combustible fossile, indépendamment de son rendement, de son label ou du fait qu’elle puisse aussi fonctionner avec un autre combustible.\n\n### 3. Conséquence pour le chantier litigieux\n\nLe taux de 5,5 % n’était correct **que si** la chaudière installée n’était pas susceptible d’utiliser des combustibles fossiles (chaudière biomasse exclusive, par exemple).\n\nDans le cas contraire (chaudière gaz, fioul ou mixte pouvant brûler un combustible fossile), le taux applicable était de 20 %. L’administration est alors fondée à réclamer le complément de TVA (14,5 % de 8 500 € HT, soit 1 232,50 €, majorations et intérêts éventuels en sus).\n\nJe vous prie de me communiquer sans délai :\n- la marque, le modèle et la notice technique de la chaudière,\n- le devis et la facture détaillée,\n- tout élément permettant d’établir le combustible utilisable.\n\nDès réception, je pourrai vous indiquer si une contestation de la proposition de rectification est opportune ou s’il convient de transiger.\n\nJe reste à votre disposition.",
+  "latence": 33.264,
+  "temperature_zero": true,
+  "jetons_entree": 645,
+  "jetons_sortie": 1534,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

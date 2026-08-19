@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "gpt-5.6-terra",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui**, l’apport de la branche industrielle à une société nouvelle peut relever du régime de faveur des articles 210 A et suivants du CGI",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:19+00:00"
+}

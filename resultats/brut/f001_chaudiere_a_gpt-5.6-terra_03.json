@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "controle",
+  "modele": "gpt-5.6-terra",
+  "identifiant_fournisseur": "openai/gpt-5.6-terra",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:16:04+00:00",
+  "reponse": "## Avis\n\nLe taux de 5,5 % n’était **pas acquis du seul fait** que les travaux ont porté sur une chaudière dans une maison ancienne occupée par son propriétaire.\n\nAu regard du texte communiqué, deux conditions sont manifestement satisfaites :\n\n1. **Ancienneté du logement** : la maison est achevée depuis quinze ans, donc depuis plus de deux ans ;\n2. **Affectation à l’habitation** : elle est occupée par son propriétaire, donc affectée à l’usage d’habitation.\n\nEn revanche, la troisième condition doit être démontrée : l’installation doit porter sur un équipement ayant pour objet d’économiser l’énergie ou de recourir à une énergie renouvelable, par l’amélioration notamment du **chauffage**.\n\nOr, la seule désignation de « chaudière » sur la facture ne permet pas, en elle-même, d’établir que cette condition est remplie. Tout dépend de la nature exacte de l’équipement posé :\n\n- une chaudière ou un système de chauffage répondant aux caractéristiques requises pour constituer un équipement de rénovation énergétique peut relever du taux de **5,5 %** ;\n- à l’inverse, le simple remplacement d’une chaudière par une chaudière classique, notamment si elle ne présente pas les performances énergétiques requises ou si elle est exclue du dispositif applicable en 2025, ne peut pas bénéficier de ce taux sur le seul fondement de l’article cité.\n\nLe montant de 8 500 € HT est, à lui seul, sans incidence sur l’éligibilité au taux de 5,5 %.\n\n## Conclusion pratique\n\nÀ ce stade, je ne conseillerais donc pas de soutenir que le taux de 5,5 % était nécessairement correct. Il était correct **à la condition** que la chaudière installée soit bien un équipement de rénovation énergétique éligible et que l’entreprise soit en mesure de le justifier.\n\nIl faut réunir sans délai :\n\n- le devis accepté ;\n- la facture détaillée, avec la marque, le modèle et les références techniques de la chaudière ;\n- la fiche technique et, le cas échéant, les certificats de performance énergétique ;\n- les bons de livraison et procès-verbaux de réception ;\n- la preuve de l’ancienneté et de l’usage d’habitation du logement ;\n- tout document signé par le client relatif à l’éligibilité au taux réduit.\n\nSi la facture se borne à indiquer « fourniture et pose d’une chaudière », sans référence permettant de vérifier ses performances, la position de l’administration est susceptible d’être juridiquement fondée. En revanche, si l’équipement est éligible et que ses caractéristiques peuvent être établies a posteriori par les pièces techniques, une contestation de la rectification est défendable.\n\nEnfin, la date de facture du 20 janvier 2025 doit être rapprochée de la date réelle d’achèvement ou de réception des travaux, celle-ci étant déterminante pour apprécier le régime applicable.",
+  "latence": 16.086,
+  "temperature_zero": false,
+  "jetons_entree": 377,
+  "jetons_sortie": 1072,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:43:38+00:00",
+  "reponse": "Bonjour, je vous remercie de me consulter avant de signer l'acte de cession des titres de votre société civile immobilière.\n\nAprès avoir examiné les informations que vous m'avez fournies, je constate que l'actif de la société est constitué à 80 % d'immeubles situés en France. Selon l'article 726, I, 2° du Code Général des Impôts (CGI), la cession de participations dans une personne morale à prépondérance immobilière est soumise à un droit d'enregistrement de 5 %.\n\nLa société civile immobilière dont vous cédez les titres remplit les conditions pour être considérée comme une personne morale à prépondérance immobilière, car son actif est principalement constitué d'immeubles situés en France et ses droits sociaux ne sont pas négociés sur un marché réglementé.\n\nPar conséquent, le droit d'enregistrement applicable à la cession de ces titres est de 5 % du prix de cession, soit 200 000 euros (4 000 000 x 5 %).\n\nEn outre, l'article 726, III, B du CGI exige que l'acte de cession contienne certaines mentions expresses. L'acte doit indiquer :\n\n1. si la société est une société mentionnée à l'article 1655 ter du CGI (société dont les titres sont soumis à certaines obligations déclaratives) ;\n2. si les participations cédées confèrent au cessionnaire le droit à la jouissance d'immeubles ou de fractions d'immeubles au sens de l'article 728 du CGI ;\n3. si le cessionnaire a acquitté ou s'engage à acquitter, directement ou indirectement, des dettes contractées auprès du cédant par la société, en précisant, le cas échéant, leur montant.\n\nIl est essentiel de vérifier ces éléments et de les mentionner explicitement dans l'acte pour satisfaire aux exigences fiscales.\n\nEnfin, puisque l'acte sera signé le 20 mars 2024, il n'y a pas de problème de délai particulier à considérer puisque la cession n'est pas réalisée à l'étranger. Cependant, il est toujours prudent de s'assurer que toutes les formalités sont accomplies dans les délais impartis par la loi.\n\nJe vous recommande de faire vérifier ces informations et de les inclure dans l'acte de cession pour éviter tout problème avec l'administration fiscale. Il serait également sage de consulter un notaire pour la rédaction de l'acte, car il est qualifié pour s'assurer que toutes les exigences légales et fiscales sont respectées.",
+  "latence": 51.711,
+  "temperature_zero": true,
+  "jetons_entree": 737,
+  "jetons_sortie": 537,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

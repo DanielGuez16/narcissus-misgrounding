@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 3,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "Merci de me transmettre sous huitaine : le traité d'apport et le PV d'AGE, le protocole de cession et l'acte réitératif, le relevé de compte attestant l'encaissement, la déclaration de revenus de l'année de l'apport et l'état de suivi 2074-I, ainsi que les comptes de la holding.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:54+00:00"
+}

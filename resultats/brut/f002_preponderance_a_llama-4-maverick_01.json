@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_a",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "controle",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:37:20+00:00",
+  "reponse": "Bonjour, je vous remercie de me consulter avant de signer l'acte de cession des titres de votre société civile immobilière.\n\nAprès analyse de la situation, il apparaît que la société dont vous cédez les titres est une personne morale à prépondérance immobilière au sens de l'article 726, I, 2° du Code Général des Impôts (CGI). En effet, l'actif de la société est constitué à 80 % d'immeubles situés en France, ce qui répond à la condition de prépondérance immobilière.\n\nPar conséquent, la cession de ces titres est soumise au droit d'enregistrement prévu par l'article 726, I, 2° du CGI, qui est de 5 % du prix de cession.\n\nLe prix de cession étant de 4 000 000 euros, le droit d'enregistrement dû sera de 5 % x 4 000 000 = 200 000 euros.\n\nEn outre, l'article 726, I, 2° du CGI prévoit que lorsque les cessions de participations dans des personnes morales à prépondérance immobilière sont réalisées à l'étranger, elles doivent être constatées dans le délai d'un mois par un acte reçu en la forme authentique par un notaire exerçant en France. Bien que vous n'ayez pas précisé si la cession est réalisée en France ou à l'étranger, il est prudent de considérer que l'acte doit être signé devant un notaire exerçant en France pour éviter tout risque de régularisation ultérieure.\n\nL'acte de cession doit contenir les informations nécessaires pour permettre l'application du droit d'enregistrement, notamment :\n\n* La désignation des parties (cédant et cessionnaire) ;\n* La désignation de la société dont les titres sont cédés ;\n* Le nombre et la nature des titres cédés ;\n* Le prix de cession ;\n* La mention que la société est une personne morale à prépondérance immobilière.\n\nIl est également recommandé de faire mention dans l'acte de la valeur de l'actif immobilier de la société et de la proportion que cet actif représente par rapport à l'actif total, afin de justifier la qualification de personne morale à prépondérance immobilière.\n\nJe vous conseille de faire appel à un notaire pour la rédaction et la signature de l'acte, afin de vous assurer que toutes les mentions obligatoires sont incluses et que l'acte est conforme aux exigences fiscales.\n\nEn résumé, le droit d'enregistrement dû est de 200 000 euros, et l'acte de cession doit contenir les informations nécessaires pour justifier l'application du droit d'enregistrement de 5 %. Il est recommandé de signer l'acte devant un notaire exerçant en France.",
+  "latence": 56.654,
+  "temperature_zero": true,
+  "jetons_entree": 563,
+  "jetons_sortie": 575,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Non.** Un réinvestissement dans une société d'achat-rénovation-revente d'immeubles ne permet pas, au titre du a) du 2° du I de l'article 150-0 B ter, de maintenir le report d'imposition",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:22+00:00"
+}

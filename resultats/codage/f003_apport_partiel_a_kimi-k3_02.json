@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "kimi-k3",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "L'opération est **éligible au régime de faveur des articles 210 A et suivants**, le dépôt du projet le 10 novembre 2022 la soustrayant à la condition d'attribution des titres aux associés instituée pour les projets déposés à compter du 1er janvier 2023.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:25+00:00"
+}

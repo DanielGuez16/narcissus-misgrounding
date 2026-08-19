@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "glm-5.2",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Sous réserve** du respect des conditions énoncées ci-dessus, l'activité de marchand de biens (achat d'immeubles en vue de leur rénovation et de leur revente) **devrait permettre le maintien du report d'imposition** prévu à l'article 150-0 B ter du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:33+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gpt-5.6-terra",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Non**, le simple fait de financer l’acquisition et la rénovation d’immeubles destinés à être revendus ne permet pas de se placer utilement sous le **a)** : les immeubles de marchand de biens sont des stocks, non des moyens permanents d’exploitation.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:08+00:00"
+}

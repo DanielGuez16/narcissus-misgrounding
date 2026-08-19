@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "glm-5.2",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "4 000 000 € x 5 % = **200 000 euros**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:16+00:00"
+}

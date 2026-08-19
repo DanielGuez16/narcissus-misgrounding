@@ -21,9 +21,9 @@ __pycache__/
 .mypy_cache/
 .ipynb_checkpoints/
 
-# --- Resultats bruts (volumineux, versionnes a la publication) ---
-resultats/brut/*
-!resultats/brut/.gitkeep
+# --- Resultats bruts et codage : VERSIONNES (donnees du banc, publiees) ---
+# resultats/brut/ et resultats/codage/ sont suivis par git, pour qu'un
+# relecteur puisse verifier les chiffres a partir des donnees brutes.
 
 # --- Calibrage apres correction (bruts + lecture, non versionnes) ---
 resultats/calibrage_apres_correction/
@@ -32,9 +32,7 @@ resultats/calibrage_apres_correction_LECTURE.md
 # --- Calibrage avant correction (premier calibrage, non versionne) ---
 resultats/calibrage_avant_correction/
 
-# --- Codage (volumineux, non versionne a ce stade) ---
-resultats/codage/*
-!resultats/codage/.gitkeep
+# --- Calibrages de codage (scratch, non versionnes) ---
 resultats/codage_calibrage/
 resultats/codage_calibrage3/
 resultats/echecs_codage.jsonl

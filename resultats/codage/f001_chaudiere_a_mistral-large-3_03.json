@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "mistral-large-3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "À ce stade, **l’application du taux de 5,5 % semble justifiée** si la chaudière installée est performante (ex. : à condensation ou biomasse).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:21+00:00"
+}

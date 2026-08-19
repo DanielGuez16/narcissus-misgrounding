@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "matiere": "Apport partiel d'actif",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:48:40+00:00",
+  "reponse": "**Oui, sous réserve des conditions du régime (notamment branche complète et engagement de conservation).**\n\nL’opération décrite constitue un apport partiel d’actifs d’une branche complète d’activité au sens de l’article 210-0 A, I, 4° du CGI : la société holding apporte, sans dissolution, une branche (l’activité industrielle) à une société nouvelle, moyennant remise de titres de cette dernière. Elle entre donc dans le champ des opérations éligibles au régime de faveur des articles 210 A et suivants (via l’article 210 B).\n\nLe dépôt du projet au greffe le 10 novembre 2022 correspond aux formalités de publicité applicables aux apports partiels d’actifs (opposition des créanciers, etc.) et n’interdit pas en soi le bénéfice du régime, dès lors que l’opération est réalisée conformément au projet et que les conditions fiscales sont réunies.\n\n**Conditions à vérifier et points d’attention dans le dossier :**\n- L’activité industrielle doit constituer une branche complète et autonome (moyens propres, clientèle, organisation distincte de l’activité de négoce). Une simple participation, même majoritaire, n’y suffit pas toujours si elle ne représente pas une branche autonome.\n- Option expresse pour le régime (dans le traité d’apport ou par acte séparé) et respect des obligations déclaratives.\n- Engagement de conservation des titres reçus pendant trois ans par la société apporteuse (condition classique du régime pour les APA). Toute attribution, distribution ou cession anticipée des titres de la société nouvelle (pour réaliser la séparation des branches familiales) remettrait en cause le régime et ferait tomber l’imposition des plus-values d’apport.\n- Sociétés passibles de l’IS, absence de soulte excessive, etc.\n\nL’objectif de séparation des deux branches familiales n’est pas un obstacle à l’éligibilité de l’apport lui-même, mais il implique d’anticiper les opérations ultérieures (réduction de capital avec attribution des titres, scission, etc.). Celles-ci devront être structurées pour rester compatibles avec l’engagement de conservation ou, à défaut, pour bénéficier d’un autre régime de faveur (scission de branches complètes notamment). À défaut, le coût fiscal de sortie pourrait être significatif.\n\nJe vous propose de revoir le traité d’apport, l’organigramme précis (détention directe ou via filiales), la justification du caractère de branche complète et le calendrier de la séparation familiale afin de sécuriser l’option et d’éviter une remise en cause. Un rescrit peut être envisagé si le caractère de branche soulève un doute.",
+  "latence": 115.792,
+  "temperature_zero": true,
+  "jetons_entree": 450,
+  "jetons_sortie": 4892,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

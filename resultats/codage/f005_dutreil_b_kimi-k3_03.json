@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "kimi-k3",
+  "repetition": 3,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "**En synthèse : non, pas en l'état.** Toutes les conditions d'engagements et de direction sont réunies, mais la société n'exerce pas une activité éligible.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:55+00:00"
+}

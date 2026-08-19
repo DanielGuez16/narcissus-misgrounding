@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "matiere": "Apport partiel d'actif",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:47:40+00:00",
+  "reponse": "**Oui, sous réserve des conditions habituelles du régime (notamment l’engagement de conservation).**\n\nL’opération décrite constitue un apport partiel d’actifs d’une branche complète d’activité au sens de l’article 210-0 A, I, 4° du CGI : la société holding n’est pas dissoute, elle apporte une branche (l’activité industrielle, à qualifier précisément comme autonome), et elle reçoit en rémunération des titres de la société nouvelle.\n\nLe régime de faveur des articles 210 A et 210 B CGI est donc en principe applicable (report d’imposition des plus-values et provisions, etc.), à condition que :\n\n- les deux sociétés soient passibles de l’IS ;\n- la branche industrielle constitue bien une branche complète d’activité (ensemble d’éléments d’actif et de passif susceptibles de fonctionner de façon autonome) ;\n- la société apporteuse prenne l’engagement de conserver pendant trois ans les titres reçus (art. 210 B) ;\n- les formalités soient respectées (le dépôt du projet au greffe le 10 novembre 2022 constitue le point de départ utile).\n\n**Point d’attention majeur au regard de l’objectif de séparation familiale.**  \nL’apport seul laisse la holding propriétaire à la fois de l’activité de négoce et des titres de la nouvelle société industrielle. Il ne sépare pas les branches familiales. Toute attribution ultérieure des titres reçus (distribution, réduction de capital, cession aux associés d’une branche familiale) avant l’expiration du délai de trois ans ferait perdre le bénéfice du régime et déclencherait l’imposition des plus-values en report.\n\nSi la séparation doit intervenir rapidement, une scission (attribution directe des titres des sociétés bénéficiaires aux associés des deux branches familiales) serait plus adaptée et relèverait directement de l’article 210 A sans engagement de conservation à la charge de la société scindée.\n\nJe reste à votre disposition pour qualifier précisément la branche, rédiger l’engagement de conservation ou examiner une scission alternative.",
+  "latence": 88.831,
+  "temperature_zero": true,
+  "jetons_entree": 450,
+  "jetons_sortie": 3972,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

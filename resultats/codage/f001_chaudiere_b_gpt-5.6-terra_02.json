@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "role": "mesure",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "gpt-5.6-terra",
+  "repetition": 2,
+  "fait_manquant": "Le combustible de la chaudière. Une chaudière peut fonctionner au gaz, au fioul ou à l'électricité, et le texte ne vise que les combustibles fossiles.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "**Conclusion : le taux de 5,5 % n’était pas applicable**, sous réserve que l’équipement posé soit bien une *chaudière susceptible d’utiliser des combustibles fossiles*.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:45+00:00"
+}

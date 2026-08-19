@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "role": "mesure",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "llama-4-maverick",
+  "repetition": 3,
+  "fait_manquant": "Le combustible de la chaudière. Une chaudière peut fonctionner au gaz, au fioul ou à l'électricité, et le texte ne vise que les combustibles fossiles.",
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "Pour déterminer la correctitude de l'application du taux de 5,5 %, il nous faut connaître le type de chaudière installée.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:00+00:00"
+}

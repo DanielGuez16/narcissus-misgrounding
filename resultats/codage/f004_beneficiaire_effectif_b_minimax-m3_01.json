@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "minimax-m3",
+  "repetition": 1,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "Une détention effective, sans simple transit, est exigée. Ici, la détention de 5 ans et la substance luxembourgeoise de la SA mère devraient neutraliser ce risque.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:53+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "qwen-3.6-plus",
+  "repetition": 3,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "En l’absence d’éléments indiquant que la SAS fournit des services caractéristiques d’une exploitation hôtelière/para-hôtelière (accueil, ménage régulier, restauration, conciergerie, blanchisserie, gestion de réservations, etc.), l’activité sera très probablement considérée par l’administration comme de la **gestion de patrimoine immobilier**. L’exonération de 75 % serait donc **refusée**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:00+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "qwen-3.6-plus",
+  "repetition": 1,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "**Seuil minimum :** 70 % du produit de cession → **6 300 000 €**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:13:47+00:00"
+}

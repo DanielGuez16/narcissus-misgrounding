@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "matiere": "Apport-cession",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T07:29:57+00:00",
+  "reponse": "**Note de consultation — report d’imposition (CGI, art. 150-0 B ter)**\n\nLa cession intervenue en février 2026, moins de trois ans après l’apport, met fin au report d’imposition **sauf** si la holding prend l’engagement de réinvestir, dans les trois ans de la cession (soit jusqu’en février 2029) et à hauteur d’**au moins 70 %** du produit (soit **6 300 000 €**), dans le financement de moyens permanents d’exploitation affectés à **son** activité éligible.\n\nL’activité doit correspondre à celle visée au 3° du C du I de l’article 199 terdecies-0 A (commerciale, industrielle, artisanale, libérale ou agricole, dans les conditions de ce texte). Sont expressément exclues les activités de gestion de son propre patrimoine immobilier. Un simple placement de trésorerie, l’acquisition d’immeubles de rapport ou le maintien d’une activité purement patrimoniale/holding ne suffit pas.\n\n**Conséquences pratiques immédiates**\n- La holding doit formaliser l’engagement (déclaration de l’année de cession et suivi ultérieur). À défaut, ou si le réinvestissement n’est pas réalisé dans les conditions et délais, le report tombe : la plus-value d’apport redevient imposable entre vos mains (avec les conséquences en droits et, le cas échéant, intérêts de retard).\n- Les 30 % restants (2 700 000 €) peuvent être utilisés plus librement (distribution, autre emploi). Une distribution générera toutefois une imposition à l’IR/PS entre vos mains.\n- Les « moyens permanents d’exploitation » s’entendent principalement d’immobilisations affectées durablement à l’activité opérationnelle de la holding elle-même (fonds, matériel, locaux d’exploitation, etc.). L’acquisition de titres d’une autre société n’entre pas dans le a) du texte que vous m’avez soumis.\n\n**Recommandations**\n1. Qualifiez dès maintenant l’activité que la holding exercera effectivement (création, acquisition d’un fonds, développement d’une activité opérationnelle). Sans activité éligible propre, le réinvestissement au titre du a) est inopérant.\n2. Identifiez et documentez les investissements éligibles avant toute immobilisation des fonds. Conservez la traçabilité du produit de cession.\n3. Ne procédez à aucune distribution ou emploi non conforme des 70 % avant validation de l’éligibilité.\n4. Anticipez le suivi déclaratif et la justification à l’administration (engagement, réalisation, affectation, conservation).\n\nJe vous propose un rendez-vous rapide pour examiner les projets d’investissement envisagés, vérifier leur éligibilité au regard du texte et de la doctrine, et préparer l’engagement ainsi que le calendrier. Transmettez-moi les éléments de la cession (acte, valorisation, déclaration d’apport initiale) et tout projet déjà identifié.\n\nRestant à votre disposition.",
+  "latence": 49.7,
+  "temperature_zero": true,
+  "jetons_entree": 595,
+  "jetons_sortie": 2375,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:17:26+00:00",
+  "reponse": "**Le taux de 5,5 % était correct au regard du texte que vous m’avez communiqué.**\n\nLes trois conditions de l’article 278-0 bis A, I du CGI sont réunies :\n\n- locaux achevés depuis plus de deux ans (maison de quinze ans) ;\n- locaux affectés à l’habitation (occupés par le propriétaire) ;\n- prestation d’installation d’un équipement ayant pour objet d’améliorer le chauffage (chaudière).\n\nL’opération entre donc dans le champ des prestations de rénovation énergétique relevant du taux réduit.\n\nJe vous confirme que nous pouvons utilement contester la proposition de rectification sur ce fondement. Transmettez-moi dès que possible la proposition elle-même, la facture du 20 janvier 2025 et tout document technique relatif à la chaudière (type, performance) afin que je prépare les observations.",
+  "latence": 49.904,
+  "temperature_zero": true,
+  "jetons_entree": 588,
+  "jetons_sortie": 2119,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

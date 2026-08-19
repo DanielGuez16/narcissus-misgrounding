@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:40:21+00:00",
+  "reponse": "**Consultation – Cession de titres de SCI à prépondérance immobilière**\n\nCher Client,\n\nVous nous consultez préalablement à la signature, prévue le 20 mars 2024, de l’acte de cession des titres d’une SCI dont l’actif est constitué à 80 % d’immeubles situés en France, pour un prix de 4 000 000 €.\n\n**1. Droit d’enregistrement dû**\n\nLa SCI constitue une personne morale à prépondérance immobilière au sens de l’article 726, I, 2° du CGI : ses droits sociaux ne sont pas négociés sur un marché réglementé ou un système multilatéral de négociation et son actif est principalement constitué d’immeubles situés en France.\n\nLa cession est donc soumise au droit d’enregistrement de 5 % prévu par ce texte (aucune des exclusions prévues – organismes HLM, certaines sociétés foncières ou SEM de logements sociaux – n’étant applicable).\n\nLe droit est liquidé sur le prix convenu (4 000 000 €), soit **200 000 €**. Il est dû par l’acquéreur. L’acte devra mentionner le paiement ou l’engagement de paiement.\n\nSi la cession était réalisée à l’étranger, elle devrait en outre être constatée dans le délai d’un mois par acte authentique reçu par un notaire exerçant en France (art. 726, III-A).\n\n**2. Mentions obligatoires dans l’acte**\n\nConformément à l’article 726, III-B du CGI, l’acte (ou la déclaration) doit indiquer expressément :\n\n- si la SCI est une société mentionnée à l’article 1655 ter du CGI ;\n- si les participations cédées confèrent au cessionnaire, directement ou indirectement, le droit à la jouissance d’immeubles ou de fractions d’immeubles au sens de l’article 728 du CGI ;\n- si le cessionnaire a acquitté ou s’engage à acquitter, directement ou indirectement, des dettes contractées auprès du cédant par la SCI, en précisant le cas échéant leur montant.\n\nCes mentions sont impératives. Nous vous recommandons de les faire figurer de manière claire et distincte dans l’acte, après vérification des faits auprès de la société et des parties.\n\nNous restons à votre disposition pour relire le projet d’acte et vous assister lors de la formalisation.\n\nBien cordialement,  \n[Votre cabinet]",
+  "latence": 34.429,
+  "temperature_zero": true,
+  "jetons_entree": 933,
+  "jetons_sortie": 1543,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

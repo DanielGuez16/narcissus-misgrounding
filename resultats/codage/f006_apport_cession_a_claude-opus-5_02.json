@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Réponse synthétique à votre question :** oui, un remploi dans une activité d'achat-rénovation-revente d'immeubles est éligible, **mais seulement s'il prend la forme d'une souscription au capital (ou d'une prise de contrôle) d'une société exerçant réellement cette activité au sens de l'article 35 du CGI**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:05+00:00"
+}

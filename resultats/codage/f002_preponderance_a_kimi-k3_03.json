@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "kimi-k3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Calcul.** 5 % × 4 000 000 € = **200 000 €**, dus dès le premier euro — sans abattement ni seuil, contrairement aux cessions de parts de SARL « ordinaires » (3 %) ou de fonds de commerce.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:15+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "kimi-k3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Réponse courte :** Oui, en principe. L'opération répond à la définition de l'apport partiel d'actif du 4° du I de l'article 210-0 A, et la date de dépôt du projet (10 novembre 2022) la place sous l'empire du texte que vous citez.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:27+00:00"
+}

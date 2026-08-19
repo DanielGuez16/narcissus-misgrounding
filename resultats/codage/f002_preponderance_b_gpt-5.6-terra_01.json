@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_b",
+  "role": "mesure",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "gpt-5.6-terra",
+  "repetition": 1,
+  "fait_manquant": "Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Pour une cession signée le 20 mars 2024, le droit à prévoir est de **200 000 €**, sur l’hypothèse d’un prix taxable de 4 000 000 € sans charges additionnelles ni survaleur.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:36+00:00"
+}

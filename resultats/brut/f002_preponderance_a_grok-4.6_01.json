@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_a",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:33:29+00:00",
+  "reponse": "**Consultation – Droits d’enregistrement sur cession de titres de SCI à prépondérance immobilière**\n\nLa SCI dont les titres sont cédés a un actif constitué à 80 % d’immeubles situés en France. Ses droits sociaux ne sont pas négociés sur un marché réglementé ou un système multilatéral de négociation. Elle constitue donc une personne morale à prépondérance immobilière au sens de l’article 726, I, 2° du CGI.\n\nLa cession est en conséquence soumise au droit d’enregistrement au taux de 5 %.  \nSur le prix convenu de 4 000 000 €, le droit s’élève à **200 000 €**.\n\nSi la cession est réalisée à l’étranger, elle doit être constatée dans le délai d’un mois par un acte reçu en la forme authentique par un notaire exerçant en France.\n\nJe reste à votre disposition pour la rédaction ou la relecture de l’acte et le suivi de l’enregistrement.",
+  "latence": 36.404,
+  "temperature_zero": true,
+  "jetons_entree": 760,
+  "jetons_sortie": 1836,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

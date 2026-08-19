@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gpt-5.6-sol",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, l’activité d’achat d’immeubles en vue de leur rénovation et de leur revente peut constituer une activité éligible**, car il s’agit en principe d’une activité de **marchand de biens**, commerciale au sens de l’article 35 du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:05+00:00"
+}

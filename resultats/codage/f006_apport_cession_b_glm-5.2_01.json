@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "glm-5.2",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "En l'état actuel des textes, le réinvestissement du produit de la cession dans une activité d'achat, rénovation et revente d'immobilier, que ce soit directement par votre holding ou par le biais d'une autre société, **ne permet pas de maintenir le report d'imposition**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:31+00:00"
+}

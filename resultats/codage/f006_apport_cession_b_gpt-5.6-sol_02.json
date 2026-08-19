@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gpt-5.6-sol",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**non**, si le remploi consiste directement à financer l’achat des immeubles destinés à être rénovés puis revendus, car ces immeubles sont normalement des stocks et non des « moyens permanents d’exploitation » au sens du a) cité ;",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:23+00:00"
+}

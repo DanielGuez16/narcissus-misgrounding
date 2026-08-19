@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_a",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "controle",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:31:34+00:00",
+  "reponse": "## 1. Droit d’enregistrement\n\nLa SCI constitue une **personne morale à prépondérance immobilière** au sens de l’article 726, I, 2° du CGI dès lors que :\n\n- ses titres ne sont pas négociés sur un marché réglementé ou un système multilatéral de négociation ;\n- son actif est principalement constitué d’immeubles situés en France — le seuil de prépondérance, supérieur à 50 %, est ici atteint avec **80 %** ;\n- elle ne relève pas de l’une des exclusions prévues par le texte.\n\nLa cession est donc soumise au taux de **5 %**.\n\nSous réserve que le prix de 4 000 000 € corresponde à la valeur réelle des titres, et en l’absence de charges venant s’ajouter au prix :\n\n> **Droit d’enregistrement : 4 000 000 € × 5 % = 200 000 €.**\n\nSi la valeur vénale réelle des titres est supérieure au prix stipulé, ou si l’acquéreur assume des charges augmentatives du prix, l’administration peut retenir cette assiette supérieure conformément aux règles générales d’assiette de l’article 726.\n\n## 2. Contenu de l’acte au 20 septembre 2023\n\nÀ cette date, le texte reproduit **n’impose pas encore que l’acte mentionne expressément** que la société dont les titres sont cédés est à prépondérance immobilière. Il ne faut donc pas appliquer rétroactivement l’obligation expresse introduite ultérieurement.\n\nToutefois, pour assurer correctement la liquidation et l’enregistrement, je recommande que l’acte contienne notamment :\n\n- l’identification complète du cédant, du cessionnaire et de la SCI ;\n- la désignation et le nombre des titres cédés ;\n- le prix et ses modalités de paiement ;\n- l’indication des éventuelles charges supportées par l’acquéreur ;\n- une déclaration selon laquelle les titres ne sont pas négociés sur un marché réglementé ou un système multilatéral de négociation ;\n- la composition et la valeur de l’actif permettant d’établir que la SCI est à prépondérance immobilière ;\n- en conséquence, la soumission de la cession au droit de 5 % prévu par l’article 726, I, 2° du CGI.\n\nCette dernière mention n’est pas, au 20 septembre 2023, une condition formelle expressément imposée par l’article 726, mais elle est fortement recommandée pour sécuriser la qualification fiscale.\n\nEnfin, **si la cession est réalisée à l’étranger**, elle doit être constatée, dans le délai d’un mois, par un **acte authentique reçu par un notaire exerçant en France**.\n\n### Conclusion\n\n- **Droit dû : 200 000 €**, sous réserve d’une valeur réelle ou de charges supérieures.\n- **Pas d’obligation légale, au 20 septembre 2023, de faire figurer une mention expresse de la prépondérance immobilière**, mais cette mention doit en pratique être insérée.\n- Si l’acte est conclu à l’étranger : reprise dans le mois par acte authentique devant un notaire français.",
+  "latence": 51.312,
+  "temperature_zero": false,
+  "jetons_entree": 561,
+  "jetons_sortie": 2230,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "deepseek-v4-pro",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Sous réserve que la branche industrielle constitue bien une branche complète d’activité autonome et que l’option soit valablement exercée dans l’acte d’apport, votre projet peut bénéficier du régime de faveur des articles 210 A et suivants du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:29+00:00"
+}

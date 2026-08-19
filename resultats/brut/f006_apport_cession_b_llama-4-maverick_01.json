@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 1,
+  "horodatage": "2026-08-19T07:25:21+00:00",
+  "reponse": "Bonjour, je vous remercie de me consulter sur cette affaire. Pour déterminer si le remploi envisagé par votre holding permet de maintenir le report d'imposition après la cession des titres de la société d'exploitation, il convient d'analyser ensemble les dispositions de l'article 150-0 B ter du Code Général des Impôts (CGI) et les conditions spécifiques de votre situation.\n\nVous avez indiqué que votre holding a vendu les titres d'une société d'exploitation le 10 mars 2026, moins de trois ans après que vous les lui ayez apportés, et a encaissé 9 000 000 euros. L'article 150-0 B ter, I, 2° du CGI prévoit que le report d'imposition est maintenu malgré la cession des titres par la société bénéficiaire de l'apport (votre holding en l'occurrence) si elle prend l'engagement d'investir le produit de la cession dans un délai de trois ans à compter de la date de la cession et à hauteur d'au moins 70 % du montant de ce produit.\n\nLe montant minimum à réinvestir serait donc de 70 % de 9 000 000 euros, soit 6 300 000 euros.\n\nL'article précise que cet investissement doit être fait dans le financement de moyens permanents d'exploitation affectés à son activité. Il est également spécifié que les activités de gestion de son propre patrimoine immobilier sont exclues du bénéfice de cette dérogation.\n\nVous envisagez de réinvestir dans une société qui achète des immeubles pour les rénover et les revendre. Cette activité semble être distincte de la simple gestion de patrimoine immobilier, car elle implique une activité de rénovation et de revente, ce qui peut être considéré comme une activité d'entreprise.\n\nCependant, pour confirmer si cette activité est éligible au remploi, il est crucial de vérifier si elle correspond à une activité définie au 3° du C du I de l'article 199 terdecies-0 A du CGI, qui concerne les activités éligibles pour le report d'imposition.\n\nSous réserve de vérifier les détails de l'activité de la société dans laquelle vous envisagez de réinvestir et de confirmer que cette activité est bien éligible selon les critères de l'article 199 terdecies-0 A, il semblerait que le remploi envisagé pourrait permettre de maintenir le report d'imposition si les autres conditions (réinvestissement d'au moins 70 % du produit de la cession dans les trois ans) sont respectées.\n\nJe vous recommande de vérifier les statuts et l'activité précise de la société cible pour confirmer son éligibilité. Il serait également prudent de prendre des engagements écrits concernant le réinvestissement du produit de la cession et de documenter soigneusement les démarches entreprises pour satisfaire aux conditions de l'article 150-0 B ter.\n\nJe suis à votre disposition pour discuter plus en détail des prochaines étapes et pour vous aider à préparer les documents nécessaires pour confirmer la position fiscale de votre holding.",
+  "latence": 74.174,
+  "temperature_zero": true,
+  "jetons_entree": 397,
+  "jetons_sortie": 634,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

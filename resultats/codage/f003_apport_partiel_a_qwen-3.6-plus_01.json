@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "qwen-3.6-plus",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**En l’état, le projet est éligible au régime de faveur des articles 210 A et suivants du CGI**, sous réserve de démontrer l’autonomie réelle de la branche industrielle et de respecter strictement les conditions formelles et l’engagement de conservation des titres.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:28+00:00"
+}

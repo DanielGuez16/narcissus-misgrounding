@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "deepseek-v4-pro",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Sous réserve de la qualification effective de l’activité de la SAS comme une activité commerciale opérationnelle (et non une simple gestion passive), les conditions de l’exonération partielle de 75 % prévue à l’article 787 B du CGI sont réunies pour la donation projetée du 5 octobre 2023.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:18+00:00"
+}

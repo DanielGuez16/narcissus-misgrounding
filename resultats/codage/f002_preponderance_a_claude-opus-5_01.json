@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "En l'état, réponse synthétique : droit proportionnel de 5 % (art. 726, I, 2° CGI), soit 200 000 € si l'assiette se confond avec le prix, montant susceptible d'être supérieur en application des règles d'assiette propres aux personnes morales à prépondérance immobilière ; enregistrement dans le mois, au plus tard le 20 octobre 2023 ; acte authentique français obligatoire dans le mois si la signature intervient à l'étranger.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:04+00:00"
+}

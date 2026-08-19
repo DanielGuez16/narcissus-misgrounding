@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:25:29+00:00",
+  "reponse": "**Non, le taux de 5,5 % n’était pas applicable.**\n\nLes conditions du I de l’article 278-0 bis A du CGI sont remplies (locaux achevés depuis plus de deux ans, affectés à l’habitation, prestation portant sur l’installation d’un équipement de chauffage). Toutefois, le III bis déroge expressément à ce régime : les prestations de rénovation énergétique qui comprennent la fourniture ou l’installation d’une chaudière susceptible d’utiliser des combustibles fossiles relèvent du taux normal de l’article 278 (20 %).\n\nSauf si l’équipement installé le 15 avril 2025 n’est pas susceptible d’utiliser des combustibles fossiles (hypothèse à vérifier sur les caractéristiques techniques exactes de la chaudière), le taux de 20 % s’imposait. La proposition de rectification apparaît donc fondée sur ce point.\n\nJe reste à votre disposition pour examiner le descriptif technique de l’appareil et, le cas échéant, les éventuelles voies de contestation ou de régularisation.",
+  "latence": 46.151,
+  "temperature_zero": true,
+  "jetons_entree": 645,
+  "jetons_sortie": 2049,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

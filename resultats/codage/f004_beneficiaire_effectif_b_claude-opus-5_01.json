@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "**Quelle est la destination des 20 M€ ?** Conservation en trésorerie, réinvestissement, remboursement d'une dette intragroupe, ou **redistribution/prêt ascendant à bref délai** ?",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:25+00:00"
+}

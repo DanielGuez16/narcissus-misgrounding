@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "glm-5.2",
+  "repetition": 2,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**En conclusion, la distribution de 20 000 000 euros prévue le 15 juin 2025 ne devrait pas être soumise à la retenue à la source française de 25 %, sous réserve de respecter les formalités déclaratives.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:58+00:00"
+}

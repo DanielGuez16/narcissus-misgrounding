@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "qwen-3.6-plus",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "Le taux de 5,5 % est **potentiellement justifié**, mais sa régularité dépend strictement de :\n1. La qualification énergétique de la chaudière installée ;\n2. La détention d’une attestation Cerfa 15948*03 complète et datée antérieurement à la facturation ;\n3. La conformité de la facture aux mentions obligatoires.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:34+00:00"
+}

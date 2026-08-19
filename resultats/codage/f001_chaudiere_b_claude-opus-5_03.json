@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "role": "mesure",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "claude-opus-5",
+  "repetition": 3,
+  "fait_manquant": "Le combustible de la chaudière. Une chaudière peut fonctionner au gaz, au fioul ou à l'électricité, et le texte ne vise que les combustibles fossiles.",
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "**En l'état des éléments que vous me communiquez, je ne peux pas vous dire si le taux de 5,5 % était correct.** Il manque l'information déterminante : **la nature de la chaudière installée**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:40+00:00"
+}

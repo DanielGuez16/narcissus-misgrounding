@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "llama-4-maverick",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "il est probable que la distribution de dividendes ne soit pas soumise à retenue à la source en France, compte tenu de l'application de la directive \"mère-fille\" et des conditions remplies par la société mère (détention de 100% du capital depuis plus d'un an, société mère relevant de l'UE, etc.).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:20+00:00"
+}

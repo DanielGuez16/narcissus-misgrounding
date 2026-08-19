@@ -1,0 +1,17 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T06:25:58+00:00",
+  "reponse": "**Non, aucune retenue à la source n’est due (sous réserve du respect des conditions de l’article 119 ter du CGI et de l’absence d’abus).**\n\nLes dividendes versés par une société française à un non-résident relèvent en principe de la retenue à la source de l’article 119 bis, 2 du CGI (taux de l’article 187). Cette règle générale ne s’applique toutefois pas lorsque les conditions de l’exonération « mères-filiales » de l’article 119 ter sont réunies.\n\nEn l’espèce, la société luxembourgeoise :\n- est une SA (forme figurant à l’annexe de la directive 2011/96/UE),\n- est soumise à l’impôt sur les sociétés luxembourgeois sans option ni exonération,\n- détient 100 % du capital depuis cinq ans (seuil de 10 % et durée de détention de deux ans largement dépassés),\n- est établie dans un État membre de l’UE.\n\nL’exonération s’applique donc de plein droit, à condition que la société luxembourgeoise soit le bénéficiaire effectif et que la distribution ne constitue pas un montage dont l’un des objets principaux est d’obtenir l’avantage fiscal (article 119 ter, 3). La détention de cinq ans et le contexte d’une cession d’actif rendent un tel grief peu vraisemblable, mais une analyse circonstanciée reste nécessaire.\n\nLe traité franco-luxembourgeois n’a pas à être invoqué (il prévoit au mieux un taux réduit, moins favorable que l’exonération directive).\n\n**Points de vigilance et diligences à accomplir avant le 15 juin 2025**\n- Obtenir de la mère luxembourgeoise : certificat de résidence, attestation de soumission à l’IS luxembourgeois, confirmation de la qualité de bénéficiaire effectif et, le cas échéant, engagement de conservation des titres.\n- Vérifier l’absence de clause de sauvegarde ou de dispositif hybride (ATAD) susceptible de remettre en cause l’exonération.\n- Préparer le dossier justificatif (statuts, extraits Kbis/équivalent, historique de détention) à conserver en cas de contrôle.\n- Si les pièces sont réunies en temps utile, la société distributrice peut s’abstenir de prélever la retenue (imprimé 2777-D et déclaration correspondante). À défaut, la retenue devrait être prélevée puis restituée sur réclamation.\n\nJe reste à votre disposition pour rédiger les attestations types, analyser le risque d’abus au regard des faits précis de la cession d’actif, ou sécuriser le calendrier de mise en paiement.",
+  "latence": 72.718,
+  "temperature_zero": true,
+  "jetons_entree": 512,
+  "jetons_sortie": 2377,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

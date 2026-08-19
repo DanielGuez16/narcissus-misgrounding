@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "kimi-k3",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "**Questions à trancher immédiatement :** quelle est la nature des conventions d'occupation (baux meublés classiques ? baux mobilité ? location saisonnière ?) ; quelles prestations sont réellement fournies ; la société emploie-t-elle du personnel",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:16+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "matiere": "Apport-cession",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 2,
+  "horodatage": "2026-08-19T07:36:31+00:00",
+  "reponse": "Bonjour, merci de me consulter sur cette affaire.\n\nAnalysons ensemble la situation : votre holding a vendu les titres d'une société d'exploitation que vous lui aviez apportés il y a moins de trois ans, et elle a reçu 9 000 000 euros en contrepartie. Le problème est que la cession de ces titres par la holding intervient dans le délai de trois ans à compter de leur apport, ce qui pourrait mettre fin au report d'imposition dont vous bénéficiez.\n\nCependant, l'article 150-0 B ter, I, 2° du CGI prévoit une dérogation à cette règle si la société bénéficiaire de l'apport (votre holding) cède les titres dans le délai de trois ans et s'engage à investir le produit de leur cession dans des moyens permanents d'exploitation affectés à son activité, et ce, à hauteur d'au moins 70 % du montant de ce produit, dans un délai de trois ans à compter de la date de la cession.\n\nPour conserver le bénéfice du report d'imposition, je vous conseille de faire en sorte que votre holding investisse au moins 70 % de 9 000 000 euros, soit 6 300 000 euros, dans des moyens permanents d'exploitation affectés à son activité, et ce, dans un délai de trois ans à compter de la date de la cession, qui a eu lieu en février 2026.\n\nConcrètement, cela signifie que votre holding doit prendre l'engagement d'investir 6 300 000 euros dans des actifs éligibles d'ici février 2029. Les investissements éligibles pourraient inclure, par exemple, des immobilisations corporelles ou incorporelles nécessaires à l'activité de la holding, ou des participations dans des sociétés opérationnelles.\n\nIl est essentiel de bien documenter cet engagement et de s'assurer que les investissements réalisés répondent aux conditions posées par l'article 150-0 B ter, I, 2° du CGI. Je vous recommande de tenir un registre détaillé des investissements prévus et réalisés, ainsi que des justificatifs associés.\n\nJe serais ravi de vous aider à élaborer une stratégie d'investissement qui répond à ces exigences et à vous assister dans la mise en œuvre de cette stratégie. Nous pourrons également examiner ensemble les différentes options d'investissement qui s'offrent à votre holding et évaluer leur éligibilité au regard des dispositions fiscales applicables.\n\nN'hésitez pas à me poser d'autres questions ou à me fournir davantage d'informations sur votre situation pour que je puisse vous apporter des conseils plus précis.",
+  "latence": 64.274,
+  "temperature_zero": true,
+  "jetons_entree": 400,
+  "jetons_sortie": 540,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

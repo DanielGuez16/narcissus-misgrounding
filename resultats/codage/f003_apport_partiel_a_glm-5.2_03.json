@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "glm-5.2",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Je vous confirme que l'opération projetée **peut effectivement bénéficier du régime de faveur de l'article 210 A du CGI**, sous réserve du respect strict de plusieurs conditions de fond et de forme.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:27+00:00"
+}

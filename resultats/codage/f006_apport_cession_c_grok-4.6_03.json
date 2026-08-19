@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "grok-4.6",
+  "repetition": 3,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "L’exception prévue au 2° du I de l’article 150-0 B ter s’applique si la holding prend l’engagement de réinvestir, dans les trois ans de la cession (soit au plus tard en février 2029) et à hauteur d’au moins 70 % du produit (soit 6 300 000 €), dans le financement de moyens permanents d’exploitation affectés à une activité éligible de la holding elle-même.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:13:06+00:00"
+}

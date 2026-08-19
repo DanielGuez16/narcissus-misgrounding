@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 3,
+  "horodatage": "2026-08-19T07:24:44+00:00",
+  "reponse": "Bonjour, merci de me consulter sur ce dossier.\n\nAnalysons ensemble la situation : votre holding a vendu les titres d'une société d'exploitation le 10 mars 2026, soit moins de trois ans après que vous les lui avez apportés. Le prix de cession s'élève à 9 000 000 euros.\n\nVous souhaitez savoir si le remploi dans une société qui achète des immeubles pour les rénover et les revendre permet de maintenir le report d'imposition.\n\nSelon l'article 150-0 B ter, I, 2° du CGI, le report d'imposition est remis en cause si la cession des titres intervient dans un délai de trois ans à compter de l'apport. Cependant, il existe une dérogation si la société bénéficiaire de l'apport (votre holding) cède les titres dans ce délai de trois ans et s'engage à investir le produit de la cession dans un délai de trois ans à compter de la date de la cession et à hauteur d'au moins 70 % du montant de ce produit.\n\nPour que cette dérogation s'applique, il faut que l'investissement soit effectué dans le financement de moyens permanents d'exploitation affectés à une activité éligible. Or, l'activité de gestion de son propre patrimoine immobilier est exclue du bénéfice de cette dérogation.\n\nLa question est donc de savoir si l'activité de la société dans laquelle vous envisagez de réinvestir est éligible. Si cette société achète des immeubles pour les rénover et les revendre, il s'agit d'une activité de marchand de biens, qui n'est pas considérée comme une gestion de son propre patrimoine immobilier au sens de l'article 150-0 B ter.\n\nPar conséquent, si votre holding s'engage à investir au moins 70 % du produit de la cession, soit 6 300 000 euros (9 000 000 x 70 %), dans le financement de moyens permanents d'exploitation de cette société, et que cela est fait dans un délai de trois ans à compter de la date de la cession (soit avant le 10 mars 2029), le report d'imposition devrait être maintenu.\n\nCependant, il est essentiel de vérifier que les conditions de l'article 150-0 B ter sont scrupuleusement respectées et que les activités de la société dans laquelle vous allez réinvestir sont bien éligibles. Je vous recommande de préparer un dossier solide pour justifier de l'éligibilité de l'activité et de l'engagement de votre holding à investir le produit de la cession.\n\nIl serait également prudent de prendre l'avis de l'administration fiscale sur cette opération, via une demande de rescrit, pour obtenir une confirmation écrite de la position de l'administration sur ce dossier.\n\nQu'en pensez-vous ? Souhaitez-vous que nous préparions ce dossier ensemble ?",
+  "latence": 7.145,
+  "temperature_zero": true,
+  "jetons_entree": 397,
+  "jetons_sortie": 600,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "Parasail",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "role": "mesure",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "glm-5.2",
+  "repetition": 2,
+  "fait_manquant": "Le combustible de la chaudière. Une chaudière peut fonctionner au gaz, au fioul ou à l'électricité, et le texte ne vise que les combustibles fossiles.",
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "Je vous invite à me transmettre en retour la nature exacte de la chaudière installée (et idéalement sa référence technique) afin que je puisse finaliser la réponse à l'administration fiscale dans les délais impartis.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:57+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "gpt-5.6-sol",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**La société française peut verser les 20 000 000 € sans retenue à la source le 15 novembre 2024**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:03+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T06:15:38+00:00",
+  "reponse": "**Non, aucune retenue à la source n’est due** (sous réserve de l’absence de montage abusif).\n\nLes dividendes versés par une société française à des non-résidents sont en principe soumis à retenue à la source (CGI, art. 119 bis, 2, au taux de l’article 187). Cette retenue est toutefois écartée par l’exonération de l’article 119 ter du CGI, qui transpose la directive mère-fille.\n\nLes conditions de l’article 119 ter sont réunies :\n- la bénéficiaire a son siège dans un État membre de l’UE (Luxembourg) ;\n- elle y est assujettie à l’impôt sur les sociétés sans option ni exonération ;\n- elle détient 100 % du capital de la filiale française de manière ininterrompue depuis cinq ans (seuil et durée largement supérieurs aux 10 % / deux ans exigés) ;\n- la distribution intervient le 15 novembre 2024, date à laquelle le régime est applicable.\n\nLa société luxembourgeoise revêtant la forme d’une SA et étant effectivement soumise à l’IS luxembourgeois, elle entre dans le champ de l’exonération. Le traité franco-luxembourgeois n’a pas à être invoqué (la directive prévaut et aboutit à un taux zéro).\n\n**Points de vigilance à documenter dans le dossier**\n- Qualité de bénéficiaire effectif et absence d’arrangement non authentique (CGI, art. 119 ter, III, et clause anti-abus générale). Les faits communiqués (détention historique de 100 %, forme sociétaire classique, assujettissement réel) ne révèlent aucun indice d’abus.\n- Formalités : obtenir et conserver l’attestation de la société mère (résidence, assujettissement, pourcentage et durée de détention) avant la mise en paiement. En l’absence de cette attestation, l’établissement payeur devrait en principe prélever la retenue (récupérable ensuite).\n\nSous ces réserves, la distribution de 20 M€ peut être effectuée sans retenue à la source.\n\nJe reste à votre disposition pour rédiger l’attestation-type, vérifier les statuts et la situation fiscale luxembourgeoise, ou préparer le dossier en cas de contrôle.",
+  "latence": 42.769,
+  "temperature_zero": true,
+  "jetons_entree": 512,
+  "jetons_sortie": 1859,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

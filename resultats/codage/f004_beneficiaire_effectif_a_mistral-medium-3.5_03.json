@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "mistral-medium-3.5",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Non, aucune retenue à la source n’est due** sur cette distribution, sous réserve du respect des conditions de la convention franco-luxembourgeoise (détention ≥ 10 % depuis ≥ 1 an, résidence fiscale luxembourgeoise).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:12+00:00"
+}

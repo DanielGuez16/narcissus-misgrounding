@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "gemini-3.1-pro",
+  "repetition": 1,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "L'activité de votre SAS consiste à détenir et exploiter son propre parc immobilier (40 appartements). Au sens de l'administration fiscale et de la loi applicable aux droits de mutation, il s'agit d'une activité à prépondérance civile (gestion de son propre patrimoine immobilier), et non d'une activité opérationnelle éligible.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:38+00:00"
+}

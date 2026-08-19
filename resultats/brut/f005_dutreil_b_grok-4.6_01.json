@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T06:51:53+00:00",
+  "reponse": "**Non. L’exonération partielle de l’article 787 B du CGI n’est pas applicable.**\n\nLa société dont les titres sont transmis a pour activité exclusive la détention et la location de quarante appartements meublés. Aux termes mêmes du deuxième alinéa de l’article 787 B (dans sa rédaction applicable au 25 octobre 2023), « n’est pas considérée comme une activité industrielle, commerciale, artisanale, agricole ou libérale l’exercice par une société d’une activité de gestion de son propre patrimoine mobilier ou immobilier ».\n\nCette exclusion légale s’applique indépendamment de la qualification fiscale des revenus (BIC) que peut revêtir la location meublée au regard des articles 34 et 35. La société n’exerce pas une activité d’animation de groupe au sens du troisième alinéa. Les conditions formelles du pacte (engagement collectif du 3 mars 2021 portant sur la totalité des droits, engagements individuels des donataires, conservation de la présidence pendant trois ans) sont donc indifférentes : le seuil d’éligibilité tenant à la nature de l’activité n’est pas franchi.\n\nLa donation en pleine propriété des titres, d’une valeur de 20 M€, sera donc soumise aux droits de mutation à titre gratuit dans les conditions de droit commun (après abattements éventuels de l’article 779), sans application du régime de faveur.\n\nJe reste à votre disposition pour chiffrer les droits et examiner d’éventuelles autres voies (donation-partage avec soulte, apport-cession, etc.).",
+  "latence": 46.515,
+  "temperature_zero": true,
+  "jetons_entree": 728,
+  "jetons_sortie": 1989,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

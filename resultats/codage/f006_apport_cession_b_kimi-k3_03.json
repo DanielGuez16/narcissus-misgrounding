@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "kimi-k3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Conclusion : le remploi dans une société d'achat-rénovation-revente d'immeubles n'est pas exclu par le texte — c'est une activité commerciale et non une gestion patrimoniale immobilière. Le report peut donc être maintenu, à condition d'investir au moins 6,3 M€ en titres de participation via la holding avant le 10 mars 2029, dans le respect strict des conditions ci-dessus.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:31+00:00"
+}

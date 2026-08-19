@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:17:08+00:00",
+  "reponse": "**Note de consultation**\n\nDossier : proposition de rectification – TVA sur travaux de rénovation énergétique  \nChantier facturé le 20 janvier 2025 – 8 500 € HT\n\nAprès examen des faits que vous m’avez exposés et du texte applicable à la date des travaux (CGI, art. 278-0 bis A, I), le taux de 5,5 % appliqué sur cette facture apparaît conforme.\n\nLes trois conditions posées par le I de l’article 278-0 bis A sont réunies :\n\n1. Les locaux étaient achevés depuis plus de deux ans (maison de quinze ans).  \n2. Ils étaient affectés à un usage d’habitation et le restent à l’issue des travaux (occupation par le propriétaire).  \n3. La prestation consiste en la pose/installation d’un équipement ayant pour objet d’améliorer le chauffage (chaudière). Cette opération entre dans le champ du b) du 3° (« amélioration du chauffage et de la ventilation »).\n\nLe texte ne subordonne pas l’application du taux réduit à d’autres critères de performance ou à une liste limitative d’appareils. Dès lors que l’équipement concourt à l’amélioration du système de chauffage dans un local d’habitation achevé depuis plus de deux ans, le taux de 5,5 % s’applique.\n\nLa proposition de rectification qui substitue le taux de 20 % n’est donc pas fondée sur le texte en vigueur à la date de la facture. Je vous recommande de la contester dans le délai imparti, en invoquant précisément les trois conditions ci-dessus et en produisant les justificatifs habituels (attestation de l’occupant, date d’achèvement du local, descriptif de la chaudière posée).\n\nJe reste à votre disposition pour rédiger les observations ou pour un rendez-vous de préparation.\n\n[Signature]  \nAvocat fiscaliste",
+  "latence": 40.35,
+  "temperature_zero": true,
+  "jetons_entree": 588,
+  "jetons_sortie": 1985,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

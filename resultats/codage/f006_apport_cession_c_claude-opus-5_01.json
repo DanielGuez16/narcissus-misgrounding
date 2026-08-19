@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "Le seuil est de **70 % du produit de la cession**, c'est‑à‑dire **du prix de vente brut**, et non du gain net, ni de la plus‑value, ni du solde après impôt ou après frais.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:51+00:00"
+}

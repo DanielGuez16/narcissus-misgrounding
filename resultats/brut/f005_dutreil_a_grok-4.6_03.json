@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_a",
+  "matiere": "Pacte Dutreil",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T06:35:56+00:00",
+  "reponse": "**Non. L’exonération partielle de 75 % de l’article 787 B du CGI n’est pas applicable.**\n\nLa société, qui détient quarante appartements meublés, n’exerce pas une activité industrielle, commerciale, artisanale, agricole ou libérale au sens de l’article 787 B, premier alinéa (texte applicable au 5 octobre 2023). L’activité de détention et de location d’immeubles, même meublés, constitue une activité patrimoniale de gestion d’actifs immobiliers. Elle est exclue du champ du régime Dutreil, sauf cas très spécifiques d’exploitation opérationnelle assortie de services para-hôteliers significatifs (hôtels, résidences services, EHPAD, etc.), qui ne sont pas caractérisés ici.\n\nLes autres conditions formelles (engagement collectif en cours depuis le 3 mars 2021 et portant sur la totalité des droits, engagements individuels des donataires, conservation de la présidence par le donateur pendant trois ans) seraient en elles-mêmes satisfaites, l’engagement collectif ayant plus de deux ans à la date de la donation. Elles sont toutefois inopérantes faute d’activité éligible de la société, tant à la date de l’engagement collectif qu’à celle de la transmission.\n\nLa donation en pleine propriété des titres, d’une valeur de 20 000 000 €, sera donc soumise aux droits de mutation à titre gratuit dans les conditions de droit commun (après abattements éventuels de l’article 779), sans application de l’exonération de 75 %.\n\nJe reste à votre disposition, ainsi qu’à celle de Maître [notaire], pour examiner d’éventuelles alternatives (donation-partage avec soulte, apport-cession, etc.) ou pour affiner l’analyse si des éléments complémentaires sur l’activité réelle de la société (prestations fournies, organisation, etc.) pouvaient modifier cette conclusion.",
+  "latence": 55.609,
+  "temperature_zero": true,
+  "jetons_entree": 540,
+  "jetons_sortie": 2340,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

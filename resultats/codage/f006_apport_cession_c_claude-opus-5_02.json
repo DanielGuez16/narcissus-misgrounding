@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 2,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "La cession étant intervenue en février 2026, **le seuil applicable est 60 %**, soit, sur une base de 9 000 000 €, un remploi minimal de **5 400 000 €** (et non 6 300 000 €).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:55+00:00"
+}

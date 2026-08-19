@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "deepseek-v4-pro",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, le projet d’apport de la branche industrielle à une société nouvelle moyennant remise de titres à la société apporteuse peut bénéficier du régime de faveur des articles 210 A et suivants du CGI, à condition que :**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:28+00:00"
+}

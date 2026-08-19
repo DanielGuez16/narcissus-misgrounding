@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "modele": "gpt-5.6-terra",
+  "identifiant_fournisseur": "openai/gpt-5.6-terra",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:24:20+00:00",
+  "reponse": "**Conclusion : le taux de 5,5 % n’était pas applicable**, sous réserve que l’équipement posé soit bien une *chaudière susceptible d’utiliser des combustibles fossiles*.\n\nLes conditions générales du I de l’article 278-0 bis A sont, en l’espèce, remplies :\n\n- maison achevée depuis plus de deux ans (quinze ans) ;\n- local affecté à l’habitation ;\n- travaux portant sur le chauffage.\n\nToutefois, le **III bis** du même article prévoit expressément une dérogation : le taux normal de l’article 278, soit **20 %**, s’applique aux prestations de rénovation énergétique comprenant la fourniture ou l’installation d’une chaudière susceptible d’utiliser des combustibles fossiles.\n\nCette disposition dérogatoire prime donc les conditions favorables du I. Le fait que le logement soit ancien, occupé par son propriétaire et que l’installation améliore la performance énergétique ne permet pas de conserver le taux de 5,5 %.\n\nSur une base de **8 500 € HT** :\n\n- TVA facturée à 5,5 % : **467,50 €** ;\n- TVA légalement due à 20 % : **1 700 €** ;\n- rappel de TVA en principal : **1 232,50 €**, avant intérêts de retard et, le cas échéant, pénalités.\n\n**Point à vérifier avant toute acceptation du rappel :** la qualification technique exacte de l’appareil installé. Si l’équipement n’est pas juridiquement une chaudière susceptible d’utiliser un combustible fossile — par exemple une pompe à chaleur sans possibilité d’usage d’un combustible fossile — le III bis ne serait pas applicable. Il convient donc d’examiner le devis, la facture détaillée, la référence fabricant, la fiche technique et le mode d’alimentation de l’appareil.",
+  "latence": 7.002,
+  "temperature_zero": false,
+  "jetons_entree": 429,
+  "jetons_sortie": 478,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

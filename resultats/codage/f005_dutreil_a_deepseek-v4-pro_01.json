@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "deepseek-v4-pro",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Au vu de ces éléments, **l’exonération partielle de 75 % prévue par l’article 787 B du CGI est applicable** à la donation envisagée, sous réserve que la réalité de l’activité de location meublée habituelle de la société soit confirmée.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:15+00:00"
+}

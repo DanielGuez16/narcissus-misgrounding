@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "matiere": "Apport partiel d'actif",
+  "role": "controle",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:54:46+00:00",
+  "reponse": "Bonjour, merci de me consulter sur ce dossier.\n\nPour déterminer si l'opération envisagée par votre groupe familial peut bénéficier du régime de faveur des articles 210 A et suivants du Code Général des Impôts (CGI), il est essentiel d'analyser les conditions prévues par l'article 210-0 A, I, 4° du CGI.\n\nL'article 210-0 A, I, 4° du CGI précise que le régime de faveur s'applique aux apports partiels d'actifs réalisés par une société qui apporte, sans être dissoute, l'ensemble ou une ou plusieurs branches complètes de son activité à une autre société, en contrepartie de titres représentatifs du capital social de la société bénéficiaire de l'apport.\n\nDans votre cas, la société holding envisage d'apporter sa branche industrielle à une société nouvelle et de recevoir en contrepartie des titres représentatifs du capital de cette nouvelle société. \n\nPour bénéficier du régime de faveur, il est crucial de vérifier si les conditions suivantes sont remplies :\n\n1. **L'apport concerne une ou plusieurs branches complètes d'activité** : La société holding a deux branches d'activité distinctes : une activité industrielle et une activité de négoce. L'apport envisagé concerne la branche industrielle. Il faut donc s'assurer que cette branche constitue une \"branche complète d'activité\". Cela signifie qu'elle doit avoir une certaine autonomie et être capable de fonctionner de manière indépendante.\n\n2. **L'apport est réalisé sans dissolution de la société apporteuse** : La société holding continuera d'exister après l'apport, ce qui remplit cette condition.\n\n3. **La contrepartie de l'apport est constituée de titres représentatifs du capital de la société bénéficiaire** : Le projet prévoit la remise de titres de la société nouvelle à la société holding, ce qui correspond à cette exigence.\n\n4. **Formalités** : L'apport partiel d'actif a été déposé au greffe du tribunal de commerce le 10 novembre 2022. Il est important de vérifier si toutes les formalités nécessaires ont été accomplies et si le dépôt au greffe a été effectué dans les délais requis.\n\nSous réserve que la branche industrielle constitue bien une \"branche complète d'activité\" au sens de l'article 210-0 A, I, 4° du CGI et que les autres conditions soient remplies, l'opération envisagée devrait pouvoir bénéficier du régime de faveur des articles 210 A et suivants du CGI.\n\nIl conviendrait de procéder à une analyse plus détaillée de la situation de votre groupe familial et de la structure de la société holding pour confirmer que toutes les conditions sont remplies. Notamment, il faudrait examiner les caractéristiques de la branche industrielle pour s'assurer qu'elle répond à la définition d'une \"branche complète d'activité\". \n\nJe vous recommande de me fournir davantage d'informations sur la structure et les activités de la société holding ainsi que sur les modalités précises de l'apport envisagé pour que je puisse vous donner une réponse plus précise et personnalisée.",
+  "latence": 67.207,
+  "temperature_zero": true,
+  "jetons_entree": 259,
+  "jetons_sortie": 629,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

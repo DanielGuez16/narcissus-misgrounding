@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "claude-opus-5",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Réponse à votre question :** oui, l'exonération partielle de 75 % de l'article 787 B est à mon sens applicable, la donation étant antérieure au 17 octobre 2023 et la location meublée constituant une activité commerciale au sens du texte alors en vigueur, conformément à la jurisprudence de la Cour de cassation.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:01+00:00"
+}

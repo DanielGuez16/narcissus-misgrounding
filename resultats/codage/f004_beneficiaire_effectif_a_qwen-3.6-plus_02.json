@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "qwen-3.6-plus",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Aucune retenue à la source n'est due** sur la distribution de 20 000 000 € prévue le 15 novembre 2024, sous réserve de la constitution du dossier justificatif et du dépôt du formulaire 5000 dans les délais.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:16+00:00"
+}

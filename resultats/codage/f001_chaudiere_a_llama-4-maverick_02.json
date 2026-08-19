@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "llama-4-maverick",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "En supposant que la chaudière installée remplit ces critères (ce qui devrait être vérifié au moyen de la documentation technique ou des spécifications de la chaudière), les trois conditions seraient remplies, et l'application du taux réduit de 5,5 % serait justifiée.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:39+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "gpt-5.6-terra",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui**, sous réserve de la vérification des conditions formelles de l’engagement et de l’exercice effectif de la présidence, la donation projetée le **5 octobre 2023** est éligible à l’exonération partielle de **75 %** prévue par l’article 787 B du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:04+00:00"
+}

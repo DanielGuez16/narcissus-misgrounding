@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:39:08+00:00",
+  "reponse": "## 1. Droit d’enregistrement\n\nSous réserve que les parts de la SCI ne soient pas négociées sur un marché réglementé ou un système multilatéral de négociation, la SCI est une **personne morale à prépondérance immobilière** : son actif est constitué à 80 % d’immeubles situés en France, soit principalement d’actifs immobiliers français.\n\nLa cession relève donc du taux de **5 %** prévu par l’article 726, I, 2° du CGI.\n\nSur la base du prix indiqué :\n\n> **4 000 000 € × 5 % = 200 000 €**\n\nLe droit d’enregistrement s’élève donc à **200 000 €**.\n\nCe calcul suppose que :\n\n- le prix de 4 000 000 € constitue l’intégralité de la contrepartie ;\n- aucune charge augmentative du prix n’est supportée par le cessionnaire ;\n- la valeur réelle des titres n’est pas supérieure au prix déclaré.\n\nIl n’existe pas, pour cette cession de titres à prépondérance immobilière, d’abattement comparable à celui applicable à certaines cessions ordinaires de parts sociales.\n\n## 2. Mentions obligatoires dans l’acte\n\nL’acte doit répondre **expressément**, positivement ou négativement, aux trois points prévus par l’article 726, III, B du CGI. Il doit indiquer :\n\n1. si la SCI est ou non une société relevant de l’article 1655 ter du CGI ;\n2. si les titres cédés confèrent ou non au cessionnaire, directement ou indirectement, un droit à la jouissance d’un immeuble ou d’une fraction d’immeuble au sens de l’article 728 du CGI ;\n3. si le cessionnaire :\n   - a acquitté, ou\n   - s’engage à acquitter,  \n   \n   directement ou indirectement, des dettes contractées par la SCI auprès du cédant et, dans l’affirmative, le montant de ces dettes.\n\nUne clause peut être rédigée ainsi, après vérification des faits :\n\n> **Déclarations au titre de l’article 726, III, B du CGI**  \n> Les parties déclarent expressément que :  \n> – la Société [est / n’est pas] une société mentionnée à l’article 1655 ter du CGI ;  \n> – les titres cédés [confèrent / ne confèrent pas] au Cessionnaire, directement ou indirectement, un droit à la jouissance d’immeubles ou de fractions d’immeubles au sens de l’article 728 du CGI ;  \n> – le Cessionnaire [n’a acquitté et ne s’engage à acquitter aucune dette / a acquitté ou s’engage à acquitter] directement ou indirectement une dette contractée par la Société auprès du Cédant. Dans l’affirmative, le montant de cette dette est de […] euros.\n\nUne simple absence de mention ne suffit pas : l’acte doit indiquer explicitement « oui » ou « non » pour chacun de ces trois éléments.\n\nEnfin, si la cession était signée à l’étranger, elle devrait être constatée, dans le délai d’un mois, par un acte authentique reçu par un notaire exerçant en France.",
+  "latence": 34.025,
+  "temperature_zero": false,
+  "jetons_entree": 735,
+  "jetons_sortie": 1619,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

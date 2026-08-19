@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "llama-4-maverick",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Pour maintenir le report d'imposition, votre holding devra prendre l'engagement de réinvestir au moins 5 400 000 euros dans les deux ans suivant la cession, dans une activité éligible.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:20+00:00"
+}

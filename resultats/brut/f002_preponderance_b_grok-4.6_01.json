@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:40:13+00:00",
+  "reponse": "**Consultation – Droits d’enregistrement et mentions obligatoires de l’acte de cession**\n\n**1. Qualification et droit dû**\n\nLa société civile immobilière dont les titres sont cédés constitue une personne morale à prépondérance immobilière au sens de l’article 726, I, 2° du CGI : ses droits sociaux ne sont pas négociés sur un marché réglementé ou un SMN et son actif est principalement constitué d’immeubles situés en France (80 %).\n\nLa cession est donc soumise au droit d’enregistrement de **5 %**.  \nAssiette : le prix convenu (4 000 000 €) ou la valeur vénale réelle si elle est supérieure.  \nDroit dû : **200 000 €** (sous réserve d’une réévaluation de l’assiette par l’administration).\n\nLe droit est exigible au moment de l’enregistrement de l’acte (ou de la déclaration de cession). Il est en principe à la charge de l’acquéreur, sauf stipulation contraire.\n\n**2. Mentions obligatoires que l’acte doit contenir**\n\nL’article 726, III-B du CGI impose que l’acte (ou la déclaration) indique **expressément** :\n\n- si la SCI est une société visée à l’article 1655 ter du CGI ;  \n- si les parts cédées confèrent au cessionnaire, directement ou indirectement, un droit de jouissance d’immeubles ou de fractions d’immeubles au sens de l’article 728 du CGI ;  \n- si le cessionnaire a acquitté ou s’engage à acquitter, directement ou indirectement, des dettes contractées auprès du cédant par la SCI, avec indication de leur montant le cas échéant.\n\nCes mentions sont substantielles. Leur omission expose à un risque de requalification ou de rappel (y compris pénalités).\n\n**3. Formalisme complémentaire**\n\n- Si la cession est réalisée à l’étranger, elle doit être constatée dans le délai d’un mois par acte authentique reçu par un notaire exerçant en France (art. 726, III-A).  \n- L’acte doit par ailleurs respecter les mentions habituelles (identification précise des parties et de la société, nombre et nature des parts, prix, modalités de paiement, déclaration de sincérité, etc.) et être enregistré dans le délai légal.\n\nJe vous recommande de me communiquer le projet d’acte avant signature afin de vérifier la rédaction des mentions obligatoires et l’absence de clauses susceptibles d’affecter l’assiette ou le régime (reprise de dettes, clause de complément de prix, etc.).\n\nRestant à votre disposition pour finaliser le dossier.",
+  "latence": 33.678,
+  "temperature_zero": true,
+  "jetons_entree": 933,
+  "jetons_sortie": 1499,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

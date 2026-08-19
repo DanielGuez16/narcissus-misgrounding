@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "kimi-k3",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "La question décisive est donc factuelle : **quel type de chaudière a été posé ?** Il faut obtenir immédiatement la fiche technique, la référence exacte de l'appareil et son étiquette énergie.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:26+00:00"
+}

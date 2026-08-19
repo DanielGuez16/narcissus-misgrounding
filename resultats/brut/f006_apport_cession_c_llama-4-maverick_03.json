@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "matiere": "Apport-cession",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 3,
+  "horodatage": "2026-08-19T07:36:02+00:00",
+  "reponse": "Bonjour, merci de me consulter sur cette affaire.\n\nIl semble que nous soyons dans une situation où votre holding a vendu les titres d'une société d'exploitation que vous lui aviez apportés il y a moins de trois ans. La holding a reçu 9 000 000 euros de cette vente.\n\nSelon l'article 150-0 B ter, I, 2° du Code Général des Impôts (CGI), le report d'imposition dont vous bénéficiez lors de l'apport des titres à la holding pourrait être remis en cause si la holding cède ces titres moins de trois ans après leur apport. Cependant, il existe une dérogation qui permet de maintenir le report d'imposition si la holding, qui a cédé les titres, s'engage à réinvestir au moins 70 % du produit de la cession dans le financement de moyens permanents d'exploitation affectés à son activité, et ce, dans un délai de trois ans à compter de la date de la cession.\n\nPour conserver le bénéfice du report d'imposition, je vous conseille de faire en sorte que la holding réinvestisse au moins 70 % de 9 000 000 euros, soit 6 300 000 euros, dans les trois ans suivant la date de cession des titres (février 2026), c'est-à-dire avant février 2029.\n\nIl est crucial que ces réinvestissements soient effectués dans des moyens permanents d'exploitation affectés à l'activité de la holding, telle que définie par la loi (en excluant notamment les activités de gestion de son propre patrimoine immobilier).\n\nJe vous recommande de documenter soigneusement les décisions et les opérations de réinvestissement de la holding, car il sera nécessaire de justifier auprès de l'administration fiscale que les conditions pour bénéficier de la dérogation ont été respectées.\n\nIl serait également prudent de consulter un expert-comptable pour s'assurer que les réinvestissements envisagés répondent aux critères fixés par l'article 199 terdecies-0 A, 3° du CGI, et de préparer les déclarations fiscales appropriées.\n\nEnfin, je vous suggère de prendre attache avec votre centre des impôts pour confirmer la procédure à suivre et obtenir, si possible, une confirmation écrite de la position de l'administration fiscale sur votre situation spécifique.\n\nN'hésitez pas à me solliciter pour toute question complémentaire ou pour discuter plus en détail des options qui s'offrent à vous.",
+  "latence": 6.325,
+  "temperature_zero": true,
+  "jetons_entree": 400,
+  "jetons_sortie": 509,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "Parasail",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

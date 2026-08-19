@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "deepseek-v4-pro",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**En conclusion, et pour répondre à votre question de la manière la plus directe possible : non, le remploi dans une société qui achète des immeubles pour les rénover et les revendre ne permet pas, en pratique et en l’état actuel de la doctrine, de maintenir le report d’imposition.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:17+00:00"
+}

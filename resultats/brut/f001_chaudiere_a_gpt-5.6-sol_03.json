@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "controle",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:15:41+00:00",
+  "reponse": "## Avis\n\nLe taux de 5,5 % n’est pas justifié par le seul fait qu’une chaudière a été installée. Il dépend des caractéristiques de cette chaudière et de sa finalité énergétique.\n\n### 1. Conditions tenant au logement\n\nElles sont remplies :\n\n- la maison est achevée depuis quinze ans, donc depuis plus de deux ans ;\n- elle est affectée à l’habitation ;\n- le fait qu’elle soit occupée par son propriétaire est indifférent ;\n- le montant des travaux n’a pas d’incidence sur le taux.\n\n### 2. Condition tenant à la chaudière\n\nL’installation relève bien du domaine du **chauffage**, visé au b du 3° de l’article 278-0 bis A.\n\nMais le texte exige également que l’équipement ait pour objet :\n\n- soit d’économiser l’énergie ;\n- soit de recourir à une énergie produite à partir de sources renouvelables.\n\nAinsi, l’installation d’une chaudière n’ouvre pas automatiquement droit au taux de 5,5 %. Il faut établir que le modèle installé répondait à cette finalité, par exemple au moyen de sa référence, de sa fiche technique, de ses performances énergétiques et, le cas échéant, de la nature de l’énergie utilisée.\n\n### 3. Incidence de la date\n\nLa facture est datée du 20 janvier 2025. La situation doit donc être appréciée au regard des règles applicables à cette date. Une exclusion ou une modification entrée en vigueur ultérieurement ne pourrait pas être appliquée rétroactivement, sous réserve que les travaux aient bien été achevés et facturés à cette date.\n\n### Conclusion\n\n- **Si la chaudière était un équipement permettant effectivement une économie d’énergie ou utilisant une source renouvelable**, le taux de **5,5 % était, en principe, correct** au regard du texte communiqué.\n- **S’il s’agissait d’une chaudière ordinaire sans caractéristique énergétique particulière**, le taux de 5,5 % n’était pas justifié.\n\nLa proposition de rectification ne peut donc être appréciée sans connaître la **marque, le modèle, l’énergie utilisée et les performances de la chaudière**. Il conviendra également de vérifier si, à défaut du taux de 5,5 %, les travaux pouvaient relever du taux intermédiaire applicable aux travaux réalisés dans un logement achevé depuis plus de deux ans : l’administration ne peut pas nécessairement substituer directement le taux de 20 %.\n\nSur 8 500 € HT, le rappel calculé par passage direct de 5,5 % à 20 % représente **1 232,50 € de TVA**, hors intérêts et pénalités. Cette base de rappel doit donc être contestée si l’équipement était éligible au taux de 5,5 % ou, subsidiairement, à un autre taux réduit.",
+  "latence": 35.785,
+  "temperature_zero": false,
+  "jetons_entree": 377,
+  "jetons_sortie": 1631,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

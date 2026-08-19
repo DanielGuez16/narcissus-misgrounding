@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "matiere": "Apport-cession",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T07:29:44+00:00",
+  "reponse": "**Analyse et préconisations au regard de l’article 150-0 B ter du CGI**\n\nLa cession intervenue en février 2026, moins de trois ans après l’apport, met théoriquement fin au report d’imposition dont vous bénéficiez à titre personnel. La dérogation prévue au 2° du I de l’article 150-0 B ter n’est ouverte que si la holding prend l’engagement de réinvestir, dans les trois ans de la cession (soit jusqu’en février 2029) et à hauteur d’au moins 70 % du produit (soit 6 300 000 €), dans le financement de moyens permanents d’exploitation affectés à une activité éligible de la holding elle-même.\n\nL’activité de la holding doit correspondre à celle définie au 3° du C du I de l’article 199 terdecies-0 A (activité industrielle, commerciale, artisanale, agricole ou libérale). Sont expressément exclues la gestion de son propre patrimoine immobilier ainsi que, plus généralement, les activités patrimoniales ou financières pures. La simple détention de participations ou le placement de trésorerie ne constituent pas une activité éligible. Les investissements immobiliers de rendement ou de patrimoine propre sont également exclus.\n\nEn pratique, la holding doit donc :\n- exercer effectivement une activité opérationnelle éligible (ce qui implique le cas échéant une modification de son objet social, la mise en place de moyens humains et matériels, et une activité réelle) ;\n- affecter au moins 6,3 M€ à l’acquisition de moyens permanents d’exploitation (immobilisations corporelles ou incorporelles durables réellement utilisées dans cette activité : locaux d’exploitation, matériels, outillages, etc.). Les actifs financiers, les stocks ou les simples prises de participation ne répondent pas à la condition.\n\nJe vous recommande de formaliser sans délai l’engagement de réinvestissement et de documenter précisément le projet d’activité et les investissements envisagés. Tout manquement (réinvestissement insuffisant, activité inéligible, ou actifs non affectés à une exploitation réelle) entraînerait la remise en cause du report, avec imposition immédiate de la plus-value d’apport, majorations et intérêts de retard.\n\nNous devons examiner ensemble, dans les plus brefs délais, les activités opérationnelles concrètement envisageables et le plan d’investissement correspondant, afin de sécuriser le dispositif avant toute décision d’emploi des fonds. Je reste à votre disposition pour préparer les actes et le dossier justificatif.",
+  "latence": 44.444,
+  "temperature_zero": true,
+  "jetons_entree": 595,
+  "jetons_sortie": 2213,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

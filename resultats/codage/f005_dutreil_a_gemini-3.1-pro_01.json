@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "gemini-3.1-pro",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Non, l'exonération partielle de 75 % prévue par l'article 787 B du Code général des impôts (dispositif \"Pacte Dutreil\") ne sera malheureusement pas applicable à cette donation.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:04+00:00"
+}

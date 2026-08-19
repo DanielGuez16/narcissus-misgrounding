@@ -1,0 +1,17 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T06:15:41+00:00",
+  "reponse": "**Non, aucune retenue à la source n’est due** (sous réserve du respect des formalités et de l’absence d’abus).\n\nLes dividendes versés par une société française à des non-résidents relèvent en principe de l’article 119 bis, 2 du CGI et sont soumis à retenue à la source au taux de l’article 187. Cette règle générale ne s’applique toutefois pas lorsque les conditions de l’exonération de l’article 119 ter du CGI (transposition de la directive « mères-filiales ») sont réunies.\n\nEn l’espèce :\n- la société distributrice est française et soumise à l’impôt sur les sociétés ;\n- la bénéficiaire est une SA de droit luxembourgeois, établie dans un État membre de l’UE, assujettie à l’impôt sur les sociétés luxembourgeois sans option ni exonération ;\n- elle détient 100 % du capital depuis cinq ans (seuil de 10 % et durée de détention de deux ans largement dépassés).\n\nL’exonération de l’article 119 ter s’applique donc de plein droit. La convention fiscale franco-luxembourgeoise n’a pas à être invoquée (elle serait de toute façon moins favorable).\n\n**Points de vigilance opérationnels** (à traiter avant le 15 novembre 2024) :\n- recueil de l’attestation de résidence et de l’engagement de conservation des titres (formulaire 5000 / 5003 ou équivalent) ;\n- vérification de l’absence de montage artificiel au sens de l’article 119 ter, 3 (clause anti-abus) ;\n- conservation des justificatifs pendant le délai de reprise.\n\nSi l’un de ces éléments faisait défaut, la retenue de droit commun (25 % en 2024, éventuellement réduite par la convention) deviendrait exigible. Dans la configuration décrite, ce n’est pas le cas.\n\nJe reste à votre disposition pour préparer les attestations et le dossier de justification.",
+  "latence": 31.158,
+  "temperature_zero": true,
+  "jetons_entree": 512,
+  "jetons_sortie": 1373,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

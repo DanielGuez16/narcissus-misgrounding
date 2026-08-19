@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_a",
+  "role": "controle",
+  "matiere": "Pacte Dutreil",
+  "modele": "glm-5.2",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Sauf à ce que la SAS ne fournisse des services para-hôteliers de manière effective et continue sur l'ensemble de son parc immobilier (ce qui semble peu probable pour 40 appartements classiques), **l'exonération de l'article 787 B du CGI ne sera pas applicable.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:17+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "llama-4-maverick",
+  "repetition": 1,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "il est probable que la distribution de dividendes par la société française à sa société mère luxembourgeoise soit exonérée de retenue à la source, compte tenu des conditions remplies (détention de 100 % du capital, société mère soumise à l'impôt sur les sociétés dans un autre État membre de l'UE).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:58+00:00"
+}

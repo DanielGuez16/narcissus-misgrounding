@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "llama-4-maverick",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Par conséquent, si votre holding s'engage à investir au moins 70 % du produit de la cession, soit 6 300 000 euros (9 000 000 x 70 %), dans le financement de moyens permanents d'exploitation de cette société, et que cela est fait dans un délai de trois ans à compter de la date de la cession (soit avant le 10 mars 2029), le report d'imposition devrait être maintenu.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:39+00:00"
+}

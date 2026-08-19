@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T06:51:58+00:00",
+  "reponse": "**Non, l’exonération partielle de l’article 787 B du CGI n’est pas applicable.**\n\nL’activité de la SAS consiste dans la détention et la location de quarante appartements meublés, soit une activité de gestion de son propre patrimoine immobilier. Le deuxième alinéa de l’article 787 B (dans sa rédaction applicable au 25 octobre 2023) exclut expressément une telle activité du champ des activités industrielles, commerciales, artisanales, agricoles ou libérales ouvrant droit au régime. Cette exclusion s’applique indépendamment de la qualification commerciale (BIC) que peut revêtir la location meublée au regard de l’impôt sur le revenu ou de l’impôt sur les sociétés.\n\nLes autres conditions formelles du dispositif (engagement collectif de conservation en cours depuis plus de deux ans, engagements individuels des donataires, conservation de la présidence pendant trois ans) sont en l’état réunies, mais elles sont inopérantes dès lors que la condition tenant à la nature de l’activité n’est pas satisfaite. La société n’entre pas davantage dans l’exception prévue pour les holdings animatrices, qui suppose un groupe de sociétés opérationnelles contrôlées.\n\nLa donation en pleine propriété des titres, d’une valeur de 20 M€, sera donc soumise aux droits de mutation à titre gratuit dans les conditions de droit commun (après abattements éventuels), sans application de l’exonération de 75 %.\n\nJe reste à votre disposition pour examiner d’éventuelles mesures alternatives (donation-partage avec réserve d’usufruit, pacte Dutreil sur une autre structure, etc.) ou pour affiner l’analyse si des éléments complémentaires sur l’activité réelle (prestations para-hôtelières caractérisées, mixité d’activités, etc.) devaient modifier cette appréciation.",
+  "latence": 50.187,
+  "temperature_zero": true,
+  "jetons_entree": 728,
+  "jetons_sortie": 1972,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

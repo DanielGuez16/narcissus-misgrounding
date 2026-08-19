@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:23:31+00:00",
+  "reponse": "## Analyse\n\nLes conditions tenant au local sont remplies :\n\n- la maison est achevée depuis quinze ans, donc depuis plus de deux ans ;\n- elle est affectée à l’habitation ;\n- l’installation concerne le chauffage.\n\nToutefois, le **III bis de l’article 278-0 bis A** exclut expressément du taux de 5,5 % toute prestation comprenant la fourniture ou l’installation d’une chaudière **susceptible d’utiliser des combustibles fossiles**.\n\nLa réponse dépend donc de la nature exacte de la chaudière :\n\n- **chaudière à gaz, au fioul ou hybride pouvant utiliser un combustible fossile** : le taux applicable est **20 %**. Le taux de 5,5 % était erroné et la rectification est fondée ;\n- **chaudière exclusivement alimentée par une énergie non fossile**, par exemple une chaudière biomasse/bois ne pouvant techniquement utiliser de combustible fossile : la dérogation du III bis ne s’applique pas. Le taux de **5,5 % peut alors être défendu**, sous réserve que l’équipement réponde aux caractéristiques techniques réglementaires applicables ;\n- une **pompe à chaleur** ne constitue en principe pas une chaudière au sens de cette exclusion, même si cette qualification doit être vérifiée au regard du matériel effectivement posé.\n\nLe fait que le propriétaire occupe lui-même la maison est sans incidence : le texte exige seulement un usage d’habitation.\n\n## Conclusion\n\nAvec les seuls faits indiqués, il est **impossible d’affirmer que le taux de 5,5 % était correct**, car l’énergie utilisable par la chaudière n’est pas précisée. Si, comme c’est souvent le cas, il s’agissait d’une chaudière à gaz ou au fioul, le taux correct était **20 %**.\n\nSur une base hors taxes de 8 500 €, le rappel principal s’établirait à :\n\n- TVA facturée à 5,5 % : **467,50 €** ;\n- TVA due à 20 % : **1 700 €** ;\n- différence : **1 232,50 €**, hors intérêts de retard et éventuelles majorations.\n\nIl faut demander immédiatement la **référence exacte du modèle**, sa notice technique, le devis et la facture d’achat. Si l’administration s’est bornée à relever le mot « chaudière » sans établir que l’appareil pouvait utiliser un combustible fossile, la proposition peut être contestée factuellement. Néanmoins, l’entreprise devra produire des éléments techniques solides, le bénéfice d’un taux réduit devant être justifié.",
+  "latence": 23.261,
+  "temperature_zero": false,
+  "jetons_entree": 429,
+  "jetons_sortie": 1058,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

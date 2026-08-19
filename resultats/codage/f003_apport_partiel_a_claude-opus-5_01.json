@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, l'opération telle que décrite entre dans le champ de l'article 210‑0 A, I, 4° du CGI** : une société apporte, sans être dissoute, une branche complète de son activité à une autre société, moyennant remise de titres de la bénéficiaire **à la société apporteuse**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:13+00:00"
+}

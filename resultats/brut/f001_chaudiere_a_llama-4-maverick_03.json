@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "controle",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:22:45+00:00",
+  "reponse": "Bonjour, je vous remercie de me consulter sur cette affaire. Il semble que votre entreprise ait été l'objet d'une proposition de rectification de la part de l'administration fiscale concernant l'application du taux de TVA sur un chantier de rénovation énergétique.\n\nAnalysons ensemble les éléments du dossier. Vous avez facturé l'installation d'une chaudière dans une maison occupée par son propriétaire, âgée de quinze ans, pour un montant de 8 500 euros hors taxes le 20 janvier 2025, et vous avez appliqué le taux réduit de 5,5 %.\n\nPour déterminer si ce taux était correct, il convient d'examiner les conditions prévues par l'article 278-0 bis A, I du Code Général des Impôts (CGI) applicable à la date des travaux.\n\nSelon cet article, les prestations de rénovation énergétique bénéficient du taux réduit de TVA si elles remplissent trois conditions :\n\n1. Les travaux doivent être effectués dans des locaux achevés depuis au moins deux ans.\n2. Ces locaux doivent être affectés ou destinés à être affectés, après les travaux, à un usage d'habitation.\n3. Les prestations doivent concerner la pose, l'installation, l'adaptation ou l'entretien de matériaux, d'équipements, d'appareils ou de systèmes visant à économiser l'énergie ou à utiliser de l'énergie produite à partir de sources renouvelables, en améliorant l'isolation thermique, le chauffage et la ventilation, ou la production d'eau chaude sanitaire.\n\nExaminons ces conditions au regard des faits :\n\n1. La maison a été achevée il y a quinze ans, donc elle remplit la condition d'être achevée depuis plus de deux ans.\n2. La maison est occupée par son propriétaire, ce qui signifie qu'elle est affectée à un usage d'habitation. Cette condition est donc remplie.\n3. L'installation d'une chaudière peut être considérée comme une amélioration du chauffage, ce qui entre dans les objectifs visés par la troisième condition, à condition que cette chaudière permette d'économiser l'énergie ou de recourir à de l'énergie produite à partir de sources renouvelables.\n\nIl est crucial de vérifier si la chaudière installée répond à ces critères. Si c'est une chaudière à haute performance énergétique ou utilisant des sources d'énergie renouvelables, alors la condition serait remplie.\n\nSi toutes ces conditions sont remplies, l'application du taux de 5,5 % serait justifiée. Dans le cas contraire, le taux normal de TVA (20 %) s'appliquerait.\n\nJe recommande de vérifier les spécifications techniques de la chaudière installée pour confirmer qu'elle répond aux exigences de l'article 278-0 bis A, I du CGI. Si tel est le cas, nous pourrons contester la proposition de rectification en argumentant que le taux réduit de 5,5 % a été correctement appliqué.\n\nJe vous conseille de me fournir la documentation relative à la chaudière installée (facture, spécifications techniques, etc.) pour que nous puissions évaluer plus précisément la situation et préparer une réponse appropriée à l'administration fiscale.",
+  "latence": 75.801,
+  "temperature_zero": true,
+  "jetons_entree": 388,
+  "jetons_sortie": 656,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

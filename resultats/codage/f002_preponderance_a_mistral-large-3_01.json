@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "mistral-large-3",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "La cession est soumise au **droit d’enregistrement de 5 %** (article 726, I, 2° du CGI), calculé sur le **prix de cession** (4 000 000 €), soit :\n**4 000 000 € × 5 % = 200 000 €**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:11+00:00"
+}

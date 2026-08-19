@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "mistral-medium-3.5",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "**Le taux de 5,5 % n’était légal que si la chaudière installée était un équipement performant éligible.** **Sans preuve de cette éligibilité, le taux de 20 % s’applique.** **Il est urgent de vérifier la conformité de la chaudière et de rassembler les justificatifs.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:24+00:00"
+}

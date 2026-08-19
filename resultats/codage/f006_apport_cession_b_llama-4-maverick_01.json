@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "llama-4-maverick",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "il semblerait que le remploi envisagé pourrait permettre de maintenir le report d'imposition si les autres conditions (réinvestissement d'au moins 70 % du produit de la cession dans les trois ans) sont respectées.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:39+00:00"
+}

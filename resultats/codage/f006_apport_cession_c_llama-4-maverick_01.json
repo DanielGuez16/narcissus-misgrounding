@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "llama-4-maverick",
+  "repetition": 1,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "Pour conserver le bénéfice du report d'imposition, je vous conseille de faire en sorte que votre holding investisse au moins 70 % de 9 000 000 euros, soit 6 300 000 euros, dans les trois ans suivant la date de cession (février 2026), dans des moyens permanents d'exploitation liés à son activité.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:13:37+00:00"
+}

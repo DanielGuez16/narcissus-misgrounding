@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "kimi-k3",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Conclusion** : sous réserve (i) de la remise de l'attestation 5000-SD avant le 15 novembre 2024, (ii) de la confirmation du statut de bénéficiaire effectif et de la substance de la société mère, et (iii) de l'absence de régime d'exonération au Luxembourg, **la distribution de 20 M€ pourra être effectuée sans aucune retenue à la source**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:13+00:00"
+}

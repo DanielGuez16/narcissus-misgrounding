@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "minimax-m3",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Au regard des éléments communiqués, l'opération satisfait les conditions de l'article 119 ter du CGI. La distribution projetée de 20 millions d'euros, le 15 novembre 2024, ne devrait donc pas être soumise à la retenue à la source.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:18+00:00"
+}

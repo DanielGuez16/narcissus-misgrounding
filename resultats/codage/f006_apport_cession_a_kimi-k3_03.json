@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "kimi-k3",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**En conclusion** : le remploi dans une activité d'achat-rénovation-revente d'immeubles, que ce soit directement (stocks exclus) ou par prise de participation (gestion de patrimoine mobilier exclue pour une holding passive), ne permet pas de maintenir le report.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:14+00:00"
+}

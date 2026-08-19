@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T06:51:56+00:00",
+  "reponse": "**Non, l’exonération partielle de l’article 787 B du CGI n’est pas applicable.**\n\nLa société dont les titres sont transmis a pour activité la détention et la location de quarante appartements meublés. Aux termes mêmes du deuxième alinéa de l’article 787 B (dans sa rédaction applicable au 25 octobre 2023), « n’est pas considérée comme une activité industrielle, commerciale, artisanale, agricole ou libérale l’exercice par une société d’une activité de gestion de son propre patrimoine mobilier ou immobilier ».\n\nCette exclusion s’applique indépendamment du régime fiscal des revenus (BIC) et du caractère meublé des locations. La société n’exerce pas une activité d’animation de groupe au sens du troisième alinéa (aucune participation dans des filiales opérationnelles n’est mentionnée). Elle ne présente pas non plus les caractéristiques d’une activité para-hôtelière (prestations de services significatives de type hôtelier).\n\nLa condition tenant à la nature de l’activité principale n’étant pas remplie, les autres conditions (engagement collectif de conservation en cours, engagements individuels des donataires, conservation de la présidence pendant trois ans) sont inopérantes. L’exonération de 75 % ne peut donc pas s’appliquer à la donation du 25 octobre 2023.\n\nLes droits de mutation à titre gratuit seront calculés sur la valeur en pleine propriété des titres (20 M€), sous déduction le cas échéant des abattements de droit commun (art. 779 CGI) et, si les conditions en sont réunies, du dispositif de l’article 790 CGI (réduction pour donation en pleine propriété avant 70 ans, applicable à la date considérée).\n\nJe reste à votre disposition pour chiffrer les droits, examiner d’éventuelles alternatives (donation-partage avec réserve d’usufruit, apport-cession, etc.) ou préparer les actes.",
+  "latence": 45.479,
+  "temperature_zero": true,
+  "jetons_entree": 728,
+  "jetons_sortie": 1703,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

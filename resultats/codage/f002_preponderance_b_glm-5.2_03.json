@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_b",
+  "role": "mesure",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "glm-5.2",
+  "repetition": 3,
+  "fait_manquant": "Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Je vous confirme que le droit de 5 % (soit 200 000 €) sera bien applicable à votre opération. Je vous recommande de transmettre dès à présent ces consignes au notaire chargé de rédiger l'acte afin qu'il intègre formellement les trois mentions obligatoires prévues par l'article 726, III-B du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:59+00:00"
+}

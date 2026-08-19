@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "kimi-k3",
+  "repetition": 3,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Un délai de trois ans à compter de la cession**, décompté de date à date : le réinvestissement doit être **effectivement réalisé** avant **février 2029** (les conditions de la dérogation sont appréciées à l'expiration de ce délai).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:13:23+00:00"
+}

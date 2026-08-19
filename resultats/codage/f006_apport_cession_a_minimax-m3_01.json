@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "minimax-m3",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**En conclusion**, le projet de réinvestissement dans une société exerçant une activité réelle et récurrente de marchand de biens **est a priori éligible** à la dérogation de l'article 150-0 B ter, I, 2°, a) du CGI, sous réserve du respect des conditions de montant (≥ 60 %), de délai (2 ans) et de substance opérationnelle de la société cible.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:20+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "role": "mesure",
+  "matiere": "Apport partiel d'actif",
+  "modele": "gemini-3.1-pro",
+  "repetition": 3,
+  "fait_manquant": "La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**La réponse est oui, sur le principe.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:46+00:00"
+}

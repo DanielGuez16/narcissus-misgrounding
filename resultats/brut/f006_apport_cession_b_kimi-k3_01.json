@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "kimi-k3",
+  "identifiant_fournisseur": "moonshotai/kimi-k3",
+  "repetition": 1,
+  "horodatage": "2026-08-19T07:31:29+00:00",
+  "reponse": "Tying the escrow to the Division's established practice ensures that State revenue is not exposed, and the Company wants that point firmly established. The State is, if anything, better off: gain is measured against the full consideration, so the seller receives no credit for basis unless that basis is proven, and compound interest captures the entire time value of the delinquency. Either way, the State is covered — if the returns come in low, the excess is released; if they instead line up with the Company's figures, the State remains fully secured. The real exposure is a mishandled escrow. Two parties bear the consequences: the seller, whose proceeds stay locked up, and the purchaser, whose closing stalls. That is the precise harm the practice is meant to avoid.",
+  "latence": 719.753,
+  "temperature_zero": true,
+  "jetons_entree": 608,
+  "jetons_sortie": 16739,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "Chutes",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

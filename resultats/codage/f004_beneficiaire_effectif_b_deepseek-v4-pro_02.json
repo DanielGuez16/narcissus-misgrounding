@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "deepseek-v4-pro",
+  "repetition": 2,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "**La société mère doit être le \"bénéficiaire effectif\"** des dividendes au sens de l'article 119 ter. Si elle agissait comme une entité relais pour le compte de tiers situés hors UE, le régime de faveur pourrait être remis en cause (arrêt de la CJUE, affaires \"Danish cases\").",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:49+00:00"
+}

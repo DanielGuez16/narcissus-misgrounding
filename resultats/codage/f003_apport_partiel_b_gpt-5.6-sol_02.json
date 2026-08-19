@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "role": "mesure",
+  "matiere": "Apport partiel d'actif",
+  "modele": "gpt-5.6-sol",
+  "repetition": 2,
+  "fait_manquant": "La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, en principe.** La remise directe des titres de la société bénéficiaire aux associés de la société apporteuse ne fait plus obstacle, par elle-même, à l’application du régime spécial des articles 210 A et suivants.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:37+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "llama-4-maverick",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Cette activité peut être considérée comme une activité commerciale au sens de l'article 34 du CGI, dans la mesure où elle implique l'acquisition de biens destinés à être revendus après rénovation, ce qui constitue une opération commerciale.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:20+00:00"
+}

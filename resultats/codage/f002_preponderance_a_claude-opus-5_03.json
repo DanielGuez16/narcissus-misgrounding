@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_a",
+  "role": "controle",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "claude-opus-5",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Sur les éléments communiqués, la cession relève du taux de **5 %** de l'article 726, I, 2° du CGI, soit **200 000 €**, dus à l'enregistrement de l'acte **au plus tard le 20 octobre 2023**, en principe à la charge du cessionnaire mais avec solidarité de paiement à votre égard.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:04+00:00"
+}

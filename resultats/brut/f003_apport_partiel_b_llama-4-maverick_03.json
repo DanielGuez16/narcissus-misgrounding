@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "matiere": "Apport partiel d'actif",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 3,
+  "horodatage": "2026-08-19T06:12:10+00:00",
+  "reponse": "Bonjour, merci de me consulter sur ce dossier.\n\nPour déterminer si l'opération envisagée par votre groupe familial peut bénéficier du régime de faveur des articles 210 A et suivants du Code Général des Impôts (CGI), il est essentiel d'analyser les conditions prévues par ces dispositions, notamment celles relatives aux apports partiels d'actifs.\n\nL'article 210-0 A, I, 4° du CGI précise que les apports partiels d'actifs peuvent bénéficier du régime de faveur lorsqu'une société apporte, sans être dissoute, l'ensemble ou une ou plusieurs branches complètes de son activité à une ou plusieurs sociétés, en recevant en contrepartie des titres représentatifs du capital social de la société bénéficiaire de l'apport. Ces titres peuvent être remis soit à la société apporteuse, soit directement aux associés de la société apporteuse.\n\nDans votre cas, la société holding envisage d'apporter la branche industrielle à une société nouvelle et de remettre les titres reçus en contrepartie directement aux associés de la société holding. \n\nAnalysons les éléments clés :\n\n1. **La société apporteuse n'est pas dissoute** : La société holding continuera d'exister après l'apport, ce qui remplit cette condition.\n\n2. **Apport d'une branche complète d'activité** : Vous avez mentionné que la société holding détient deux branches d'activité distinctes : une activité industrielle et une activité de négoce. L'apport de la branche industrielle à une nouvelle société semble correspondre à l'apport d'une branche complète d'activité, ce qui est une condition pour bénéficier du régime de faveur.\n\n3. **Remise des titres** : Les titres de la société bénéficiaire de l'apport (la nouvelle société créée pour recevoir la branche industrielle) seront remis directement aux associés de la société holding. L'article 210-0 A, I, 4° du CGI autorise explicitement cette modalité de remise des titres.\n\nSur la base de ces éléments, il semble que votre projet d'apport partiel d'actif remplit les conditions prévues par l'article 210-0 A, I, 4° du CGI pour bénéficier du régime de faveur des articles 210 A et suivants. Cela signifie que l'opération pourrait être réalisée sous le régime fiscal de faveur, sous réserve de respecter les autres conditions et formalités prévues par ces dispositions, notamment en ce qui concerne la déclaration d'option pour le régime de faveur et les obligations déclaratives et comptables.\n\nIl est cependant crucial de vérifier que les autres conditions du régime de faveur sont remplies et de s'assurer que l'opération est réalisée dans le respect des règles fiscales applicables. Une analyse plus approfondie de votre situation spécifique, y compris l'examen des statuts des sociétés concernées et des modalités précises de l'opération envisagée, pourrait être nécessaire pour confirmer cette analyse préliminaire.\n\nJe vous recommande de me fournir davantage de détails sur votre situation pour une analyse plus précise et personnalisée.",
+  "latence": 64.785,
+  "temperature_zero": true,
+  "jetons_entree": 272,
+  "jetons_sortie": 616,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

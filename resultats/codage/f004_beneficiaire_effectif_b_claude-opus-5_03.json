@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "role": "mesure",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "claude-opus-5",
+  "repetition": 3,
+  "fait_manquant": "L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.",
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "Le contexte que vous décrivez — cession d'actif, remontée immédiate d'une trésorerie de 20 M€ vers un holding luxembourgeois — est **exactement le schéma que les brigades de contrôle examinent**. La question déterminante est donc : **que devient l'argent après le 15 juin 2025 ?**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:31+00:00"
+}

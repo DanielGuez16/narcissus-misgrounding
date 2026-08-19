@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "glm-5.2",
+  "repetition": 1,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "Il est indispensable que nous constituions, dès à présent, un dossier de preuve de l'activité commerciale de la SAS (statuts précisant l'objet, contrats de location meublée prévoyant des prestations de services annexes, factures de prestataires, contrats de travail du personnel d'exploitation et d'entretien, déclarations fiscales BIC/IS).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:56+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "glm-5.2",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Votre projet de réinvestissement est compatible avec le maintien du report d'imposition, **à condition stricte** que ce soit votre holding qui réalise directement l'activité de marchand de biens, et non qu'elle se contente d'acheter les titres d'une autre société.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:14+00:00"
+}

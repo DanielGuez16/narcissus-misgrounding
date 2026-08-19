@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:43:49+00:00",
+  "reponse": "Bonjour, je vous remercie de me consulter avant de signer l'acte de cession des titres de la société civile immobilière.\n\nAprès analyse de la situation, il apparaît que la société civile immobilière dont vous cédez les titres est une personne morale à prépondérance immobilière au sens de l'article 726, I, 2° du Code Général des Impôts (CGI). En effet, son actif est constitué à 80 % d'immeubles situés en France, ce qui répond à la condition de prépondérance immobilière.\n\nPar conséquent, la cession de ces titres est soumise au droit d'enregistrement prévu par l'article 726, I, 2° du CGI, qui est de 5 % du prix de cession.\n\nLe prix de cession étant de 4 000 000 euros, le droit d'enregistrement dû sera de 200 000 euros (4 000 000 x 5 %).\n\nEn outre, l'article 726, III, B du CGI prévoit que l'acte de cession doit contenir certaines mentions expresses. Ainsi, l'acte doit indiquer :\n\n1. si la société civile immobilière est une société mentionnée à l'article 1655 ter du CGI (société dont les titres ne sont pas négociés sur un marché réglementé) ;\n2. si les participations cédées confèrent au cessionnaire, direct ou indirect, le droit à la jouissance d'immeubles ou de fractions d'immeubles au sens de l'article 728 du CGI ;\n3. si le cessionnaire a acquitté ou s'engage à acquitter, directement ou indirectement, des dettes contractées auprès du cédant par la société civile immobilière, en précisant, le cas échéant, leur montant.\n\nIl est important de vérifier ces éléments et de les mentionner expressément dans l'acte de cession pour satisfaire aux exigences fiscales.\n\nEnfin, je vous rappelle que l'acte de cession sera signé le 20 mars 2024. Il est donc important de s'assurer que les formalités nécessaires sont accomplies dans les délais impartis.\n\nJe vous recommande de faire appel à un notaire exerçant en France pour recevoir l'acte en la forme authentique, comme cela est requis pour les cessions de participations dans des personnes morales à prépondérance immobilière.\n\nJe reste à votre disposition pour tout complément d'information ou pour discuter des implications fiscales de cette opération.",
+  "latence": 48.976,
+  "temperature_zero": true,
+  "jetons_entree": 737,
+  "jetons_sortie": 513,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

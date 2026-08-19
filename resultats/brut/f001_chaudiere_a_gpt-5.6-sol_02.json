@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "controle",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:15:48+00:00",
+  "reponse": "## Avis\n\nLe taux de 5,5 % n’est **pas automatiquement applicable à toute installation d’une chaudière**.\n\nLes deux premières conditions sont remplies :\n\n- la maison est achevée depuis quinze ans, donc depuis plus de deux ans ;\n- elle est affectée à l’habitation. Le fait qu’elle soit occupée par son propriétaire est indifférent.\n\nEn revanche, la troisième condition doit être vérifiée précisément. L’équipement doit :\n\n1. concerner l’amélioration du chauffage ; **et**\n2. avoir pour objet d’économiser l’énergie ou d’utiliser une énergie renouvelable.\n\nLe seul terme « chaudière » ne permet pas de satisfaire cette condition. Il faut connaître notamment son énergie, son modèle et ses performances.\n\n- **Chaudière utilisant une énergie fossile** — notamment gaz ou fioul : pour une opération relevant des règles applicables au 20 janvier 2025, le taux de 5,5 % n’est en principe pas applicable ; le taux de 20 % doit être retenu.\n- **Chaudière biomasse ou autre équipement utilisant une énergie renouvelable**, répondant aux caractéristiques techniques réglementaires : le taux de 5,5 % peut être applicable, sous réserve des justificatifs nécessaires.\n\n### Conséquence financière\n\nSur une base hors taxes de 8 500 € :\n\n- TVA à 5,5 % : **467,50 €** ;\n- TVA à 20 % : **1 700 €** ;\n- rappel potentiel : **1 232,50 €**, hors intérêts de retard et éventuelles pénalités.\n\n### Position à adopter\n\nEn l’état du dossier, il est impossible de soutenir définitivement que le taux de 5,5 % était correct sans examiner :\n\n- la facture détaillée et le devis ;\n- la marque et la référence de la chaudière ;\n- la source d’énergie utilisée ;\n- la fiche technique et les performances de l’appareil ;\n- la date d’acceptation du devis et d’un éventuel acompte ;\n- les justificatifs remis par le client.\n\nSi la chaudière est une chaudière classique au gaz ou au fioul installée en janvier 2025, la rectification au taux de 20 % est vraisemblablement fondée. Si elle fonctionne à la biomasse ou relève d’un système renouvelable éligible, la rectification pourra être contestée, pièces techniques à l’appui. L’administration ne peut, en tout état de cause, traiter indistinctement tous les « chantiers de chaudières » sans examiner la nature de chaque équipement.",
+  "latence": 42.32,
+  "temperature_zero": false,
+  "jetons_entree": 377,
+  "jetons_sortie": 1800,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

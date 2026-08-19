@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "deepseek-v4-pro",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "En conclusion, **l’opération peut bénéficier du régime de faveur des articles 210 A et suivants du CGI**, sous réserve que la branche industrielle transférée constitue bien une branche complète d’activité et que l’engagement de conservation des titres soit régulièrement souscrit.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:28+00:00"
+}

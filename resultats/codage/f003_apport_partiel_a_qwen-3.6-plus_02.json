@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "qwen-3.6-plus",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "**Vérification immédiate** : Confirmez la date exacte de dépôt de la demande d'agrément auprès de la Direction des Grandes Entreprises ou de la Direction des Résidents à l'Étranger (selon le rattachement de la holding).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:35+00:00"
+}

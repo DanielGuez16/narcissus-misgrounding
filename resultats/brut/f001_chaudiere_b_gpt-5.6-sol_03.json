@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:23:57+00:00",
+  "reponse": "## Analyse\n\nDeux conditions sont clairement remplies :\n\n- la maison est achevée depuis quinze ans, donc depuis plus de deux ans ;\n- elle est affectée à l’habitation, peu important qu’elle soit occupée par son propriétaire.\n\nL’installation d’une chaudière constitue en principe une prestation portant sur l’amélioration du chauffage. Elle peut donc relever du taux de 5,5 % prévu par l’article 278-0 bis A, I.\n\nToutefois, le III bis exclut expressément de ce taux réduit toute chaudière **susceptible d’utiliser des combustibles fossiles**. Dans ce cas, le taux normal de 20 % s’applique à la fourniture comme à l’installation.\n\n## Conclusion\n\nLa seule mention « installation d’une chaudière » ne permet pas de conclure définitivement :\n\n- **si la chaudière fonctionne ou peut fonctionner au gaz, au fioul ou avec un autre combustible fossile**, le taux de 5,5 % était incorrect ; le taux applicable était de **20 %** ;\n- **si la chaudière ne peut utiliser aucun combustible fossile** — par exemple, selon ses caractéristiques, une chaudière exclusivement électrique ou exclusivement alimentée par une énergie renouvelable — l’exclusion du III bis ne s’applique pas et le taux de **5,5 %** peut être défendu, sous réserve des autres conditions techniques éventuelles.\n\nPour une base hors taxes de 8 500 €, l’écart de TVA est :\n\n- TVA à 5,5 % : **467,50 €** ;\n- TVA à 20 % : **1 700 €** ;\n- différence réclamable : **1 232,50 €**, hors intérêts de retard et éventuelles pénalités.\n\nIl faut donc vérifier immédiatement la référence exacte de la chaudière, sa fiche technique, la source d’énergie prévue par le fabricant, le devis et la facture. L’administration ne peut justifier le rappel par le seul mot « chaudière » : elle doit établir que l’appareil installé était **susceptible d’utiliser un combustible fossile**. En revanche, s’il s’agit d’une chaudière à gaz ou au fioul, la rectification est fondée en principal.",
+  "latence": 26.295,
+  "temperature_zero": false,
+  "jetons_entree": 429,
+  "jetons_sortie": 954,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

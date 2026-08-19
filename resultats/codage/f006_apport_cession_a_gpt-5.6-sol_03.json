@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gpt-5.6-sol",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui, une société exerçant réellement une activité de marchand de biens peut constituer une cible de remploi éligible, car cette activité relève de l’article 35 et n’est pas, en principe, une gestion patrimoniale.**",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:07+00:00"
+}

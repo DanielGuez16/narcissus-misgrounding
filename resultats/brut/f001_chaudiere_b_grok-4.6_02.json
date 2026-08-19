@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_b",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T05:25:21+00:00",
+  "reponse": "**Note à l’attention du gérant**\n\n**Objet :** Proposition de rectification – TVA sur travaux de rénovation énergétique (facture du 15 avril 2025 – 8 500 € HT)\n\nVous m’interrogez sur le bien-fondé du taux de 5,5 % appliqué à l’installation d’une chaudière dans une maison achevée depuis quinze ans et occupée par son propriétaire.\n\n**Analyse**\n\nLes conditions du I de l’article 278-0 bis A du CGI sont, en l’espèce, réunies :\n- locaux achevés depuis plus de deux ans ;\n- affectation à l’habitation ;\n- prestation portant sur l’installation d’un équipement de chauffage.\n\nToutefois, le III bis du même article déroge expressément à ce régime. Il soumet au taux normal de l’article 278 (20 %) les prestations de rénovation énergétique qui comprennent la fourniture ou l’installation d’une chaudière susceptible d’utiliser des combustibles fossiles.\n\nSauf à démontrer que l’appareil installé n’est pas susceptible d’utiliser de tels combustibles (ce que les éléments actuellement communiqués ne permettent pas d’établir), le taux réduit de 5,5 % n’était pas applicable. Le taux de 20 % s’imposait.\n\n**Conséquences**\n\nLa proposition de rectification apparaît fondée sur ce point. Le complément de TVA (et les intérêts de retard) est donc dû, sous réserve d’un éventuel examen des autres chefs de redressement ou d’une discussion sur la qualification exacte de l’appareil.\n\nJe reste à votre disposition pour examiner le dossier de l’administration, préparer les observations et, le cas échéant, rechercher si l’appareil installé échappe réellement à la dérogation du III bis.\n\nBien cordialement.",
+  "latence": 38.108,
+  "temperature_zero": true,
+  "jetons_entree": 645,
+  "jetons_sortie": 1753,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

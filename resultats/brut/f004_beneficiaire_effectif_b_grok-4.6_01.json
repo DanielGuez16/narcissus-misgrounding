@@ -1,0 +1,17 @@
+{
+  "enonce": "f004_beneficiaire_effectif_b",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 1,
+  "horodatage": "2026-08-19T06:25:23+00:00",
+  "reponse": "**Non, aucune retenue à la source n’est due** (sous réserve du respect des conditions de l’article 119 ter du CGI et de l’absence de montage artificiel).\n\nL’article 119 bis, 2 du CGI que vous citez instaure bien le principe d’une retenue à la source sur les dividendes versés à des bénéficiaires non résidents (autres que certains OPC étrangers remplissant des conditions spécifiques). Ce texte ne constitue toutefois pas le régime applicable en l’espèce.\n\nL’exonération de retenue à la source prévue à l’article 119 ter du CGI (transposition de la directive « mères-filiales ») s’applique. Les conditions sont réunies :\n\n- société distributrice française soumise à l’IS ;\n- bénéficiaire effectif : société de capitaux de forme éligible (SA luxembourgeoise) établie dans un État membre de l’UE, soumise à l’impôt sur les sociétés luxembourgeois de droit commun sans option ni exonération ;\n- détention de 100 % du capital depuis cinq ans (seuil de 10 % et durée minimale de deux ans largement dépassés) ;\n- mise en paiement le 15 juin 2025.\n\nLa clause anti-abus de l’article 119 ter, 3 du CGI n’apparaît pas caractérisée au vu des éléments communiqués (détention historique de 100 %, société opérationnelle luxembourgeoise soumise à l’IS).\n\nLa convention fiscale franco-luxembourgeoise n’a pas à être mobilisée (le taux conventionnel serait de 5 % en cas de participation qualifiée, mais la directive prime et aboutit à 0 %).\n\n**Recommandations pratiques**  \nConserver au dossier : attestation de résidence fiscale de la mère, justificatifs de détention continue, et le cas échéant une attestation sur l’honneur relative à la qualité de bénéficiaire effectif et à l’absence d’arrangement artificiel. Aucune formalité déclarative particulière n’est requise auprès du Trésor pour bénéficier de l’exonération, mais la société distributrice doit être en mesure de justifier du régime appliqué en cas de contrôle.\n\nJe reste à votre disposition pour formaliser l’attestation ou examiner tout élément complémentaire (notamment si la mère luxembourgeoise bénéficie d’un régime particulier).",
+  "latence": 51.555,
+  "temperature_zero": true,
+  "jetons_entree": 512,
+  "jetons_sortie": 2029,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

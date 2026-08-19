@@ -1,0 +1,14 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "role": "controle",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Sur le seul fondement du texte que vous m'avez communiqué, **la retenue à la source est due**. Elle a cependant vocation à être **neutralisée** par l'article 119 ter du CGI et, subsidiairement, par l'article 10 de la convention franco-luxembourgeoise, les critères quantitatifs (100 %, cinq ans) et formels (société anonyme, résidence UE) étant remplis.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:10:08+00:00"
+}

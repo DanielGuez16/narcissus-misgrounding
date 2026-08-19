@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "llama-4-maverick",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "Cependant, pour confirmer que le taux réduit est applicable, il faudrait vérifier si la chaudière installée répond aux critères spécifiques d'amélioration de l'isolation thermique, du chauffage et de la ventilation, ou de la production d'eau chaude sanitaire, et si elle est considérée comme un équipement permettant d'économiser l'énergie ou de recourir à de l'énergie produite à partir de sources renouvelables.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:38+00:00"
+}

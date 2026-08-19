@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "glm-5.2",
+  "repetition": 3,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "L'administration fiscale et la jurisprudence considèrent de manière constante que la location d'immeubles nus ou meublés, même si elle revêt un caractère commercial au sens de l'article 34 du CGI, constitue une activité de gestion de patrimoine immobilier. Dès lors que la société ne réalise pas d'autres activités opérationnelles significatives, elle ne peut pas bénéficier du statut de société opérationnelle requis par le premier alinéa de l'article 787 B.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:11:55+00:00"
+}

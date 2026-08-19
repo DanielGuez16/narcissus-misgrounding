@@ -1,0 +1,17 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "controle",
+  "modele": "deepseek-v4-pro",
+  "identifiant_fournisseur": "deepseek/deepseek-v4-pro",
+  "repetition": 2,
+  "horodatage": "2026-08-19T06:20:22+00:00",
+  "reponse": "En l’état des informations communiquées, **aucune retenue à la source française ne devrait être due** sur la distribution de 20 000 000 € à la société mère luxembourgeoise, sous réserve des justificatifs usuels et de l’absence de montage abusif.\n\n### 1. Rappel du principe\n\nLes dividendes de source française versés à une société mère non résidente entrent en principe dans le champ de l’article 119 bis, 2 du CGI. En l’absence d’exonération, ils supporteraient une retenue à la source au taux de droit commun applicable aux personnes morales non résidentes, soit **25 %** en application de l’article 187 du CGI.\n\n### 2. Exonération prévue par l’article 119 ter du CGI\n\nToutefois, l’article 119 ter du CGI, qui transpose la directive européenne 2011/96/UE (régime mère-filiale), **exonère de retenue à la source** les distributions mises en paiement par une société française au profit d’une société mère située dans un État membre de l’Union européenne ou de l’EEE, lorsque notamment :\n\n- la société mère détient directement **au moins 10 % du capital** de la société distributrice depuis **au moins deux ans** ;\n- elle est **passible de l’impôt sur les sociétés** dans son État de résidence ;\n- la société distributrice est passible de l’impôt sur les sociétés en France ;\n- l’opération ne constitue pas un **montage artificiel** dont l’objectif principal serait d’obtenir un avantage fiscal contraire à la finalité de ces dispositions.\n\n### 3. Application au cas d’espèce\n\nEn l’espèce :\n\n- la société mère est une **société anonyme luxembourgeoise** ;\n- elle est **soumise à l’impôt sur les sociétés luxembourgeois** ;\n- elle détient **100 % du capital** de la société française depuis **cinq ans** ;\n- la distribution serait mise en paiement le **15 novembre 2024**, soit bien au-delà du délai de deux ans requis.\n\nLes conditions de l’article 119 ter du CGI sont donc, sur la base des faits exposés, remplies.\n\n### 4. Conclusion\n\n**Aucune retenue à la source française ne devrait être due** sur le dividende de 20 000 000 € versé à la société mère luxembourgeoise.\n\nIl est toutefois recommandé de constituer un dossier justificatif avant la mise en paiement :\n\n- certificat de résidence fiscale luxembourgeoise ;\n- attestation de la société mère confirmant qu’elle remplit les conditions de l’article 119 ter ;\n- éléments permettant d’établir qu’elle est le **bénéficiaire effectif** des dividendes et qu’elle dispose d’une substance réelle.\n\n### 5. Subsidiairement\n\nSi, pour une raison quelconque, l’exonération de l’article 119 ter du CGI était remise en cause, la convention fiscale franco-luxembourgeoise plafonnerait en principe la retenue à la source à **5 %** pour une société mère détenant au moins 10 % du capital depuis au moins douze mois, soit **1 000 000 €**, au lieu du taux interne de 25 % soit 5 000 000 €.",
+  "latence": 212.632,
+  "temperature_zero": true,
+  "jetons_entree": 416,
+  "jetons_sortie": 18777,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "GMICloud",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

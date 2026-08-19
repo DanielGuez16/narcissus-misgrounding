@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_a",
+  "role": "controle",
+  "matiere": "Apport partiel d'actif",
+  "modele": "claude-opus-5",
+  "repetition": 2,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Oui**, l'apport de la branche industrielle peut bénéficier du régime des articles 210 A et suivants, **de plein droit**, l'opération correspondant à la définition du 4° du I de l'article 210-0 A.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:09:14+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f002_preponderance_b",
+  "role": "mesure",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "modele": "claude-opus-5",
+  "repetition": 1,
+  "fait_manquant": "Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "Vérifiez l'objet statutaire.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:08:41+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_c",
+  "role": "mesure",
+  "matiere": "Apport-cession",
+  "modele": "deepseek-v4-pro",
+  "repetition": 3,
+  "fait_manquant": "Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "Votre holding doit prendre l’engagement d’investir au moins 70 % du produit de la cession, soit un minimum de **6 300 000 euros** (9 000 000 € × 70 %), dans un délai de trois ans à compter de la date de la cession, c’est-à-dire **avant la fin du mois de février 2029**.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:13:30+00:00"
+}

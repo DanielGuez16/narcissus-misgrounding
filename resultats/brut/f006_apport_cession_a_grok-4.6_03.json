@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T07:05:21+00:00",
+  "reponse": "**Non. Ce remploi ne permet pas de maintenir le report d’imposition.**\n\nLes faits sont les suivants : l’apport des titres de la société d’exploitation à la holding (que vous contrôlez à 100 %) est intervenu il y a moins de trois ans. La cession du 10 novembre 2025 entre donc dans le champ de l’article 150-0 B ter, I, 2° du CGI. Le report d’imposition prend fin, sauf si la holding prend l’engagement de réinvestir, dans les deux ans et à hauteur d’au moins 60 % du produit (soit 5 400 000 €), dans les conditions strictement prévues par le texte.\n\nLe texte applicable exige un investissement « dans le financement de moyens permanents d’exploitation affectés à **son** activité commerciale » (celle de la société bénéficiaire de l’apport, c’est-à-dire la holding), au sens des articles 34 ou 35 du CGI. Les activités de gestion de son propre patrimoine mobilier ou immobilier sont expressément exclues.\n\nL’opération envisagée (souscription ou acquisition de titres d’une société dont l’objet est l’achat, la rénovation et la revente d’immeubles) ne satisfait pas cette condition :\n\n- Il s’agit d’un investissement en titres, c’est-à-dire d’une opération de gestion du patrimoine mobilier de la holding. Celle-ci demeure une société holding patrimoniale.\n- Les fonds ne financent pas des moyens permanents d’exploitation affectés à une activité commerciale exercée par la holding elle-même.\n- Même si l’on considérait l’activité de la cible (marchand de biens, activité commerciale au sens de l’article 35), cela resterait sans incidence : le texte vise l’activité de la holding, pas celle d’une filiale ou d’une participation.\n\nLes immeubles destinés à la revente constitueraient au demeurant des stocks et non des moyens permanents d’exploitation.\n\nEn l’absence de réinvestissement éligible, le report d’imposition prend fin à raison de la cession du 10 novembre 2025. La plus-value en report devient imposable (impôt sur le revenu et prélèvements sociaux) au titre de 2025.\n\nJe reste à votre disposition pour examiner d’éventuelles autres modalités de réinvestissement qui pourraient, le cas échéant, entrer dans le champ du texte, ou pour chiffrer les conséquences fiscales de la remise en cause.",
+  "latence": 50.785,
+  "temperature_zero": true,
+  "jetons_entree": 594,
+  "jetons_sortie": 2385,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

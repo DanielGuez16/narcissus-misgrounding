@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "claude-opus-5",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Le projet est **compatible** avec le maintien du report d'imposition, mais **pas sous la forme d'un investissement immobilier direct par la holding**, où la notion de « moyens permanents d'exploitation » constitue un obstacle sérieux dès lors que les immeubles constituent des stocks.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:07+00:00"
+}

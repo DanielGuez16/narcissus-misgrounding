@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "qwen-3.6-plus",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**En l'état, votre projet de réinvestissement dans une société d'achat-rénovation-revente immobilière est compatible avec le maintien du report d'imposition**, sous réserve de respecter strictement les conditions de délai (10/03/2029), de seuil (6,3 M€), de forme (engagement écrit) et de substance (activité commerciale avérée de la cible et animation effective par la holding).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:34+00:00"
+}

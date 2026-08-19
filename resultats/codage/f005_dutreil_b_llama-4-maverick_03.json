@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "llama-4-maverick",
+  "repetition": 3,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "Étant donné que la société a pour principale activité la gestion de son patrimoine immobilier (quarante appartements meublés), cela correspond à la gestion de son propre patrimoine, ce qui n'est pas considéré comme une activité éligible selon le deuxième alinéa de l'article 787 B, sauf si elle répond aux critères du troisième alinéa.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:05+00:00"
+}

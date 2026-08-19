@@ -1,0 +1,17 @@
+{
+  "enonce": "f004_beneficiaire_effectif_a",
+  "matiere": "Retenue à la source, bénéficiaire effectif",
+  "role": "controle",
+  "modele": "mistral-medium-3.5",
+  "identifiant_fournisseur": "mistralai/mistral-medium-3-5",
+  "repetition": 1,
+  "horodatage": "2026-08-19T06:15:47+00:00",
+  "reponse": "**Objet : Analyse de la retenue à la source sur la distribution de dividendes à une société mère luxembourgeoise**\n\n**Référence :** CGI, art. 119 bis, 2 / Convention fiscale franco-luxembourgeoise\n\n**Client :** [Nom de la société française]\n\n**Contexte :**\nVotre société envisage de distribuer **20 000 000 €** à sa société mère luxembourgeoise (détentrice de 100 % du capital depuis 5 ans, SA soumise à l’IS luxembourgeois). La distribution serait payée le **15 novembre 2024**.\n\n**Question :** Une retenue à la source (RAS) est-elle due en France sur cette distribution ?\n\n---\n\n### **Analyse juridique :**\n\n#### **1. Principe général (CGI, art. 119 bis, 2)**\nLes dividendes distribués à une personne morale **non résidente en France** sont soumis à une **retenue à la source (RAS)** de **30 %** (taux de droit commun, CGI art. 187), **sauf exemption ou réduction prévue par une convention fiscale**.\n\n#### **2. Exceptions applicables :**\n##### **a) Exemption pour les sociétés mères (CGI, art. 119 bis, 2, al. 2)**\nL’article 119 bis, 2 prévoit une **exemption de RAS** si :\n- Le bénéficiaire est une **société résidente dans un État membre de l’UE** (le Luxembourg en fait partie).\n- La société mère détient **au moins 5 % du capital** de la filiale française **depuis au moins 2 ans** (votre cas : 100 % depuis 5 ans → condition remplie).\n\n**→ Conclusion partielle :** L’exemption de RAS s’applique **si la société mère luxembourgeoise est éligible** (ce qui semble être le cas).\n\n##### **b) Convention fiscale franco-luxembourgeoise (art. 10)**\nLa convention du **1er avril 2020** (applicable depuis 2021) réduit la RAS à **0 %** pour les dividendes versés à une société mère luxembourgeoise **si elle détient au moins 10 % du capital** (votre cas : 100 % → condition remplie).\n\n**→ Conclusion partielle :** La convention supprime la RAS.\n\n#### **3. Vérifications complémentaires :**\n- **Forme juridique de la société mère** : SA luxembourgeoise → éligible.\n- **Imposition au Luxembourg** : Soumise à l’IS luxembourgeois → pas de risque de \"société écran\".\n- **Durée de détention** : 5 ans > 2 ans → condition remplie.\n\n---\n\n### **Réponse finale :**\n**Aucune retenue à la source n’est due** sur la distribution de **20 000 000 €** à la société mère luxembourgeoise, car :\n1. **Exemption UE** (CGI, art. 119 bis, 2) : Société mère résidente UE + détention > 2 ans.\n2. **Convention franco-luxembourgeoise** : RAS à 0 % pour les dividendes versés à une société mère détenant ≥ 10 %.\n\n**Recommandation :**\n- **Justificatif à conserver** : Preuve de la détention du capital depuis 5 ans + certificat de résidence fiscale luxembourgeois.\n- **Déclaration** : La distribution doit être déclarée en France (formulaire **2777-D-SD**), mais **sans RAS à payer**.\n\n**À votre disposition pour toute précision complémentaire.**\n\n**Cordialement,**\n[Votre nom]\nAvocat fiscaliste\n[Cabinet X]",
+  "latence": 6.625,
+  "temperature_zero": true,
+  "jetons_entree": 343,
+  "jetons_sortie": 848,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "Mistral",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

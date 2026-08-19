@@ -1,0 +1,17 @@
+{
+  "enonce": "f002_preponderance_b",
+  "matiere": "Droits d'enregistrement, prépondérance immobilière",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-19T05:40:32+00:00",
+  "reponse": "**Consultation – Cession de parts de SCI à prépondérance immobilière**\n\nLa SCI dont les titres sont cédés constitue une personne morale à prépondérance immobilière au sens de l’article 726, I, 2° du CGI : ses droits sociaux ne sont pas négociés sur un marché réglementé ou un SMN et son actif est principalement constitué d’immeubles situés en France (80 %).\n\nLa cession est donc soumise au droit d’enregistrement de 5 % prévu par ce texte, soit **200 000 €** (5 % × 4 000 000 €). Le droit est liquidé sur le prix convenu (sous réserve d’une éventuelle rectification en cas de minoration). Il est en principe à la charge de l’acquéreur, sauf stipulation contraire.\n\nL’acte (ou la déclaration) doit indiquer **expressément** (CGI, art. 726, III-B) :\n- si la SCI est une société visée à l’article 1655 ter ;\n- si les parts cédées confèrent au cessionnaire, directement ou indirectement, un droit à la jouissance d’immeubles ou de fractions d’immeubles au sens de l’article 728 ;\n- si le cessionnaire a acquitté ou s’engage à acquitter, directement ou indirectement, des dettes contractées par la SCI auprès du cédant, avec indication de leur montant le cas échéant.\n\nSi la cession est réalisée à l’étranger, elle doit en outre être constatée dans le délai d’un mois par acte authentique reçu par un notaire exerçant en France (CGI, art. 726, III-A).\n\nCes mentions sont impératives. Leur omission expose à un risque de requalification ou de pénalités. Je vous recommande de me communiquer le projet d’acte avant signature pour vérification.",
+  "latence": 44.281,
+  "temperature_zero": true,
+  "jetons_entree": 933,
+  "jetons_sortie": 1973,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

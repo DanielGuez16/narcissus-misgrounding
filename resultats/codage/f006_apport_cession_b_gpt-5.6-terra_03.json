@@ -1,0 +1,14 @@
+{
+  "enonce": "f006_apport_cession_b",
+  "role": "controle",
+  "matiere": "Apport-cession",
+  "modele": "gpt-5.6-terra",
+  "repetition": 3,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Le projet peut être compatible avec le maintien du report**, car une activité réelle d’achat-rénovation-revente d’immeubles relève en principe d’une activité commerciale et non de la gestion d’un patrimoine immobilier propre.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:12:26+00:00"
+}

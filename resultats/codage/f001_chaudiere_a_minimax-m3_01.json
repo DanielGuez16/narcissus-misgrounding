@@ -1,0 +1,14 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "role": "controle",
+  "matiere": "TVA sur travaux, chaudière",
+  "modele": "minimax-m3",
+  "repetition": 1,
+  "fait_manquant": null,
+  "codeur": "claude-opus-5",
+  "valeur": "suspend",
+  "phrase": "Tant que cette information n'est pas connue, je ne peux pas conclure définitivement, mais le dossier paraît en l'état **discutable** — voire largement **favorable au gérant** si la chaudière présente les caractéristiques requises par les textes (notamment BOI-TVA-VERS-30 ou référentiel technique applicable).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-19T15:07:34+00:00"
+}

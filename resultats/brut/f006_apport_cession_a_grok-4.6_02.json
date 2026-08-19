@@ -1,0 +1,17 @@
+{
+  "enonce": "f006_apport_cession_a",
+  "matiere": "Apport-cession",
+  "role": "controle",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-19T07:05:44+00:00",
+  "reponse": "**Non. Ce remploi n’est pas éligible et ne permet pas de maintenir le report d’imposition.**\n\nLe report prévu à l’article 150-0 B ter du CGI prend fin en cas de cession des titres apportés dans les trois ans de l’apport, sauf si la holding cédante (société bénéficiaire de l’apport) prend l’engagement de remployer, dans les deux ans de la cession et à hauteur d’au moins 60 % du produit (soit ici au moins 5 400 000 €), ce produit dans le financement de moyens permanents d’exploitation affectés à **son** activité commerciale (au sens des articles 34 ou 35), industrielle, artisanale, libérale, agricole ou financière. Les activités de gestion de son propre patrimoine mobilier ou immobilier sont expressément exclues.\n\nL’investissement envisagé (prise de participation ou apport dans une société dont l’objet est l’achat, la rénovation et la revente d’immeubles) ne satisfait pas ces conditions, pour deux raisons cumulatives :\n\n- Il s’agit d’une prise de participation, c’est-à-dire d’un emploi dans le patrimoine mobilier de la holding. Cette activité est exclue par le texte même.\n- Les fonds ne financent pas des moyens permanents d’exploitation de la holding elle-même. Ils financent l’activité (et le stock) d’une autre personne morale. Même si la cible exerce une activité commerciale de marchand de biens (article 35 du CGI), cela reste l’activité de la cible, non celle de la holding.\n\nÀ titre surabondant, même si la holding exerçait elle-même l’activité d’achat-rénovation-revente, les immeubles acquis en vue de la revente constitueraient des stocks (actifs circulants) et non des moyens permanents d’exploitation (immobilisations affectées de façon durable à l’activité). Le texte exige précisément des moyens permanents.\n\nEn l’absence de remploi éligible dans le délai de deux ans, le report d’imposition prendra fin. La plus-value en report deviendra imposable au titre de l’année de la cession des titres (2025), selon les règles de droit commun applicables à cette date, avec les majorations et intérêts de retard éventuels en cas de défaut de déclaration.\n\nJe vous invite à me communiquer les éléments complémentaires (date exacte de l’apport, montant de la plus-value en report, statuts et activité réelle actuelle de la holding, projet précis de la société cible et modalités d’investissement envisagées) afin d’examiner s’il existe une autre voie de remploi conforme ou des mesures d’accompagnement possibles. Dans l’attente, aucun engagement de remploi ne doit être pris sur cette opération.",
+  "latence": 76.561,
+  "temperature_zero": true,
+  "jetons_entree": 594,
+  "jetons_sortie": 3641,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

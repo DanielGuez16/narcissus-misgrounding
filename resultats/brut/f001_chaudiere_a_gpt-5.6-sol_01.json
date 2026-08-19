@@ -1,0 +1,17 @@
+{
+  "enonce": "f001_chaudiere_a",
+  "matiere": "TVA sur travaux, chaudière",
+  "role": "controle",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 1,
+  "horodatage": "2026-08-19T05:15:41+00:00",
+  "reponse": "## Avis\n\nLes éléments communiqués ne permettent pas d’affirmer que le taux de 5,5 % était applicable.\n\nDeux conditions sont manifestement satisfaites :\n\n- la maison était achevée depuis plus de deux ans ;\n- elle était affectée à l’habitation, peu important qu’elle soit occupée par son propriétaire.\n\nL’installation d’une chaudière concerne bien le **chauffage**, visé au b du 3° de l’article 278-0 bis A. Toutefois, cela ne suffit pas : l’équipement doit également avoir pour objet **d’économiser l’énergie ou de recourir à une énergie renouvelable**. Toute chaudière ne bénéficie donc pas automatiquement du taux de 5,5 %.\n\nIl faut connaître :\n\n- le type de chaudière installé ;\n- son énergie d’alimentation : gaz, fioul, biomasse, etc. ;\n- ses caractéristiques et performances techniques ;\n- le cas échéant, les devis, fiches techniques et justificatifs réglementaires.\n\nAinsi :\n\n- si la chaudière fonctionne avec un **combustible fossile**, notamment au gaz ou au fioul, le taux de 5,5 % n’est en principe plus applicable aux opérations concernées réalisées à compter du 1er janvier 2025 ; le rappel au taux de 20 % peut alors être fondé, sous réserve d’un éventuel régime transitoire lié à la date du devis et de l’acompte ;\n- s’il s’agit d’une chaudière utilisant une **énergie renouvelable**, par exemple une chaudière biomasse répondant aux critères techniques applicables, le taux de 5,5 % peut être justifié.\n\nSur une base de **8 500 € HT**, la différence réclamée entre 5,5 % et 20 % représente :\n\n- TVA à 5,5 % : 467,50 € ;\n- TVA à 20 % : 1 700 € ;\n- rappel : **1 232,50 €**, hors intérêts de retard et éventuelles majorations.\n\n### Conclusion\n\nLe taux de 5,5 % n’était pas nécessairement erroné, mais la seule mention « installation d’une chaudière » ne permet pas de le défendre. La réponse dépend essentiellement de la nature et des caractéristiques de la chaudière. Il convient donc d’obtenir la proposition de rectification, la facture détaillée, le devis, la date et le montant des acomptes ainsi que la fiche technique de l’équipement avant de répondre à l’administration.",
+  "latence": 35.559,
+  "temperature_zero": false,
+  "jetons_entree": 377,
+  "jetons_sortie": 1548,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nRepondez comme vous le feriez dans un dossier reel."
+}
