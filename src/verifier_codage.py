@@ -48,6 +48,7 @@ DOSSIER_DOUBLE = RACINE / "resultats" / "double_codage"
 
 GRAINE_UNIFORME = 20260819
 GRAINE_STRATIFIEE = 20260820
+GRAINE_MELANGE = 20260821
 TAILLE_UNIFORME = 50
 PAR_VALEUR = 10
 
@@ -174,6 +175,14 @@ def tirage_uniforme(cellules: list[dict], taille: int, graine: int) -> list[dict
 
 
 def tirage_stratifie(cellules: list[dict], par_valeur: int, graine: int) -> list[dict]:
+    """Tire N cellules par valeur, PUIS melange l'ordre de presentation.
+
+    Le melange n'est pas cosmetique. Sans lui, les strates se suivent en blocs
+    de N reponses de meme valeur, et la feuille cesse d'etre aveugle : un
+    codeur qui lit dix reponses semblables d'affilee en deduit la structure du
+    tirage et code la onzieme en connaissant sa categorie. Le premier tirage
+    stratifie, ecrit avant ce correctif, presentait ce defaut.
+    """
     alea = random.Random(graine)
     tire = []
     for valeur in VALEURS:
@@ -184,6 +193,7 @@ def tirage_stratifie(cellules: list[dict], par_valeur: int, graine: int) -> list
                 f"uniforme, {par_valeur} demandees. Reduisez --par-valeur."
             )
         tire.extend(alea.sample(strate, par_valeur))
+    random.Random(GRAINE_MELANGE).shuffle(tire)
     return tire
 
 
@@ -323,7 +333,7 @@ def accord_d_un_tirage(nom: str, correspondance: list[dict], saisi: dict[str, st
     }
 
 
-def calculer_accord() -> int:
+def calculer_accord(tirage: str = "tous") -> int:
     chemin = DOSSIER_DOUBLE / "reference_scellee.json"
     if not chemin.exists():
         raise SystemExit(f"{chemin} introuvable. Tirez les echantillons d'abord.")
@@ -331,6 +341,9 @@ def calculer_accord() -> int:
 
     resultats = []
     for nom, entree in reference["tirages"].items():
+        if tirage != "tous" and nom != tirage:
+            print(f"\n=== {nom} : ecarte du calcul (--tirage {tirage}) ===")
+            continue
         saisi = lire_saisie(DOSSIER_DOUBLE / entree["fichier_saisie"], entree["correspondance"])
         resultats.append(accord_d_un_tirage(nom, entree["correspondance"], saisi))
 
@@ -346,16 +359,52 @@ def calculer_accord() -> int:
 # --------------------------------------------------------------------------
 
 
+def saisie_remplie(chemin: Path) -> bool:
+    if not chemin.exists():
+        return False
+    with chemin.open(encoding="utf-8") as flux:
+        return any((l.get("code_humain") or "").strip() for l in csv.DictReader(flux))
+
+
+def verifier_correspondance_stable(nom: str, nouvelle: list[dict]) -> None:
+    """Interdit de remapper des etiquettes sous une feuille deja codee.
+
+    La reference porte la correspondance etiquette -> cellule. Si le tirage
+    change apres qu'une feuille a ete remplie, les valeurs saisies designeraient
+    d'autres cellules sans que rien ne le signale.
+    """
+    chemin = DOSSIER_DOUBLE / "reference_scellee.json"
+    if not chemin.exists():
+        return
+    ancienne = json.loads(chemin.read_text(encoding="utf-8"))["tirages"].get(nom)
+    if not ancienne:
+        return
+    if not saisie_remplie(DOSSIER_DOUBLE / ancienne["fichier_saisie"]):
+        return
+    avant = [(e["etiquette"], e["cellule"]) for e in ancienne["correspondance"]]
+    apres = [(e["etiquette"], e["cellule"]) for e in nouvelle]
+    if avant != apres:
+        raise SystemExit(
+            f"Le tirage '{nom}' a change, alors que {ancienne['fichier_saisie']} contient "
+            "deja un codage a la main. Reecrire la reference ferait pointer les etiquettes "
+            "saisies vers d'autres cellules, sans que rien ne le signale.\n"
+            f"Deplacez {DOSSIER_DOUBLE} ailleurs si vous voulez refaire ce tirage, "
+            "ou gardez la reference actuelle."
+        )
+
+
 def main() -> int:
     analyseur = argparse.ArgumentParser(description="Double codage en aveugle du codage automatique.")
     analyseur.add_argument("--accord", action="store_true",
                            help="Calculer l'accord, une fois les feuilles remplies.")
+    analyseur.add_argument("--tirage", choices=["uniforme", "stratifie", "tous"], default="tous",
+                           help="Restreindre le calcul d'accord a un tirage (defaut : tous).")
     analyseur.add_argument("--taille-uniforme", type=int, default=TAILLE_UNIFORME)
     analyseur.add_argument("--par-valeur", type=int, default=PAR_VALEUR)
     arguments = analyseur.parse_args()
 
     if arguments.accord:
-        return calculer_accord()
+        return calculer_accord(arguments.tirage)
 
     enonces = charger_enonces()
     codages = charger_codages()
@@ -375,9 +424,14 @@ def main() -> int:
     stratifie = tirage_stratifie(restantes, arguments.par_valeur, GRAINE_STRATIFIEE)
 
     print(f"\nTirage uniforme  : {len(uniforme)} cellules, graine {GRAINE_UNIFORME}")
+    corr_u = [{"etiquette": f"U{i:02d}", "cellule": cle(c)} for i, c in enumerate(uniforme, 1)]
+    verifier_correspondance_stable("uniforme", corr_u)
     corr_u = ecrire_feuille("uniforme", "U", uniforme, enonces)
     print(f"Tirage stratifie : {len(stratifie)} cellules, {arguments.par_valeur} par valeur, "
-          f"graine {GRAINE_STRATIFIEE}, hors des {len(uniforme)} precedentes")
+          f"graine {GRAINE_STRATIFIEE}, melange avec la graine {GRAINE_MELANGE}, "
+          f"hors des {len(uniforme)} precedentes")
+    corr_s = [{"etiquette": f"S{i:02d}", "cellule": cle(c)} for i, c in enumerate(stratifie, 1)]
+    verifier_correspondance_stable("stratifie", corr_s)
     corr_s = ecrire_feuille("stratifie", "S", stratifie, enonces)
 
     recouvrement = {e["cellule"] for e in corr_u} & {e["cellule"] for e in corr_s}
