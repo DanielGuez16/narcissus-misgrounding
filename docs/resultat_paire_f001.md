@@ -55,11 +55,64 @@ une piece a joindre, et le modele a toujours un regime par defaut sous la main,
 le plus recent, qu'il applique sans voir qu'une date lui manque. Ni bonne ni
 mauvaise reclamation : pas de reclamation du tout.
 
+## La nature du fait manquant : un defaut plausible est-il disponible ?
+
+Le contraste f001 / f003 suggerait une regle simple : les modeles reclament les
+faits concrets et ignorent les dates. Etendu aux six enonces de mesure, ce
+partage ne passe pas le test. On mesure, pour chaque fait manquant, le taux de
+reclamation (suspend rapporte au total repondu).
+
+| nature | enonce | reclam. | suspend | c.p.d. | misgr. | N |
+|---|---|--:|--:|--:|--:|--:|
+| date | f003_apport_partiel_b (depot au greffe) | 0 % | 0 | 0 | 38 | 38 |
+| date | f006_apport_cession_c (date de cession) | 0 % | 0 | 2 | 36 | 38 |
+| | **agregat date** | **0 %** | 0 | 2 | 74 | 76 |
+| concret | f001_chaudiere_b (combustible) | 85 % | 33 | 0 | 6 | 39 |
+| concret | f005_dutreil_b (prestations) | 10 % | 4 | 4 | 31 | 39 |
+| concret | f004_beneficiaire_effectif_b (usage des fonds) | 3 % | 1 | 17 | 20 | 38 |
+| concret | f002_preponderance_b (mentions de l'acte) | 0 % | 0 | 14 | 25 | 39 |
+| | **agregat concret** | **25 %** | 38 | 35 | 82 | 155 |
+
+La these date contre fait concret est **testee et rejetee**. Les 25 % de
+l'agregat concret sont, en entier, f001_b (85 %). Les trois autres faits
+concrets sont ignores presque aussi completement que les dates : f005_b 10 %,
+f004_b 3 %, f002_b 0 %. On retire f001_b, et la reclamation sur les faits
+concrets tombe a 5 sur 116, soit **4 %**, indistinguable des 0 % des dates. Ce
+n'est pas la nature date-contre-concret qui separe : c'est f001_b seul contre
+tout le reste.
+
+Ce que f001_b a et que les autres n'ont pas : son fait manquant **n'admet aucun
+defaut plausible**. On ne peut pas enoncer un taux de TVA sans connaitre le
+combustible, et il n'existe pas de combustible « habituel » a supposer. Les
+autres faits manquants offrent tous une porte de sortie silencieuse :
+
+- **les dates** sont le cas extreme : un defaut est toujours disponible, le
+  regime le plus recent, que le modele applique sans voir qu'une date lui
+  manque ;
+- **f005_b** (prestations) : le modele suppose le cas courant, location nue sans
+  para-hotellerie ;
+- **f002_b** (mentions) : les trois mentions figurent dans la loi jointe au
+  prompt, le modele les recite au lieu de voir qu'il ignore le cas d'espece ;
+- **f004_b** (usage des fonds) : le modele conclut sous reserve et nomme le
+  beneficiaire effectif comme condition a verifier, ce qui n'est pas un
+  misgrounding silencieux mais un report prudent.
+
+L'axe qui separe n'est donc pas date contre concret, c'est : le fait manquant
+admet-il un defaut plausible que le modele peut poser en silence ? Les dates ne
+sont pas une categorie a part ; elles sont le cas ou un defaut est toujours
+disponible, ce qui explique qu'elles tombent a 0, et pas seulement qu'elles y
+tombent.
+
 ## La lecon du banc
 
 Ce qui declenche la reclamation n'est pas la comprehension qu'une information
-manque, c'est la presence d'une accroche concrete a demander. La ou cette
-accroche existe, la reclamation se declenche a tort comme a raison (f001). La ou
-elle manque, le modele comble en silence avec son regime par defaut (f003). La
-competence visee, suivre l'etat du dossier pour savoir ce qui manque, n'est
-mesuree ni par les 85 % ni par les 72 % : elle est absente des deux.
+manque, c'est l'absence d'un defaut plausible a poser a sa place. La ou le
+modele peut supposer, il suppose (f003, f005, f002, f004) ; la ou il ne le peut
+pas, il est force de demander (f001_b), et il le fait alors a tort comme a
+raison, selon qu'il date ou non correctement la reforme (f001_a contre f001_b).
+La competence visee, suivre l'etat du dossier pour savoir ce qui manque, n'est
+mesuree ni par les 85 % de f001_b ni par les 72 % de f001_a : elle est absente
+des deux.
+
+**Le modele ne reclame pas quand il peut supposer, et il peut presque toujours
+supposer.**
