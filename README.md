@@ -22,6 +22,7 @@ relancer.
 | `benchmark/textes/` | les textes de loi, un fichier par version datee |
 | `resultats/brut/` | **500 reponses brutes** : 13 enonces x 13 modeles x 3 repetitions, moins 7 cellules minimax sans reponse. Un JSON par appel, `{enonce}_{modele}_{repetition}.json` |
 | `resultats/codage/` | **507 cellules codees** : la valeur de comportement et la phrase de la reponse qui la justifie |
+| `resultats/double_codage/` | les deux echantillons recodes a la main, la reference scellee et l'accord |
 | `docs/` | les resultats et la methodo (voir plus bas) |
 
 ## Ce que mesure le banc
@@ -81,18 +82,47 @@ qui la justifie, verifiee mot pour mot par le script.
 Le codeur, ses regles et son calibrage sont dans
 [docs/codage_calibrage.md](docs/codage_calibrage.md).
 
+## Ce que vaut ce codage
+
+Un codage produit par un modele ne vaut que verifie. Deux echantillons ont ete
+recodes a la main, en aveugle du premier codage, par une seconde personne :
+**50 cellules tirees au hasard**, qui mesurent l'accord tel qu'il se produit sur
+nos donnees, et **40 cellules tirees dix par valeur**, qui mesurent la capacite
+a distinguer les quatre categories. 90 cellules distinctes, graines fixes.
+
+| Tirage | n | Accord | Kappa 4 valeurs | Accord binaire | Kappa binaire |
+|---|--:|--:|--:|--:|--:|
+| Uniforme | 50 | 86,0 % | 0,776 | 98,0 % | 0,922 |
+| Stratifie | 40 | 82,5 % | 0,767 | 97,5 % | 0,935 |
+
+Les deux kappas ne disent pas la meme chose. Celui **a quatre valeurs** mesure
+une finesse de codage que les resultats publies n'utilisent pas : l'agregation
+ne compte que `suspend` en reclamation et additionne les trois autres en
+misgrounding, donc un desaccord entre ces trois ne deplace aucun chiffre. Celui
+**sur la variable binaire**, `suspend` contre le reste, mesure la fiabilite des
+taux annonces. Un seul desaccord franchit cette frontiere sur chacun des deux
+tirages.
+
+Methode, tirage ecarte, desaccords en clair et ce que la stratification a
+revele : [docs/double_codage.md](docs/double_codage.md).
+
 ## Ou lire les resultats
 
-- [docs/tableaux_resultats.md](docs/tableaux_resultats.md) : les tableaux
-  complets (par enonce, par modele, la matrice), la regle d'agregation, et le
-  resultat hors chaudiere.
-- [docs/resultat_paire_f001.md](docs/resultat_paire_f001.md) : le resultat
-  central, la paire controle/mesure de la chaudiere et l'axe "un defaut plausible
-  est-il disponible".
-- [docs/cellules_relancees.md](docs/cellules_relancees.md) : les 11 cellules en
-  echec, diagnostic, et une limite de reproductibilite (le routage OpenRouter).
-- [docs/limites_enonces.md](docs/limites_enonces.md) : limites de conception des
-  enonces, a declarer.
+- [tableaux_resultats.md](docs/tableaux_resultats.md) : les tableaux complets,
+  par enonce, par modele, la matrice, et la regle d'agregation.
+- [resultat_paire_f001.md](docs/resultat_paire_f001.md) : le resultat central,
+  la paire controle/mesure de la chaudiere.
+- [double_codage.md](docs/double_codage.md) : les deux echantillons recodes a la
+  main, les quatre mesures d'accord, et ce que la stratification a revele.
+- [limites_enonces.md](docs/limites_enonces.md) : les limites de conception des
+  enonces, dont les deux qui font manquer plusieurs faits. A declarer, pas a
+  corriger.
+- [codage_calibrage.md](docs/codage_calibrage.md) : le codeur, ses regles, et le
+  calibrage qui les a arretees.
+- [cellules_relancees.md](docs/cellules_relancees.md) : les 11 cellules en echec,
+  leur diagnostic, et les 7 laissees absentes comme resultat.
+- [declaration_ia.md](docs/declaration_ia.md) : la declaration d'usage de l'IA a
+  porter dans le papier, et ce que la politique de l'editeur exige.
 
 ## Rejouer, ou recoder sans rejouer
 
@@ -111,6 +141,7 @@ n'est pas versionne.
 python src/tester_modeles.py                                       # les 13 modeles repondent-ils ?
 python src/lancer.py --enonces tous --modeles tous --repetitions 3 # la campagne, 507 appels -> resultats/brut/
 python src/coder.py                                                # code resultats/brut/ -> resultats/codage/
+python src/verifier_codage.py --accord                             # l'accord entre les deux codeurs
 ```
 
 **Recoder sans relancer la campagne.** `src/coder.py` lit les reponses de
