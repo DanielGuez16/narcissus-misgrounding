@@ -190,8 +190,24 @@ def _extraire_json(texte: str) -> dict:
     raise ValueError(f"pas de JSON exploitable : {texte[:300]!r}")
 
 
+# Equivalences typographiques : un artefact de rendu (ligature, apostrophe
+# courbe, espace insecable) qui ferait echouer la comparaison est un defaut
+# d'outil, pas une donnee. On les neutralise avant de comparer.
+_EQUIV = {
+    "œ": "oe", "Œ": "oe", "æ": "ae", "Æ": "ae",   # oe ae ligatures
+    "’": "'", "‘": "'", "ʼ": "'", "`": "'", "´": "'",  # apostrophes
+    "“": '"', "”": '"', "„": '"', "«": '"', "»": '"',  # guillemets
+    "–": "-", "—": "-", "‒": "-", "−": "-",        # tirets
+    "…": "...",                                                    # points de suspension
+    " ": " ", " ": " ", " ": " ", "​": "",         # espaces insecables/fines
+}
+
+
 def _normaliser(s: str) -> str:
-    return re.sub(r"\s+", " ", s or "").strip().lower()
+    s = s or ""
+    for k, v in _EQUIV.items():
+        s = s.replace(k, v)
+    return re.sub(r"\s+", " ", s).strip().lower()
 
 
 def _phrase_verbatim(phrase: str, reponse: str) -> bool:
