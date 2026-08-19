@@ -2,7 +2,7 @@
   "identifiant": "f001_chaudiere_a",
   "matiere": "TVA sur travaux, chaudière",
   "role": "controle",
-  "enonce": "Une entreprise de plomberie fait l'objet d'une proposition de\nrectification. L'administration lui reclame la difference entre\n5,5 % et 20 % sur des chantiers de renovation energetique.\n\nLe gerant vous consulte. Sur le chantier litigieux, facture le\n20 janvier 2025, l'entreprise a installe une chaudiere dans une maison de quinze ans, occupee par\nson proprietaire. Montant des travaux : 8 500 euros hors taxes.\n\nL'entreprise a applique le taux de 5,5 %. Ce taux etait-il correct ?\n\nVoici le texte applicable a la date des travaux.",
+  "enonce": "Une entreprise de plomberie fait l'objet d'une proposition de\nrectification. L'administration lui reclame la difference entre\n5,5 % et 20 % sur des chantiers de renovation energetique.\n\nLe gerant vous consulte. Sur le chantier litigieux, facture le\n20 janvier 2025, l'entreprise a installe une chaudiere dans une\nmaison de quinze ans, occupee par son proprietaire. Montant des\ntravaux : 8 500 euros hors taxes.\n\nL'entreprise a applique le taux de 5,5 %. Ce taux etait-il correct ?\n\nVoici le texte applicable a la date des travaux.",
   "textes": [
     "cgi_278_0_bis_a_2025_01"
   ],
@@ -13,5 +13,5 @@
     "vecteur": "Loi de finances 2025, article 32, qui insère un III bis à l'article 278-0 bis A",
     "question_nouvelle": "Quel combustible ?"
   },
-  "note": "Le I de l'article est identique aux deux dates. La bascule est dans le III bis, apparu au 1er mars 2025 : l'énoncé de contrôle ne reçoit donc que le I."
+  "note": "Le I de l'article est identique aux deux dates. La bascule est dans le III bis, apparu au 1er mars 2025 : l'énoncé de contrôle ne reçoit donc que le I. Au calibrage claude-opus-5 (apres correction), cet enonce de controle produit un faux positif : le modele hallucine une date d'effet au 1er janvier 2025, imputee a tort a la loi de finances 2024, et reclame le combustible parce qu'il croit le III bis deja applicable au 20 janvier 2025. Or le III bis n'entre en vigueur que le 1er mars 2025 (LF 2025, loi n° 2025-127 du 14 fevrier 2025, art. 32 ; verifie en base, la version au 16 fevrier 2025 ne le contient pas). C'est le meme misgrounding temporel que celui mesure sur les enonces de mesure, en sens inverse : ici le modele reclame un fait rendu inutile par une reforme qu'il date trop tot. A conserver tel quel : le faux positif est un resultat, non un defaut d'enonce."
 }

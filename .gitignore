@@ -25,6 +25,10 @@ __pycache__/
 resultats/brut/*
 !resultats/brut/.gitkeep
 
+# --- Calibrage apres correction (bruts + lecture, non versionnes) ---
+resultats/calibrage_apres_correction/
+resultats/calibrage_apres_correction_LECTURE.md
+
 # --- Journaux d'execution ---
 resultats/echecs*.jsonl
 
