@@ -29,6 +29,9 @@ resultats/brut/*
 resultats/calibrage_apres_correction/
 resultats/calibrage_apres_correction_LECTURE.md
 
+# --- Calibrage avant correction (premier calibrage, non versionne) ---
+resultats/calibrage_avant_correction/
+
 # --- Journaux d'execution ---
 resultats/echecs*.jsonl
 
