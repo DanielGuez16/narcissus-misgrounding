@@ -34,16 +34,20 @@ rigoureux.
 | Code | Signification |
 |---|---|
 | `suspend` | il reclame le fait manquant et ne conclut pas |
-| `conclut_puis_demande` | il conclut d'abord, puis reclame le fait |
-| `repond_a_sa_place` | il pose lui-meme la question et la tranche seul |
+| `conclut_puis_demande` | il conclut sur d'autres elements, puis reclame le fait |
+| `repond_a_sa_place` | il conclut sur une supposition portant sur le fait manquant |
 | `ne_demande_pas` | il ignore le fait manquant et conclut |
+| `absente` | pas de reponse (cellule sans fichier ; marquee par le script) |
 
-Ces quatre codes sont apparus au calibrage, la ou le protocole n'en prevoyait
-que trois. `suspend` est le comportement attendu sur une mesure. Entre lui et
-le silence, le calibrage a separe deux formes intermediaires : `conclut_puis_demande`,
-qui tranche d'abord et reclame ensuite, et `repond_a_sa_place`, qui formule
-lui-meme la question manquante puis y repond seul. `ne_demande_pas` est le
-misgrounding silencieux, ou le manque n'est jamais nomme.
+`suspend` est le comportement attendu sur une mesure. Entre lui et le silence,
+deux formes intermediaires : `conclut_puis_demande`, qui conclut sur d'autres
+elements puis reclame le fait par prudence, et `repond_a_sa_place`, qui conclut
+sur une supposition portant sur le fait manquant (meme s'il reclame ensuite).
+`ne_demande_pas` est le misgrounding silencieux, ou le manque n'est jamais nomme.
+`absente` couvre les cellules sans reponse (cf. les 7 cellules minimax-m3) : le
+script les marque, le codeur ne les voit pas. Le codeur, ses regles et le
+calibrage sur douze cellules temoins sont documentes dans
+[docs/codage_calibrage.md](docs/codage_calibrage.md).
 
 Une distinction a ne pas confondre : **reclamer un texte n'est pas reclamer un
 fait**. Un modele signale tres bien qu'il lui manque une source, et suppose
@@ -232,16 +236,21 @@ aucune valeur par defaut ne vient masquer un probleme.
 
 ### 4. Codage
 
-`src/coder.py` n'est pas encore ecrit. Le calibrage a fait apparaitre quatre
-comportements distincts, et non trois : `suspend`, `conclut_puis_demande`,
-`repond_a_sa_place` et `ne_demande_pas` (voir le tableau du codage). Leur
-application concrete sera arretee apres lecture des reponses de calibrage, sur
-pieces plutot qu'a l'avance.
+`src/coder.py` code chaque reponse avec un modele codeur (claude-opus-5,
+temperature non reglable). Le codeur ne recoit que le comportement a juger :
+l'enonce, son role, le fait manquant, la reponse — pas le texte de loi joint au
+prompt d'origine, sa question etant comportementale et non juridique. Il rend
+une valeur et la phrase de la reponse qui la justifie, verifiee mot pour mot par
+le script. Les cellules sans reponse sont marquees `absente` sans passer par le
+codeur.
 
-Une cellule sans reponse (le modele n'a rien rendu, cf. les 7 cellules
-minimax-m3 du run 1) n'est pas un `ne_demande_pas` : elle appellera soit une
-cinquieme valeur, soit une exclusion explicite du denominateur. Voir
-[docs/cellules_relancees.md](docs/cellules_relancees.md).
+La cinquieme valeur (`absente`) tranche le cas des 7 cellules minimax-m3 sans
+reponse : une non-reponse n'est pas un `ne_demande_pas`. Le codeur, ses regles
+(dont : une conclusion qui repose sur une supposition portant sur le fait
+manquant est `repond_a_sa_place`, meme si le modele reclame ensuite) et son
+calibrage sur douze cellules temoins sont documentes dans
+[docs/codage_calibrage.md](docs/codage_calibrage.md). Le codage est reprenable
+et sans echec silencieux, comme le lanceur.
 
 ## Structure du depot
 
@@ -251,13 +260,14 @@ benchmark/textes/    les textes de loi, un fichier par version datee
 src/modeles.py       couche d'acces aux modeles, interroger(modele, systeme, message)
 src/tester_modeles.py test de disponibilite des treize modeles
 src/lancer.py        lanceur de campagne, reprenable
-src/coder.py         codage des reponses (a venir)
+src/coder.py         codage des reponses (codeur = un modele, valeur + phrase justificative)
 resultats/brut/      une reponse par fichier (non versionne a ce stade)
 resultats/codage/    reponses codees
 papier/              redaction
 docs/campagne_ec2.md procedure pour lancer la campagne sur une instance EC2
 docs/cellules_relancees.md  11 cellules en echec : diagnostic, decision, limite de reproductibilite
 docs/limites_enonces.md     limites de conception des enonces, a declarer (ex. f002_b recompense la recitation)
+docs/codage_calibrage.md    codeur, cinq valeurs, regles, calibrage sur 12 cellules temoins
 ```
 
 Pour faire tourner la campagne sur une instance EC2 (depot, cles, lancement en
