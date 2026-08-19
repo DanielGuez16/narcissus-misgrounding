@@ -8,7 +8,7 @@ reponse dans resultats/brut/ des qu'elle arrive.
     python src/lancer.py --calibrage --modeles claude-opus-5
 
     # campagne complete
-    python src/lancer.py --enonces tous --modeles tous --repetitions 10
+    python src/lancer.py --enonces tous --modeles tous --repetitions 3
 
     # reprise : relancer la meme commande. Les appels deja faits sont sautes.
 

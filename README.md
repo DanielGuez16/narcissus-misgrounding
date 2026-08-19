@@ -165,11 +165,11 @@ vient pas de la, mais de l'ordre d'accumulation en virgule flottante et du
 routage entre serveurs.
 
 Ensuite, la variable mesuree ici est un comportement d'elicitation, pas le
-determinisme. Seed libre, on mesure ce qu'un cabinet obtiendrait en posant dix
-fois la meme question. C'est la situation reelle.
+determinisme. Seed libre, on mesure ce qu'un cabinet obtiendrait en posant
+trois fois la meme question. C'est la situation reelle.
 
-Enfin, un seed constant rendrait dix reponses identiques chez les modeles qui
-le respectent, et ferait disparaitre la variance que les dix repetitions
+Enfin, un seed constant rendrait trois reponses identiques chez les modeles qui
+le respectent, et ferait disparaitre la variance que les trois repetitions
 servent precisement a mesurer. Si un autre modele refuse le parametre, l'appel
 echoue avec un message qui le dit et indique la ligne du registre a corriger :
 il n'y a pas de repli silencieux.
