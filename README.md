@@ -257,6 +257,7 @@ resultats/codage/    reponses codees
 papier/              redaction
 docs/campagne_ec2.md procedure pour lancer la campagne sur une instance EC2
 docs/cellules_relancees.md  11 cellules en echec : diagnostic, decision, limite de reproductibilite
+docs/limites_enonces.md     limites de conception des enonces, a declarer (ex. f002_b recompense la recitation)
 ```
 
 Pour faire tourner la campagne sur une instance EC2 (depot, cles, lancement en
