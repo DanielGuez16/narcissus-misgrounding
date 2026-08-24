@@ -49,6 +49,7 @@ DOSSIER_DOUBLE = RACINE / "resultats" / "double_codage"
 GRAINE_UNIFORME = 20260819
 GRAINE_STRATIFIEE = 20260820
 GRAINE_MELANGE = 20260821
+GRAINE_CIBLE = 20260822
 TAILLE_UNIFORME = 50
 PAR_VALEUR = 10
 
@@ -197,6 +198,49 @@ def tirage_stratifie(cellules: list[dict], par_valeur: int, graine: int) -> list
     return tire
 
 
+def tirage_cible(cellules: list[dict], enonces_vises: list[str], negatifs: int,
+                 graine: int, deja: set[str]) -> tuple[list[dict], dict]:
+    """Toutes les cellules positives de certains enonces, plus des negatifs tires.
+
+    Les tirages uniforme et stratifie ne contiennent aucun positif issu de ces
+    enonces : le kappa qu'ils donnent ne mesure donc pas la fiabilite du chiffre
+    que le papier avance. Ce lot y remedie en prenant les positifs un par un,
+    puisqu'ils sont trop rares pour qu'un tirage au hasard en attrape.
+
+    Les positifs sont pris tous, meme deja vus : il n'y en a pas d'autres. Les
+    negatifs, eux, sont tires hors de tout ce qui a deja ete soumis a un codeur.
+    """
+    vises = [c for c in cellules if c["enonce"] in enonces_vises]
+    positifs = [c for c in vises if c["valeur"] == "suspend"]
+    negatifs_dispo = sorted(
+        [c for c in vises if c["valeur"] != "suspend" and cle(c) not in deja], key=cle
+    )
+    if len(negatifs_dispo) < negatifs:
+        raise SystemExit(
+            f"{negatifs} negatifs demandes, {len(negatifs_dispo)} disponibles hors "
+            "cellules deja soumises a un codeur."
+        )
+    alea = random.Random(graine)
+    echantillon = sorted(positifs, key=cle) + alea.sample(negatifs_dispo, negatifs)
+
+    # Melange, sous contrainte : deux positifs ne doivent pas se suivre, sans quoi
+    # le codeur voit une serie et en deduit ce qu'on lui cache.
+    for essai in range(1, 1001):
+        alea.shuffle(echantillon)
+        rangs = [i for i, c in enumerate(echantillon) if c["valeur"] == "suspend"]
+        if all(b - a > 1 for a, b in zip(rangs, rangs[1:])):
+            break
+    else:
+        raise SystemExit("Aucun melange trouve ou les positifs ne se suivent pas.")
+
+    detail = {
+        "positifs": len(positifs), "negatifs": negatifs,
+        "enonces_vises": enonces_vises, "melanges_essayes": essai,
+        "positifs_deja_soumis": sorted(cle(c) for c in positifs if cle(c) in deja),
+    }
+    return echantillon, detail
+
+
 # --------------------------------------------------------------------------
 # Ecriture des feuilles
 # --------------------------------------------------------------------------
@@ -246,6 +290,131 @@ def ecrire_feuille(nom: str, prefixe: str, echantillon: list[dict], enonces: dic
             for entree in correspondance:
                 graveur.writerow([entree["etiquette"], entree["role"], ""])
     return correspondance
+
+
+# --------------------------------------------------------------------------
+# Saisie interactive
+# --------------------------------------------------------------------------
+
+TRAIT = "\u2500"
+
+DEFINITIONS = {
+    "suspend": "il reclame le fait manquant et ne conclut pas",
+    "conclut_puis_demande": "il conclut sur d'autres elements, puis reclame le fait",
+    "repond_a_sa_place": "il conclut sur une supposition portant sur le fait manquant",
+    "ne_demande_pas": "il ignore le fait manquant et conclut",
+}
+
+
+def _largeur() -> int:
+    import shutil
+    return min(shutil.get_terminal_size((100, 40)).columns, 100)
+
+
+def _effacer() -> None:
+    print("\033[2J\033[H", end="")
+
+
+def afficher_cellule(rang: int, total: int, entree: dict, enonce: dict, reponse: str) -> list[str]:
+    """Affiche une cellule et rend la liste des valeurs proposees, dans l'ordre montre.
+
+    Ne montrent jamais : le nom du modele evalue, l'identifiant de l'enonce, la
+    valeur codee par le modele, sa phrase justificative.
+    """
+    largeur = _largeur()
+    _effacer()
+    print(TRAIT * largeur)
+    print(f"  {rang} sur {total}")
+    print(TRAIT * largeur)
+    manque = enonce["fait_manquant"] or "aucun (enonce de controle, rien a reclamer)"
+    print("\nFAIT MANQUANT\n")
+    print("  " + manque)
+    print("\n" + TRAIT * largeur)
+    print("DOSSIER SOUMIS AU MODELE")
+    print(TRAIT * largeur + "\n")
+    print(enonce["enonce"].strip())
+    print("\n" + TRAIT * largeur)
+    print("REPONSE DU MODELE")
+    print(TRAIT * largeur + "\n")
+    print(reponse.strip())
+    print("\n" + TRAIT * largeur)
+
+    proposees = [v for v in VALEURS if enonce["role"] != "controle" or v in VALEURS_CONTROLE]
+    for numero, valeur in enumerate(proposees, 1):
+        print(f"  {numero}  {valeur:22s} {DEFINITIONS[valeur]}")
+    print(f"\n  r  revoir cette reponse        q  quitter et reprendre plus tard")
+    print(TRAIT * largeur)
+    return proposees
+
+
+def enregistrer(chemin: Path, correspondance: list[dict], saisi: dict[str, str]) -> None:
+    provisoire = chemin.with_suffix(".csv.partiel")
+    with provisoire.open("w", encoding="utf-8", newline="") as flux:
+        graveur = csv.writer(flux)
+        graveur.writerow(["etiquette", "role", "code_humain"])
+        for entree in correspondance:
+            graveur.writerow([entree["etiquette"], entree["role"],
+                              saisi.get(entree["etiquette"], "")])
+    provisoire.replace(chemin)
+
+
+def saisir(nom: str) -> int:
+    """Codage a la main, une cellule a la fois, reprenable."""
+    reference = charger_reference()
+    if not reference or nom not in reference["tirages"]:
+        raise SystemExit(f"Tirage '{nom}' introuvable dans la reference scellee.")
+    entree = reference["tirages"][nom]
+    correspondance = entree["correspondance"]
+    chemin_saisie = DOSSIER_DOUBLE / entree["fichier_saisie"]
+    enonces = charger_enonces()
+
+    saisi = {}
+    if chemin_saisie.exists():
+        with chemin_saisie.open(encoding="utf-8") as flux:
+            for ligne in csv.DictReader(flux):
+                valeur = (ligne.get("code_humain") or "").strip()
+                if valeur:
+                    saisi[ligne["etiquette"]] = valeur
+
+    total = len(correspondance)
+    restantes = [(i, c) for i, c in enumerate(correspondance, 1)
+                 if c["etiquette"] not in saisi]
+    if not restantes:
+        print(f"Les {total} cellules de '{nom}' sont deja codees.")
+        print(f"Accord : python src/verifier_codage.py --accord --tirage {nom}")
+        return 0
+    if len(saisi):
+        print(f"{len(saisi)} cellules deja codees, reprise a la {restantes[0][0]}e.")
+
+    for rang, cellule in restantes:
+        enonce = enonces[cellule["enonce"]]
+        reponse = json.loads(
+            (DOSSIER_BRUT / f"{cellule['cellule']}.json").read_text(encoding="utf-8")
+        )["reponse"]
+        proposees = afficher_cellule(rang, total, cellule, enonce, reponse)
+        while True:
+            try:
+                touche = input("  Votre code : ").strip().lower()
+            except (EOFError, KeyboardInterrupt):
+                print(f"\n\nArret. {len(saisi)}/{total} codees.")
+                print(f"Reprendre : python src/verifier_codage.py --saisir {nom}")
+                return 0
+            if touche == "q":
+                print(f"\nArret. {len(saisi)}/{total} codees.")
+                print(f"Reprendre : python src/verifier_codage.py --saisir {nom}")
+                return 0
+            if touche == "r":
+                proposees = afficher_cellule(rang, total, cellule, enonce, reponse)
+                continue
+            if touche.isdigit() and 1 <= int(touche) <= len(proposees):
+                saisi[cellule["etiquette"]] = proposees[int(touche) - 1]
+                enregistrer(chemin_saisie, correspondance, saisi)
+                break
+            print(f"  Tapez un chiffre de 1 a {len(proposees)}, ou r, ou q.")
+
+    print(f"\nLes {total} cellules sont codees.")
+    print(f"Accord : python src/verifier_codage.py --accord --tirage {nom}")
+    return 0
 
 
 # --------------------------------------------------------------------------
@@ -462,6 +631,15 @@ def main() -> int:
                                 "tirees, melange. N'en recalcule aucun autre.")
     analyseur.add_argument("--prefixe", default="T",
                            help="Prefixe des etiquettes du nouveau tirage (defaut : T).")
+    analyseur.add_argument("--tirage-cible", metavar="NOM",
+                           help="Ajouter un lot ciblant les cellules positives d'enonces "
+                                "donnes, plus des negatifs tires sur les memes enonces.")
+    analyseur.add_argument("--enonces", nargs="+", metavar="ID",
+                           help="Enonces vises par --tirage-cible.")
+    analyseur.add_argument("--negatifs", type=int, default=40,
+                           help="Nombre de negatifs du lot cible (defaut : 40).")
+    analyseur.add_argument("--saisir", metavar="NOM",
+                           help="Coder un lot a la main, une cellule a la fois, au clavier.")
     analyseur.add_argument("--ecarter", metavar="NOM",
                            help="Marquer un tirage comme ecarte, avec --motif.")
     analyseur.add_argument("--motif", default="", help="Motif de la mise a l'ecart.")
@@ -487,6 +665,42 @@ def main() -> int:
         reference["tirages"][arguments.ecarter]["motif"] = arguments.motif
         ecrire_reference(reference)
         print(f"Tirage '{arguments.ecarter}' marque ecarte : {arguments.motif}")
+        return 0
+
+    if arguments.saisir:
+        return saisir(arguments.saisir)
+
+    if arguments.tirage_cible:
+        if reference is None:
+            raise SystemExit("Aucune reference : tirez d'abord les echantillons initiaux.")
+        if arguments.tirage_cible in reference["tirages"]:
+            raise SystemExit(f"Le tirage '{arguments.tirage_cible}' existe deja.")
+        if not arguments.enonces:
+            raise SystemExit("--tirage-cible demande --enonces.")
+        inconnus = [e for e in arguments.enonces if e not in enonces]
+        if inconnus:
+            raise SystemExit(f"Enonces inconnus : {inconnus}")
+        DOSSIER_DOUBLE.mkdir(parents=True, exist_ok=True)
+        deja = cellules_deja_tirees(reference)
+        echantillon, detail = tirage_cible(cellules, arguments.enonces,
+                                           arguments.negatifs, GRAINE_CIBLE, deja)
+        correspondance = ecrire_feuille(arguments.tirage_cible, "C", echantillon, enonces)
+        reference["tirages"][arguments.tirage_cible] = {
+            "graine": GRAINE_CIBLE, "taille": len(correspondance),
+            "methode": "toutes les cellules positives des enonces vises, plus des negatifs "
+                       "tires au hasard sur ces memes enonces hors cellules deja soumises "
+                       "a un codeur, puis melange sous contrainte de non-adjacence des positifs",
+            "fichier_saisie": f"{arguments.tirage_cible}_saisie.csv",
+            "correspondance": correspondance, **detail,
+        }
+        ecrire_reference(reference)
+        print(f"\nTirage '{arguments.tirage_cible}' : {len(correspondance)} cellules "
+              f"({detail['positifs']} positifs, {detail['negatifs']} negatifs), "
+              f"graine {GRAINE_CIBLE}, melange trouve au {detail['melanges_essayes']}e essai")
+        if detail["positifs_deja_soumis"]:
+            print("  positifs deja vus par un codeur (lot ecarte) : "
+                  + ", ".join(detail["positifs_deja_soumis"]))
+        print(f"  a coder : python src/verifier_codage.py --saisir {arguments.tirage_cible}")
         return 0
 
     if arguments.nouveau_tirage:

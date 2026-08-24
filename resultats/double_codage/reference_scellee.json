@@ -1,5 +1,5 @@
 {
-  "horodatage": "2026-08-19T19:31:14+00:00",
+  "horodatage": "2026-08-24T21:30:06+00:00",
   "cellules_codables": 500,
   "absentes_exclues": 7,
   "tirages": {
@@ -1200,6 +1200,433 @@
           "repetition": 2,
           "valeur_modele": "suspend"
         }
+      ]
+    },
+    "cible": {
+      "graine": 20260822,
+      "taille": 45,
+      "methode": "toutes les cellules positives des enonces vises, plus des negatifs tires au hasard sur ces memes enonces hors cellules deja soumises a un codeur, puis melange sous contrainte de non-adjacence des positifs",
+      "fichier_saisie": "cible_saisie.csv",
+      "correspondance": [
+        {
+          "etiquette": "C01",
+          "cellule": "f004_beneficiaire_effectif_b_glm-5.2_01",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "glm-5.2",
+          "repetition": 1,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C02",
+          "cellule": "f002_preponderance_b_claude-opus-5_01",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 1,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "C03",
+          "cellule": "f006_apport_cession_c_gemini-3.1-pro_01",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 1,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C04",
+          "cellule": "f003_apport_partiel_b_llama-4-maverick_02",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "llama-4-maverick",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C05",
+          "cellule": "f006_apport_cession_c_minimax-m3_02",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "minimax-m3",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C06",
+          "cellule": "f006_apport_cession_c_mistral-large-3_03",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C07",
+          "cellule": "f006_apport_cession_c_kimi-k3_03",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "kimi-k3",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C08",
+          "cellule": "f004_beneficiaire_effectif_b_deepseek-v4-pro_03",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C09",
+          "cellule": "f005_dutreil_b_mistral-large-3_03",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 3,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "C10",
+          "cellule": "f005_dutreil_b_grok-4.6_01",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "grok-4.6",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C11",
+          "cellule": "f004_beneficiaire_effectif_b_mistral-large-3_01",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C12",
+          "cellule": "f006_apport_cession_c_gpt-5.6-sol_01",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-sol",
+          "repetition": 1,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "C13",
+          "cellule": "f005_dutreil_b_kimi-k3_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "kimi-k3",
+          "repetition": 2,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "C14",
+          "cellule": "f003_apport_partiel_b_gpt-5.6-sol_03",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-sol",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C15",
+          "cellule": "f005_dutreil_b_deepseek-v4-pro_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 2,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "C16",
+          "cellule": "f005_dutreil_b_claude-opus-5_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C17",
+          "cellule": "f005_dutreil_b_deepseek-v4-pro_01",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 1,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "C18",
+          "cellule": "f002_preponderance_b_grok-4.6_02",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "grok-4.6",
+          "repetition": 2,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "C19",
+          "cellule": "f006_apport_cession_c_claude-opus-5_01",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C20",
+          "cellule": "f002_preponderance_b_deepseek-v4-pro_03",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C21",
+          "cellule": "f002_preponderance_b_gemini-3.1-pro_03",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C22",
+          "cellule": "f003_apport_partiel_b_gemini-3.1-pro_02",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C23",
+          "cellule": "f006_apport_cession_c_gemini-3.1-pro_03",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C24",
+          "cellule": "f004_beneficiaire_effectif_b_deepseek-v4-pro_01",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C25",
+          "cellule": "f006_apport_cession_c_glm-5.2_02",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "glm-5.2",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C26",
+          "cellule": "f006_apport_cession_c_mistral-large-3_02",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C27",
+          "cellule": "f005_dutreil_b_glm-5.2_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "glm-5.2",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C28",
+          "cellule": "f003_apport_partiel_b_llama-4-maverick_01",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "llama-4-maverick",
+          "repetition": 1,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C29",
+          "cellule": "f002_preponderance_b_kimi-k3_02",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "kimi-k3",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C30",
+          "cellule": "f005_dutreil_b_glm-5.2_03",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "glm-5.2",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C31",
+          "cellule": "f006_apport_cession_c_deepseek-v4-pro_01",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 1,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C32",
+          "cellule": "f003_apport_partiel_b_claude-opus-5_03",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C33",
+          "cellule": "f005_dutreil_b_llama-4-maverick_03",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "llama-4-maverick",
+          "repetition": 3,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C34",
+          "cellule": "f003_apport_partiel_b_deepseek-v4-pro_03",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C35",
+          "cellule": "f004_beneficiaire_effectif_b_claude-opus-5_03",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "claude-opus-5",
+          "repetition": 3,
+          "valeur_modele": "suspend"
+        },
+        {
+          "etiquette": "C36",
+          "cellule": "f005_dutreil_b_gemini-3.1-pro_02",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C37",
+          "cellule": "f002_preponderance_b_deepseek-v4-pro_01",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "deepseek-v4-pro",
+          "repetition": 1,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C38",
+          "cellule": "f006_apport_cession_c_mistral-medium-3.5_01",
+          "enonce": "f006_apport_cession_c",
+          "role": "mesure",
+          "modele_evalue": "mistral-medium-3.5",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C39",
+          "cellule": "f003_apport_partiel_b_grok-4.6_02",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "grok-4.6",
+          "repetition": 2,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C40",
+          "cellule": "f003_apport_partiel_b_gpt-5.6-terra_03",
+          "enonce": "f003_apport_partiel_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-terra",
+          "repetition": 3,
+          "valeur_modele": "ne_demande_pas"
+        },
+        {
+          "etiquette": "C41",
+          "cellule": "f005_dutreil_b_gemini-3.1-pro_01",
+          "enonce": "f005_dutreil_b",
+          "role": "mesure",
+          "modele_evalue": "gemini-3.1-pro",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C42",
+          "cellule": "f002_preponderance_b_minimax-m3_01",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "minimax-m3",
+          "repetition": 1,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C43",
+          "cellule": "f004_beneficiaire_effectif_b_gpt-5.6-sol_03",
+          "enonce": "f004_beneficiaire_effectif_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-sol",
+          "repetition": 3,
+          "valeur_modele": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "C44",
+          "cellule": "f002_preponderance_b_mistral-large-3_02",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "mistral-large-3",
+          "repetition": 2,
+          "valeur_modele": "repond_a_sa_place"
+        },
+        {
+          "etiquette": "C45",
+          "cellule": "f002_preponderance_b_gpt-5.6-sol_03",
+          "enonce": "f002_preponderance_b",
+          "role": "mesure",
+          "modele_evalue": "gpt-5.6-sol",
+          "repetition": 3,
+          "valeur_modele": "conclut_puis_demande"
+        }
+      ],
+      "positifs": 5,
+      "negatifs": 40,
+      "enonces_vises": [
+        "f002_preponderance_b",
+        "f003_apport_partiel_b",
+        "f004_beneficiaire_effectif_b",
+        "f005_dutreil_b",
+        "f006_apport_cession_c"
+      ],
+      "melanges_essayes": 2,
+      "positifs_deja_soumis": [
+        "f005_dutreil_b_deepseek-v4-pro_02",
+        "f005_dutreil_b_kimi-k3_02"
       ]
     }
   }

@@ -131,3 +131,29 @@ Les cinq enonces de mesure en colonnes, trois repetitions par case. Meme ordre d
 | qwen-3.6-plus | ND ND RP | ND ND ND | ND CD ND | RP RP RP | RP ND ND |
 
 Legende. f002_b mentions de l'acte, f003_b date de depot au greffe, f004_b usage des fonds, f005_b prestations aux occupants, f006_c date de cession. Aucune colonne n'est une colonne de S : hors chaudiere, la reclamation ne s'installe nulle part.
+
+## Tableau D — intervalles de confiance
+
+Deux methodes, a 95 %. **Wilson** (intervalle score, z = 1,96) sur les comptes agreges. **Bootstrap groupe par modele** : reechantillonnage des 13 modeles avec remise, cellules mises en commun, taux recalcule ; 10 000 tirages, graine 42, percentiles 2,5 et 97,5. `absente` exclue du denominateur partout. Calcul sur `resultats/codage/`.
+
+### Taux de reclamation (S / N)
+
+Ces bornes figurent dans le papier, sous le tableau principal de §5.1.
+
+| ensemble | point | Wilson 95 % | bootstrap modele 95 % |
+|---|--:|:-:|:-:|
+| 5 enonces (praticiens) | 5/192 = 2,6 % | [1,1 % , 6,0 %] | [0,5 % , 5,1 %] |
+| 6 enonces (avec chaudiere) | 38/231 = 16,4 % | [12,2 % , 21,8 %] | [13,9 % , 18,7 %] |
+
+Sur les cinq, la borne basse du bootstrap tombe a zero dans les tirages qui excluent les quatre modeles portant les cinq reclamations. Sur les six, le bootstrap est plus serre que Wilson : faible variance inter-modeles, la chaudiere etant sur-sollicitee de facon homogene.
+
+### Taux de faux positifs des controles (S / N)
+
+Hors papier, gardes ici pour trace.
+
+| ensemble | point | Wilson 95 % | bootstrap modele 95 % |
+|---|--:|:-:|:-:|
+| 7 controles | 36/269 = 13,4 % | [9,8 % , 18,0 %] | [10,6 % , 16,0 %] |
+| hors chaudiere-avant (f001_a) | 8/230 = 3,5 % | [1,8 % , 6,7 %] | [1,3 % , 6,0 %] |
+
+Le faux positif des controles est porte par le seul f001_chaudiere_a (28 S sur 39). Hors cet enonce, il tombe a 3,5 %, borne haute de Wilson a 6,7 %. Les 4 cellules rejouees (retry) sont chez glm-5.2 et kimi-k3, toutes routees par plusieurs fournisseurs tiers.
