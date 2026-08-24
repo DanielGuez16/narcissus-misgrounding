@@ -31,7 +31,7 @@ automatique, que vous ne devez pas connaitre en codant.
 
 ## C01  (1 sur 45)
 
-**VOTRE CODE : _ne_demande_pas_____________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.
 
