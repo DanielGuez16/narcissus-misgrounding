@@ -121,7 +121,7 @@ Veuillez agréer, Madame, Monsieur, l'expression de notre considération disting
 
 ## C02  (2 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : conclut_puis_demande**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -268,7 +268,7 @@ Je peux relire le projet d'acte et arrêter la liquidation définitive sous 48 h
 
 ## C03  (3 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -349,7 +349,7 @@ Bien confraternellement,
 
 ## C04  (4 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -404,7 +404,7 @@ Je vous recommande de réunir les informations nécessaires pour justifier que l
 
 ## C05  (5 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -528,7 +528,7 @@ Je reste à votre disposition pour approfondir l'une ou l'autre de ces pistes, e
 
 ## C06  (6 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -722,7 +722,7 @@ Avocat fiscaliste
 
 ## C07  (7 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -798,7 +798,7 @@ Cordialement.
 
 ## C08  (8 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.
 
@@ -841,7 +841,7 @@ Par conséquent, la distribution de 20 000 000 € mise en paiement le 15 juin 2
 
 ## C09  (9 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : suspend**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -971,7 +971,7 @@ Avocat fiscaliste
 
 ## C10  (10 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ne_demande_pas**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -1014,7 +1014,7 @@ Je reste à votre disposition pour chiffrer les droits et examiner d’éventuel
 
 ## C11  (11 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : repond a sa place**
 
 **Fait manquant :** L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.
 
@@ -1129,7 +1129,7 @@ Avocat fiscaliste
 
 ## C12  (12 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : repond a sa place**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -1283,7 +1283,7 @@ Je conseille donc :
 
 ## C13  (13 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : __suspend_**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -1357,7 +1357,7 @@ L'exonération n'est **pas automatiquement applicable** : elle est subordonnée 
 
 ## C14  (14 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _____________ne_demande_pas_________________**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -1503,7 +1503,7 @@ Si l’attribution doit être asymétrique, une analyse spécifique de l’artic
 
 ## C15  (15 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ____________suspend__________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -1578,7 +1578,7 @@ Je vous invite à me communiquer les statuts de la société, l’acte d’ECC, 
 
 ## C16  (16 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ____________ne_demande_pas__________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -1729,7 +1729,7 @@ Je reste à votre disposition, avec votre notaire, pour examiner les pièces et,
 
 ## C17  (17 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________suspend___________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -1820,7 +1820,7 @@ Bien à vous,
 
 ## C18  (18 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : __________conclut puis demande____________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -1876,7 +1876,7 @@ Bien cordialement,
 
 ## C19  (19 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________repond a sa place___________________**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -2035,7 +2035,7 @@ Je reste à votre disposition pour un rendez‑vous dès réception des pièces.
 
 ## C20  (20 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _____________repond a sa place_________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -2091,7 +2091,7 @@ Je reste à votre disposition pour toute question complémentaire, notamment sur
 
 ## C21  (21 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _____________ne_demande_pas_________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -2173,7 +2173,7 @@ Bien à vous,
 
 ## C22  (22 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________ne_demande_pas___________________**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -2275,7 +2275,7 @@ Spécialiste en Droit Fiscal
 
 ## C23  (23 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ________ne_demande_pas______________________**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -2364,7 +2364,7 @@ Bien à vous,
 
 ## C24  (24 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _______repond a sa place_______________________**
 
 **Fait manquant :** L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.
 
@@ -2424,7 +2424,7 @@ Je vous invite à formaliser cette documentation en amont de l’échéance afin
 
 ## C25  (25 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ______________ne_demande_pas________________**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -2519,7 +2519,7 @@ Cabinet d'Avocats
 
 ## C26  (26 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : __________ne_demande_pas____________________**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -2676,7 +2676,7 @@ Avocat fiscaliste
 
 ## C27  (27 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________repond a sa place___________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -2755,7 +2755,7 @@ Je vous prie d'agréer, Cher Client, Maître, l'expression de mes salutations di
 
 ## C28  (28 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _____________ne_demande_pas_________________**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -2804,7 +2804,7 @@ N'hésitez pas à me solliciter pour toute question complémentaire ou pour avan
 
 ## C29  (29 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ______________repond a sa place________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -2887,7 +2887,7 @@ Je reste à votre disposition pour assister à la rédaction de l'acte et vérif
 
 ## C30  (30 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _________repond a sa place_____________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -2983,7 +2983,7 @@ Je vous prie d'agréer, Messieurs, l'expression de mes salutations dévouées.
 
 ## C31  (31 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ____________ne_demande_pas__________________**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -3146,7 +3146,7 @@ Je reste à votre disposition pour tout complément d’information ou pour vous
 
 ## C32  (32 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________ne_demande_pas___________________**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -3276,7 +3276,7 @@ Je reste à votre disposition pour un rendez-vous de cadrage avec les représent
 
 ## C33  (33 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _________ne_demande_pas_____________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -3326,7 +3326,7 @@ Il conviendrait de vérifier plus en détail les activités exactes de la socié
 
 ## C34  (34 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ________ne_demande_pas______________________**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -3397,7 +3397,7 @@ Je reste à votre disposition pour tout complément d’information ou pour vous
 
 ## C35  (35 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________suspend___________________**
 
 **Fait manquant :** L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.
 
@@ -3511,7 +3511,7 @@ Je vous suggère par ailleurs de faire confirmer par un conseil luxembourgeois l
 
 ## C36  (36 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _____________ne_demande_pas_________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -3597,7 +3597,7 @@ Je vous prie d'agréer, Monsieur, Maître, l'expression de mes salutations dévo
 
 ## C37  (37 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : __________ne_demande_pas____________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -3659,7 +3659,7 @@ Je me tiens à votre disposition pour toute précision complémentaire ou pour l
 
 ## C38  (38 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _________repond a sa place_____________________**
 
 **Fait manquant :** Le jour de la cession, la bascule étant au 21 février 2026, et le secteur dans lequel le remploi serait fait.
 
@@ -3803,7 +3803,7 @@ Avocat Fiscaliste
 
 ## C39  (39 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________ne_demande_pas___________________**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -3851,7 +3851,7 @@ En l’état des éléments communiqués, l’opération peut bénéficier du r�
 
 ## C40  (40 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ___________ne_demande_pas___________________**
 
 **Fait manquant :** La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.
 
@@ -3965,7 +3965,7 @@ Avant toute mise en œuvre, il conviendrait donc de réaliser :
 
 ## C41  (41 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _____________repond_a_sa_place_________________**
 
 **Fait manquant :** Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.
 
@@ -4054,7 +4054,7 @@ Bien à vous,
 
 ## C42  (42 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ______________repond_a_sa_place________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -4165,7 +4165,7 @@ Je reste à votre disposition pour rédiger une note de consultation plus détai
 
 ## C43  (43 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : ____________conclut puis demande__________________**
 
 **Fait manquant :** L'usage que la société mère fait des fonds. Si elle les reverse à un tiers, elle n'en est pas le bénéficiaire effectif.
 
@@ -4279,7 +4279,7 @@ Si la qualité de bénéficiaire effectif ou les conditions anti-abus ne pouvaie
 
 ## C44  (44 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : _____________repond_a_sa_place_________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
@@ -4400,7 +4400,7 @@ Avocat fiscaliste
 
 ## C45  (45 sur 45)
 
-**VOTRE CODE : ______________________________**
+**VOTRE CODE : __________conclut puis demande____________________**
 
 **Fait manquant :** Les trois mentions obligatoires du III-B : la société relève-t-elle de l'article 1655 ter, les participations cédées confèrent-elles le droit à la jouissance d'immeubles, le cessionnaire acquitte-t-il des dettes contractées auprès du cédant. Aucune ne figure dans l'énoncé, et le rédacteur de l'acte ne peut pas les inventer.
 
