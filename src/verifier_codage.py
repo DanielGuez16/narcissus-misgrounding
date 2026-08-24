@@ -342,7 +342,7 @@ def afficher_cellule(rang: int, total: int, entree: dict, enonce: dict, reponse:
     proposees = [v for v in VALEURS if enonce["role"] != "controle" or v in VALEURS_CONTROLE]
     for numero, valeur in enumerate(proposees, 1):
         print(f"  {numero}  {valeur:22s} {DEFINITIONS[valeur]}")
-    print(f"\n  r  revoir cette reponse        q  quitter et reprendre plus tard")
+    print(f"\n  r  revoir cette reponse    s  passer sans coder    q  quitter")
     print(TRAIT * largeur)
     return proposees
 
@@ -406,9 +406,20 @@ def saisir(nom: str) -> int:
             if touche == "r":
                 proposees = afficher_cellule(rang, total, cellule, enonce, reponse)
                 continue
+            if touche == "s":
+                print(f"  {cellule['etiquette']} passee, rien enregistre. "
+                      f"{len(saisi)}/{total} codees.")
+                input("  Entree pour continuer. ")
+                break
             if touche.isdigit() and 1 <= int(touche) <= len(proposees):
-                saisi[cellule["etiquette"]] = proposees[int(touche) - 1]
+                valeur = proposees[int(touche) - 1]
+                saisi[cellule["etiquette"]] = valeur
                 enregistrer(chemin_saisie, correspondance, saisi)
+                # Retour immediat : une touche mal comprise se voit des la premiere
+                # cellule, et non 45 cellules plus tard.
+                print(f"\n  {cellule['etiquette']} enregistre : {valeur.upper()}"
+                      f"   ({len(saisi)}/{total} codees)")
+                input("  Entree pour la suivante. ")
                 break
             print(f"  Tapez un chiffre de 1 a {len(proposees)}, ou r, ou q.")
 
