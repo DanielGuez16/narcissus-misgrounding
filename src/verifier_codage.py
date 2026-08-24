@@ -422,10 +422,27 @@ def saisir(nom: str) -> int:
 # --------------------------------------------------------------------------
 
 
+class KappaDegenere(Exception):
+    """Un codeur n'a employe qu'une seule valeur : le kappa ne mesure plus rien.
+
+    Quand un codeur code tout a l'identique, l'accord attendu par hasard egale
+    l'accord observe, et le kappa vaut zero par construction, quel que soit le
+    contenu. Le nombre existe, il ne veut rien dire. Le rendre serait pire que
+    ne rien rendre : il a l'apparence d'un resultat.
+    """
+
+
 def kappa_de_cohen(paires: list[tuple[str, str]]) -> float:
     total = len(paires)
     observe = sum(1 for a, b in paires if a == b) / total
     un, deux = Counter(a for a, _ in paires), Counter(b for _, b in paires)
+    for nom, compte in (("le codage automatique", un), ("le codage a la main", deux)):
+        if len(compte) == 1 and total > 1:
+            raise KappaDegenere(
+                f"{nom} n'emploie qu'une seule valeur, '{next(iter(compte))}', sur les "
+                f"{total} cellules. Le kappa vaudrait zero par construction et ne "
+                "mesurerait rien."
+            )
     hasard = sum((un[v] / total) * (deux[v] / total) for v in VALEURS)
     if hasard >= 1:
         raise SystemExit(
@@ -474,10 +491,17 @@ def accord_d_un_tirage(nom: str, correspondance: list[dict], saisi: dict[str, st
 
     paires = [(par_etiquette[e]["valeur_modele"], saisi[e]) for e in sorted(saisi)]
     brut = sum(1 for a, b in paires if a == b) / len(paires)
-    kappa = kappa_de_cohen(paires)
     print(f"{len(paires)} cellules comparees")
     print(f"  accord brut    : {brut:.1%}")
-    print(f"  kappa de Cohen : {kappa:.3f}")
+    try:
+        kappa = kappa_de_cohen(paires)
+        print(f"  kappa de Cohen : {kappa:.3f}")
+    except KappaDegenere as anomalie:
+        kappa = None
+        print(f"  kappa de Cohen : NON CALCULE")
+        print(f"    {anomalie}")
+        print("    Un codage constant n'est pas un codage. Verifiez la feuille de saisie "
+              "avant\n    d'en tirer quoi que ce soit.")
 
     print("  distribution   : modele / humain")
     for valeur in VALEURS:
@@ -495,11 +519,16 @@ def accord_d_un_tirage(nom: str, correspondance: list[dict], saisi: dict[str, st
     for d in desaccords:
         print(f"    {d['etiquette']} {d['valeur_modele']:22s} vs {d['valeur_humain']:22s} "
               f"({d['cellule']})")
-    return {
+    resultat = {
         "tirage": nom, "cellules_comparees": len(paires),
         "accord_brut": brut, "kappa_de_cohen": kappa,
         "non_codees": sorted(manquantes), "desaccords": desaccords,
     }
+    if kappa is None:
+        resultat["kappa_non_calcule"] = (
+            "un codeur n'emploie qu'une seule valeur : kappa degenere, non rapportable"
+        )
+    return resultat
 
 
 def calculer_accord(tirage: str = "tous") -> int:

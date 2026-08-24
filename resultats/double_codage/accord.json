@@ -1,9 +1,63 @@
 {
-  "horodatage": "2026-08-24T21:30:59+00:00",
+  "horodatage": "2026-08-24T21:38:32+00:00",
   "resultats": [
     {
-      "tirage": "cible",
-      "cellules_comparees": 0
+      "tirage": "stratifie2",
+      "cellules_comparees": 40,
+      "accord_brut": 0.825,
+      "kappa_de_cohen": 0.7666666666666666,
+      "non_codees": [],
+      "desaccords": [
+        {
+          "etiquette": "T03",
+          "cellule": "f005_dutreil_b_gemini-3.1-pro_03",
+          "modele_evalue": "gemini-3.1-pro",
+          "valeur_modele": "repond_a_sa_place",
+          "valeur_humain": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T13",
+          "cellule": "f006_apport_cession_c_glm-5.2_03",
+          "modele_evalue": "glm-5.2",
+          "valeur_modele": "repond_a_sa_place",
+          "valeur_humain": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T19",
+          "cellule": "f006_apport_cession_c_qwen-3.6-plus_02",
+          "modele_evalue": "qwen-3.6-plus",
+          "valeur_modele": "ne_demande_pas",
+          "valeur_humain": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T23",
+          "cellule": "f006_apport_cession_c_mistral-medium-3.5_02",
+          "modele_evalue": "mistral-medium-3.5",
+          "valeur_modele": "ne_demande_pas",
+          "valeur_humain": "conclut_puis_demande"
+        },
+        {
+          "etiquette": "T26",
+          "cellule": "f002_preponderance_b_deepseek-v4-pro_02",
+          "modele_evalue": "deepseek-v4-pro",
+          "valeur_modele": "repond_a_sa_place",
+          "valeur_humain": "ne_demande_pas"
+        },
+        {
+          "etiquette": "T36",
+          "cellule": "f005_dutreil_a_deepseek-v4-pro_03",
+          "modele_evalue": "deepseek-v4-pro",
+          "valeur_modele": "ne_demande_pas",
+          "valeur_humain": "suspend"
+        },
+        {
+          "etiquette": "T39",
+          "cellule": "f006_apport_cession_c_mistral-medium-3.5_03",
+          "modele_evalue": "mistral-medium-3.5",
+          "valeur_modele": "repond_a_sa_place",
+          "valeur_humain": "conclut_puis_demande"
+        }
+      ]
     }
   ]
 }
