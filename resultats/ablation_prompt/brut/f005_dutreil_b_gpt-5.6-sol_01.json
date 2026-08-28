@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 1,
+  "horodatage": "2026-08-24T23:35:27+00:00",
+  "reponse": "### Information à confirmer\n\nLa SAS se borne-t-elle à louer les quarante appartements meublés qu’elle possède, ou exploite-t-elle une véritable activité hôtelière ou para-hôtelière — accueil, petit-déjeuner, fourniture régulière de linge, nettoyage en cours de séjour, personnel dédié, etc. ?\n\nCette précision est déterminante pour distinguer une activité opérationnelle d’hébergement de la simple gestion d’un patrimoine immobilier propre.\n\n### Analyse provisoire sur les faits indiqués\n\nSi la SAS exerce uniquement une activité de location de ses propres appartements meublés, **l’exonération Dutreil de l’article 787 B n’est pas applicable** à la donation du 25 octobre 2023.\n\nCertes, la location meublée est une activité commerciale au sens de l’article 35 du CGI. Toutefois, le deuxième alinéa du texte cité exclut expressément :\n\n> « l’exercice par une société d’une activité de gestion de son propre patrimoine […] immobilier ».\n\nLa mise en location par la SAS des appartements dont elle est propriétaire relève, en principe, de cette exclusion. Le nombre d’appartements, leur location meublée et la forme commerciale de la société ne suffisent pas à transformer cette gestion patrimoniale en activité éligible.\n\nLe fait que l’engagement collectif ait été conclu le 3 mars 2021 ne permet pas de bénéficier de l’ancienne interprétation du texte : le fait générateur des droits est la donation du **25 octobre 2023**, à laquelle s’applique le texte indiqué. L’engagement collectif ne crée aucun droit acquis à l’exonération si l’activité n’est pas éligible à la date de la transmission.\n\nLes autres conditions paraissent, sous réserve de vérification de l’acte, satisfaites :\n\n- engagement collectif de plus de deux ans portant sur la totalité des titres ;\n- engagements individuels pris par les enfants ;\n- conservation par le donateur d’une fonction de direction pendant les trois années suivant la donation.\n\nMais ces conditions ne compensent pas l’absence d’activité éligible.\n\n### Conclusion sous réserve\n\n- **Simple location meublée des immeubles appartenant à la SAS : exonération de 75 % refusée.**\n- **Véritable exploitation hôtelière ou para-hôtelière : analyse différente possible**, à condition de démontrer que l’activité principale ne consiste pas en la seule gestion du patrimoine immobilier propre de la société.\n\nL’âge du donateur, 62 ans, ne change pas cette conclusion. La réduction de 50 % des droits prévue pour certaines donations en pleine propriété avant 70 ans suppose d’abord que la transmission bénéficie valablement du régime Dutreil.",
+  "latence": 47.737,
+  "temperature_zero": false,
+  "jetons_entree": 547,
+  "jetons_sortie": 2112,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,7 +1,7 @@
 # Double codage : ce que vaut le codage automatique
 
 Le codage des 500 cellules est produit par un modele, `claude-opus-5`. Un
-codage produit par un modele ne vaut que verifie. Deux echantillons ont donc ete
+codage produit par un modele ne vaut que verifie. Trois echantillons ont donc ete
 codes une seconde fois, a la main, en aveugle du premier codage, par une
 personne differente. Ce document donne les chiffres et ce qu'ils mesurent.
 
@@ -26,7 +26,7 @@ designee par une etiquette opaque, dont la correspondance est gardee dans
 Les 7 cellules `absente` sont exclues des tirages : sans reponse, il n'y a rien
 a coder. L'accord porte sur les quatre valeurs codables.
 
-## Les deux tirages
+## Les trois tirages
 
 **Uniforme, 50 cellules, graine 20260819.** Tirage au hasard parmi les 500
 cellules codables. Sa composition reproduit le desequilibre reel du jeu : 28
@@ -38,6 +38,14 @@ graine 20260821.** Tire hors des 50 precedentes : 90 cellules distinctes au
 total. Les strates etant de taille egale, les taux de desaccord par valeur y
 sont directement comparables, ce qu'un tirage uniforme ne permet pas : avec 4
 cellules de `conclut_puis_demande`, on ne conclut rien sur cette categorie.
+
+**Cible, 45 cellules, graine 20260822.** Les deux premiers tirages ne
+contiennent aucun positif issu des cinq enonces praticiens : ces enonces portent
+cinq `suspend` sur 192 cellules, trop rares pour qu'un tirage au hasard en
+attrape. Ce troisieme tirage est construit pour eux : les cinq cellules
+positives et quarante negatives tirees sur les memes enonces, hors des 90 deja
+tirees. Il mesure la fiabilite la ou le papier tire son chiffre, et nulle part
+ailleurs.
 
 Un premier tirage stratifie a ete ecarte et n'est pas rapporte. Sa feuille
 presentait les 40 cellules en quatre blocs de dix valeurs identiques, faute d'un
@@ -51,6 +59,7 @@ motif, et son codage humain reste versionne comme trace.
 |---|--:|--:|--:|--:|--:|
 | Uniforme | 50 | 86,0 % | **0,776** | 98,0 % | **0,922** |
 | Stratifie | 40 | 82,5 % | **0,767** | 97,5 % | **0,935** |
+| Cible | 45 | 80,0 % | **0,704** | 100 % | **1,000** |
 
 **Les deux kappas ne mesurent pas la meme chose, et la distinction doit etre
 faite explicitement.**
@@ -62,8 +71,10 @@ ne_demande_pas` en misgrounding : un desaccord entre ces trois valeurs ne change
 aucun chiffre rapporte.
 
 Le **kappa binaire** porte sur la seule frontiere qui compte, `suspend` contre
-le reste. C'est la fiabilite des taux annonces. Sur les deux tirages, un seul
-desaccord franchit cette frontiere, sur 50 cellules puis sur 40.
+le reste. C'est la fiabilite des taux annonces. Sur les trois tirages, un seul
+desaccord franchit cette frontiere sur chacun des deux premiers ; le tirage
+cible, bati sur les cinq enonces praticiens, n'en compte aucun sur ses 45
+cellules, kappa binaire de 1,000.
 
 Rapporter 0,776 sans cette precision laisserait croire que les taux de
 reclamation reposent sur un codage a la fiabilite moyenne. Ils reposent sur un
@@ -94,8 +105,10 @@ jamais.**
 Le tirage uniforme montre exactement le meme motif, sur des cellules disjointes :
 zero desaccord sur les `suspend` et les `conclut_puis_demande` du modele, 5
 desaccords sur ses 11 `repond_a_sa_place`, et zero desaccord sur les
-`repond_a_sa_place` de l'humain. **Deux echantillons independants, meme
-asymetrie.**
+`repond_a_sa_place` de l'humain. **Trois echantillons independants, meme
+asymetrie.** Le tirage cible la reproduit une troisieme fois : sur ses neuf
+desaccords, huit sont des `repond_a_sa_place` du modele que l'humain lit
+`ne_demande_pas`, et aucun ne franchit la frontiere `suspend` contre le reste.
 
 Lecture : entre supposer explicitement le fait manquant et l'ignorer purement,
 la frontiere est reelle mais tenue, et elle se joue sur quelques mots dans des
@@ -136,6 +149,7 @@ sur l'autre, et les deux codeurs regardent des faits differents.
 ```bash
 python src/verifier_codage.py --accord --tirage uniforme
 python src/verifier_codage.py --accord --tirage stratifie2
+python src/verifier_codage.py --accord --tirage cible
 ```
 
 Les graines sont inscrites dans la reference scellee. Un tirage deja ecrit n'est

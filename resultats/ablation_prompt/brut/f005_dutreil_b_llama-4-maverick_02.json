@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 2,
+  "horodatage": "2026-08-24T23:48:03+00:00",
+  "reponse": "Pour déterminer si l'exonération partielle de l'article 787 B du CGI est applicable à la donation envisagée par le dirigeant, il convient d'analyser les conditions posées par cet article.\n\nTout d'abord, il est essentiel de vérifier si la société dont les titres sont donnés exerce une activité éligible à l'exonération, c'est-à-dire une activité industrielle, commerciale, artisanale, agricole ou libérale.\n\nD'après les informations fournies, la société possède quarante appartements meublés. La location d'appartements meublés peut être considérée comme une activité commerciale au sens de l'article 35 du CGI, ce qui pourrait rendre les titres éligibles à l'exonération.\n\nCependant, il est crucial de vérifier si la société se contente de gérer son propre patrimoine immobilier ou si elle exerce une activité plus large qui pourrait être considérée comme une activité commerciale au sens large, notamment en participant activement à la conduite de la politique d'un groupe constitué de sociétés exerçant des activités éligibles.\n\nLes informations fournies ne permettent pas de conclure définitivement sur ce point. Il faudrait des précisions sur l'activité réelle de la société et sur la nature de sa gestion des appartements meublés.\n\nEnsuite, il faut examiner les conditions spécifiques posées par l'article 787 B pour l'application de l'exonération. L'une des conditions est que les parts ou actions soient transmises par décès, entre vifs, ou à un fonds de pérennité. La donation envisagée est une transmission entre vifs, ce qui remplit cette condition.\n\nL'exonération est également subordonnée à d'autres conditions non précisées dans le texte fourni, qu'il conviendrait de vérifier.\n\nEnfin, l'engagement collectif de conservation signé le 3 mars 2021 et les engagements individuels pris par les enfants sont pertinents pour d'autres dispositions fiscales, notamment celles relatives à l'exonération des droits de mutation à titre gratuit en cas de transmission de titres de sociétés, mais il faut vérifier si ces engagements sont pris en compte pour l'exonération de l'article 787 B.\n\nAvant de conclure sur l'applicabilité de l'exonération partielle de 75 % prévue par l'article 787 B, j'aurais besoin de plus d'informations sur l'activité précise de la société et sur les autres conditions posées par l'article 787 B qui n'ont pas été précisées dans le texte fourni.\n\nPouvez-vous me fournir des précisions sur l'activité de la société et sur les autres conditions requises par l'article 787 B pour l'exonération ?",
+  "latence": 35.085,
+  "temperature_zero": true,
+  "jetons_entree": 549,
+  "jetons_sortie": 543,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

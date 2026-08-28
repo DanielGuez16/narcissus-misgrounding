@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "claude-opus-5",
+  "repetition": 2,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "La société fournit-elle, dans des conditions similaires à celles des établissements hôteliers, au moins trois des quatre prestations suivantes : petit-déjeuner, nettoyage régulier des locaux (et non un simple nettoyage à l'entrée et à la sortie), fourniture de linge de maison, réception de la clientèle ?",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-25T00:06:07+00:00"
+}

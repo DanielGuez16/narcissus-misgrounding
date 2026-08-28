@@ -23,6 +23,7 @@ relancer.
 | `resultats/brut/` | **500 reponses brutes** : 13 enonces x 13 modeles x 3 repetitions, moins 7 cellules minimax sans reponse. Un JSON par appel, `{enonce}_{modele}_{repetition}.json` |
 | `resultats/codage/` | **507 cellules codees** : la valeur de comportement et la phrase de la reponse qui la justifie |
 | `resultats/double_codage/` | les deux echantillons recodes a la main, la reference scellee et l'accord |
+| `resultats/ablation_prompt/` | l'ablation de consigne : 2 enonces x 13 modeles x 3 repetitions sous une consigne qui autorise la question, brut et codage separes de la campagne principale |
 | `docs/` | les resultats et la methodo (voir plus bas) |
 
 ## Ce que mesure le banc
@@ -114,6 +115,9 @@ revele : [docs/double_codage.md](docs/double_codage.md).
   la paire controle/mesure de la chaudiere.
 - [double_codage.md](docs/double_codage.md) : les deux echantillons recodes a la
   main, les quatre mesures d'accord, et ce que la stratification a revele.
+- [ablation_prompt.md](docs/ablation_prompt.md) : l'ablation de consigne, sa
+  raison, son protocole et ses resultats, avec et sans la consigne qui autorise
+  la question.
 - [limites_enonces.md](docs/limites_enonces.md) : les limites de conception des
   enonces, dont les deux qui font manquer plusieurs faits. A declarer, pas a
   corriger.

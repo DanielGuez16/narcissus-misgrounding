@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "role": "mesure",
+  "matiere": "Apport partiel d'actif",
+  "modele": "minimax-m3",
+  "repetition": 1,
+  "fait_manquant": "La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "**Sur le plan strictement juridique, l'opération telle que décrite est éligible au régime de faveur de l'article 210 A du CGI** : le texte de l'article 210-0 A, I, 4° la vise expressément, et le mécanisme de la remise directe des titres aux associés est précisément la situation qu'il a entendu autoriser.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-25T00:05:41+00:00"
+}

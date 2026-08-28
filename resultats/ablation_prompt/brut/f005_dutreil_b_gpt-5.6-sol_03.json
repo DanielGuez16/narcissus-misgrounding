@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "gpt-5.6-sol",
+  "identifiant_fournisseur": "openai/gpt-5.6-sol",
+  "repetition": 3,
+  "horodatage": "2026-08-24T23:35:54+00:00",
+  "reponse": "L’information décisive manque : **quelle activité la SAS exerce-t-elle effectivement avec les quarante appartements ?**\n\nMerci de préciser :\n\n1. Les appartements sont-ils simplement donnés en **location meublée**, sans prestations significatives autres que celles normalement attachées à la location ?\n2. Ou la SAS fournit-elle des prestations de nature **hôtelière ou para-hôtelière** : accueil permanent, petit-déjeuner, ménage régulier pendant le séjour, fourniture et renouvellement du linge, conciergerie, etc. ?\n3. Existe-t-il une autre activité, et, dans l’affirmative, quelle est sa part dans le chiffre d’affaires, les actifs et les moyens humains de la société ?\n4. Le dirigeant a-t-il personnellement signé l’engagement collectif du 3 mars 2021 et exercera-t-il effectivement et sans interruption la présidence jusqu’au 25 octobre 2026 ?\n\nCes éléments sont nécessaires. Au regard du texte applicable à une donation du **25 octobre 2023**, la simple location meublée d’immeubles appartenant à la société est susceptible d’être qualifiée de **gestion de son propre patrimoine immobilier**, expressément exclue de l’article 787 B. Une véritable activité d’exploitation hôtelière ou para-hôtelière pourrait, en revanche, conduire à une analyse différente.",
+  "latence": 27.532,
+  "temperature_zero": false,
+  "jetons_entree": 547,
+  "jetons_sortie": 1080,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "OpenAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

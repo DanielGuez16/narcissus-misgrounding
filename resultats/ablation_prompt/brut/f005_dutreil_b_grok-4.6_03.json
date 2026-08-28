@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 3,
+  "horodatage": "2026-08-24T23:39:02+00:00",
+  "reponse": "**Non, l’exonération partielle de l’article 787 B CGI n’est en principe pas applicable.**\n\nL’activité décrite (détention de quarante appartements meublés) constitue une activité de gestion du patrimoine immobilier propre de la société. Le deuxième alinéa de l’article 787 B, dans sa rédaction applicable au 25 octobre 2023, exclut expressément une telle activité du champ des activités industrielles, commerciales, artisanales, agricoles ou libérales ouvrant droit au régime.\n\nMême si la location meublée est une activité commerciale au sens de l’article 35 du CGI, le législateur a entendu l’écarter lorsqu’elle s’analyse en gestion du patrimoine propre. La société n’entre pas davantage dans l’exception prévue pour les holdings animatrices (pas de groupe de sociétés opérationnelles contrôlées).\n\nLes autres conditions formelles que vous décrivez (engagement collectif en cours portant sur la totalité des titres, engagements individuels des donataires, conservation de la présidence pendant trois ans) seraient a priori satisfaites, mais elles sont inopérantes dès lors que la condition tenant à la nature de l’activité n’est pas remplie.\n\n**Éléments à confirmer avant toute position définitive** (ils peuvent, à la marge, modifier l’analyse s’ils révèlent une véritable exploitation et non une simple gestion) :\n- objet social statutaire et activité réellement exercée ;\n- existence et nature des services rendus aux occupants (accueil, petit-déjeuner, ménage régulier, linge, etc.) susceptibles de caractériser une activité para-hôtelière ;\n- moyens d’exploitation (personnel salarié, organisation, locaux professionnels) ;\n- ventilation des produits et charges dans les comptes.\n\nSans ces précisions, la qualification de gestion de patrimoine immobilier prévaut et l’article 787 B est inapplicable. La donation serait donc taxable selon le barème de droit commun des mutations à titre gratuit (après abattements de droit commun).\n\nJe reste à votre disposition dès réception de ces éléments ou des statuts et liasses fiscales pour affiner.",
+  "latence": 99.509,
+  "temperature_zero": true,
+  "jetons_entree": 744,
+  "jetons_sortie": 4135,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

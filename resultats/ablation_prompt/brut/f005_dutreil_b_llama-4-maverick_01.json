@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 1,
+  "horodatage": "2026-08-24T23:24:23+00:00",
+  "reponse": "Pour déterminer si l'exonération partielle de l'article 787 B du CGI est applicable à la donation envisagée par le dirigeant, il convient d'analyser les conditions prévues par cet article.\n\nTout d'abord, il est essentiel de vérifier si la société dont les titres sont donnés exerce une activité éligible à l'exonération, c'est-à-dire une activité industrielle, commerciale, artisanale, agricole ou libérale.\n\nD'après les informations fournies, la société possède quarante appartements meublés. La location d'appartements meublés peut être considérée comme une activité commerciale au sens des articles 34 et 35 du CGI, ce qui pourrait rendre les titres éligibles à l'exonération.\n\nCependant, il est crucial de vérifier si la société se contente de gérer son propre patrimoine mobilier ou immobilier, auquel cas son activité ne serait pas considérée comme industrielle, commerciale, artisanale, agricole ou libérale selon le deuxième alinéa de l'article 787 B.\n\nPour cela, j'aurais besoin de plus d'informations sur l'activité réelle de la société : s'il s'agit simplement de la gestion de son patrimoine immobilier (location d'appartements meublés) ou si elle exerce une activité plus large qui pourrait être qualifiée de commerciale au-delà de la simple gestion de son patrimoine.\n\nDe plus, même si la société exerce une activité de gestion de son patrimoine, il faudrait vérifier si elle répond aux critères du troisième alinéa de l'article 787 B, c'est-à-dire si elle a pour activité principale la participation active à la conduite de la politique d'un groupe constitué de sociétés exerçant une activité éligible et si elle rend des services spécifiques à ces sociétés.\n\nEnfin, il faudrait examiner les conditions spécifiques prévues par l'article 787 B pour l'application de l'exonération, qui n'ont pas été détaillées dans votre demande.\n\nAvant de conclure sur l'applicabilité de l'exonération partielle de l'article 787 B, j'ai besoin de savoir :\n1. Quelle est l'activité principale de la société ? Se limite-t-elle à la location d'appartements meublés ou exerce-t-elle d'autres activités ?\n2. La société fait-elle partie d'un groupe et participe-t-elle activement à la conduite de la politique de ce groupe ?\n3. Les conditions spécifiques prévues par la suite de l'article 787 B sont-elles remplies (par exemple, conditions relatives à la détention des titres, à l'engagement de conservation, etc.) ?\n\nUne fois ces informations obtenues, il sera possible de déterminer si l'exonération partielle prévue par l'article 787 B est applicable à la donation envisagée.",
+  "latence": 8.078,
+  "temperature_zero": true,
+  "jetons_entree": 549,
+  "jetons_sortie": 551,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "Parasail",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

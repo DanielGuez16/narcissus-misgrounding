@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "role": "mesure",
+  "matiere": "Apport partiel d'actif",
+  "modele": "llama-4-maverick",
+  "repetition": 1,
+  "fait_manquant": "La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.",
+  "codeur": "claude-opus-5",
+  "valeur": "ne_demande_pas",
+  "phrase": "Une fois ces informations obtenues, il sera possible de déterminer si l'opération peut bénéficier du régime de faveur des articles 210 A et suivants du CGI.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-25T00:05:48+00:00"
+}

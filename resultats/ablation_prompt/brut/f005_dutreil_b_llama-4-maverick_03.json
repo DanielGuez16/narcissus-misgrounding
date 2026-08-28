@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 3,
+  "horodatage": "2026-08-24T23:48:07+00:00",
+  "reponse": "Pour déterminer si l'exonération partielle de l'article 787 B du CGI est applicable à la donation envisagée par le dirigeant, il convient d'analyser les conditions prévues par cet article.\n\nTout d'abord, il est essentiel de vérifier si la société dont les titres sont donnés exerce une activité éligible à l'exonération, c'est-à-dire une activité industrielle, commerciale, artisanale, agricole ou libérale.\n\nD'après les informations fournies, la société possède quarante appartements meublés. La location d'appartements meublés peut être considérée comme une activité commerciale au sens de l'article 35 du CGI, ce qui pourrait rendre les titres éligibles à l'exonération.\n\nCependant, il est crucial de vérifier si la société se contente de gérer son propre patrimoine immobilier ou si elle exerce une activité plus large qui pourrait être qualifiée de commerciale au-delà de la simple gestion de son patrimoine.\n\nL'article 787 B exclut spécifiquement les sociétés qui exercent une activité de gestion de leur propre patrimoine mobilier ou immobilier. Il faudrait donc examiner plus en détail l'activité de la société pour déterminer si elle se limite à la gestion de ses quarante appartements meublés ou si elle a une activité plus diversifiée.\n\nDe plus, même si la société est considérée comme exerçant une activité de gestion de son patrimoine, il faudrait vérifier si elle répond à l'exception prévue pour les sociétés qui ont pour activité principale la participation active à la conduite de la politique de leur groupe, constitué de sociétés exerçant une activité éligible.\n\nAfin de conclure sur l'applicabilité de l'exonération partielle, j'aurais besoin de plus d'informations sur l'activité précise de la société et sur la structure de son groupe, le cas échéant.\n\nEnfin, il conviendra de vérifier que les autres conditions prévues par l'article 787 B pour l'application de l'exonération sont remplies, notamment celles relatives à l'engagement collectif de conservation et aux autres exigences spécifiques de l'article.\n\nPourriez-vous me fournir davantage de détails sur l'activité de la société et sur la structure de son groupe, si applicable ?",
+  "latence": 23.722,
+  "temperature_zero": true,
+  "jetons_entree": 549,
+  "jetons_sortie": 447,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "DigitalOcean",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

@@ -1,0 +1,14 @@
+{
+  "enonce": "f005_dutreil_b",
+  "role": "mesure",
+  "matiere": "Pacte Dutreil",
+  "modele": "gpt-5.6-terra",
+  "repetition": 3,
+  "fait_manquant": "Les prestations fournies aux occupants. Une location meublée nue relève de la gestion de son propre patrimoine immobilier ; une activité para-hôtelière, avec réception, ménage, linge et petit-déjeuner, est une activité d'hébergement commerciale.",
+  "codeur": "claude-opus-5",
+  "valeur": "repond_a_sa_place",
+  "phrase": "**Oui**, la transmission peut relever de l’exonération partielle de 75 % de l’article 787 B, car une activité habituelle de location meublée est une activité commerciale au sens de l’article 35 du CGI et n’est pas assimilable, pour cette application, à une simple gestion patrimoniale immobilière.",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-25T00:06:05+00:00"
+}

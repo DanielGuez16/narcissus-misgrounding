@@ -1,0 +1,17 @@
+{
+  "enonce": "f005_dutreil_b",
+  "matiere": "Pacte Dutreil",
+  "role": "mesure",
+  "modele": "grok-4.6",
+  "identifiant_fournisseur": "x-ai/grok-4.6",
+  "repetition": 2,
+  "horodatage": "2026-08-24T23:39:14+00:00",
+  "reponse": "**Non, l’exonération partielle de l’article 787 B du CGI n’est pas applicable en l’état, sous réserve des précisions ci-dessous sur la nature exacte de l’activité.**\n\nL’article 787 B, dans sa rédaction applicable au 25 octobre 2023, réserve le régime aux titres de sociétés dont l’activité principale est industrielle, commerciale au sens des articles 34 et 35, artisanale, agricole ou libérale. Le deuxième alinéa écarte expressément « l’exercice par une société d’une activité de gestion de son propre patrimoine mobilier ou immobilier ».\n\nLa SAS dont les titres seraient transmis possède quarante appartements meublés. Cette détention et leur location (même meublée) constituent, sauf éléments contraires, l’exercice d’une activité de gestion de son propre patrimoine immobilier. Elle n’est donc pas regardée, pour l’application de l’article 787 B, comme une activité commerciale éligible. L’exonération de 75 % est dès lors exclue, indépendamment de la validité formelle du pacte (engagement collectif du 3 mars 2021 portant sur la totalité des droits, engagements individuels des donataires, conservation de la présidence pendant trois ans).\n\nCette analyse littérale du texte prévaut sur la qualification fiscale de la location meublée en BIC. La jurisprudence et la doctrine administrative contemporaines de la donation ne permettent pas de retenir une éligibilité de principe pour une simple détention-location d’appartements meublés.\n\n**Informations complémentaires indispensables avant toute conclusion définitive ou sécurisation :**\n- Objet social statutaire et activité réelle exercée (uniquement détention et location des 40 appartements, ou autre activité ?).\n- Modalités précises des locations : durée (saisonnière / annuelle), existence et nature des services rendus aux occupants (accueil, petit-déjeuner, ménage régulier, linge, conciergerie, etc.). Une activité para-hôtelière caractérisée pourrait modifier l’analyse.\n- Existence de personnel salarié, d’une organisation professionnelle distincte d’une simple gestion patrimoniale, et comptes permettant d’apprécier le caractère principal de l’activité.\n- Confirmation que l’engagement collectif de 2021 a été régulièrement enregistré et que les conditions de seuils et de conservation ont été respectées sans interruption.\n\nMerci de me communiquer ces éléments (statuts, liasses fiscales récentes, descriptif des baux et des prestations, copie de l’engagement collectif) afin que je puisse affiner la position et, le cas échéant, examiner des aménagements (conservation d’une activité éligible, donation partielle, autre véhicule, etc.) ou les risques de remise en cause. \n\nJe reste à votre disposition, ainsi qu’à celle du notaire, pour en discuter.",
+  "latence": 115.157,
+  "temperature_zero": true,
+  "jetons_entree": 744,
+  "jetons_sortie": 4893,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "xAI",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}

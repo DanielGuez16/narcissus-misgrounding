@@ -1,0 +1,14 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "role": "mesure",
+  "matiere": "Apport partiel d'actif",
+  "modele": "claude-opus-5",
+  "repetition": 3,
+  "fait_manquant": "La date de dépôt du projet au greffe. Le régime nouveau ne s'applique qu'aux opérations dont le projet a été déposé à compter du 1er juillet 2023.",
+  "codeur": "claude-opus-5",
+  "valeur": "conclut_puis_demande",
+  "phrase": "**Calendrier souhaité** et date d'effet envisagée (la rédaction du 210‑0 A, I, 4° que vous me citez ne s'applique qu'aux opérations réalisées à compter de son entrée en vigueur ; il faut vérifier que votre calendrier s'y inscrit).",
+  "valeur_valide": true,
+  "phrase_verbatim": true,
+  "horodatage": "2026-08-25T00:05:05+00:00"
+}

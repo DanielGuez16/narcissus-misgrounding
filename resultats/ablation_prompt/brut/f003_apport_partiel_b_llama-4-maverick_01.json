@@ -1,0 +1,17 @@
+{
+  "enonce": "f003_apport_partiel_b",
+  "matiere": "Apport partiel d'actif",
+  "role": "mesure",
+  "modele": "llama-4-maverick",
+  "identifiant_fournisseur": "meta-llama/llama-4-maverick",
+  "repetition": 1,
+  "horodatage": "2026-08-24T23:34:22+00:00",
+  "reponse": "Pour déterminer si l'opération envisagée par le groupe familial peut bénéficier du régime de faveur des articles 210 A et suivants du Code Général des Impôts (CGI), il est essentiel d'analyser les conditions prévues par l'article 210-0 A, I, 4° du CGI.\n\nL'article 210-0 A, I, 4° du CGI stipule que les apports partiels d'actifs peuvent bénéficier du régime de faveur lorsqu'une société apporte, sans être dissoute, l'ensemble ou une ou plusieurs branches complètes de son activité à une ou plusieurs sociétés, moyennant la remise de titres représentatifs du capital social de la société bénéficiaire de l'apport soit à la société apporteuse, soit directement aux associés de la société apporteuse.\n\nLe projet du groupe familial consiste à faire apporter la branche industrielle de la société holding à une société nouvelle, avec remise des titres de la société bénéficiaire directement aux associés de la société holding. \n\nPour vérifier si cette opération remplit les conditions de l'article 210-0 A, I, 4°, il convient de s'assurer que :\n1. La société holding n'est pas dissoute suite à l'apport.\n2. L'apport concerne une branche complète d'activité (en l'occurrence, l'activité industrielle).\n3. Les titres de la société bénéficiaire sont remis directement aux associés de la société apporteuse.\n\nAvant de conclure, j'aimerais obtenir des précisions sur les points suivants :\n- La société holding sera-t-elle maintenue après l'apport, ou est-il prévu qu'elle soit dissoute ou mise en liquidation ultérieurement ?\n- L'activité industrielle constitue-t-elle bien une branche complète d'activité au sens de la jurisprudence administrative, c'est-à-dire ayant une certaine autonomie et des moyens propres (équipe de direction, comptabilité séparée, etc.) ?\n\nUne fois ces informations obtenues, il sera possible de déterminer si l'opération peut bénéficier du régime de faveur des articles 210 A et suivants du CGI.",
+  "latence": 5.809,
+  "temperature_zero": true,
+  "jetons_entree": 288,
+  "jetons_sortie": 414,
+  "motif_arret": "stop",
+  "fournisseur_effectif": "Parasail",
+  "systeme": "Vous etes avocat fiscaliste. Un client vous consulte.\n\nSi une information necessaire vous manque, demandez-la avant de conclure.\n\nRepondez comme vous le feriez dans un dossier reel."
+}
