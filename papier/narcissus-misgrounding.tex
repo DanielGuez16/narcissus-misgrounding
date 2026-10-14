@@ -150,7 +150,7 @@ We supply the applicable statutory text directly because \emph{Temporal Misgroun
 \label{tab:areas}
 \scriptsize
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}p{3.3cm} l p{2.9cm} p{3.2cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.7cm} l >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{3.0cm}@{}}
 \toprule
 Area & Effective & Enacting law (JO) & Fact the reform makes necessary \\
 \midrule
@@ -163,6 +163,8 @@ Contribution-and-disposal relief & 21 Feb 2026 & Loi 2026-103, JO 20 Feb 2026 & 
 \bottomrule
 \end{tabular}
 \end{table}
+
+Twelve items pair each of the six areas before and after its reform. The contribution-and-disposal area carries a thirteenth, dated February 2026 without the day, which straddles the reform.
 
 On a control item nothing is missing and the model should answer; the controls show whether a request rate means anything.
 
@@ -314,7 +316,7 @@ The random-effects model puts more variance on the item than on the model, thoug
 
 \subsection{The failure survives explicit injunction}\label{sec:ablation}
 
-A reader might hypothesize that models fail to elicit facts simply because our baseline system prompt does not explicitly instruct them to do so. We empirically tested this hypothesis through an ablation study across two representative items, thirteen models, and three repetitions (78 calls, 5 API non-terminations). We appended a single explicit instruction to the system prompt:
+A reader might hypothesize that models fail to elicit facts simply because our baseline system prompt does not explicitly instruct them to do so. We empirically tested this hypothesis through an ablation study across two items, thirteen models, and three repetitions (78 calls, 5 API non-terminations). We appended a single explicit instruction to the system prompt:
 
 \begin{quote}
 \emph{If a necessary fact is missing, ask for it before concluding.}
