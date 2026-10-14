@@ -5,11 +5,6 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{float}
-% Resserre l'espace autour des tableaux flottants (espacement, pas zone de texte)
-\setlength{\textfloatsep}{3pt plus 1pt minus 1pt}
-\setlength{\intextsep}{3pt plus 1pt minus 1pt}
-\setlength{\abovecaptionskip}{3pt}
-\setlength{\belowcaptionskip}{0pt}
 %
 \def\hb{\hbox to 11.5 cm{}}
 
@@ -37,11 +32,11 @@ We build a benchmark of thirteen items across six reforms of French tax law. Eac
 
 Across five of the six measurement items, those built from reported cases, models request the missing fact in only 3\% of responses (5 of 192); on three of them the fact is never requested, and nine of the thirteen models never ask for it at all. The single outlier driving this figure to 16\% is an AI-generated item, which differs from the other five on two dimensions at once, as Section~\ref{sec:why} discusses. They do not ask indiscriminately either: on control items, where nothing is missing, they answer rather than ask in 96.5\% of cases, apart from one item where they ask the question a later version of the text would call for.
 
-Read by area, the request rate is the same on both sides of each reform: what models ask follows the subject of the file rather than the new requirements of the law. Coding was verified by a second author on 135 cells drawn blind, including all five positive cases that produce the headline figure. The benchmark, all responses, the coding and the code are released.
+Read by area, the request rate is the same on both sides of each reform: what models ask follows the subject of the file. A second author verified the coding on 135 cells drawn blind, including the five positive cases. All data and code are released.
 \end{abstract}
 
 \begin{keyword}
-narcissus misgrounding\sep legal question answering\sep information elicitation\sep legislative reform\sep French tax law\sep benchmark
+narcissus misgrounding\sep information elicitation\sep legislative reform\sep French tax law\sep benchmark
 \end{keyword}
 \end{frontmatter}
 \markboth{}{}
@@ -54,7 +49,7 @@ Article 150-0 B ter of the French tax code allows a company director to defer ta
 
 Consider a seasoned director who has executed such restructurings for years. When consulting counsel after their holding company sells shares in February 2026 to reinvest in a property project, they have no reason to suspect a timing issue: under the law they know, the exact day of the sale is irrelevant. Yet their entire tax position hinges on that single unstated fact: before the 21st of February, the reinvestment is fully eligible; from the 21st, tax deferral is forfeited. A human lawyer immediately asks for the exact date. The question arises from the reform and appears nowhere in the client's file.
 
-We report what thirteen state-of-the-art language models do when placed in counsel's position.
+We report what thirteen language models do when placed in counsel's position.
 
 \subsection*{The phenomenon}
 
@@ -66,7 +61,7 @@ This makes the failure more dangerous than hallucination, which a reader can cat
 
 \subsection*{Contributions}
 
-\emph{Conceptualisation}: we identify and characterize narcissus misgrounding as a structural failure mode distinct from retrieval failure and hallucination. \emph{Benchmark}: we build thirteen legal files across six French tax reforms, each paired with the statutory text in force at the date of the facts, and evaluate thirteen leading models over three repetitions; all 573 responses (500 from the main campaign and 73 from the prompt ablation reported in Section~\ref{sec:ablation}), annotations, and code are released.\footnote{Available at \url{https://github.com/DanielGuez16/narcissus-misgrounding}.} \emph{Findings}: across the five reported-case items, models request the decisive fact in only 3\% of responses, and nine of thirteen never ask; the overall 16\% rate is driven by a single AI-generated outlier, which differs from the other five on two dimensions at once, as Section~\ref{sec:why} discusses. \emph{Resilience to prompting}: the failure survives an explicit instruction to ask, which suggests that the error stems from an inability to perceive factual voids created by legal change. \emph{Observations on the instruments}: we report three deployment anomalies, unenforced token ceilings, non-termination, and undocumented routing variability.
+\emph{Conceptualisation}: we identify and characterize narcissus misgrounding as a structural failure mode distinct from retrieval failure and hallucination. \emph{Benchmark}: we build thirteen legal files across six French tax reforms, each paired with the statutory text in force at the date of the facts, and evaluate thirteen leading models over three repetitions; all 573 responses (500 from the main campaign and 73 from the prompt ablation reported in Section~\ref{sec:ablation}), annotations, and code are released.\footnote{Available at \url{https://github.com/DanielGuez16/narcissus-misgrounding}.} \emph{Findings}: on the five reported-case items, models request the decisive fact in 3\% of responses; the overall 16\% rate is driven by one AI-generated item, which differs from the other five on two dimensions at once, as Section~\ref{sec:why} discusses. \emph{Resilience to prompting}: the failure survives an explicit instruction to ask (Section~\ref{sec:ablation}). \emph{Observations on the instruments}: unenforced token ceilings, non-termination, and routing variability.
 
 \subsection*{Why this is not a retrieval problem}
 
@@ -138,28 +133,28 @@ Each item is a tax file presented to the model as a client would submit it to co
 
 The items, the statutory texts and the system prompt are in French; the prompt is translated here. A complete item, with its statutory text, is in the repository.
 
-The prompt deliberately contains no instruction to identify or request missing information. In legal practice, counsel receiving a new file is not forewarned that a critical fact is absent; identifying factual gaps is an intrinsic outcome of the legal analysis itself. Prompting the model to ask for missing information would implicitly signal the presence of a factual void, thereby bypassing the core capability under test: whether the system independently recognizes when a statutory change renders an unstated fact decisive.
+The prompt does not ask the model to look for missing facts. Counsel receiving a file is not warned that a fact is absent, and such an instruction would give the test away.
 
-We supply the applicable statutory text directly because \emph{Temporal Misgrounding in Legal RAG}~\cite{cymbler2026} established that models otherwise fail during the retrieval step. Because our evaluation does not target retrieval, we isolate the factual elicitation phase by assuming retrieval is fully solved.
+Retrieval is assumed solved, for the reason given in Section 1.
 
 \subsection{The items}
 
 \begin{table}[!ht]
 \centering
-\caption{The six areas of French tax law: the effective date of each reform, the enacting text with its date of publication in the Journal officiel, and the fact the reform makes necessary.}
+\caption{The six areas of French tax law: the effective date of each reform, and the enacting text with its date of publication in the Journal officiel.}
 \label{tab:areas}
 \scriptsize
 \setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.7cm} l >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{3.0cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.6cm} l >{\raggedright\arraybackslash}p{4.6cm}@{}}
 \toprule
-Area & Effective & Enacting law (JO) & Fact the reform makes necessary \\
+Area & Effective & Enacting law (JO) \\
 \midrule
-Reduced VAT on renovation & 1 Mar 2025 & Loi 2025-127, JO 15 Feb 2025 & The fuel the boiler can burn \\
-Registration duties on property-holding companies & 1 Jan 2024 & Loi 2023-1322, JO 30 Dec 2023 & Three declarations in the deed \\
-Partial contribution of assets & 1 Jul 2023 & Ord. 2023-393, JO 25 May 2023; CGI aligned by Loi 2025-127 & The date the plan was filed with the registry \\
-Withholding tax and beneficial ownership & 16 Feb 2025 & Loi 2025-127, JO 15 Feb 2025 & What the parent does with the funds \\
-Dutreil business transfer relief & 17 Oct 2023 & Loi 2023-1322, JO 30 Dec 2023 & The services provided to the occupants \\
-Contribution-and-disposal relief & 21 Feb 2026 & Loi 2026-103, JO 20 Feb 2026 & The day of the disposal, and the sector of the reinvestment \\
+Reduced VAT on renovation & 1 Mar 2025 & Loi 2025-127, JO 15 Feb 2025 \\
+Registration duties on property-holding companies & 1 Jan 2024 & Loi 2023-1322, JO 30 Dec 2023 \\
+Partial contribution of assets & 1 Jul 2023 & Ord. 2023-393, JO 25 May 2023; CGI aligned by Loi 2025-127 \\
+Withholding tax and beneficial ownership & 16 Feb 2025 & Loi 2025-127, JO 15 Feb 2025 \\
+Dutreil business transfer relief & 17 Oct 2023 & Loi 2023-1322, JO 30 Dec 2023 \\
+Contribution-and-disposal relief & 21 Feb 2026 & Loi 2026-103, JO 20 Feb 2026 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -227,9 +222,9 @@ Targeted & 45 & 80.0\% & 0.704 & 100\% & \textbf{1.000} \\
 \end{tabular}
 \end{table}
 
-The two reporting columns evaluate distinct properties. The primary findings of this paper rely strictly on a binary classification: whether a model requests the missing fact or does not. Disagreements between \emph{assumes} and \emph{does not ask} do not alter any reported rate. The binary kappa ($\kappa \ge 0.922$) confirms the high reliability of our main results, whereas the four-code kappa measures a finer distinction not required for the core findings in Section~\ref{sec:results}.
+The reported rates rest on the binary variable, request or not, which a disagreement between \emph{assumes} and \emph{does not ask} leaves unchanged; the binary kappa ($\kappa \ge 0.922$) is the one that bears on Section~\ref{sec:results}.
 
-Because positive cases are rare across practitioner-sourced items (5 positives in 192 cells), the third draw specifically targeted these items, combining all 5 positive cells with 40 negative cells. Both coders achieved 100\% agreement on all 5 positive cases, yielding perfect binary reliability ($\kappa = 1.00$) across the 45 cells. Minor disagreements were strictly confined to the boundary between \emph{assumes} and \emph{does not ask} (four-code $\kappa = 0.704$), a nuance that affects only the qualitative discussion in Section~\ref{sec:why}.
+Positive cases are rare on practitioner-sourced items (5 in 192 cells), so the third draw took all five with 40 negative cells. Both coders agreed on all five ($\kappa = 1.00$ over the 45 cells); the disagreements fall between \emph{assumes} and \emph{does not ask} (four-code $\kappa = 0.704$), which affects only the discussion in Section~\ref{sec:why}.
 
 \section{Results}\label{sec:results}
 
@@ -270,7 +265,7 @@ The spread between the best and the worst model does not change the conclusion.
 
 Each item was put to each model three times. Across the corpus, two thirds of the model-item pairs return the same code on all three repetitions. On the registry-filing item the thirteen model-item pairs are unanimous, across thirty-eight responses: no model varies between its own repetitions.
 
-Blair-Stanek \& Van Durme~\cite{blairstanek2025} report instability of up to 50\% on hard legal questions at temperature zero. We do not claim these models are stable in general, and a third of our pairs are not. On the item that carries the strongest result, the behaviour does not fluctuate.
+Blair-Stanek \& Van Durme~\cite{blairstanek2025} report instability of up to 50\% at temperature zero; a third of our pairs vary, but not on this item.
 
 \paragraph{Manual verification of the strongest figure.}
 
@@ -324,17 +319,13 @@ A reader might hypothesize that models fail to elicit facts simply because our b
 
 The two items diverge. On the Dutreil item, where the missing fact is factually salient, the request rate rises from 4 of 39 to 27 of 35. On the filing-date item, where the missing fact is a temporal condition created by the reform, it stays at 0 of 38.
 
-Thirteen leading models, explicitly commanded to ask for missing facts before concluding, produced 38 definitive legal opinions on a filing date none of them possessed.
-
-Two conclusions follow. First, prompt engineering cannot resolve narcissus misgrounding when the factual void is induced by statutory change: if an explicit command yields zero elicitation on filing dates, a gentler instruction is unlikely to succeed where an explicit one does not. Second, because the prompt in Section~\ref{sec:tracks} was held constant on both sides of each reform, prompt wording cannot account for the cross-reform invariance we observe.
+Two conclusions follow. First, prompt engineering cannot resolve narcissus misgrounding when the factual void is induced by statutory change. Second, because the prompt in Section~\ref{sec:tracks} was held constant on both sides of each reform, prompt wording cannot account for the cross-reform invariance we observe.
 
 \section{Why they do not ask}\label{sec:why}
 
 Each missing fact admits a default value the model can adopt silently. For \emph{dates}, it defaults to the latest statutory text and applies it; for \emph{occupant services} (Dutreil), it assumes a standard furnished lease without hotel services; for \emph{statutory declarations}, it recites the list verbatim without registering that it lacks client values to fill it in; and for the \emph{use of funds}, it answers under reservation, delivering a conclusion while treating the missing fact as a mere hypothetical.
 
-When a default value is available, the model adopts it instead of asking.
-
-This is what makes the error invisible: the response never states that a value was chosen.
+When a default value is available, the model adopts it instead of asking, and the response never says that a value was chosen: this is what makes the error invisible.
 
 \paragraph{The synthetic outlier.}
 
@@ -344,8 +335,7 @@ The boiler item stands apart because its missing fact admits no default, and it 
 
 \section{Conclusion}
 
-\enlargethispage{2\baselineskip}
-Narcissus misgrounding sits strictly downstream of the failure identified in Temporal Misgrounding in Legal RAG~\cite{cymbler2026}. Where that work showed standard retrieval fetching the wrong statutory version, our setup provides the exact, date-conditioned text within the prompt: the model holds the right law, at the right date, and nothing in it is hallucinated or misread. The failure occurs because the missing piece is not a legal norm but a client-specific fact, residing in no corpus. This makes the risk more insidious than retrieval failure or statutory hallucination: an opinion that cites the right law and reasons flawlessly appears pristine, yet rests on a silent factual assumption the reader cannot locate. The greater danger is a well-reasoned, authoritative answer given on facts that are not the client's.
+Narcissus misgrounding sits downstream of the retrieval failure identified in Temporal Misgrounding in Legal RAG~\cite{cymbler2026}. The model holds the right law at the right date; what it lacks is a fact about the client that no corpus contains. An opinion that cites the right law and reasons correctly can still rest on a factual assumption the reader cannot locate.
 
 \section{Limitations and Future Work}
 
