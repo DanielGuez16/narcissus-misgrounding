@@ -43,3 +43,7 @@ resultats/echecs*.jsonl
 # --- Systeme ---
 .DS_Store
 Thumbs.db
+
+# --- Brouillons de travail internes (jamais publies) ---
+benchmark/cas_fiscaux_papier.docx
+benchmark/dossiers_correction_juriste.pages
