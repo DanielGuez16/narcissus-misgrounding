@@ -3,6 +3,7 @@
 \usepackage{mathptmx}
 \usepackage{soul}\setuldepth{article}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{float}
 % Resserre l'espace autour des tableaux flottants (espacement, pas zone de texte)
 \setlength{\textfloatsep}{3pt plus 1pt minus 1pt}
@@ -34,9 +35,9 @@ We identify and measure narcissus misgrounding: language models answer a legal q
 
 We build a benchmark of thirteen items across six reforms of French tax law. Each item is a file put to the model as a client would put it to counsel, paired with the version of the text applicable at the date of the facts, so that retrieval is not what is under test. Six items carry a fact the reform has made necessary and the file does not state; seven control items carry none. Thirteen models, three repetitions, 500 responses across 507 cells.
 
-Across the five reported-case items, models request the missing fact in only 3\% of responses (5 of 192); on three of them the fact is never requested, and nine of the thirteen models never ask for it at all. The single outlier driving this figure to 16\% is an AI-generated item, which may indicate that models recognize patterns from their training distribution rather than performing genuine legal reasoning. They do not ask indiscriminately either: on control items, where nothing is missing, they answer rather than ask in 96.5\% of cases, apart from one item where they ask the question a later version of the text would call for.
+Across five of the six measurement items, those built from reported cases, models request the missing fact in only 3\% of responses (5 of 192); on three of them the fact is never requested, and nine of the thirteen models never ask for it at all. The single outlier driving this figure to 16\% is an AI-generated item, which may indicate that models recognize patterns from their training distribution rather than performing genuine legal reasoning. They do not ask indiscriminately either: on control items, where nothing is missing, they answer rather than ask in 96.5\% of cases, apart from one item where they ask the question a later version of the text would call for.
 
-Read by area, the request rate is the same on both sides of each reform: models ask what the subject suggests, not what the law newly requires. Coding was verified by a second author on 135 cells drawn blind, including all five positive cases that produce the headline figure. The benchmark, all responses, the coding and the code are released.
+Read by area, the request rate is the same on both sides of each reform: what models ask follows the subject of the file rather than the new requirements of the law. Coding was verified by a second author on 135 cells drawn blind, including all five positive cases that produce the headline figure. The benchmark, all responses, the coding and the code are released.
 \end{abstract}
 
 \begin{keyword}
@@ -47,11 +48,11 @@ narcissus misgrounding\sep legal question answering\sep information elicitation\
 
 \section{Introduction}
 
-A tax reform does not only change the answer to a question. It can change what the question requires.
+A tax reform can change not only the answer to a question but also the facts needed to answer it.
 
 Article 150-0 B ter of the French tax code allows a company director to defer tax on a capital gain when contributing shares to a holding company. If the holding company subsequently sells those shares within three years, it must reinvest most of the proceeds in an active economic business. Until 21 February 2026, property dealing (marchand de biens) qualified as an eligible activity. From that date, it is excluded.
 
-Consider a seasoned director who has executed such restructurings for years. When consulting counsel after his holding company sells shares in February 2026 to reinvest in a property project, he has no reason to suspect a timing issue, under the law he knows, the exact day of the sale is irrelevant. Yet his entire tax position hinges on that single unstated fact: before the 21st of February, the reinvestment is fully eligible; from the 21st, tax deferral is forfeited. A human lawyer immediately asks for the exact date. The question is not in the client's file; it is demanded by the reform.
+Consider a seasoned director who has executed such restructurings for years. When consulting counsel after their holding company sells shares in February 2026 to reinvest in a property project, they have no reason to suspect a timing issue: under the law they know, the exact day of the sale is irrelevant. Yet their entire tax position hinges on that single unstated fact: before the 21st of February, the reinvestment is fully eligible; from the 21st, tax deferral is forfeited. A human lawyer immediately asks for the exact date. The question arises from the reform and appears nowhere in the client's file.
 
 We report what thirteen state-of-the-art language models do when placed in counsel's position.
 
@@ -59,13 +60,13 @@ We report what thirteen state-of-the-art language models do when placed in couns
 
 We call it narcissus misgrounding: a model answers a legal question without requesting the fact that decides it, having silently supplied that fact itself. In the vocabulary of argumentation theory, the model covertly discharges a burden of establishment, supplying the very premise it should have questioned.
 
-Narcissus is neither blind nor misinformed, and nothing in the water is hidden from him. Held spellbound by his own reflection, he never looks outward. A language model given the applicable statutory text is in that state: it does not look at the client's case, it gazes at what it already holds. What it lacks is a factual premise it could obtain by asking. Instead it fills the void from the default case, the ordinary practice, the scenario its training data suggests. The gap closes without a trace.
+Narcissus is neither blind nor misinformed, and nothing in the water is hidden from him. Held spellbound by his own reflection, he never looks outward. A language model given the applicable statutory text is in that state: it looks at what it already holds rather than at the client's case. What it lacks is a factual premise it could obtain by asking. Instead it fills the void from the default case, the ordinary practice, the scenario its training data suggests. The gap closes without a trace.
 
-This is why the failure is more dangerous than hallucination. A hallucinated answer can be caught. A narcissus-misgrounded one appears pristine: correct law, right version, seamless reasoning, resting on an assumed fact that silently invalidates the advice.
+This makes the failure more dangerous than hallucination, which a reader can catch. A narcissus-misgrounded answer appears pristine: correct law, right version, seamless reasoning, resting on an assumed fact that silently invalidates the advice.
 
 \subsection*{Contributions}
 
-\emph{Conceptualisation}: we identify and characterize narcissus misgrounding as a structural failure mode distinct from retrieval failure and hallucination. \emph{Benchmark}: we build thirteen legal files across six French tax reforms, each paired with the statutory text in force at the date of the facts, and evaluate thirteen leading models over three repetitions; all 573 responses (500 primary, 73 ablation), annotations, and code are released.\footnote{Available at \url{https://github.com/DanielGuez16/narcissus-misgrounding}.} \emph{Findings}: across the five reported-case items, models request the decisive fact in only 3\% of responses, and nine of thirteen never ask; the overall 16\% rate is driven by a single AI-generated outlier, which may indicate that models recognize patterns from their training distribution rather than engaging in true legal elicitation. \emph{Resilience to prompting}: the failure survives an explicit instruction to ask, which suggests that the error stems from an inability to perceive factual voids created by legal change. \emph{Instrumental observations}: we report three deployment anomalies, unenforced token ceilings, non-termination, and undocumented routing variability.
+\emph{Conceptualisation}: we identify and characterize narcissus misgrounding as a structural failure mode distinct from retrieval failure and hallucination. \emph{Benchmark}: we build thirteen legal files across six French tax reforms, each paired with the statutory text in force at the date of the facts, and evaluate thirteen leading models over three repetitions; all 573 responses (500 from the main campaign and 73 from the prompt ablation reported in Section~\ref{sec:ablation}), annotations, and code are released.\footnote{Available at \url{https://github.com/DanielGuez16/narcissus-misgrounding}.} \emph{Findings}: across the five reported-case items, models request the decisive fact in only 3\% of responses, and nine of thirteen never ask; the overall 16\% rate is driven by a single AI-generated outlier, which may indicate that models recognize patterns from their training distribution rather than engaging in true legal elicitation. \emph{Resilience to prompting}: the failure survives an explicit instruction to ask, which suggests that the error stems from an inability to perceive factual voids created by legal change. \emph{Observations on the instruments}: we report three deployment anomalies, unenforced token ceilings, non-termination, and undocumented routing variability.
 
 \subsection*{Why this is not a retrieval problem}
 
@@ -75,7 +76,7 @@ Temporal Misgrounding in Legal RAG~\cite{cymbler2026} demonstrated that a versio
 
 \paragraph{Asking for what is missing.}
 
-Steenhuis \& Westermann~\cite{steenhuis2024} test whether an LLM requests missing information during legal aid intake; their most frequent error is asking unnecessary questions where a file could be decided. Two elements differ: their prompt explicitly commands asking, and their missing facts are statically enumerated by eligibility rules. Their work describes guided intake; ours evaluates open advice. Steenhuis~\cite{steenhuis2025} extends this to triage, and Steenhuis and Harvey~\cite{steenhuis2026} extend it further, evaluating the quality of the follow-up questions themselves. Yu et al.~\cite{yu2025} study interactive legal consultations, and Zhang et al.~\cite{dlawbench} evaluate legal consultation over several turns, where the exchange with the client is the object rather than a single answer. Outside law, QuestBench~\cite{questbench} and MediQ~\cite{mediq} test question-asking when required variables are fixed a priori. AskBench~\cite{askbench} measures the same behaviour outside law: models skip the clarification even where asking would improve the answer. The abstention literature measures whether models decline unanswerable questions~\cite{rajpurkar2018}, while Guitton et al.~\cite{guitton2025} measure textual ambiguity in rules. In our benchmark, the required variable is fixed only after a legislative reform alters the legal threshold.
+Steenhuis \& Westermann~\cite{steenhuis2024} test whether an LLM requests missing information during legal aid intake; their most frequent error is asking unnecessary questions where a file could be decided. Two elements differ: their prompt explicitly commands asking, and their missing facts are statically enumerated by eligibility rules. Their work concerns guided intake, whereas we evaluate open advice. Steenhuis~\cite{steenhuis2025} extends this to triage, and Steenhuis and Harvey~\cite{steenhuis2026} extend it further, evaluating the quality of the follow-up questions themselves. Yu et al.~\cite{yu2025} study interactive legal consultations, and Zhang et al.~\cite{dlawbench} evaluate legal consultation over several turns, where the exchange with the client is the object rather than a single answer. Outside law, QuestBench~\cite{questbench} and MediQ~\cite{mediq} test question-asking when required variables are fixed a priori. AskBench~\cite{askbench} measures the same behaviour outside law: models skip the clarification even where asking would improve the answer. The abstention literature measures whether models decline unanswerable questions~\cite{rajpurkar2018}, while Guitton et al.~\cite{guitton2025} measure textual ambiguity in rules. In our benchmark, the required variable is fixed only after a legislative reform alters the legal threshold.
 
 \paragraph{Argumentation theory.}
 
@@ -83,7 +84,7 @@ Argumentation schemes carry critical questions~\cite{waltonschemes2008} required
 
 \paragraph{Norm change and the temporal dimension of law.}
 
-Legal changes alter prerequisite conditions, not just answers. Governatori \& Rotolo~\cite{governatori2010} separate abrogation from annulment in defeasible logic. Tamargo et al.~\cite{tamargo2019} formalize temporalized belief revision, extending Lindahl \& Odelstad~\cite{lindahl2003} and Moguillansky et al.~\cite{moguillansky2024}. Palmirani et al.~\cite{palmirani2010,palmirani2009} and Sz\H{o}ke et al.~\cite{szoke2012} model legal temporal dimensions and change management. Slingerland et al.~\cite{slingerland2018} measure reform impact on case classification, and de Martim~\cite{demartim2025} proposes point-in-time reconstruction for legal AI. We measure how models behave when one of these newly required conditions goes missing.
+A legal change can alter the conditions of a rule as well as its outcome. Governatori \& Rotolo~\cite{governatori2010} separate abrogation from annulment in defeasible logic. Tamargo et al.~\cite{tamargo2019} formalize temporalized belief revision, extending Lindahl \& Odelstad~\cite{lindahl2003} and Moguillansky et al.~\cite{moguillansky2024}. Palmirani et al.~\cite{palmirani2010,palmirani2009} and Sz\H{o}ke et al.~\cite{szoke2012} model legal temporal dimensions and change management. Slingerland et al.~\cite{slingerland2018} measure reform impact on case classification, and de Martim~\cite{demartim2025} proposes point-in-time reconstruction for legal AI. We measure how models behave when one of these newly required conditions goes missing.
 
 \paragraph{Reliability of language models in law.}
 
@@ -95,9 +96,9 @@ Across the venues and period surveyed, we find no study evaluating whether a leg
 
 \section{The case}
 
-A company director sells his business in two steps: he contributes his shares to a holding company, and the holding company subsequently sells them.
+A company director sells their business in two steps: they contribute their shares to a holding company, and the holding company subsequently sells them.
 
-The shares cost him one million euros, contributed at an agreed valuation of nine; less than three years later, the holding company sells them for nine million euros.
+The shares cost the director one million euros, contributed at an agreed valuation of nine; less than three years later, the holding company sells them for nine million euros.
 
 \paragraph{The contribution, and why tax is deferred.}
 
@@ -105,27 +106,27 @@ For tax purposes, a contribution of shares is treated as a sale. The eight-milli
 
 \paragraph{The disposal, and the obligation it creates.}
 
-The holding company no longer owns a business; it holds nine million euros in cash. The director has personally sold nothing, retaining his shares in the holding company. Because the disposal occurred within three years of the initial contribution, the statute requires the holding company to reinvest a substantial portion of the sale proceeds into an active economic business. How much must be reinvested, and within what timeframe, are conditions directly altered by the reform: 60\% within two years for disposals prior to 21 February 2026, versus 70\% within three years for disposals from that date onward. That represents a choice between placing 5.4 million euros within two years or 6.3 million euros within three. The reform also raises the minimum holding period on what is acquired, from twelve months to five years.
+The holding company no longer owns a business; it holds nine million euros in cash. The director has personally sold nothing, retaining their shares in the holding company. Because the disposal occurred within three years of the initial contribution, the statute requires the holding company to reinvest a substantial portion of the sale proceeds into an active economic business. How much must be reinvested, and within what timeframe, are conditions directly altered by the reform: 60\% within two years for disposals prior to 21 February 2026, versus 70\% within three years for disposals from that date onward. That represents a choice between placing 5.4 million euros within two years or 6.3 million euros within three. The reform also raises the minimum holding period on what is acquired, from twelve months to five years.
 
 \paragraph{Where the lawyer stops and the system proceeds.}
 
-The director consults his tax counsel:
+The director consults their tax counsel:
 
 \begin{quote}
 \emph{I contributed my shares to my holding company, and it sold them in February 2026. I want to reinvest in a company that buys buildings, renovates them, and resells them. Does that qualify?}
 \end{quote}
 
-The client states everything he believes to be relevant. One decisive fact is missing, omitted precisely because he has no reason to know it matters: on which exact day in February did the holding company complete the sale?
+The client states everything they believe to be relevant. One decisive fact is missing, omitted precisely because they have no reason to know it matters: on which exact day in February did the holding company complete the sale?
 
 Article 11 of the amending act provides, in an uncodified transitional clause, that the reform applies to disposals executed from the day after publication. The law was published on 20 February; the legal boundary falls strictly on the 21st. Prior to the 21st, the eligible reinvestment scope includes any commercial activity under Articles 34 and 35 of the code, under which property dealing (marchand de biens) qualifies. From the 21st onward, the text references a provision excluding real-estate activities. After that date, the project fails.
 
-A system equipped with a versioned RAG corpus identifies both statutory versions, holds two conflicting texts, and must resolve the ambiguity. It systematically adopts the later version, silently assuming the sale occurred after the 21st.
+A system with a versioned corpus would find both versions and have to choose between them.
 
-The human tax lawyer, by contrast, picks up the telephone. Neither he nor the model can conclude without the date; the difference is that he asks for it, recognizing that a single missing day dictates four terms of the opinion: project eligibility, the reinvestment quota, the compliance deadline, and the minimum holding period, twelve months before the reform and five years after.
+The human tax lawyer, by contrast, picks up the telephone. Neither the lawyer nor the model can conclude without the date, but the lawyer asks for it, recognizing that a single missing day dictates four terms of the opinion: project eligibility, the reinvestment quota, the compliance deadline, and the minimum holding period, twelve months before the reform and five years after.
 
 \section{Experimental design}
 
-We set out to measure not merely a system that errs, but one that errs invisibly.
+We set out to measure errors that a reader of the answer cannot see.
 
 \paragraph{The task.}
 
@@ -134,6 +135,8 @@ Each item is a tax file presented to the model as a client would submit it to co
 \begin{quote}
 \emph{You are a tax lawyer. A client is consulting you. Answer as you would in a real file.}
 \end{quote}
+
+The items, the statutory texts and the system prompt are in French; the prompt is translated here. A complete item, with its statutory text, is in the repository.
 
 The prompt deliberately contains no instruction to identify or request missing information. In legal practice, counsel receiving a new file is not forewarned that a critical fact is absent; identifying factual gaps is an intrinsic outcome of the legal analysis itself. Prompting the model to ask for missing information would implicitly signal the presence of a factual void, thereby bypassing the core capability under test: whether the system independently recognizes when a statutory change renders an unstated fact decisive.
 
@@ -161,13 +164,38 @@ Contribution-and-disposal relief & 21 Feb 2026 & Loi 2026-103, JO 20 Feb 2026 & 
 \end{tabular}
 \end{table}
 
-Twelve items pair each area before and after its reform. The contribution-and-disposal area carries a thirteenth: a file dated February 2026 without the day, straddling the reform and stating no sector. It is a measurement item, and the only one where the missing facts are unrelated to each other.
+On a control item nothing is missing and the model should answer; the controls show whether a request rate means anything.
 
-Items set before their reform are controls, as is a seventh item, set after the reform but giving both the day and the sector. Nothing is missing and the model should answer; they rule out a request rate that would mean nothing.
+\begin{table}[!ht]
+\centering
+\caption{The thirteen items. Condition: the date of the facts relative to the reform.}
+\label{tab:items}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l >{\raggedright\arraybackslash}p{2.3cm} l l >{\raggedright\arraybackslash}p{3.1cm}@{}}
+\toprule
+Item & Area & Condition & Role & Missing fact \\
+\midrule
+f001\_chaudiere\_a & Reduced VAT on renovation & Before & Control & -- \\
+f001\_chaudiere\_b & Reduced VAT on renovation & After & Measurement & The fuel the boiler can burn \\
+f002\_preponderance\_a & Property-holding companies & Before & Control & -- \\
+f002\_preponderance\_b & Property-holding companies & After & Measurement & Three declarations in the deed \\
+f003\_apport\_partiel\_a & Partial contribution & Before & Control & -- \\
+f003\_apport\_partiel\_b & Partial contribution & After & Measurement & The date the plan was filed with the registry \\
+f004\_beneficiaire\_effectif\_a & Beneficial ownership & Before & Control & -- \\
+f004\_beneficiaire\_effectif\_b & Beneficial ownership & After & Measurement & What the parent does with the funds \\
+f005\_dutreil\_a & Dutreil & Before & Control & -- \\
+f005\_dutreil\_b & Dutreil & After & Measurement & The services provided to the occupants \\
+f006\_apport\_cession\_a & Contribution-and-disposal & Before & Control & -- \\
+f006\_apport\_cession\_b & Contribution-and-disposal & After & Control & -- (day and sector given) \\
+f006\_apport\_cession\_c & Contribution-and-disposal & Straddling & Measurement & The day of the disposal, and the sector of the reinvestment \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Models and runs}
 
-The benchmark evaluates thirteen leading language models, queried between 05:15 and 14:07 UTC on 19 August 2026. Claude Opus 5 was reached through Anthropic's first-party API; GPT-5.6 Sol, GPT-5.6 Terra, Gemini 3.1 Pro, Grok 4.6, Mistral Large 3, Mistral Medium 3.5, and Qwen 3.6 Plus through OpenRouter to their first-party backends; and Kimi K3, GLM-5.2, DeepSeek V4 Pro, MiniMax M3, and Llama 4 Maverick across third-party providers. The last eight have published weights, though all runs used cloud endpoints. Complete identifiers, routing metadata, and timestamps are in the released dataset. Temperature was zero wherever the endpoint supports it; Claude Opus 5 and the two GPT-5.6 variants do not expose the parameter. Three repetitions per item yield 500 responses across 507 cells, after seven API non-terminations. Of the four models that produce the five requests on real-world items, two were routed to a single backend and two across several: the figure reflects model capability, not routing.
+The benchmark evaluates thirteen leading language models, queried between 05:15 and 14:07 UTC on 19 August 2026. Claude Opus 5 was reached through Anthropic's first-party API; GPT-5.6 Sol, GPT-5.6 Terra, Gemini 3.1 Pro, Grok 4.6, Mistral Large 3, Mistral Medium 3.5, and Qwen 3.6 Plus through OpenRouter to their first-party backends; and Kimi K3, GLM-5.2, DeepSeek V4 Pro, MiniMax M3, and Llama 4 Maverick across third-party providers. The last eight have published weights, though all runs used cloud endpoints. Complete identifiers, routing metadata, and timestamps are in the released dataset. Temperature was zero wherever the endpoint supports it; Claude Opus 5 and the two GPT-5.6 variants do not expose the parameter. Three repetitions per item yield 500 responses across 507 cells, after seven API non-terminations. Of the four models that produce the five requests on real-world items, two were routed to a single backend and two across several: the figure is not an artefact of routing.
 
 \subsection{Coding}
 \label{sec:coding}
@@ -256,7 +284,7 @@ They ask the question the later version of the text would call for, on facts the
 
 \subsection{What the models ask does not change across a reform}\label{sec:tracks}
 
-They do not ask indiscriminately, they ask at the wrong time.
+The requests follow the subject of the file rather than the timing of the reform.
 
 \begin{table}[!ht]
 \centering
@@ -280,11 +308,11 @@ Contribution-and-disposal (day and sector given) & -- & 3 (1/39) \\
 
 Read across the rows rather than down the columns. On the boiler item the models ask on both sides of the reform, although the fuel carries no consequence before it. On Dutreil they ask on both sides, at 11\% and 10\%. On the remaining four they ask on neither. The last row is a seventh control, set after the reform but giving the day and the sector: nothing is missing there either. It carries the eighth false positive.
 
-What the models ask does not change across a reform. What the law newly requires is not what triggers the question.
+The questions the models ask stay the same on both sides of a reform, so the new requirement in the law is not what prompts them.
 
-The random-effects model puts more variance on the item than on the model, though on the five practitioner-sourced items alone the two are not separable. What a model is does not predict whether it asks; what the file is about does.
+The random-effects model puts more variance on the item than on the model, though on the five practitioner-sourced items alone the two are not separable. The subject of the file predicts whether a model will ask; the choice of model does not.
 
-\subsection{The failure survives explicit injunction}
+\subsection{The failure survives explicit injunction}\label{sec:ablation}
 
 A reader might hypothesize that models fail to elicit facts simply because our baseline system prompt does not explicitly instruct them to do so. We empirically tested this hypothesis through an ablation study across two representative items, thirteen models, and three repetitions (78 calls, 5 API non-terminations). We appended a single explicit instruction to the system prompt:
 
@@ -292,30 +320,30 @@ A reader might hypothesize that models fail to elicit facts simply because our b
 \emph{If a necessary fact is missing, ask for it before concluding.}
 \end{quote}
 
-The contrast between the two items is striking. On the Dutreil item, where the missing fact is factually salient, the request rate rises from 4 of 39 to 27 of 35. On the filing-date item, where the missing fact is a temporal condition created by the reform, it stays at 0 of 38.
+The two items diverge. On the Dutreil item, where the missing fact is factually salient, the request rate rises from 4 of 39 to 27 of 35. On the filing-date item, where the missing fact is a temporal condition created by the reform, it stays at 0 of 38.
 
 Thirteen leading models, explicitly commanded to ask for missing facts before concluding, produced 38 definitive legal opinions on a filing date none of them possessed.
 
-Two critical conclusions follow. First, prompt engineering cannot resolve narcissus misgrounding when the factual void is induced by statutory change: if an explicit command yields zero elicitation on filing dates, no subtle prompt variation will succeed. Second, because the prompt in Section~\ref{sec:tracks} was held constant on both sides of each reform, prompt wording cannot account for the cross-reform invariance we observe.
+Two conclusions follow. First, prompt engineering cannot resolve narcissus misgrounding when the factual void is induced by statutory change: if an explicit command yields zero elicitation on filing dates, a gentler instruction is unlikely to succeed where an explicit one does not. Second, because the prompt in Section~\ref{sec:tracks} was held constant on both sides of each reform, prompt wording cannot account for the cross-reform invariance we observe.
 
 \section{Why they do not ask}\label{sec:why}
 
 Each missing fact admits a default value the model can adopt silently. For \emph{dates}, it defaults to the latest statutory text and applies it; for \emph{occupant services} (Dutreil), it assumes a standard furnished lease without hotel services; for \emph{statutory declarations}, it recites the list verbatim without registering that it lacks client values to fill it in; and for the \emph{use of funds}, it answers under reservation, delivering a conclusion while treating the missing fact as a mere hypothetical.
 
-The model does not ask when it can assume. And it can always assume.
+When a default value is available, the model adopts it instead of asking.
 
-This is what makes the error invisible: the system does not report selecting a value because it does not register having chosen one. The gap closes without a trace.
+This is what makes the error invisible: the response never states that a value was chosen.
 
 \paragraph{The synthetic outlier.}
 
 The boiler item stands apart because its missing fact admits no default, and it alone was AI-generated rather than drawn from a reported case. This may indicate that models pick up structural cues from their training distribution when faced with synthetic inputs, and default to silent assumptions on real-world files.
 
-\paragraph{Instrumental anomalies.} Three deployment findings emerged. \emph{Token ceilings}: MiniMax M3 exceeded its 32,000 token limit to return 37,016 reasoning tokens, and generated 79,371 at a 64,000 limit. \emph{Non-termination}: the same model failed to conclude across seven cells, generating reasoning until hitting provider timeouts. \emph{Routing variability}: four failed calls succeeded on identical retries where only the upstream API provider changed, revealing non-deterministic routing in aggregators.
+\paragraph{Observations on the instruments.} Three deployment findings emerged. \emph{Token ceilings}: MiniMax M3 exceeded its 32,000 token limit to return 37,016 reasoning tokens, and generated 79,371 at a 64,000 limit. \emph{Non-termination}: the same model failed to conclude across seven cells, generating reasoning until hitting provider timeouts. \emph{Routing variability}: four failed calls succeeded on identical retries where only the upstream API provider changed, revealing non-deterministic routing in aggregators.
 
 \section{Conclusion}
 
 \enlargethispage{2\baselineskip}
-Narcissus misgrounding sits strictly downstream of the failure identified in Temporal Misgrounding in Legal RAG~\cite{cymbler2026}. Where that work showed standard retrieval fetching the wrong statutory version, our setup provides the exact, date-conditioned text within the prompt: the model holds the right law, at the right date, and nothing in it is hallucinated or misread. The failure occurs because the missing piece is not a legal norm but a client-specific fact, residing in no corpus. This makes the risk more insidious than retrieval failure or statutory hallucination: an opinion that cites the right law and reasons flawlessly appears pristine, yet rests on a silent factual assumption the reader cannot locate. The ultimate danger of legal AI is not that it may give the wrong legal answer, but that it delivers a flawless, authoritative answer to the wrong factual case.
+Narcissus misgrounding sits strictly downstream of the failure identified in Temporal Misgrounding in Legal RAG~\cite{cymbler2026}. Where that work showed standard retrieval fetching the wrong statutory version, our setup provides the exact, date-conditioned text within the prompt: the model holds the right law, at the right date, and nothing in it is hallucinated or misread. The failure occurs because the missing piece is not a legal norm but a client-specific fact, residing in no corpus. This makes the risk more insidious than retrieval failure or statutory hallucination: an opinion that cites the right law and reasons flawlessly appears pristine, yet rests on a silent factual assumption the reader cannot locate. The greater danger is a well-reasoned, authoritative answer given on facts that are not the client's.
 
 \section{Limitations and Future Work}
 

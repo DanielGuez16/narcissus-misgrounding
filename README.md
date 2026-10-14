@@ -85,16 +85,20 @@ Le codeur, ses regles et son calibrage sont dans
 
 ## Ce que vaut ce codage
 
-Un codage produit par un modele ne vaut que verifie. Deux echantillons ont ete
+Un codage produit par un modele ne vaut que verifie. Trois echantillons ont ete
 recodes a la main, en aveugle du premier codage, par une seconde personne :
 **50 cellules tirees au hasard**, qui mesurent l'accord tel qu'il se produit sur
-nos donnees, et **40 cellules tirees dix par valeur**, qui mesurent la capacite
-a distinguer les quatre categories. 90 cellules distinctes, graines fixes.
+nos donnees, **40 cellules tirees dix par valeur**, qui mesurent la capacite
+a distinguer les quatre categories, et **45 cellules ciblees** sur les cinq
+enonces praticiens : les cinq cellules positives qui portent le chiffre du
+papier, et quarante negatives des memes enonces. 135 cellules distinctes,
+graines fixes.
 
 | Tirage | n | Accord | Kappa 4 valeurs | Accord binaire | Kappa binaire |
 |---|--:|--:|--:|--:|--:|
 | Uniforme | 50 | 86,0 % | 0,776 | 98,0 % | 0,922 |
 | Stratifie | 40 | 82,5 % | 0,767 | 97,5 % | 0,935 |
+| Cible | 45 | 80,0 % | 0,704 | 100 % | 1,000 |
 
 Les deux kappas ne disent pas la meme chose. Celui **a quatre valeurs** mesure
 une finesse de codage que les resultats publies n'utilisent pas : l'agregation
@@ -102,7 +106,8 @@ ne compte que `suspend` en reclamation et additionne les trois autres en
 misgrounding, donc un desaccord entre ces trois ne deplace aucun chiffre. Celui
 **sur la variable binaire**, `suspend` contre le reste, mesure la fiabilite des
 taux annonces. Un seul desaccord franchit cette frontiere sur chacun des deux
-tirages.
+premiers tirages, aucun sur le tirage cible : les cinq positifs sont vus par les
+deux codeurs.
 
 Methode, tirage ecarte, desaccords en clair et ce que la stratification a
 revele : [docs/double_codage.md](docs/double_codage.md).
@@ -113,8 +118,8 @@ revele : [docs/double_codage.md](docs/double_codage.md).
   par enonce, par modele, la matrice, et la regle d'agregation.
 - [resultat_paire_f001.md](docs/resultat_paire_f001.md) : le resultat central,
   la paire controle/mesure de la chaudiere.
-- [double_codage.md](docs/double_codage.md) : les deux echantillons recodes a la
-  main, les quatre mesures d'accord, et ce que la stratification a revele.
+- [double_codage.md](docs/double_codage.md) : les trois echantillons recodes a la
+  main, les mesures d'accord, et ce que la stratification a revele.
 - [ablation_prompt.md](docs/ablation_prompt.md) : l'ablation de consigne, sa
   raison, son protocole et ses resultats, avec et sans la consigne qui autorise
   la question.
