@@ -183,9 +183,9 @@ f004\_beneficiaire\_effectif\_a & Beneficial ownership & Before & Control & -- \
 f004\_beneficiaire\_effectif\_b & Beneficial ownership & After & Measurement & What the parent does with the funds \\
 f005\_dutreil\_a & Dutreil & Before & Control & -- \\
 f005\_dutreil\_b & Dutreil & After & Measurement & The services provided to the occupants \\
-f006\_apport\_cession\_a & Contribution-and-disposal & Before & Control & -- \\
-f006\_apport\_cession\_b & Contribution-and-disposal & After & Control & -- (day and sector given) \\
-f006\_apport\_cession\_c & Contribution-and-disposal & Straddling & Measurement & The day of the disposal, and the sector of the reinvestment \\
+f006\_apport\_cession\_a & Contribution and disposal & Before & Control & -- \\
+f006\_apport\_cession\_b & Contribution and disposal & After & Control & -- (day and sector given) \\
+f006\_apport\_cession\_c & Contribution and disposal & Straddling & Measurement & The day of the disposal, and the sector of the reinvestment \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -251,7 +251,7 @@ Answers with no mention of the missing fact & 75 & 39.1 \\
 
 Only the first behaviour is correct: legal counsel must ask before advising. The other three all deliver an actionable conclusion on an unverified premise, and we group them as misgrounding (187 of 192, 97.4\%).
 
-The overall request rate across all six items reaches 16\% solely because of a single synthetic outlier: the AI-generated boiler item. Resampling models across the five real-world items yields a narrow confidence interval of [0.5\%, 5.1\%], whereas resampling items across the full set yields [0.4\%, 44.4\%]. This extreme width is a structural finding rather than a limitation: the variance resides entirely in the items.
+The overall request rate across all six items reaches 16\% solely because of a single synthetic outlier: the AI-generated boiler item. Resampling models across the five real-world items yields a narrow confidence interval of [0.5\%, 5.1\%], whereas resampling items across the full set yields [0.4\%, 44.4\%]. This extreme width is a structural finding rather than a limitation: the variance lies between items rather than between models.
 
 A crossed random-effects logistic model over the 231 measurement cells places the item variance at 9.13 [3.34, 24.94] against 0.27 [0.12, 0.58] for the model. Fitted without the synthetic boiler item, the item variance drops to 1.22 [0.38, 3.94] against 0.45 [0.21, 0.96]. Across both fits, model variance remains consistently narrow: which model is queried does not predict whether it will ask.
 
@@ -273,7 +273,7 @@ We read all thirty-eight conclusions on the registry-filing item rather than rel
 
 \subsection{Controls}
 
-Seven control items, on which nothing is missing, and the model should answer. It does so in 86.6\% of cases, 233 of 269.
+On the seven control items nothing is missing and the model should answer. It does so in 86.6\% of cases, 233 of 269.
 
 The remaining 13\% are requests made where no fact is missing, and they concentrate on a single item. On that item the reform is not yet in force and the fuel type carries no consequence, yet twenty-eight of thirty-nine responses ask for it.
 
